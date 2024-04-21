@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>StableDiffusion14.SDXL模型推荐 | 聚沙成塔 - 集腋成裘</title><meta name="author" content="逍遥之韶"><meta name="copyright" content="逍遥之韶"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1. 优势1.1 提示词兼容性大幅提升 不再强制需要 masterpiece、high quality、best quality 等提示词来提升画面质量  对自然语言的理解更加到位，逐渐从词条化方案转变为自然语言表述的方案   1.2 更大、更高清的分辨率 SD1.5时代使用的训练样本数据，尺寸多为512像素、768像素的正方形图片  SDXL时代使用的训练样本数据，尺寸提升到1024像素的正方形">
+<meta property="og:type" content="article">
+<meta property="og:title" content="StableDiffusion14.SDXL模型推荐">
+<meta property="og:url" content="https://shadowchencsd.github.io/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/index.html">
+<meta property="og:site_name" content="聚沙成塔 - 集腋成裘">
+<meta property="og:description" content="1. 优势1.1 提示词兼容性大幅提升 不再强制需要 masterpiece、high quality、best quality 等提示词来提升画面质量  对自然语言的理解更加到位，逐渐从词条化方案转变为自然语言表述的方案   1.2 更大、更高清的分辨率 SD1.5时代使用的训练样本数据，尺寸多为512像素、768像素的正方形图片  SDXL时代使用的训练样本数据，尺寸提升到1024像素的正方形">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shadowchencsd.github.io/img/DocCover12.jpg">
+<meta property="article:published_time" content="2024-04-15T05:52:53.000Z">
+<meta property="article:modified_time" content="2024-04-21T16:40:00.758Z">
+<meta property="article:author" content="逍遥之韶">
+<meta property="article:tag" content="WebUI">
+<meta property="article:tag" content="AI绘图模型">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shadowchencsd.github.io/img/DocCover12.jpg"><link rel="shortcut icon" href="/img/hexo.png"><link rel="canonical" href="https://shadowchencsd.github.io/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'StableDiffusion14.SDXL模型推荐',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-22 00:40:00'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 7.1.1"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/DocCover12.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="聚沙成塔 - 集腋成裘"><span class="site-name">聚沙成塔 - 集腋成裘</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">StableDiffusion14.SDXL模型推荐</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2024-04-21T16:40:00.758Z" title="更新于 2024-04-22 00:40:00">2024-04-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Stable-Diffusion%E6%A0%B7%E5%9B%BE/">Stable Diffusion样图</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">699</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="StableDiffusion14.SDXL模型推荐"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-优势"><a href="#1-优势" class="headerlink" title="1. 优势"></a>1. 优势</h1><h2 id="1-1-提示词兼容性大幅提升"><a href="#1-1-提示词兼容性大幅提升" class="headerlink" title="1.1 提示词兼容性大幅提升"></a>1.1 提示词兼容性大幅提升</h2><ul>
+<li><p>不再强制需要 <strong>masterpiece、high quality、best quality</strong> 等提示词来提升画面质量</p>
+</li>
+<li><p>对自然语言的理解更加到位，逐渐从<strong>词条化方案</strong>转变为<strong>自然语言表述的方案</strong></p>
+</li>
+</ul>
+<h2 id="1-2-更大、更高清的分辨率"><a href="#1-2-更大、更高清的分辨率" class="headerlink" title="1.2 更大、更高清的分辨率"></a>1.2 更大、更高清的分辨率</h2><ul>
+<li><p><strong>SD1.5时代</strong>使用的训练样本数据，尺寸多为<strong>512像素、768像素</strong>的正方形图片</p>
+</li>
+<li><p><strong>SDXL时代</strong>使用的训练样本数据，尺寸提升到<strong>1024像素</strong>的正方形图片，可以直接画出分辨率更大的图片</p>
+</li>
+<li><p><strong>判断方法</strong>：在<strong>使用更大的分辨率作图</strong>时，AI会<strong>误以为</strong>是在生成多张图片，从而产生<strong>多人</strong>的现象</p>
+</li>
+</ul>
+<h2 id="1-3-图片精度大幅提升"><a href="#1-3-图片精度大幅提升" class="headerlink" title="1.3 图片精度大幅提升"></a>1.3 图片精度大幅提升</h2><ul>
+<li>可以使用<strong>Refiner模型</strong>进行<strong>图生图</strong></li>
+</ul>
+<h2 id="1-4-生成准确度大幅提升"><a href="#1-4-生成准确度大幅提升" class="headerlink" title="1.4 生成准确度大幅提升"></a>1.4 生成准确度大幅提升</h2><ul>
+<li><p>会<strong>写字</strong>：具有<strong>初步书写文字</strong>的能力</p>
+</li>
+<li><p>会<strong>画手</strong>：<strong>手指错乱</strong>的情况有所降低</p>
+</li>
+</ul>
+<h2 id="1-5-风格自由度大幅提升"><a href="#1-5-风格自由度大幅提升" class="headerlink" title="1.5 风格自由度大幅提升"></a>1.5 风格自由度大幅提升</h2><ul>
+<li><strong>默认模型风格</strong>：接近于照片风真实系的效果</li>
+<li><strong>官方的SDXL模型支持十多种画面风格</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">提示词</th>
+<th align="center">风格</th>
+<th align="center">示例图</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">Enhance</td>
+<td align="center"><strong>原始图像增强</strong></td>
+<td align="center">&#x2F;</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Anime</td>
+<td align="center"><strong>动漫</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Anime.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Photographic</td>
+<td align="center"><strong>写实照片</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Photographic.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">Digital Art</td>
+<td align="center"><strong>数字艺术</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/DigitalArt.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">Comic book</td>
+<td align="center"><strong>漫画书</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/ComicBook.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">Fantasy art</td>
+<td align="center"><strong>奇幻艺术</strong></td>
+<td align="center">&#x2F;</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">Analog film</td>
+<td align="center"><strong>电影胶片</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/AnalogFilm.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">Neon punk</td>
+<td align="center"><strong>赛博朋克</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/NeonPunk.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">Isometric</td>
+<td align="center"><strong>等距插画</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Isometric.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">Low poly</td>
+<td align="center"><strong>扁平化</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/LowPoly.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">Origami</td>
+<td align="center"><strong>折纸</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Origami.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">Line Art</td>
+<td align="center"><strong>线条艺术</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/LineArt.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">Craft clay</td>
+<td align="center"><strong>工艺粘土</strong></td>
+<td align="center">&#x2F;</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">Cinematic</td>
+<td align="center"><strong>电影风格</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Cinematic.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">3D model</td>
+<td align="center"><strong>3D卡通</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/3DModel.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">Pixel Art</td>
+<td align="center"><strong>像素艺术</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/PixelArt.jpg" class="" title="SDXL"></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">Texture</td>
+<td align="center"><strong>纹理风格</strong></td>
+<td align="center"><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/Texture.jpg" class="" title="SDXL"></td>
+</tr>
+</tbody></table>
+<h1 id="2-劣势"><a href="#2-劣势" class="headerlink" title="2. 劣势"></a>2. 劣势</h1><h2 id="2-1-通用模型，非定制化开发"><a href="#2-1-通用模型，非定制化开发" class="headerlink" title="2.1 通用模型，非定制化开发"></a>2.1 通用模型，非定制化开发</h2><ul>
+<li><strong>官方的SDXL</strong>是一个<strong>基础模型</strong>，没有经过微调，也不是为了满足某一个特定需求而量身定制</li>
+</ul>
+<h2 id="2-2-LoRA兼容性问题"><a href="#2-2-LoRA兼容性问题" class="headerlink" title="2.2 LoRA兼容性问题"></a>2.2 LoRA兼容性问题</h2><ul>
+<li>可能不兼容<strong>SD1.5版本</strong>训练出来的<strong>LoRA模型</strong></li>
+</ul>
+<h1 id="3-模型推荐"><a href="#3-模型推荐" class="headerlink" title="3. 模型推荐"></a>3. 模型推荐</h1><h2 id="SDXL"><a href="#SDXL" class="headerlink" title="SDXL"></a>SDXL</h2><h3 id="官方基础模型"><a href="#官方基础模型" class="headerlink" title="官方基础模型"></a>官方基础模型</h3><ul>
+<li><strong>sd_xl_base_1.0.safetensors</strong>：用于文生图功能，<strong>根据文字描述，生成样图</strong></li>
+<li><strong>sd_xl_vae.safetensors</strong>：<strong>获得更鲜艳的颜色和更清晰的图像</strong></li>
+<li><strong>sd_xl_refiner_1.0.safetensors</strong>：用于图生图功能，<strong>对输入图像作细节强化</strong></li>
+</ul>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/SDXL%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png" class="" title="SDXL基本原理">
+
+<h3 id="推荐出图的分辨率"><a href="#推荐出图的分辨率" class="headerlink" title="推荐出图的分辨率"></a>推荐出图的分辨率</h3><ul>
+<li>【21:9】 1536 x 640</li>
+<li>【16:9】 1344 x 768</li>
+<li>【3:2】 1216 x 832</li>
+<li>【5:4】 1152 x 896</li>
+<li>【1:1】 1024 x 1024</li>
+</ul>
+<h3 id="例图"><a href="#例图" class="headerlink" title="例图"></a>例图</h3><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/SDXL-1.jpg" class="" title="SDXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/SDXL-2.jpg" class="" title="SDXL">
+
+<h2 id="GhostXL"><a href="#GhostXL" class="headerlink" title="GhostXL"></a>GhostXL</h2><h3 id="推荐分辨率"><a href="#推荐分辨率" class="headerlink" title="推荐分辨率"></a>推荐分辨率</h3><p>​		最佳分辨率：<strong>1024 * 1536</strong></p>
+<h3 id="高清优化"><a href="#高清优化" class="headerlink" title="高清优化"></a>高清优化</h3><p>​		不需要用<strong>高清修复</strong>和<strong>Refiner优化</strong></p>
+<h3 id="风格微调"><a href="#风格微调" class="headerlink" title="风格微调"></a>风格微调</h3><p>​		可以通过 <strong>xxx art style</strong> 提示词对画面风格进行微调，如：<strong>realistic art style</strong>、<strong>anime art style</strong>、<strong>comic art style</strong>……</p>
+<h3 id="例图-1"><a href="#例图-1" class="headerlink" title="例图"></a>例图</h3><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-1.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-2.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-3.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-4.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-5.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-6.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-7.jpg" class="" title="GhostXL">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/GhostXL-8.jpg" class="" title="GhostXL">
+
+<h2 id="ArienMixXL-Asian"><a href="#ArienMixXL-Asian" class="headerlink" title="ArienMixXL_Asian"></a>ArienMixXL_Asian</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ol>
+<li><strong>不需要外部VAE</strong></li>
+<li><strong>推荐尺寸</strong>：1200 * 900、1024 * 768、1280 * 768、1356 * 1024、1536 * 1024</li>
+<li><strong>推荐取样器</strong>：DPM++ 3M SDE Karras系列</li>
+<li><strong>迭代步数</strong>：35-50</li>
+</ol>
+<h3 id="例图-2"><a href="#例图-2" class="headerlink" title="例图"></a>例图</h3><img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/ArienMixXL_Asian-1.jpg" class="" title="ArienMixXL_Asian">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/ArienMixXL_Asian-2.jpg" class="" title="ArienMixXL_Asian">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/ArienMixXL_Asian-3.jpg" class="" title="ArienMixXL_Asian">
+
+<img src="/2024/04/15/StableDiffusion14.SDXL%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/ArienMixXL_Asian-4.jpg" class="" title="ArienMixXL_Asian"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/WebUI/">WebUI</a><a class="post-meta__tags" href="/tags/AI%E7%BB%98%E5%9B%BE%E6%A8%A1%E5%9E%8B/">AI绘图模型</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/04/20/StableDiffusion15.ControlNet%E6%8F%92%E4%BB%B6/" title="StableDiffusion15.ControlNet插件"><img class="cover" src="/img/DocCover5.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">StableDiffusion15.ControlNet插件</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/07/StableDiffusion13.LoRA%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/" title="StableDiffusion13.LoRA模型推荐"><img class="cover" src="/img/DocCover11.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">StableDiffusion13.LoRA模型推荐</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/01/18/StableDiffusion04.%E6%A8%A1%E5%9E%8B%E9%85%8D%E7%BD%AE%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B%E5%92%8CVAE%E6%A8%A1%E5%9E%8B/" title="StableDiffusion04.模型配置：基本模型和VAE模型"><img class="cover" src="/img/DocCover5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-18</div><div class="title">StableDiffusion04.模型配置：基本模型和VAE模型</div></div></a></div><div><a href="/2024/01/19/StableDiffusion05.%E6%A8%A1%E5%9E%8B%E9%85%8D%E7%BD%AE%EF%BC%9AEmbeddings%E3%80%81HyperNetwork%E3%80%81LoRA/" title="StableDiffusion05.模型配置：Embeddings、HyperNetwork、LoRA"><img class="cover" src="/img/DocCover5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-19</div><div class="title">StableDiffusion05.模型配置：Embeddings、HyperNetwork、LoRA</div></div></a></div><div><a href="/2024/03/01/StableDiffusion10.%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%EF%BC%9A%E4%BA%8C%E6%AC%A1%E5%85%83%E6%8F%92%E7%94%BB%E6%A8%A1%E5%9E%8B/" title="StableDiffusion10.大模型推荐：二次元插画模型"><img class="cover" src="/img/DocCover8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-01</div><div class="title">StableDiffusion10.大模型推荐：二次元插画模型</div></div></a></div><div><a href="/2024/03/20/StableDiffusion12.%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%EF%BC%9A%E7%9C%9F%E5%AE%9E%E7%B3%BB%E6%A8%A1%E5%9E%8B/" title="StableDiffusion12.大模型推荐：真实系模型"><img class="cover" src="/img/DocCover10.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-20</div><div class="title">StableDiffusion12.大模型推荐：真实系模型</div></div></a></div><div><a href="/2024/03/10/StableDiffusion11.%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%EF%BC%9A%E6%B8%B2%E6%9F%93%E7%B1%BB%E6%A8%A1%E5%9E%8B/" title="StableDiffusion11.大模型推荐：渲染类模型"><img class="cover" src="/img/DocCover9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-03-10</div><div class="title">StableDiffusion11.大模型推荐：渲染类模型</div></div></a></div><div><a href="/2024/04/07/StableDiffusion13.LoRA%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90/" title="StableDiffusion13.LoRA模型推荐"><img class="cover" src="/img/DocCover11.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-07</div><div class="title">StableDiffusion13.LoRA模型推荐</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">逍遥之韶</div><div class="author-info__description">搞搞开发，写写代码，打打游戏，玩玩AI</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/shadowchen"><i class="fab fa-github"></i><span>GitHub主页</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E4%BC%98%E5%8A%BF"><span class="toc-text">1. 优势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87"><span class="toc-text">1.1 提示词兼容性大幅提升</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%9B%B4%E5%A4%A7%E3%80%81%E6%9B%B4%E9%AB%98%E6%B8%85%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87"><span class="toc-text">1.2 更大、更高清的分辨率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E5%9B%BE%E7%89%87%E7%B2%BE%E5%BA%A6%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87"><span class="toc-text">1.3 图片精度大幅提升</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E7%94%9F%E6%88%90%E5%87%86%E7%A1%AE%E5%BA%A6%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87"><span class="toc-text">1.4 生成准确度大幅提升</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-%E9%A3%8E%E6%A0%BC%E8%87%AA%E7%94%B1%E5%BA%A6%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87"><span class="toc-text">1.5 风格自由度大幅提升</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%8A%A3%E5%8A%BF"><span class="toc-text">2. 劣势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E9%80%9A%E7%94%A8%E6%A8%A1%E5%9E%8B%EF%BC%8C%E9%9D%9E%E5%AE%9A%E5%88%B6%E5%8C%96%E5%BC%80%E5%8F%91"><span class="toc-text">2.1 通用模型，非定制化开发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-LoRA%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98"><span class="toc-text">2.2 LoRA兼容性问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90"><span class="toc-text">3. 模型推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SDXL"><span class="toc-text">SDXL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B"><span class="toc-text">官方基础模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-text">原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E5%87%BA%E5%9B%BE%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87"><span class="toc-text">推荐出图的分辨率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E5%9B%BE"><span class="toc-text">例图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GhostXL"><span class="toc-text">GhostXL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E5%88%86%E8%BE%A8%E7%8E%87"><span class="toc-text">推荐分辨率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E6%B8%85%E4%BC%98%E5%8C%96"><span class="toc-text">高清优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A3%8E%E6%A0%BC%E5%BE%AE%E8%B0%83"><span class="toc-text">风格微调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E5%9B%BE-1"><span class="toc-text">例图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ArienMixXL-Asian"><span class="toc-text">ArienMixXL_Asian</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-text">特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E5%9B%BE-2"><span class="toc-text">例图</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 逍遥之韶</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":20,"vOffset":0},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body></html>
