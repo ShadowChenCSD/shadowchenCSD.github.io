@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Jenkins06.任务设置 | 聚沙成塔 - 集腋成裘</title><meta name="author" content="逍遥之韶"><meta name="copyright" content="逍遥之韶"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1. 新建任务 点击Dashboard下的New Item   编辑“Item Name”，选择如没有特别的需要，一般默认选择“FreeStyle Project”      快捷操作：如果要在既有的任务上创建新任务，可以使用Copy From的功能创建新任务    2. 新建任务的配置设定2.1 Pre-Build（构建前操作）任务的描述信息 作用：描述任务的工作用途 默认：非必填项，即使为空，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jenkins06.任务设置">
+<meta property="og:url" content="https://shadowchencsd.github.io/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:site_name" content="聚沙成塔 - 集腋成裘">
+<meta property="og:description" content="1. 新建任务 点击Dashboard下的New Item   编辑“Item Name”，选择如没有特别的需要，一般默认选择“FreeStyle Project”      快捷操作：如果要在既有的任务上创建新任务，可以使用Copy From的功能创建新任务    2. 新建任务的配置设定2.1 Pre-Build（构建前操作）任务的描述信息 作用：描述任务的工作用途 默认：非必填项，即使为空，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shadowchencsd.github.io/img/DocCover_Jenkins_2.png">
+<meta property="article:published_time" content="2024-04-24T02:38:20.000Z">
+<meta property="article:modified_time" content="2024-04-24T11:10:17.586Z">
+<meta property="article:author" content="逍遥之韶">
+<meta property="article:tag" content="Jenkins">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shadowchencsd.github.io/img/DocCover_Jenkins_2.png"><link rel="shortcut icon" href="/img/hexo.png"><link rel="canonical" href="https://shadowchencsd.github.io/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Jenkins06.任务设置',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-24 19:10:17'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 7.1.1"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/DocCover_Jenkins_2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="聚沙成塔 - 集腋成裘"><span class="site-name">聚沙成塔 - 集腋成裘</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Jenkins06.任务设置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2024-04-24T11:10:17.586Z" title="更新于 2024-04-24 19:10:17">2024-04-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Jenkins%E9%85%8D%E7%BD%AE/">Jenkins配置</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">607</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Jenkins06.任务设置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-新建任务"><a href="#1-新建任务" class="headerlink" title="1. 新建任务"></a>1. 新建任务</h1><ol>
+<li><p>点击<strong>Dashboard</strong>下的<strong>New Item</strong></p>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E6%96%B0%E5%BB%BA%E4%BB%BB%E5%8A%A1.jpg" class="" title="新建任务">
+</li>
+<li><p>编辑“<strong>Item Name</strong>”，选择如没有特别的需要，一般默认选择“<strong>FreeStyle Project</strong>”</p>
+</li>
+</ol>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E6%96%B0%E4%BB%BB%E5%8A%A1%E5%88%9B%E5%BB%BA.jpg" class="" title="新任务创建">
+
+<ul>
+<li><strong>快捷操作</strong>：如果要<strong>在既有的任务上创建新任务</strong>，可以使用<strong>Copy From</strong>的功能创建<strong>新任务</strong></li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E6%96%B0%E4%BB%BB%E5%8A%A1%E5%88%9B%E5%BB%BA%EF%BC%9A%E6%8B%B7%E8%B4%9D%E6%97%A2%E6%9C%89%E4%BB%BB%E5%8A%A1.jpg" class="" title="新任务创建：拷贝既有任务">
+
+<h1 id="2-新建任务的配置设定"><a href="#2-新建任务的配置设定" class="headerlink" title="2. 新建任务的配置设定"></a>2. 新建任务的配置设定</h1><h2 id="2-1-Pre-Build（构建前操作）"><a href="#2-1-Pre-Build（构建前操作）" class="headerlink" title="2.1 Pre-Build（构建前操作）"></a>2.1 Pre-Build（构建前操作）</h2><h3 id="任务的描述信息"><a href="#任务的描述信息" class="headerlink" title="任务的描述信息"></a>任务的描述信息</h3><ul>
+<li><strong>作用</strong>：描述任务的工作用途</li>
+<li><strong>默认</strong>：<strong>非必填项</strong>，即使为空，也不影响任务的运行</li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E4%BB%BB%E5%8A%A1%E6%8F%8F%E8%BF%B0.jpg" class="" title="任务描述">
+
+<h3 id="指定任务的运行节点"><a href="#指定任务的运行节点" class="headerlink" title="指定任务的运行节点"></a>指定任务的运行节点</h3><ul>
+<li><strong>作用</strong>：指定任务的运行节点，在多工作节点系统下适用</li>
+<li><strong>默认</strong>：<strong>非必填项</strong>，如果<strong>没有指定工作节点</strong>，则<strong>任务运行在本机环境内</strong></li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E4%BB%BB%E5%8A%A1%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%8A%82%E7%82%B9.jpg" class="" title="任务的工作节点">
+
+<h3 id="配置获取源码的方式"><a href="#配置获取源码的方式" class="headerlink" title="配置获取源码的方式"></a>配置获取源码的方式</h3><ul>
+<li><p><strong>作用</strong>：获取仓库代码，进行自动化作业（测试、部署、发布等）</p>
+</li>
+<li><p><strong>支持仓库类型</strong>：<strong>空</strong>、<strong>GIT</strong>、<strong>Subversion（SVN）</strong></p>
+<ul>
+<li><p><strong>Git</strong>：填入<strong>仓库地址</strong>、<strong>账户凭据</strong>即可使用。可以<strong>选择master&#x2F;branch分支</strong></p>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/Git.jpg" class="" title="Git">
+</li>
+<li><p><strong>SVN</strong>：填入<strong>仓库地址</strong>、<strong>账户凭据</strong>即可使用。可以<strong>选择checkout的策略</strong></p>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/SVN.jpg" class="" title="SVN"></li>
+</ul>
+</li>
+</ul>
+<h3 id="任务触发机制设定"><a href="#任务触发机制设定" class="headerlink" title="任务触发机制设定"></a>任务触发机制设定</h3><ul>
+<li><strong>作用</strong>：设置任务的触发机制，可选“<strong>手动触发</strong>”、“<strong>周期触发</strong>”、“<strong>计划触发</strong>”等</li>
+<li><strong>默认</strong>：<strong>非必填项</strong>，如果没有设置，则任务为<strong>手动触发</strong>机制</li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E8%A7%A6%E5%8F%91%E6%9C%BA%E5%88%B6.jpg" class="" title="触发机制">
+
+<h2 id="2-2-Build（构建）"><a href="#2-2-Build（构建）" class="headerlink" title="2.2 Build（构建）"></a>2.2 Build（构建）</h2><h3 id="指定构建时需要执行的脚本"><a href="#指定构建时需要执行的脚本" class="headerlink" title="指定构建时需要执行的脚本"></a>指定构建时需要执行的脚本</h3><ul>
+<li><strong>作用</strong>：指定构建时需要执行的脚本<ul>
+<li>一般情况下，<strong>Linux平台设置shell脚本、Windows平台设置cmd脚本、特定平台可以直接设置python脚本</strong></li>
+</ul>
+</li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC.jpg" class="" title="执行脚本">
+
+<h3 id="撰写执行脚本内容"><a href="#撰写执行脚本内容" class="headerlink" title="撰写执行脚本内容"></a>撰写执行脚本内容</h3><ul>
+<li><strong>作用</strong>：Jenkins自动化作业的<strong>核心功能</strong>。<strong>该模块会执行构建脚本的内容，根据构建脚本的执行状态，Jenkins反馈运行成功或失败。</strong></li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E6%92%B0%E5%86%99%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC%E5%86%85%E5%AE%B9.jpg" class="" title="撰写执行脚本内容">
+
+<ul>
+<li><strong>Jenkins天气状态变化</strong><ul>
+<li>Jenkins以<strong>晴雨状态</strong>来表示它的<strong>运行状态</strong>反馈，晴天表示成功，雨天表示失败</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-3-Post-Build（构建后操作）"><a href="#2-3-Post-Build（构建后操作）" class="headerlink" title="2.3 Post-Build（构建后操作）"></a>2.3 Post-Build（构建后操作）</h2><h3 id="发送邮件通知"><a href="#发送邮件通知" class="headerlink" title="发送邮件通知"></a>发送邮件通知</h3><ul>
+<li><strong>作用</strong>：设置任务完成的邮件通知机制，可按照<strong>Always</strong>、<strong>Successful</strong>、<strong>Failure</strong>等状态分别给不同的相关人员发送邮件</li>
+<li><strong>依赖项</strong>：需要提前设置<strong>发件人</strong>相关信息</li>
+<li><strong>默认</strong>：<strong>非必填项</strong>，如果没有设置，则不发送任何邮件</li>
+</ul>
+<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5.jpg" class="" title="邮件通知">
+
+<h1 id="3-对既有任务进行配置修改"><a href="#3-对既有任务进行配置修改" class="headerlink" title="3. 对既有任务进行配置修改"></a>3. 对既有任务进行配置修改</h1><p>​		点击<strong>既有的任务</strong>，选择左侧的<strong>Configure</strong>，之后<strong>参照上一节内容</strong>进行设置调整。</p>
+<p>​		<img src="/2024/04/24/Jenkins06.%E4%BB%BB%E5%8A%A1%E8%AE%BE%E7%BD%AE/%E9%85%8D%E7%BD%AE%E5%86%8D%E4%BF%AE%E6%94%B9.jpg" class="" title="配置再修改"></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Jenkins/">Jenkins</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/04/24/Jenkins07.SVN%E6%A3%80%E5%87%BA%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91/" title="Jenkins07.SVN检出代码逻辑"><img class="cover" src="/img/DocCover_Jenkins_2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Jenkins07.SVN检出代码逻辑</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/23/Jenkins05.%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E4%BB%8B%E7%BB%8D/" title="Jenkins05.工作流程介绍"><img class="cover" src="/img/DocCover_Jenkins_2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Jenkins05.工作流程介绍</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/04/22/Jenkins01.%E5%AE%89%E8%A3%85%EF%BC%9AWindows%E7%B3%BB%E7%BB%9F/" title="Jenkins01.安装：Windows系统"><img class="cover" src="/img/DocCover_Jenkins_1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-22</div><div class="title">Jenkins01.安装：Windows系统</div></div></a></div><div><a href="/2024/04/22/Jenkins02.%E5%AE%89%E8%A3%85%EF%BC%9ADocker%E7%8E%AF%E5%A2%83/" title="Jenkins02.安装：Docker环境"><img class="cover" src="/img/DocCover_Jenkins_1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-22</div><div class="title">Jenkins02.安装：Docker环境</div></div></a></div><div><a href="/2024/04/22/Jenkins03.%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/" title="Jenkins03.初始化配置"><img class="cover" src="/img/DocCover_Jenkins_1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-22</div><div class="title">Jenkins03.初始化配置</div></div></a></div><div><a href="/2024/04/23/Jenkins04.%E5%90%AF%E5%8A%A8%E5%92%8C%E5%81%9C%E6%AD%A2/" title="Jenkins04.启动和停止"><img class="cover" src="/img/DocCover_Jenkins_1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-23</div><div class="title">Jenkins04.启动和停止</div></div></a></div><div><a href="/2024/04/23/Jenkins05.%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E4%BB%8B%E7%BB%8D/" title="Jenkins05.工作流程介绍"><img class="cover" src="/img/DocCover_Jenkins_2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-23</div><div class="title">Jenkins05.工作流程介绍</div></div></a></div><div><a href="/2024/04/24/Jenkins07.SVN%E6%A3%80%E5%87%BA%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91/" title="Jenkins07.SVN检出代码逻辑"><img class="cover" src="/img/DocCover_Jenkins_2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-24</div><div class="title">Jenkins07.SVN检出代码逻辑</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">逍遥之韶</div><div class="author-info__description">搞搞开发，写写代码，打打游戏，玩玩AI</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/shadowchen"><i class="fab fa-github"></i><span>GitHub主页</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BA%E4%BB%BB%E5%8A%A1"><span class="toc-text">1. 新建任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%96%B0%E5%BB%BA%E4%BB%BB%E5%8A%A1%E7%9A%84%E9%85%8D%E7%BD%AE%E8%AE%BE%E5%AE%9A"><span class="toc-text">2. 新建任务的配置设定</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-Pre-Build%EF%BC%88%E6%9E%84%E5%BB%BA%E5%89%8D%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="toc-text">2.1 Pre-Build（构建前操作）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF"><span class="toc-text">任务的描述信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E4%BB%BB%E5%8A%A1%E7%9A%84%E8%BF%90%E8%A1%8C%E8%8A%82%E7%82%B9"><span class="toc-text">指定任务的运行节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%8E%B7%E5%8F%96%E6%BA%90%E7%A0%81%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-text">配置获取源码的方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E8%A7%A6%E5%8F%91%E6%9C%BA%E5%88%B6%E8%AE%BE%E5%AE%9A"><span class="toc-text">任务触发机制设定</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-Build%EF%BC%88%E6%9E%84%E5%BB%BA%EF%BC%89"><span class="toc-text">2.2 Build（构建）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E6%9E%84%E5%BB%BA%E6%97%B6%E9%9C%80%E8%A6%81%E6%89%A7%E8%A1%8C%E7%9A%84%E8%84%9A%E6%9C%AC"><span class="toc-text">指定构建时需要执行的脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%B0%E5%86%99%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="toc-text">撰写执行脚本内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-Post-Build%EF%BC%88%E6%9E%84%E5%BB%BA%E5%90%8E%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="toc-text">2.3 Post-Build（构建后操作）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5"><span class="toc-text">发送邮件通知</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%AF%B9%E6%97%A2%E6%9C%89%E4%BB%BB%E5%8A%A1%E8%BF%9B%E8%A1%8C%E9%85%8D%E7%BD%AE%E4%BF%AE%E6%94%B9"><span class="toc-text">3. 对既有任务进行配置修改</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 逍遥之韶</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":20,"vOffset":0},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body></html>
