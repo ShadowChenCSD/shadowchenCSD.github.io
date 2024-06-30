@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ChatTTS使用方法</title>
+      <link href="/2024/06/21/ChatTTS%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+      <url>/2024/06/21/ChatTTS%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><p><strong>ChatTTS</strong> 是一款专门为对话场景设计的<strong>文本转语音</strong>模型。</p><h1 id="2-代码仓库"><a href="#2-代码仓库" class="headerlink" title="2. 代码仓库"></a>2. 代码仓库</h1><p><a href="https://github.com/2noise/ChatTTS/tree/main"><strong>ChatTTS</strong></a></p><p><a href="https://github.com/CCmahua/ChatTTS-Enhanced"><strong>ChatTTS Enhanced</strong></a>，<strong>整合包</strong>下载：<a href="https://pan.baidu.com/s/1DqvN2hHZ2uAmdjKCwKNmCQ?pwd=f5d4">百度网盘</a>、<a href="https://pan.quark.cn/s/4ee64af2aedb">夸克网盘</a></p><h1 id="3-ChatTTS-增强版使用说明"><a href="#3-ChatTTS-增强版使用说明" class="headerlink" title="3. ChatTTS 增强版使用说明"></a>3. ChatTTS 增强版使用说明</h1><h2 id="3-1-启动"><a href="#3-1-启动" class="headerlink" title="3.1 启动"></a>3.1 启动</h2><p><strong>方案一</strong>：运行 <strong>启动器.exe</strong>，自动启动webui界面</p><p><strong>方案二</strong>：按照 <a href="https://github.com/CCmahua/ChatTTS-Enhanced"><strong>ChatTTS Enhanced 项目工程</strong></a>，自行创建开发环境，通过<code>python webui/webui.py</code>方式启动webui界面</p><h2 id="3-2-界面介绍"><a href="#3-2-界面介绍" class="headerlink" title="3.2 界面介绍"></a>3.2 界面介绍</h2><img src="/2024/06/21/ChatTTS%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/ChatTTS%E5%A2%9E%E5%BC%BA%E7%89%88V3.png" class="" title="界面"><ul><li><strong>输入文字</strong>：文字转语音的<strong>文字内容</strong><ul><li><strong>支持</strong>：中文、英文、中英混杂</li><li>可在里面<strong>填入特定的token，以满足特别的要求</strong></li></ul></li><li><strong>提炼文本</strong>：是否对文本进行<strong>口语化处理</strong>，可自动添加 <strong>口语化用词（啊、这个、然后……）</strong>、<strong>停顿</strong>、<strong>调整语气</strong>等</li><li><strong>音色</strong>：可<strong>上传音色</strong>，或者<strong>设定随机种子数产生随机音色</strong></li><li><strong>音频</strong>：可自定义<strong>语速</strong>、<strong>口语化程度</strong>、<strong>笑声程度</strong>、<strong>停顿程度</strong>等</li></ul><h2 id="3-3-文本语言"><a href="#3-3-文本语言" class="headerlink" title="3.3 文本语言"></a>3.3 文本语言</h2><h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p><strong>这个project的schedule有些问题，cost偏高。目前我们没法confirm手上的resource能完全take得了。</strong></p><audio id="audio" controls="">    <source id="wav" src="中英混杂.wav"></audio><h2 id="3-4-音色选择"><a href="#3-4-音色选择" class="headerlink" title="3.4 音色选择"></a>3.4 音色选择</h2><h3 id="随机设定"><a href="#随机设定" class="headerlink" title="随机设定"></a>随机设定</h3><p>可依照<a href="https://github.com/6drf21e/ChatTTS_Speaker">ChatTTS_Speaker</a>项目工程提供的<strong>音色种子</strong>，进行音色切换。</p><p>可<a href="https://modelscope.cn/studios/ttwwwaa/ChatTTS_Speaker"><strong>在线</strong></a>试听音色、下载音色模型。</p><h3 id="自定义音色"><a href="#自定义音色" class="headerlink" title="自定义音色"></a>自定义音色</h3><p>可<strong>上传</strong>自定义音色的<strong>模型文件</strong>，进行音色切换。</p><img src="/2024/06/21/ChatTTS%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/%E4%B8%8A%E4%BC%A0%E9%9F%B3%E8%89%B2.png" class="" title="界面"><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p><strong>中央组织部最新党内统计数据显示，截至2023年底，中国共产党党员总数为9918.5万名，比上年净增114.4万名[uv_break]。党的基层组织517.6万个，比上年净增11.1万个[uv_break]。</strong></p><ul><li><strong>男声</strong>（种子：11）：</li></ul><audio id="audio" controls="">    <source id="wav" src="男声.wav"></audio><ul><li><strong>女声</strong>（种子：2）：</li></ul><audio id="audio" controls="">    <source id="wav" src="女声.wav"></audio><h2 id="3-5-特定Token的设置"><a href="#3-5-特定Token的设置" class="headerlink" title="3.5 特定Token的设置"></a>3.5 特定Token的设置</h2><h3 id="笑声"><a href="#笑声" class="headerlink" title="笑声"></a>笑声</h3><ul><li><p>可插入<code>[laugh]</code>以增加<strong>笑声</strong>。</p></li><li><p>可插入多个<code>[laugh]</code>以增加<strong>笑声程度</strong>。</p></li></ul><h3 id="停顿"><a href="#停顿" class="headerlink" title="停顿"></a>停顿</h3><ul><li>可插入<code>[uv_break]</code>，人为增加<strong>短暂的停顿</strong>。</li><li>可插入<code>[lbreak]</code>，人为增加<strong>较长的停顿</strong>。</li></ul><h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p><strong>我跟你说[laugh][laugh]笑死我了[laugh]，昨天我朋友去超市买水果[uv_break]，他走到水果区看到一堆橙子，标价上写着：买一送一[uv_break]。他就拿起两个橙子去结账，结果收银员告诉他说[uv_break]：这个买一送一，指的是买一箱、送一个[laugh]。</strong></p><audio id="audio" controls="">    <source id="wav" src="token.wav"></audio>]]></content>
+      
+      
+      <categories>
+          
+          <category> ChatTTS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ChatTTS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>YoloV10.03.训练和验证</title>
       <link href="/2024/05/31/YoloV10.03.%E8%AE%AD%E7%BB%83%E5%92%8C%E9%AA%8C%E8%AF%81/"/>
       <url>/2024/05/31/YoloV10.03.%E8%AE%AD%E7%BB%83%E5%92%8C%E9%AA%8C%E8%AF%81/</url>
