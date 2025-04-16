@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【StableDiffusion】04.安装：Linux环境 | 聚沙成塔 - 集腋成裘</title><meta name="author" content="逍遥之韶"><meta name="copyright" content="逍遥之韶"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1. 基础环境安装 显卡驱动：下载最新版本 CUDA：推荐和显卡驱动匹配的版本，下载时选本地安装模式（Local版本） miniconda：下载较新的版本 Git：推荐最新版本  2. WebUI：官方原版2.1 获取仓库代码1git clone https:&#x2F;&#x2F;github.com&#x2F;AUTOMATIC1111&#x2F;stable-diffusion-webui.git  2.2 创建虚拟环境12con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【StableDiffusion】04.安装：Linux环境">
+<meta property="og:url" content="https://shadowchencsd.github.io/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/index.html">
+<meta property="og:site_name" content="聚沙成塔 - 集腋成裘">
+<meta property="og:description" content="1. 基础环境安装 显卡驱动：下载最新版本 CUDA：推荐和显卡驱动匹配的版本，下载时选本地安装模式（Local版本） miniconda：下载较新的版本 Git：推荐最新版本  2. WebUI：官方原版2.1 获取仓库代码1git clone https:&#x2F;&#x2F;github.com&#x2F;AUTOMATIC1111&#x2F;stable-diffusion-webui.git  2.2 创建虚拟环境12con">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shadowchencsd.github.io/img/DocCover_StableDiffusion_2.jpg">
+<meta property="article:published_time" content="2025-01-20T04:20:10.000Z">
+<meta property="article:modified_time" content="2025-04-16T03:15:28.206Z">
+<meta property="article:author" content="逍遥之韶">
+<meta property="article:tag" content="StableDiffusion配置">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shadowchencsd.github.io/img/DocCover_StableDiffusion_2.jpg"><link rel="shortcut icon" href="/img/hexo.png"><link rel="canonical" href="https://shadowchencsd.github.io/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【StableDiffusion】04.安装：Linux环境',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-04-16 11:15:28'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/DocCover_StableDiffusion_2.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="聚沙成塔 - 集腋成裘"><span class="site-name">聚沙成塔 - 集腋成裘</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【StableDiffusion】04.安装：Linux环境</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2025-04-16T03:15:28.206Z" title="更新于 2025-04-16 11:15:28">2025-04-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/StableDiffusion/">StableDiffusion</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【StableDiffusion】04.安装：Linux环境"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-基础环境安装"><a href="#1-基础环境安装" class="headerlink" title="1. 基础环境安装"></a>1. 基础环境安装</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.nvidia.cn/geforce/drivers/"><strong>显卡驱动</strong></a>：下载<strong>最新版本</strong></li>
+<li><a target="_blank" rel="noopener" href="https://developer.nvidia.com/cuda-toolkit-archive"><strong>CUDA</strong></a>：推荐和显卡驱动<strong>匹配</strong>的版本，下载时选<strong>本地安装</strong>模式（<strong>Local</strong>版本）</li>
+<li><a target="_blank" rel="noopener" href="https://www.anaconda.com/download/success"><strong>miniconda</strong></a>：下载较新的版本</li>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/download"><strong>Git</strong></a>：推荐<strong>最新</strong>版本</li>
+</ul>
+<h1 id="2-WebUI：官方原版"><a href="#2-WebUI：官方原版" class="headerlink" title="2. WebUI：官方原版"></a>2. WebUI：官方原版</h1><h2 id="2-1-获取仓库代码"><a href="#2-1-获取仓库代码" class="headerlink" title="2.1 获取仓库代码"></a>2.1 获取仓库代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/AUTOMATIC1111/stable-diffusion-webui.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-2-创建虚拟环境"><a href="#2-2-创建虚拟环境" class="headerlink" title="2.2 创建虚拟环境"></a>2.2 创建虚拟环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n webui python=3.10</span><br><span class="line">conda activate webui</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-安装pytorch"><a href="#2-3-安装pytorch" class="headerlink" title="2.3 安装pytorch"></a>2.3 安装pytorch</h2><ul>
+<li>注意<strong>pytorch版本</strong>和<strong>显卡驱动版本</strong>的兼容</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最新版本</span></span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br><span class="line"><span class="comment"># 指定版本</span></span><br><span class="line">pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-安装xformers"><a href="#2-4-安装xformers" class="headerlink" title="2.4 安装xformers"></a>2.4 安装xformers</h2><ul>
+<li>注意<strong>xformers</strong>和<strong>pytorch</strong>的版本对应</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最新版本</span></span><br><span class="line">pip install xformers</span><br><span class="line"><span class="comment"># 指定版本</span></span><br><span class="line">pip install xformers==0.0.28.post2 <span class="comment"># 对应torch=2.5.0、torchvision=0.20.0、torchaudio=2.5.0</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-5-安装依赖环境"><a href="#2-5-安装依赖环境" class="headerlink" title="2.5 安装依赖环境"></a>2.5 安装依赖环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> stable-diffsion-webui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖环境</span></span><br><span class="line">pip install -r requirements_versions.txt</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-6-下载模型"><a href="#2-6-下载模型" class="headerlink" title="2.6 下载模型"></a>2.6 下载模型</h2><ul>
+<li>以<strong>SD 1.5系列</strong>的Anything-v5.0模型为例<ul>
+<li><strong>Anything-v5.0-PRT.safetensors</strong>的checkpoints模型文件</li>
+<li><strong>animevae.pt</strong>的vae模型文件</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> stable-diffsion-webui</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载checkpoints模型</span></span><br><span class="line">wget -P ./models/checkpoints https://hf-mirror.com/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT.safetensors</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载vae模型</span></span><br><span class="line">wget -P ./models/VAE https://hf-mirror.com/Loli-Kyn/animevae/resolve/main/animevae.pt</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-7-创建启动脚本"><a href="#2-7-创建启动脚本" class="headerlink" title="2.7 创建启动脚本"></a>2.7 创建启动脚本</h2><ul>
+<li><strong>创建启动脚本</strong>：<code>start.sh</code></li>
+<li><strong>参数说明</strong>：<ul>
+<li><strong>xformers</strong>：启用xformers，可以极大地改善内存消耗和速度</li>
+<li><strong>no-half-vae</strong>：不启用半精VAE，解决生成图片时，可能的VAE精度不足所导致的报错</li>
+<li><strong>disable-safe-unpickle</strong>：不启动安全检查，不加可能导致模型加载时报错</li>
+<li><strong>port</strong>：对外暴露的端口号</li>
+<li><strong>theme</strong>：主题</li>
+<li><strong>device-id</strong>：指定GPU</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> COMMANDLINE_ARGS=<span class="string">&quot;--xformers --no-half-vae --disable-safe-unpickle --port 18288 --theme dark --device-id 6&quot;</span></span><br><span class="line"></span><br><span class="line">python_cmd=<span class="string">&quot;python&quot;</span></span><br><span class="line">LAUNCH_SCRIPT=<span class="string">&quot;launch.py&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;<span class="variable">$&#123;python_cmd&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;LAUNCH_SCRIPT&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-8-启动"><a href="#2-8-启动" class="headerlink" title="2.8 启动"></a>2.8 启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash start.sh</span><br></pre></td></tr></table></figure>
+
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-Linux%E7%95%8C%E9%9D%A2.png" class="" title="WebUI-Linux界面">
+
+<h2 id="附：无法选择vae模型？"><a href="#附：无法选择vae模型？" class="headerlink" title="附：无法选择vae模型？"></a>附：无法选择vae模型？</h2><ol>
+<li><p>选择<strong>Settings</strong>标签页</p>
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-%E9%80%89%E6%8B%A9Settings%E6%A0%87%E7%AD%BE%E9%A1%B5.png" class="" title="选择Settings标签页">
+</li>
+<li><p>在<strong>Quicksettings list</strong>中选择<strong>sd_model_checkpoints</strong>和<strong>sd_vae</strong>，并<strong>应用设置</strong></p>
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-Quicksettings_list.png" class="" title="Quicksettings list">
+</li>
+<li><p><strong>刷新页面</strong></p>
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-Linux%E7%95%8C%E9%9D%A2%EF%BC%88%E5%B8%A6VAE%E6%A8%A1%E5%9E%8B%EF%BC%89.png" class="" title="WebUI-Linux界面（带VAE模型）"></li>
+</ol>
+<h2 id="附：需要安装CLIP？"><a href="#附：需要安装CLIP？" class="headerlink" title="附：需要安装CLIP？"></a>附：需要安装CLIP？</h2><p>​		可以从<a target="_blank" rel="noopener" href="https://www.modelscope.cn/AI-ModelScope/clip-vit-large-patch14">clip-vit-large-patch14</a>中获取clip资源，保存在<strong>models&#x2F;openai</strong>文件夹中，文件夹需要自行新建。</p>
+<h2 id="附：没有中文界面？"><a href="#附：没有中文界面？" class="headerlink" title="附：没有中文界面？"></a>附：没有中文界面？</h2><p>​		中文界面汉化扩展插件：<a target="_blank" rel="noopener" href="https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans">https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans</a></p>
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-Linux%E7%95%8C%E9%9D%A2%E6%B1%89%E5%8C%96.png" class="" title="WebUI-Linux界面汉化">
+
+<h1 id="3-WebUI-Forge：lllyasviel整合包"><a href="#3-WebUI-Forge：lllyasviel整合包" class="headerlink" title="3. WebUI-Forge：lllyasviel整合包"></a>3. WebUI-Forge：lllyasviel整合包</h1><h2 id="3-1-获取仓库代码"><a href="#3-1-获取仓库代码" class="headerlink" title="3.1 获取仓库代码"></a>3.1 获取仓库代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/lllyasviel/stable-diffusion-webui-forge.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-2-创建虚拟环境"><a href="#3-2-创建虚拟环境" class="headerlink" title="3.2 创建虚拟环境"></a>3.2 创建虚拟环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n webui-forge python=3.10</span><br><span class="line">conda activate webui-forge</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-3-安装pytorch"><a href="#3-3-安装pytorch" class="headerlink" title="3.3 安装pytorch"></a>3.3 安装pytorch</h2><ul>
+<li>注意<strong>pytorch版本</strong>和<strong>显卡驱动版本</strong>的兼容</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最新版本</span></span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br><span class="line"><span class="comment"># 指定版本</span></span><br><span class="line">pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-4-安装xformers"><a href="#3-4-安装xformers" class="headerlink" title="3.4 安装xformers"></a>3.4 安装xformers</h2><ul>
+<li>注意<strong>xformers</strong>和<strong>pytorch</strong>的版本对应</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最新版本</span></span><br><span class="line">pip install xformers</span><br><span class="line"><span class="comment"># 指定版本</span></span><br><span class="line">pip install xformers==0.0.28.post2 <span class="comment"># 对应torch=2.5.0、torchvision=0.20.0、torchaudio=2.5.0</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-5-安装依赖环境"><a href="#3-5-安装依赖环境" class="headerlink" title="3.5 安装依赖环境"></a>3.5 安装依赖环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> stable-diffsion-webui-forge</span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新einops版本</span></span><br><span class="line">sed -i <span class="string">&#x27;s/einops==0.4.1/einops==0.8.0/g&#x27;</span> requirements_versions.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖环境</span></span><br><span class="line">pip install -r requirements_versions.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装缺少模块</span></span><br><span class="line">pip install sacremoses</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-6-下载模型"><a href="#3-6-下载模型" class="headerlink" title="3.6 下载模型"></a>3.6 下载模型</h2><ul>
+<li>以<strong>SD 1.5系列</strong>的Anything-v5.0模型为例<ul>
+<li><strong>Anything-v5.0-PRT.safetensors</strong>的checkpoints模型文件</li>
+<li><strong>animevae.pt</strong>的vae模型文件</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> stable-diffsion-webui-forge</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载checkpoints模型</span></span><br><span class="line">wget -P ./models/checkpoints https://hf-mirror.com/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT.safetensors</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载vae模型</span></span><br><span class="line">wget -P ./models/VAE https://hf-mirror.com/Loli-Kyn/animevae/resolve/main/animevae.pt</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-7-创建启动脚本"><a href="#3-7-创建启动脚本" class="headerlink" title="3.7 创建启动脚本"></a>3.7 创建启动脚本</h2><ul>
+<li><strong>创建启动脚本</strong>：<code>start.sh</code></li>
+<li><strong>参数说明</strong>：<ul>
+<li><strong>xformers</strong>：启用xformers，可以极大地改善内存消耗和速度</li>
+<li><strong>no-half-vae</strong>：不启用半精VAE，解决生成图片时，可能的VAE精度不足所导致的报错</li>
+<li><strong>disable-safe-unpickle</strong>：不启动安全检查，不加可能导致模型加载时报错</li>
+<li><strong>port</strong>：对外暴露的端口号</li>
+<li><strong>theme</strong>：主题</li>
+<li><strong>gpu-device-id</strong>：指定GPU</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> COMMANDLINE_ARGS=<span class="string">&quot;--xformers --no-half-vae --disable-safe-unpickle --port 11888 --theme dark --gpu-device-id 6&quot;</span></span><br><span class="line"></span><br><span class="line">python_cmd=<span class="string">&quot;python&quot;</span></span><br><span class="line">LAUNCH_SCRIPT=<span class="string">&quot;launch.py&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;<span class="variable">$&#123;python_cmd&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;LAUNCH_SCRIPT&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-8-启动"><a href="#3-8-启动" class="headerlink" title="3.8 启动"></a>3.8 启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash start.sh</span><br></pre></td></tr></table></figure>
+
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/WebUI-Forge-Linux%E7%95%8C%E9%9D%A2.png" class="" title="WebUI-Forge-Linux界面">
+
+<h2 id="附：无法读取SD-3-5的CLIP组件？"><a href="#附：无法读取SD-3-5的CLIP组件？" class="headerlink" title="附：无法读取SD 3.5的CLIP组件？"></a>附：无法读取SD 3.5的CLIP组件？</h2><ul>
+<li>下载<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1_VYyQ8wQpjh-AoGtWWCa6zK5vEQbwA4K/view?pli=1"><strong>SD35_ForgeV2插件</strong></a>，追加并替换原有的文件夹内容：<strong>backend</strong>、<strong>modules</strong>、<strong>repositories</strong>。</li>
+<li><strong>设置</strong><ul>
+<li><strong>UI</strong>选择：<strong>all</strong></li>
+<li><strong>checkpoint</strong>选择：<strong>SD3.5系列模型</strong></li>
+<li><strong>VAE&#x2F;Text Encoder</strong>选择：<strong>clip_l.safetensors</strong>、<strong>clip_g.safetensors</strong>、<strong>t5xxl_fp8_e4m3fn.safetensors</strong></li>
+</ul>
+</li>
+<li><strong>完成上述设置</strong>后，即可<strong>正常生图</strong></li>
+</ul>
+<h1 id="4-ComfyUI：官方原版"><a href="#4-ComfyUI：官方原版" class="headerlink" title="4. ComfyUI：官方原版"></a>4. ComfyUI：官方原版</h1><h2 id="4-1-获取仓库代码"><a href="#4-1-获取仓库代码" class="headerlink" title="4.1 获取仓库代码"></a>4.1 获取仓库代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/comfyanonymous/ComfyUI.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-2-创建虚拟环境"><a href="#4-2-创建虚拟环境" class="headerlink" title="4.2 创建虚拟环境"></a>4.2 创建虚拟环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n comfyui python=3.10</span><br><span class="line">conda activate comfyui</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-3-安装pytorch"><a href="#4-3-安装pytorch" class="headerlink" title="4.3 安装pytorch"></a>4.3 安装pytorch</h2><ul>
+<li>注意<strong>pytorch版本</strong>和<strong>显卡驱动版本</strong>的兼容</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最新版本</span></span><br><span class="line">pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</span><br><span class="line"><span class="comment"># 指定版本</span></span><br><span class="line">pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu121</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-4-安装依赖环境"><a href="#4-4-安装依赖环境" class="headerlink" title="4.4 安装依赖环境"></a>4.4 安装依赖环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-5-下载模型"><a href="#4-5-下载模型" class="headerlink" title="4.5 下载模型"></a>4.5 下载模型</h2><ul>
+<li>以<strong>SD 1.5系列</strong>的Anything-v5.0模型为例<ul>
+<li><strong>Anything-v5.0-PRT.safetensors</strong>的checkpoints模型文件</li>
+<li><strong>animevae.pt</strong>的vae模型文件</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> ComfyUI</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载checkpoints模型</span></span><br><span class="line">wget -P ./models/checkpoints https://hf-mirror.com/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT.safetensors</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载vae模型</span></span><br><span class="line">wget -P ./models/vae https://hf-mirror.com/Loli-Kyn/animevae/resolve/main/animevae.pt</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-6-启动"><a href="#4-6-启动" class="headerlink" title="4.6 启动"></a>4.6 启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python main.py --port 8188 --listen 127.0.0.1 --cuda-device 6</span><br><span class="line"><span class="comment"># listen指定IP地址</span></span><br><span class="line"><span class="comment"># port指定IP端口</span></span><br><span class="line"><span class="comment"># cuda-device指定GPU的ID号</span></span><br></pre></td></tr></table></figure>
+
+<img src="/2025/01/20/%E3%80%90StableDiffusion%E3%80%9104.%E5%AE%89%E8%A3%85%EF%BC%9ALinux%E7%8E%AF%E5%A2%83/ComfyUI%E7%95%8C%E9%9D%A2.png" class="" title="ComfyUI界面"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/StableDiffusion%E9%85%8D%E7%BD%AE/">StableDiffusion配置</a></div><div class="post_share"><div class="social-share" data-image="/img/DocCover_StableDiffusion_2.jpg" data-sites="qq,wechat,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/01/23/%E3%80%90StableDiffusion%E3%80%9105.%E5%AE%89%E8%A3%85%EF%BC%9A%E6%8F%92%E4%BB%B6/" title="【StableDiffusion】05.安装：插件"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【StableDiffusion】05.安装：插件</div></div></a></div><div class="next-post pull-right"><a href="/2025/01/18/%E3%80%90StableDiffusion%E3%80%9103.%E5%AE%89%E8%A3%85%EF%BC%9AWindows%E7%8E%AF%E5%A2%83/" title="【StableDiffusion】03.安装：Windows环境"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【StableDiffusion】03.安装：Windows环境</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2025/01/15/%E3%80%90StableDiffusion%E3%80%9102.%E9%85%8D%E7%BD%AE%E8%A6%81%E6%B1%82%E3%80%81%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9/" title="【StableDiffusion】02.配置要求、版本选择"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-15</div><div class="title">【StableDiffusion】02.配置要求、版本选择</div></div></a></div><div><a href="/2025/01/18/%E3%80%90StableDiffusion%E3%80%9103.%E5%AE%89%E8%A3%85%EF%BC%9AWindows%E7%8E%AF%E5%A2%83/" title="【StableDiffusion】03.安装：Windows环境"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-18</div><div class="title">【StableDiffusion】03.安装：Windows环境</div></div></a></div><div><a href="/2025/01/23/%E3%80%90StableDiffusion%E3%80%9105.%E5%AE%89%E8%A3%85%EF%BC%9A%E6%8F%92%E4%BB%B6/" title="【StableDiffusion】05.安装：插件"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-23</div><div class="title">【StableDiffusion】05.安装：插件</div></div></a></div><div><a href="/2025/01/25/%E3%80%90StableDiffusion%E3%80%9106.%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD/" title="【StableDiffusion】06.模型下载"><img class="cover" src="/img/DocCover_StableDiffusion_2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-25</div><div class="title">【StableDiffusion】06.模型下载</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">逍遥之韶</div><div class="author-info__description">写代码，打游戏，搞AIGC</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/shadowchen"><i class="fab fa-github"></i><span>GitHub主页</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="toc-text">1. 基础环境安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-WebUI%EF%BC%9A%E5%AE%98%E6%96%B9%E5%8E%9F%E7%89%88"><span class="toc-text">2. WebUI：官方原版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%8E%B7%E5%8F%96%E4%BB%93%E5%BA%93%E4%BB%A3%E7%A0%81"><span class="toc-text">2.1 获取仓库代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="toc-text">2.2 创建虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%AE%89%E8%A3%85pytorch"><span class="toc-text">2.3 安装pytorch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%AE%89%E8%A3%85xformers"><span class="toc-text">2.4 安装xformers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E7%8E%AF%E5%A2%83"><span class="toc-text">2.5 安装依赖环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B"><span class="toc-text">2.6 下载模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-%E5%88%9B%E5%BB%BA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC"><span class="toc-text">2.7 创建启动脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-%E5%90%AF%E5%8A%A8"><span class="toc-text">2.8 启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%EF%BC%9A%E6%97%A0%E6%B3%95%E9%80%89%E6%8B%A9vae%E6%A8%A1%E5%9E%8B%EF%BC%9F"><span class="toc-text">附：无法选择vae模型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%EF%BC%9A%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85CLIP%EF%BC%9F"><span class="toc-text">附：需要安装CLIP？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%EF%BC%9A%E6%B2%A1%E6%9C%89%E4%B8%AD%E6%96%87%E7%95%8C%E9%9D%A2%EF%BC%9F"><span class="toc-text">附：没有中文界面？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-WebUI-Forge%EF%BC%9Alllyasviel%E6%95%B4%E5%90%88%E5%8C%85"><span class="toc-text">3. WebUI-Forge：lllyasviel整合包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E8%8E%B7%E5%8F%96%E4%BB%93%E5%BA%93%E4%BB%A3%E7%A0%81"><span class="toc-text">3.1 获取仓库代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="toc-text">3.2 创建虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E5%AE%89%E8%A3%85pytorch"><span class="toc-text">3.3 安装pytorch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E5%AE%89%E8%A3%85xformers"><span class="toc-text">3.4 安装xformers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E7%8E%AF%E5%A2%83"><span class="toc-text">3.5 安装依赖环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B"><span class="toc-text">3.6 下载模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-%E5%88%9B%E5%BB%BA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC"><span class="toc-text">3.7 创建启动脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-%E5%90%AF%E5%8A%A8"><span class="toc-text">3.8 启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%EF%BC%9A%E6%97%A0%E6%B3%95%E8%AF%BB%E5%8F%96SD-3-5%E7%9A%84CLIP%E7%BB%84%E4%BB%B6%EF%BC%9F"><span class="toc-text">附：无法读取SD 3.5的CLIP组件？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-ComfyUI%EF%BC%9A%E5%AE%98%E6%96%B9%E5%8E%9F%E7%89%88"><span class="toc-text">4. ComfyUI：官方原版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%8E%B7%E5%8F%96%E4%BB%93%E5%BA%93%E4%BB%A3%E7%A0%81"><span class="toc-text">4.1 获取仓库代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="toc-text">4.2 创建虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%AE%89%E8%A3%85pytorch"><span class="toc-text">4.3 安装pytorch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E7%8E%AF%E5%A2%83"><span class="toc-text">4.4 安装依赖环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B"><span class="toc-text">4.5 下载模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6-%E5%90%AF%E5%8A%A8"><span class="toc-text">4.6 启动</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By 逍遥之韶</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":20,"vOffset":0},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body></html>
