@@ -1,7 +1,7 @@
 ---
 title: Jenkins：环境变量
 published: 2024-05-10
-description: 给Jenkins服务添加环境变量，以激活系统内的程序，如conda、python、CUDA等。
+description: 给Jenkins服务添加环境变量，激活系统内的程序，如conda、python、CUDA等。
 tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_2.png"

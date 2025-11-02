@@ -2,7 +2,7 @@
 title: Jenkins：任务触发机制
 published: 2024-05-14
 description: 对Jenkins任务触发机制进行说明，重点阐述自动触发机制下的日程表设定。
-tags: [Jenkins使用]
+tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_2.png"
 ---

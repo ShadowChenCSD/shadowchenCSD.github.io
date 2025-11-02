@@ -1,6 +1,6 @@
 ---
 title: 科学上网：软路由 + OpenClash插件
-description: 将树莓派刷入OpenWRT作为软路由，通过OpenClash插件，实现路由级别的科学上网。
+description: 将树莓派刷入OpenWRT作为软路由，再通过OpenClash插件，实现路由级别的科学上网。
 published: 2024-07-22
 pinned: true
 tags: [树莓派, 旁路由, OpenWRT, OpenClash]

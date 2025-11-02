@@ -1,8 +1,8 @@
 ---
 title: Jenkins：任务视图
 published: 2024-05-29
-description: 介绍Jenkins的任务视图的功能：通过预设的过滤规则，以便对任务进行分类管理。
-tags: [Jenkins使用]
+description: 介绍Jenkins的任务视图功能：通过预设的过滤规则，以便对任务进行分类管理。
+tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_2.png"
 ---

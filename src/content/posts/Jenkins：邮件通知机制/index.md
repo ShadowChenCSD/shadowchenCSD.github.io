@@ -1,8 +1,8 @@
 ---
 title: Jenkins：邮件通知机制
 published: 2024-05-20
-description: 详细介绍邮件通知插件的功能与应用实践。
-tags: [Jenkins使用]
+description: 详细说明Jenkins邮件通知插件的功能与应用实践。
+tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_2.png"
 ---

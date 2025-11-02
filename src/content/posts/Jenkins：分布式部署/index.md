@@ -1,7 +1,7 @@
 ---
 title: Jenkins：分布式部署
 published: 2024-05-05
-description: 介绍如何对Jenkins进行分布式部署，以充分利用服务器资源，降低单一节点的工作负荷。
+description: 介绍如何对Jenkins进行分布式部署，充分利用服务器资源，降低单一节点的工作负荷。
 tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_1.png"

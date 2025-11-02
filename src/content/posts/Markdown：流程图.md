@@ -1,7 +1,7 @@
 ---
 title: Markdown：流程图
 published: 2023-10-20
-description: 介绍撰写Markdown文档的流程图使用方法。
+description: 介绍如何在Markdown文档中使用Mermaid流程图。
 tags: [文章撰写, Markdown]
 category: 博客
 image: "/posts/flowchart.png"

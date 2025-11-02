@@ -1,7 +1,7 @@
 ---
 title: Jenkins：代码检出逻辑
 published: 2024-05-11
-description: 分析Jenkins服务检出仓库代码的逻辑。
+description: 分析Jenkins检出仓库代码的逻辑。
 tags: [Jenkins]
 category: CICD
 image: "/posts/Jenkins_2.png"
