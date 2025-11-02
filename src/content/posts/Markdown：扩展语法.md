@@ -3,7 +3,7 @@ title: Markdown：扩展语法
 published: 2023-10-18
 description: 介绍撰写Markdown文档的扩展语法规则。
 image: "/posts/markdown.png"
-tags: [文章撰写, Markdown]
+tags: [Markdown, 文章撰写]
 category: 博客
 ---
 
