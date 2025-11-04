@@ -1,0 +1,9 @@
+{
+	"title": "坦克大战",
+	"hidden": false,
+	"description": "关卡地图",
+	"date": "1985-09-09",
+	"tags": ["平面射击", "游戏"],
+	"layout": "grid",
+	"columns": 3
+}

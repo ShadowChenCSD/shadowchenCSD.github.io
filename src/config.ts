@@ -51,13 +51,15 @@ export const siteConfig: SiteConfig = {
 				"/assets/desktop-banner/02.png",
 				"/assets/desktop-banner/03.jpg",
 				"/assets/desktop-banner/04.jpg",
-				// "/assets/desktop-banner/05.jpg",
+				"/assets/desktop-banner/05.jpg",
+				"/assets/desktop-banner/06.jpg",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/01.jpg",
 				"/assets/mobile-banner/02.jpg",
 				"/assets/mobile-banner/03.jpg",
 				"/assets/mobile-banner/04.jpg",
+				"/assets/mobile-banner/05.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -170,31 +172,31 @@ export const navBarConfig: NavBarConfig = {
 		},
 		LinkPreset.Anime,
 		LinkPreset.Game,
+		LinkPreset.Friends,
 		// LinkPreset.Projects,
 		// LinkPreset.Skills,
 		// LinkPreset.Timeline,
-		// 支持多级菜单
-		{
-			name: "站点",
-			url: "/links/",
-			icon: "material-symbols:link",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/ShadowChenCSD",
-					external: true,
-					icon: "fa6-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/393361071",
-					external: true,
-					icon: "fa6-brands:bilibili",
-				},
-				LinkPreset.Friends,
-			],
-		},
 		LinkPreset.About,
+		// 支持多级菜单
+		// {
+		// 	name: "站点",
+		// 	url: "/links/",
+		// 	icon: "material-symbols:link",
+		// 	children: [
+		// 		{
+		// 			name: "GitHub",
+		// 			url: "https://www.github.com",
+		// 			external: true,
+		// 			icon: "fa6-brands:github",
+		// 		},
+		// 		{
+		// 			name: "Bilibili",
+		// 			url: "https://www.bilibili.com",
+		// 			external: true,
+		// 			icon: "fa6-brands:bilibili",
+		// 		},
+		// 	],
+		// },
 	],
 };
 
