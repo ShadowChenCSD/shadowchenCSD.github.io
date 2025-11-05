@@ -4,6 +4,7 @@ published: 2023-06-24
 description: 介绍OpenCV的绘图方式及键盘鼠标的交互方式。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
+pinned: true
 image: "/posts/OpenCV.png"
 ---
 

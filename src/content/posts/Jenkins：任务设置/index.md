@@ -4,6 +4,7 @@ published: 2024-05-08
 description: 拆解Jenkins任务的设定要素。
 tags: [Jenkins]
 category: CICD
+pinned: true
 image: "/posts/Jenkins_2.png"
 ---
 
