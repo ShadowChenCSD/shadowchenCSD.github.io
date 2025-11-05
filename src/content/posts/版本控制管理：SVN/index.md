@@ -54,7 +54,7 @@ image: "/posts/SVN.png"
 
 2. 输入命令`svn --version`，如果**提示相应的版本**，说明svn命令行工具可以正常使用了；如果提示**“svn”不是内部或外部命令，也不是可运行的程序或批处理文件名**，说明svn命令行工具没有配置成功，需要重新审核配置过程。
 
-   ![Subversion](.\Subversion.png)
+   ![Subversion](Subversion.png)
 
 ## 3.3 subversion（Linux）
 
