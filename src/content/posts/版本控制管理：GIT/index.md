@@ -175,7 +175,6 @@ git config user.email "xxx@xxx.com"
 - **不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改**
   - **`文件被修改了，已经add了，但还没commit`**
   - `git restore --staged file`
-  - `git restore --staged  file`
 - **提交了不合适的修改到本地版本库中，想要撤销本次提交**
   - **`文件被修改了，已经add了，已经commit了，但还没push`**
   - `git reset --hard HEAD^`（仅切换到上一版本）
