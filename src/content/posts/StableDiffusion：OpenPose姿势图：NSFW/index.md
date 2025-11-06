@@ -1,11 +1,12 @@
 ---
 title: StableDiffusion：OpenPose姿势图：NSFW
-published: 2024-12-28
+published: 2024-12-31
 description: 记录OpenPose姿势图，NSFW。
 encrypted: true
 password: "OpenPoseNSFW"
 tags: [AIGC·图像, StableDiffusion, OpenPose]
 category: AIGC
+image: "/posts/Lock.png"
 ---
 
 # 1. 介绍

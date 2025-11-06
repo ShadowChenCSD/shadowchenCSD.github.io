@@ -1,6 +1,6 @@
 ---
 title: StableDiffusion：OpenPose姿势图：格斗
-published: 2024-12-30
+published: 2024-12-22
 description: 记录OpenPose姿势图，格斗主题。
 tags: [AIGC·图像, StableDiffusion, OpenPose]
 category: AIGC
