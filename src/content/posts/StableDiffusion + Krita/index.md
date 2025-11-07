@@ -25,7 +25,7 @@ image: "/posts/comfyUI+krita.jpeg"
   - **Linux系统**：使用`git clone`下载程序包
 - **Krita-ai-diffusion**：从<https://github.com/Acly/krita-ai-diffusion>的GitHub网页的Release中下载**最新版本**
 
-![Krita-Ai-diffusion](Krita-Ai-diffusion下载.jpg)
+![Krita-AI-diffusion](Krita-AI-diffusion下载.jpg)
 
 # 3. 安装与配置
 
