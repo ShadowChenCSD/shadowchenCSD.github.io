@@ -1,8 +1,8 @@
 ---
 title: StableDiffusion：ControlNet应用：姿势图调整
-published: 2024-12-25
+published: 2024-12-22
 description: 介绍如何使用插件调整OpenPose姿势图。
-tags: [AIGC·图像, StableDiffusion, OpenPose]
+tags: [AIGC·图像, 图像生成, StableDiffusion, OpenPose]
 category: AIGC
 image: "/posts/ControlNet.png"
 ---

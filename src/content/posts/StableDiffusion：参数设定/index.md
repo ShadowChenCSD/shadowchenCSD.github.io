@@ -2,7 +2,7 @@
 title: StableDiffusion：参数设定
 published: 2024-11-05
 description: 重点讲述AI生图时的重要参数。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 ---
 

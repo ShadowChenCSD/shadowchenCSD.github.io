@@ -2,7 +2,7 @@
 title: StableDiffusion：ControlNet应用：写字
 published: 2024-12-20
 description: 介绍使用ControlNet模型实现AI艺术字的效果。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/ControlNet.png"
 ---

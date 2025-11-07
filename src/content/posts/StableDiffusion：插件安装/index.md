@@ -2,7 +2,7 @@
 title: StableDiffusion：插件安装
 published: 2024-10-28
 description: 介绍如何安装StableDiffusion插件。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/INSTALL.jpeg"
 ---

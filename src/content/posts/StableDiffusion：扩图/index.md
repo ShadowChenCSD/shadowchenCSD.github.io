@@ -2,7 +2,7 @@
 title: StableDiffusion：扩图
 published: 2024-11-28
 description: 介绍如何使用WebUI或ComfyUI，对图像进行外扩补充。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/StableDiffusion.png"
 ---

@@ -2,7 +2,7 @@
 title: StableDiffusion：局部重绘·ComfyUI
 published: 2024-11-26
 description: 介绍如何使用ComfyUI对图像进行局部重绘。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/StableDiffusion.png"
 ---

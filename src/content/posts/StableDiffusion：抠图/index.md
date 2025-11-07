@@ -2,7 +2,7 @@
 title: StableDiffusion：抠图
 published: 2024-12-03
 description: 介绍使用AI进行抠图技术，包括Florence 2方案、SAM 2方案以及RMBG方案。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 ---
 

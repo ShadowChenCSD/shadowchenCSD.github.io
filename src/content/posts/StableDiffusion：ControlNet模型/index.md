@@ -2,7 +2,7 @@
 title: StableDiffusion：ControlNet模型
 published: 2024-12-12
 description: 介绍如何ControlNet模型控制图像的结构。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 pinned: true
 image: "/posts/ControlNet.png"

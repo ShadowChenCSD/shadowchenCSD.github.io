@@ -2,7 +2,7 @@
 title: StableDiffusion：使用LoRA模型
 published: 2024-12-05
 description: 介绍如何在WebUI和ComfyUI中使用LoRA模型，生成特定风格、特定角色的图像。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 pinned: true
 image: "/posts/LoRA.png"

@@ -2,9 +2,8 @@
 title: StableDiffusion：高清放大
 published: 2024-11-30
 description: 介绍图像高清放大技术，既包括传统的插值放大方案、通过模型进行放大的方案，也包括使用图生图进行重采样放大的方案，还有通过高清放大插件进行放大的方案。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-pinned: true
 image: "/posts/StableDiffusion.png"
 ---
 

@@ -2,7 +2,7 @@
 title: StableDiffusion：介绍
 published: 2024-10-03
 description: 介绍StableDiffusion的功能：文生图、图生图、局部重绘、高清放大、ControlNet插件、LoRA模型。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 pinned: true
 image: "/posts/AIGC.png"

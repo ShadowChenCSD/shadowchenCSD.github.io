@@ -1,8 +1,8 @@
 ---
 title: StableDiffusion：PuLID组件
 published: 2025-01-09
-description: 介绍PuLIDTools组件的使用方法，实现人脸迁移的功能。
-tags: [AIGC·图像, StableDiffusion]
+description: 介绍PuLID组件的使用方法，实现人脸迁移的功能。
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/PuLID.jpg"
 ---

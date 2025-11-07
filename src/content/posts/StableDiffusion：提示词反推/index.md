@@ -2,7 +2,7 @@
 title: StableDiffusion：提示词反推
 published: 2024-11-20
 description: 介绍如何根据输入图像反推提示词，以满足其他业务的需求。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/AIGC.png"
 ---

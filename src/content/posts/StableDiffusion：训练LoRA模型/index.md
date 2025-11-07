@@ -2,7 +2,7 @@
 title: StableDiffusion：训练LoRA模型
 published: 2024-12-08
 description: 介绍如何训练一个特定风格的LoRA模型。
-tags: [AIGC·图像, StableDiffusion, Flux]
+tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
 pinned: true
 image: "/posts/LoRA.png"

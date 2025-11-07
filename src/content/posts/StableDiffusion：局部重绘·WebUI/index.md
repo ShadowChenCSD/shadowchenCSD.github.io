@@ -2,7 +2,7 @@
 title: StableDiffusion：局部重绘·WebUI
 published: 2024-11-23
 description: 介绍如何使用WebUI对图像进行局部重绘。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/StableDiffusion.png"
 ---

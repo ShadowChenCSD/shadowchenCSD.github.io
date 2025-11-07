@@ -2,7 +2,7 @@
 title: StableDiffusion：图生图
 published: 2024-11-03
 description: 介绍如何使用WebUI、ComfyUI进行图生图。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 pinned: true
 image: "/posts/StableDiffusion.png"

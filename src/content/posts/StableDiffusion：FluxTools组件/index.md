@@ -2,7 +2,7 @@
 title: StableDiffusion：FluxTools组件
 published: 2025-01-05
 description: 介绍FluxTools组件提供的4个模型的用法。
-tags: [AIGC·图像, StableDiffusion, Flux]
+tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
 image: "/posts/StableDiffusion.png"
 ---

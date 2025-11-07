@@ -2,7 +2,7 @@
 title: StableDiffusion：提示词撰写
 published: 2024-11-18
 description: 介绍如何撰写提示词，生成符合预期的AI图像。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 image: "/posts/AIGC.png"
 ---

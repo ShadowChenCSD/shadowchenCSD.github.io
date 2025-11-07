@@ -2,7 +2,7 @@
 title: StableDiffusion：模型选择
 published: 2024-11-12
 description: 重点讲述AI生图时不同模型对生图结果的影响。
-tags: [AIGC·图像, StableDiffusion]
+tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
 ---
 
