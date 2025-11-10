@@ -1,6 +1,6 @@
 ---
 title: 风格迁移：训练Flux-Kontext-LoRA模型
-published: 2025-09-20
+published: 2025-08-20
 description: 介绍如何训练一个Flux-Kontext-LoRA模型模型，用于实现风格迁移的功能。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC

@@ -1,6 +1,7 @@
 ---
 title: 图像编辑：Qwen-Image-Edit
 published: 2025-09-16
+updated: 2025-10-12
 description: 展现Qwen-Image-Edit在图像编辑领域中的能力。
 tags: [AIGC·图像, 图像编辑, Qwen]
 category: AIGC
@@ -10,15 +11,26 @@ image: "/posts/Qwen-Image-Edit.png"
 
 # 1. 介绍
 
-​	**`Qwen-Image-Edit`**是2025年8月19日由通义团队推出的**图像编辑**模型。基于20B的Qwen-Image模型进⼀步训练，将Qwen-Image的文本渲染能力延展至图像编辑领域，专注于**语义理解**和**对象编辑**，支持**双语文本修改**、**风格迁移**及**角色姿态调整**等。
+​		**`Qwen-Image-Edit`**是2025年8月19日由通义团队推出的**图像编辑**模型。基于20B的Qwen-Image模型进⼀步训练，将Qwen-Image的文本渲染能力延展至图像编辑领域，专注于**语义理解**和**对象编辑**，支持**双语文本修改**、**风格迁移**及**角色姿态调整**等。
 
-​	**Qwen-Image-Edit**擅长处理以下任务：
+​		**Qwen-Image-Edit**擅长处理以下任务：
 
 - **对象修改**：添加、移除、替换、提取、背景更换、姿态调整……
 - **文本编辑**：添加、移除、替换……
 - **风格转换**：水彩风、线稿风、像素风、动漫风、粘土风、赛博朋克风……
 - **角色一致性**：角色参考、物品参考、画风参考……
 - **视觉引导**：方框、圆圈、涂抹块……
+
+---
+
+​		**`Qwen-Image-Edit-2509`** 是 `Qwen-Image-Edit` 的月度迭代版本。与8月份发布的 `Qwen-Image-Edit` 相比，Qwen-Image-Edit-2509 的主要改进包括：
+
+- **多图像编辑支持**：支持各种组合，如 `人 + 人 `、 `人 + 产品` 和 `人 + 场景` 。目前**在1到3张**输入图像时表现最佳。
+- **增强的单图像一致性**
+  - **改进的人像编辑一致性**：更好地保留面部身份，支持各种**肖像风格**和**姿势变换**
+  - **改进的产品编辑一致性**：更好地保留产品身份，支持**产品海报编辑**
+  - **改进的文字编辑一致性**：除了修改文字内容外，还支持编辑**文字字体**、**文字颜色**和**文字材质**
+- **原生支持 ControlNet**：包括**深度图**、**边缘图**、**关键点图**等。
 
 # 2. 能力展示
 
@@ -776,9 +788,92 @@ image: "/posts/Qwen-Image-Edit.png"
   </tbody>
 </table>
 
+## 2.14 文字颜色修改（Text Color）：Qwen-Image-Edit 2509版
+
+1. **把"Qwen-Image-Edit"换成橘色**
+2. **把"Qwen-Image-Edit"换成粉色**
+3. **把"Qwen-Image-Edit"换成荧光紫色**
+4. **把"Qwen-Image-Edit"换成彩虹色**
+5. **把"Qwen-Image-Edit"换成糖果色**
+7. **把"Qwen-Image-Edit"换成蓝紫渐变色**
+8. **把"Qwen-Image-Edit"换成蓝粉渐变色**
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <thead>
+    <tr align="center">
+      <th>输入</th>
+      <th>输出</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/108.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/109.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/110.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/111.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/112.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/113.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/114.png" width="512" /></td>
+    </tr>
+  </tbody>
+</table>
+
+## 2.15 文字字体修改（Text Font）：Qwen-Image-Edit 2509版
+
+1. **把文字“Qwen-Image-Edit”换成淡绿色的粗笔刷字体**
+2. **把文字“Qwen-Image-Edit”换成紫色的像素字体**
+3. **把文字“Qwen-Image-Edit”换成黑色的滴墨字体**
+4. **把文字“Qwen-Image-Edit”换成红色的镂空卡通字体**
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <thead>
+    <tr align="center">
+      <th>输入</th>
+      <th>输出</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/115.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/116.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/117.png" width="512" /></td>
+    </tr>
+    <tr align="center">
+      <td><img src="/posts/input/26.png" width="512" /></td>
+      <td><img src="/posts/output-Qwen/118.png" width="512" /></td>
+    </tr>
+  </tbody>
+</table>
+
 # 3. 资源消耗
 
-​	Qwen-Image-Edit方案涉及多个模型，包括：**Qwen-Image-Edit**基础模型、**Qwen-2.5-vl-7B**解析器模型、**Qwen-Image-vae**编解码模型，以及用于**快速生图**LoRA模型：**Qwen-Image-Lightning-4steps-V1.0**。
+​	Qwen-Image-Edit方案涉及多个模型，包括：**Qwen-Image-Edit**基础模型 / **Qwen-Image-Edit-2509**基础模型、**Qwen-2.5-vl-7B**解析器模型、**Qwen-Image-vae**编解码模型，以及用于**快速生图**LoRA模型：**Qwen-Image-Lightning-4steps-V1.0**。
 
 - **steps**和**CFG**设置参考
 
@@ -800,18 +895,16 @@ image: "/posts/Qwen-Image-Edit.png"
 ## 4.1 优点
 
 - **`生成效果`**：同**flux-kontext**一样，作为**开源图像编辑模型**，几乎可以完成一样的**图像编辑**任务，并且在多数场合下，生成图效果可以媲美**flux-kontext**的生成图效果。
-
 - **`提示词输入`**：由于Qwen系列使用的是Qwen自家的视觉大模型解析器：**Qwen-2.5-vl-7B**，因此，它能够**支持中文输入作为提示词**，极大提高了中文用户的使用体验。
-
 - **`中式元素支持`**：得益于Qwen系列模型的强大能力，用户可以使用**中式元素**进行图像生成，如绘制**孙悟空、哪吒、关羽、园林、鸟巢、东方明珠等**中式元素形象。相比之下，Flux系列作为国外模型，对中式元素形象的生成无能为力。
-
 - **`中文编辑支持`**：Qwen系列模型还支持**对图像中的中文内容进行编辑**，Qwen模型既能支持**对英文文字的修改**，也能支持**对中文文字的修改**，相比Flux模型仅能修改**英文文字**，Qwen-Image-Edit模型**更能满足中文场景的设计需求**。
+- **`文字编辑方面`**：相比**flux-kontext**，**Qwen-Image-Edit-2509版本**的模型支持**文字颜色修改**和**文字字体修改**，扩大了Qwen系列模型的应用场合。
 
 ## 4.2 缺陷
 
 - **`画质方面`**：在修改画面元素的时候，有时会出现**画面风格改变**、**细节减少**、**画面质量下降**等情况，不符合预期的视觉效果输出。
 
-- **`文字编辑方面`**：尽管模型支持双语文字修改，但在**文字编辑**时**不能指定字体**，并且，**当文字量较多时会出现错字、漏字的情况**，需要重新排列设计。
+- **`文字编辑方面`**：尽管模型支持双语文字修改，但**在文字量较多时会出现错字、漏字的情况**，需要重新排列设计。
 
 - **`视觉引导方面`**：在实践中发现，使用**方框式标注**或**圆圈式标注**的做法，就已经可以**相对准确地**处理**指定对象**了，而使用**区域涂抹方式标注**，反而**不能很准确地搜寻到指定区域**进行处理，因此，推荐使用**方框**或**圆圈**的方式进行对象标注，而不要使用**区域涂抹**的方式。
 
@@ -926,5 +1019,16 @@ image: "/posts/Qwen-Image-Edit.png"
 {"file": "images/08.jpg", "instruction": "将\"BLACK FOREST LABS\"修改为\"黑·森林·实验室\""}
 {"file": "images/08.jpg", "instruction": "将\"BLACK FOREST LABS\"修改为\"春蚕到死丝方尽，蜡炬成灰泪始干。\""}
 {"file": "images/09.jpg", "instruction": "将\"Together We Create!\"修改为\"我们一起创造！\""}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成橘色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成粉色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成荧光紫色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成彩虹色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成糖果色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成蓝紫渐变色"}
+{"file": "images/26.png", "instruction": "把\"Qwen-Image-Edit\"换成蓝粉渐变色"}
+{"file": "images/26.png", "instruction": "把文字“Qwen-Image-Edit”换成淡绿色的粗笔刷字体"}
+{"file": "images/26.png", "instruction": "把文字“Qwen-Image-Edit”换成紫色的像素字体"}
+{"file": "images/26.png", "instruction": "把文字“Qwen-Image-Edit”换成黑色的滴墨字体"}
+{"file": "images/26.png", "instruction": "把文字“Qwen-Image-Edit”换成红色的镂空卡通字体"}
 ```
 
