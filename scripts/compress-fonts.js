@@ -998,4 +998,4 @@ async function compressFonts() {
 }
 
 // 运行压缩
-compressFonts();
+// compressFonts();
