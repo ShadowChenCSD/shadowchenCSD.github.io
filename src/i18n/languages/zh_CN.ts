@@ -3,8 +3,8 @@ import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
 	[Key.home]: "主页",
-	[Key.about]: "关于我们",
-	[Key.archive]: "归档",
+	[Key.about]: "关于",
+	[Key.archive]: "文章",
 	[Key.search]: "搜索",
 	[Key.other]: "其他",
 
@@ -57,26 +57,44 @@ export const zh_CN: Translation = {
 	[Key.publishedAt]: "发布于",
 	[Key.license]: "许可协议",
 	[Key.anime]: "追番",
+	[Key.game]: "游戏",
 	[Key.diary]: "日记",
 	[Key.gallery]: "相册",
 
 	// 番剧页面
-	[Key.animeTitle]: "我的追番记录",
-	[Key.animeSubtitle]: "记录我的二次元之旅",
-	[Key.animeStatusWatching]: "在看",
-	[Key.animeStatusCompleted]: "看过",
-	[Key.animeStatusPlanned]: "想看",
-	[Key.animeStatusOnHold]: "搁置",
-	[Key.animeStatusDropped]: "抛弃",
-	[Key.animeFilterAll]: "全部",
+	[Key.animeTitle]: "追番",
+	[Key.animeSubtitle]: "记录我的二次元之旅，评分来自Bangumi番组计划",
+	[Key.animeTotal]: "总数",
+	[Key.animeStatusWatching]: "追番中",
+	[Key.animeStatusCompleted]: "已追完",
+	[Key.animeStatusPlanned]: "计划中",
+	[Key.animeAvgRating]: "平均评分",
+	[Key.animeActor]: "主演",
 	[Key.animeYear]: "年份",
 	[Key.animeStudio]: "制作",
-	[Key.animeEmpty]: "暂无追番数据",
+	[Key.animeFilterAll]: "全部",
+	[Key.animeEmpty]: "暂无数据",
 	[Key.animeEmptyBangumi]: "请检查 Bangumi 配置或网络连接",
-	[Key.animeEmptyLocal]: "请在 src/data/anime.ts 文件中添加番剧信息",
+	[Key.animeEmptyLocal]: "请在 src/data/anime.ts 文件中添加信息",
+
+	// 游戏页面
+	[Key.gameTitle]: "游戏",
+	[Key.gameSubtitle]: "记录我的游戏历程，评分来自Bangumi番组计划",
+	[Key.gameTotal]: "总数",
+	[Key.gameRating]: "评分",
+	[Key.gameStatusPlaying]: "游戏中",
+	[Key.gameStatusCompleted]: "已通关",
+	[Key.gameStatusPlanned]: "计划中",
+	[Key.gameAvgRating]: "平均评分",
+	[Key.gameActor]: "主角",
+	[Key.gameYear]: "年份",
+	[Key.gameFilterAll]: "全部",	
+	[Key.gameEmpty]: "暂无数据",
+	[Key.gameEmptyBangumi]: "请检查 Bangumi 配置或网络连接",
+	[Key.gameEmptyLocal]: "请在 src/data/game.ts 文件中添加信息",
 
 	// 短文页面
-	[Key.diarySubtitle]: "随时随地，分享生活",
+	[Key.diarySubtitle]: "分享点滴生活",
 	[Key.diaryCount]: "条短文",
 	[Key.diaryReply]: "回复",
 	[Key.diaryTips]: "只展示最近30条日记",
@@ -95,16 +113,13 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
+	[Key.albumsCount]: "组照片",
+	[Key.albumsSubtitle]: "记录美好瞬间",
 	[Key.albumsEmpty]: "暂无内容",
 	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
 	[Key.albumsBackToList]: "返回相册",
 	[Key.albumsPhotoCount]: "张照片",
 	[Key.albumsPhotosCount]: "张照片",
-
-	// 设备页面
-	[Key.devices]: "我的设备",
-	[Key.devicesSubtitle]: "这里展示了我日常使用的各类设备",
 
 	// 项目展示页面
 	[Key.projects]: "项目展示",
@@ -159,6 +174,8 @@ export const zh_CN: Translation = {
 	[Key.skillsDistribution]: "技能分布",
 	[Key.skillsByLevel]: "按等级分布",
 	[Key.skillsByCategory]: "按分类分布",
+
+        // 其他
 	[Key.noData]: "暂无数据",
 
 	// 时间线页面
@@ -201,7 +218,7 @@ export const zh_CN: Translation = {
 	[Key.autoSyntaxHighlightFailed]: "自动语法高亮也失败:",
 	[Key.decryptionError]: "解密过程中发生错误:",
 
-	//最后编辑时间卡片
+	// 最后编辑时间卡片
 	[Key.lastModifiedPrefix]: "距离上次编辑: ",
 	[Key.lastModifiedOutdated]: "部分信息可能已经过时",
 	[Key.year]: "年",

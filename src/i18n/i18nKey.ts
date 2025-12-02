@@ -1,28 +1,34 @@
 enum I18nKey {
+	// 导航栏标题
 	home = "home",
 	about = "about",
 	archive = "archive",
+	tags = "tags",
+	categories = "categories",
+	anime = "anime",
+	diary = "diary",
+	gallery = "gallery",
+	game = "game",
 	search = "search",
 	other = "other",
+	more = "more",
 
-	// 导航栏标题
 	navLinks = "navLinks",
 	navMy = "navMy",
 	navAbout = "navAbout",
 	navOthers = "navOthers",
+	
+	themeColor = "themeColor",
 
-	tags = "tags",
-	categories = "categories",
-	recentPosts = "recentPosts",
-	postList = "postList",
-	tableOfContents = "tableOfContents",
+	lightMode = "lightMode",
+	darkMode = "darkMode",
+	systemMode = "systemMode",
 
 	// 公告栏
 	announcement = "announcement",
 	announcementClose = "announcementClose",
 
-	comments = "comments",
-
+	// 文章页面
 	untitled = "untitled",
 	uncategorized = "uncategorized",
 	noTags = "noTags",
@@ -33,18 +39,16 @@ enum I18nKey {
 	minutesCount = "minutesCount",
 	postCount = "postCount",
 	postsCount = "postsCount",
-
-	themeColor = "themeColor",
-
-	lightMode = "lightMode",
-	darkMode = "darkMode",
-	systemMode = "systemMode",
-
-	more = "more",
+	postList = "postList",
 
 	author = "author",
 	publishedAt = "publishedAt",
+	comments = "comments",
 	license = "license",
+	recentPosts = "recentPosts",
+	tableOfContents = "tableOfContents",
+
+	// 友链页面
 	friends = "friends",
 	friendsSubtitle = "friendsSubtitle",
 	friendsSearchPlaceholder = "friendsSearchPlaceholder",
@@ -54,24 +58,38 @@ enum I18nKey {
 	friendsCopyLink = "friendsCopyLink",
 	friendsCopySuccess = "friendsCopySuccess",
 	friendsTags = "friendsTags",
-	anime = "anime",
-	diary = "diary",
-	gallery = "gallery",
 
 	// 番剧页面
 	animeTitle = "animeTitle",
 	animeSubtitle = "animeSubtitle",
+	animeTotal = "animeTotal",
 	animeStatusWatching = "animeStatusWatching",
 	animeStatusCompleted = "animeStatusCompleted",
 	animeStatusPlanned = "animeStatusPlanned",
-	animeStatusOnHold = "animeStatusOnHold",
-	animeStatusDropped = "animeStatusDropped",
-	animeFilterAll = "animeFilterAll",
+	animeAvgRating = "animeAvgRating",
+	animeActor = "animeActor",
 	animeYear = "animeYear",
 	animeStudio = "animeStudio",
+	animeFilterAll = "animeFilterAll",
 	animeEmpty = "animeEmpty",
 	animeEmptyBangumi = "animeEmptyBangumi",
 	animeEmptyLocal = "animeEmptyLocal",
+
+	// 游戏页面
+	gameTitle = "gameTitle",
+	gameSubtitle = "gameSubtitle",
+	gameTotal = "gameTotal",
+	gameRating = "gameRating",
+	gameAvgRating = "gameAvgRating",
+	gameStatusPlaying = "gameStatusPlaying",
+	gameStatusCompleted = "gameStatusCompleted",
+	gameStatusPlanned = "gameStatusPlanned",
+	gameActor = "gameActor",
+	gameYear = "gameYear",
+	gameFilterAll = "gameFilterAll",
+	gameEmpty = "gameEmpty",
+	gameEmptyBangumi = "gameEmptyBangumi",
+	gameEmptyLocal = "gameEmptyLocal",
 
 	// 短文页面
 	diarySubtitle = "diarySubtitle",
@@ -99,10 +117,7 @@ enum I18nKey {
 	albumsBackToList = "albumsBackToList",
 	albumsPhotoCount = "albumsPhotoCount",
 	albumsPhotosCount = "albumsPhotosCount",
-
-	// 设备页面
-	devices = "devices",
-	devicesSubtitle = "devicesSubtitle",
+	albumsCount = "albumsCount",
 
 	// 项目展示页面
 	projects = "projects",
@@ -131,7 +146,7 @@ enum I18nKey {
 	projectsVisit = "projectsVisit",
 	projectsGitHub = "projectsGitHub",
 
-	// Skills page
+	// 技能展示页面
 	skills = "skills",
 	skillsSubtitle = "skillsSubtitle",
 	skillsFrontend = "skillsFrontend",
@@ -159,7 +174,7 @@ enum I18nKey {
 	skillsByCategory = "skillsByCategory",
 	noData = "noData",
 
-	// Timeline page
+	//  时间线页面
 	timeline = "timeline",
 	timelineSubtitle = "timelineSubtitle",
 	timelineEducation = "timelineEducation",

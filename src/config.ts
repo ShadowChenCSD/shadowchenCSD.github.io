@@ -17,42 +17,42 @@ import { LinkPreset } from "./types/config";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://shadowchenCSD.github.io/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	title: "个人博客",
+	subtitle: "",
+	siteURL: "https://www.shadowchencsd.blog/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2025-10-18", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 230, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 175, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
 	// 特色页面开关配置(关闭不在使用的页面有助于提升SEO,关闭后直接在顶部导航删除对应的页面就行)
 	featurePages: {
 		anime: true, // 番剧页面开关
+		game: true, // 游戏页面开关
 		diary: true, // 日记页面开关
 		friends: true, // 友链页面开关
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
 		timeline: true, // 时间线页面开关
 		albums: true, // 相册页面开关
-		devices: true, // 设备页面开关
 	},
 
 	// 顶栏标题配置
-	navbarTitle: {
-		// 顶栏标题文本
-		text: "MizukiUI",
-		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.png",
-	},
+	// navbarTitle: {
+	// 	// 顶栏标题文本
+	// 	text: "",
+	// 	// 顶栏标题图标路径，默认使用 public/images/avatar/avatar.jpg"
+	// 	icon: "",
+	// },
 
 	bangumi: {
 		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
@@ -62,19 +62,23 @@ export const siteConfig: SiteConfig = {
 		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
 	},
 
+	game: {
+		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
+	},
+
 	// 文章列表布局配置
 	postListLayout: {
 		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（双列布局）
 		// 注意：如果侧边栏配置启用了"both"双侧边栏，则无法使用文章列表"grid"网格（双列）布局
 		defaultMode: "list",
 		// 是否允许用户切换布局
-		allowSwitch: true,
+		allowSwitch: false,
 	},
 
 	// 标签样式配置
 	tagStyle: {
 		// 是否使用新样式（悬停高亮样式）还是旧样式（外框常亮样式）
-		useNewStyle: false,
+		useNewStyle: true,
 	},
 
 	// 壁纸模式配置
@@ -93,20 +97,19 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
-				"/assets/desktop-banner/6.webp",
+				"/assets/desktop-banner/01.jpg",
+				"/assets/desktop-banner/02.png",
+				"/assets/desktop-banner/03.jpg",
+				"/assets/desktop-banner/04.jpg",
+				"/assets/desktop-banner/05.jpg",
+				"/assets/desktop-banner/06.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/01.jpg",
+				"/assets/mobile-banner/02.jpg",
+				"/assets/mobile-banner/03.jpg",
+				"/assets/mobile-banner/04.jpg",
+				"/assets/mobile-banner/05.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -115,7 +118,7 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 3, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -135,18 +138,17 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
+			title: "有朋自远方来，不亦乐乎？", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"花径不曾缘客扫，蓬门今始为君开。",
+				"烹羊宰牛且为乐，会须一饮三百杯。",
+				"长风破浪会有时，直挂云帆济沧海。",
+				"山重水复疑无路，柳暗花明又一村。",
+				"莫愁前路无知己，天下谁人不识君？",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
-
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
 				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
@@ -166,8 +168,8 @@ export const siteConfig: SiteConfig = {
 	},
 	toc: {
 		enable: true, // 启用目录功能
-		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
+		depth: 3, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
+		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
@@ -180,44 +182,44 @@ export const siteConfig: SiteConfig = {
 	],
 
 	// 字体配置
-	font: {
-		// 注意：自定义字体需要在 src/styles/main.css 中引入字体文件
-		// 注意：字体子集优化功能目前仅支持 TTF 格式字体,开启后需要在生产环境才能看到效果,在Dev环境下显示的是浏览器默认字体!
-		asciiFont: {
-			// 英文字体 - 优先级最高
-			// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
-			fontFamily: "ZenMaruGothic-Medium",
-			fontWeight: "400",
-			localFonts: ["ZenMaruGothic-Medium.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
-		},
-		cjkFont: {
-			// 中日韩字体 - 作为回退字体
-			fontFamily: "萝莉体 第二版",
-			fontWeight: "500",
-			localFonts: ["萝莉体 第二版.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
-		},
-	},
-	showLastModified: true, // 控制“上次编辑”卡片显示的开关
+	// font: {
+	// 	// 注意：自定义字体需要在 src/styles/main.css 中引入字体文件
+	// 	// 注意：字体子集优化功能目前仅支持 TTF 格式字体,开启后需要在生产环境才能看到效果,在Dev环境下显示的是浏览器默认字体!
+	// 	asciiFont: {
+	// 		// 英文字体 - 优先级最高
+	// 		// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
+	// 		fontFamily: "ZenMaruGothic-Medium",
+	// 		fontWeight: "500",
+	// 		localFonts: ["ZenMaruGothic-Medium.ttf"],
+	// 		enableCompress: true, // 启用字体子集优化，减少字体文件大小
+	// 	},
+	// 	cjkFont: {
+	// 		// 中日韩字体 - 作为回退字体
+	// 		fontFamily: "方正苏新诗柳楷简体",
+	// 		fontWeight: "300",
+	// 		localFonts: ["方正苏新诗柳楷简体.ttf"],
+	// 		enableCompress: true, // 启用字体子集优化，减少字体文件大小
+	// 	},
+	// },
+
+	showLastModified: false, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
+			"/assets/desktop-banner/01.jpg",
+			"/assets/desktop-banner/02.png",
+			"/assets/desktop-banner/03.jpg",
+			"/assets/desktop-banner/04.jpg",
+			"/assets/desktop-banner/05.jpg",
+			"/assets/desktop-banner/06.jpg",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
+			"/assets/mobile-banner/01.jpg",
+			"/assets/mobile-banner/02.jpg",
+			"/assets/mobile-banner/03.jpg",
+			"/assets/mobile-banner/04.jpg",
+			"/assets/mobile-banner/05.jpg",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -234,106 +236,42 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
-		{
-			name: "Links",
-			url: "/links/",
-			icon: "material-symbols:link",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
-					external: true,
-					icon: "fa6-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa6-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
-			],
-		},
-		{
-			name: "My",
-			url: "/content/",
-			icon: "material-symbols:person",
-			children: [
-				{
-					name: "Anime",
-					url: "/anime/",
-					icon: "material-symbols:movie",
-				},
-				{
-					name: "Diary",
-					url: "/diary/",
-					icon: "material-symbols:book",
-				},
-				{
-					name: "Gallery",
-					url: "/albums/",
-					icon: "material-symbols:photo-library",
-				},
-				{
-					name: "Devices",
-					url: "devices/",
-					icon: "material-symbols:devices",
-					external: false,
-				},
-			],
-		},
-		{
-			name: "About",
-			url: "/content/",
-			icon: "material-symbols:info",
-			children: [
-				{
-					name: "About",
-					url: "/about/",
-					icon: "material-symbols:person",
-				},
-				{
-					name: "Friends",
-					url: "/friends/",
-					icon: "material-symbols:group",
-				},
-			],
-		},
-		{
-			name: "Others",
-			url: "#",
-			icon: "material-symbols:more-horiz",
-			children: [
-				{
-					name: "Projects",
-					url: "/projects/",
-					icon: "material-symbols:work",
-				},
-				{
-					name: "Skills",
-					url: "/skills/",
-					icon: "material-symbols:psychology",
-				},
-				{
-					name: "Timeline",
-					url: "/timeline/",
-					icon: "material-symbols:timeline",
-				},
-			],
-		},
+		LinkPreset.Diary,
+		LinkPreset.Gallery,
+		LinkPreset.Anime,
+		LinkPreset.Game,
+		LinkPreset.Friends,
+		// LinkPreset.Projects,
+		// LinkPreset.Skills,
+		// LinkPreset.Timeline,
+		LinkPreset.About,
+		// 支持自定义导航栏链接，支持多级菜单
+		// {
+		// 	name: "站点",
+		// 	url: "/links/",
+		// 	icon: "material-symbols:link",
+		// 	children: [
+		// 		{
+		// 			name: "GitHub",
+		// 			url: "https://www.github.com",
+		// 			external: true,
+		// 			icon: "fa6-brands:github",
+		// 		},
+		// 		{
+		// 			name: "Bilibili",
+		// 			url: "https://www.bilibili.com",
+		// 			external: true,
+		// 			icon: "fa6-brands:bilibili",
+		// 		},
+		// 	],
+		// },
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Matsuzaka Yuki",
-	bio: "The world is big, you have to go and see",
+	avatar: "/images/avatar/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "逍遥之韶",
+	bio: "欲穷千里目，更上一层楼。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -342,33 +280,18 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://space.bilibili.com/393361071",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			url: "https://github.com/ShadowChenCSD",
 		},
 	],
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: false,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
@@ -392,20 +315,19 @@ export const commentConfig: CommentConfig = {
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
 	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
-	closable: true, // 允许用户关闭公告
-	link: {
-		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
-		url: "/about/", // 链接 URL
-		external: false, // 内部链接
-	},
+	closable: false, // 允许用户关闭公告
+	// link: {
+	// 	enable: false, // 启用链接
+	// 	text: "Learn More", // 链接文本
+	// 	url: "/about/", // 链接 URL
+	// 	external: false, // 内部链接
+	// },
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
-	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
-	meting_api:
-		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
+	meting_api: "https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
 	id: "14164869977", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
@@ -426,7 +348,7 @@ export const footerConfig: FooterConfig = {
  */
 export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧边栏位置：单侧(unilateral)或双侧(both)
-	position: "both",
+	position: "unilateral",
 
 	// 侧边栏组件配置列表
 	components: [
@@ -450,7 +372,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件（现在通过统一配置控制）
-			enable: true,
+			enable: false,
 			// 组件显示顺序
 			order: 2,
 			// 组件位置："top" 表示固定在顶部
@@ -463,14 +385,46 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			animationDelay: 50,
 		},
 		{
+			// 组件类型：日历组件(移动端不显示)
+			type: "calendar",
+			// 是否启用该组件
+			enable: true,
+			// 组件显示顺序
+			order: 3,
+			// 组件位置
+			position: "top",
+			// 所在侧边栏
+			sidebar: "left",
+			// CSS 类名
+			class: "onload-animation",
+			// 动画延迟时间
+			animationDelay: 250,
+		},
+		{
+			// 组件类型：站点统计组件
+			type: "site-stats",
+			// 是否启用该组件
+			enable: true,
+			// 组件显示顺序
+			order: 4,
+			// 组件位置
+			position: "top",
+			// 所在侧边栏
+			sidebar: "left",
+			// CSS 类名
+			class: "onload-animation",
+			// 动画延迟时间
+			animationDelay: 200,
+		},
+		{
 			// 组件类型：分类组件
 			type: "categories",
 			// 是否启用该组件
 			enable: true,
 			// 组件显示顺序
-			order: 3,
+			order: 5,
 			// 组件位置："sticky" 表示粘性定位，可滚动
-			position: "sticky",
+			position: "top",
 			// 所在侧边栏
 			sidebar: "left",
 			// CSS 类名
@@ -479,8 +433,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			animationDelay: 150,
 			// 响应式配置
 			responsive: {
-				// 折叠阈值：当分类数量超过5个时自动折叠
-				collapseThreshold: 5,
+				// 折叠阈值：当分类数量超过8个时自动折叠
+				collapseThreshold: 8,
 			},
 		},
 		{
@@ -489,7 +443,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否启用该组件
 			enable: true,
 			// 组件显示顺序
-			order: 5,
+			order: 6,
 			// 组件位置："sticky" 表示粘性定位
 			position: "top",
 			// 所在侧边栏
@@ -500,41 +454,9 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			animationDelay: 250,
 			// 响应式配置
 			responsive: {
-				// 折叠阈值：当标签数量超过20个时自动折叠
-				collapseThreshold: 20,
+				// 折叠阈值：当标签数量超过25个时自动折叠
+				collapseThreshold: 25,
 			},
-		},
-		{
-			// 组件类型：站点统计组件
-			type: "site-stats",
-			// 是否启用该组件
-			enable: true,
-			// 组件显示顺序
-			order: 5,
-			// 组件位置
-			position: "top",
-			// 所在侧边栏
-			sidebar: "right",
-			// CSS 类名
-			class: "onload-animation",
-			// 动画延迟时间
-			animationDelay: 200,
-		},
-		{
-			// 组件类型：日历组件(移动端不显示)
-			type: "calendar",
-			// 是否启用该组件
-			enable: true,
-			// 组件显示顺序
-			order: 6,
-			// 组件位置
-			position: "top",
-			// 所在侧边栏
-			sidebar: "right",
-			// CSS 类名
-			class: "onload-animation",
-			// 动画延迟时间
-			animationDelay: 250,
 		},
 	],
 
@@ -565,7 +487,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 移动端：抽屉模式
 			mobile: "sidebar",
 			// 平板端：显示侧边栏
-			tablet: "sidebar",
+			tablet: "drawer",
 			// 桌面端：显示侧边栏
 			desktop: "sidebar",
 		},
@@ -573,16 +495,16 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
-	sakuraNum: 21, // 樱花数量
+	enable: true, // 默认关闭樱花特效
+	sakuraNum: 25, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
-		min: 0.5, // 樱花最小尺寸倍数
-		max: 1.1, // 樱花最大尺寸倍数
+		min: 0.6, // 樱花最小尺寸倍数
+		max: 1.2, // 樱花最大尺寸倍数
 	},
 	opacity: {
-		min: 0.3, // 樱花最小不透明度
-		max: 0.9, // 樱花最大不透明度
+		min: 0.5, // 樱花最小不透明度
+		max: 1.0, // 樱花最大不透明度
 	},
 	speed: {
 		horizontal: {
@@ -602,24 +524,19 @@ export const sakuraConfig: SakuraConfig = {
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
 	enable: true, // 启用看板娘
-	models: ["/pio/models/pio/model.json"], // 默认模型路径
+	models: ["/pio/models/yuki-miku/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
-	width: 280, // 默认宽度
-	height: 250, // 默认高度
-	mode: "draggable", // 默认为可拖拽模式
+	width: 550, // 默认宽度
+	height: 550, // 默认高度
+	mode: "fixed", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
+		welcome: "🌸 欢 迎 来 到 本 站 🌸", // 欢迎词
 		touch: [
-			"What are you doing?",
-			"Stop touching me!",
-			"HENTAI!",
-			"Don't bully me like that!",
+			"你 找 我 ？",
+			"不 要 哪 里 都 戳 ！",
+			"看 文 章 要 专 心 ！",
 		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
 	},
 };
 

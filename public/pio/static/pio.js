@@ -101,18 +101,7 @@ var Paul_Pio = function (prop) {
     const action = {
         // 欢迎
         welcome: () => {
-            if (document.referrer && document.referrer.includes(current.root)) {
-                const referrer = document.createElement("a");
-                referrer.href = document.referrer;
-
-                if (prop.content.referer) {
-                    modules.message(prop.content.referer.replace(/%t/, `“${referrer.hostname}”`));
-                }
-                else {
-                    modules.message(`欢迎来自 “${referrer.hostname}” 的朋友！`);
-                }
-            }
-            else if (prop.tips) {
+            if (prop.tips) {
                 let text, hour = new Date().getHours();
 
                 if (hour > 22 || hour <= 5) {

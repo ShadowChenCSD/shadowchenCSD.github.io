@@ -1,49 +1,45 @@
+# 🪧博客来源
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
+​		本网站是在[松坂有希](https://space.bilibili.com/701864046)基于**Astro框架**构建的[**Mizuki博客**](https://mizuki.mysqil.com)基础上，进行**二次改造**的主题博客。
 
 ::github{repo="matsuzaka-yuki/Mizuki"}
 
-## 🌟 Theme Features
+# 🎨 界面设计
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+- **现代设计**：简约的**界面**，精美的**排版**，流畅的**动画**
+- **全设备响应**：对从**移动端**到**桌面端**的大多数设备进行了排版优化
+- **亮暗模式**：**显示模式**可以随心切换，过渡流畅
+- **主题色**：提供**遍及全色系**的**72种**主题颜色，可以根据喜好自行选择
+- **音乐控件**：支持**在线**、**本地**两种播放模式
+- **看板娘**：支持由[**Paul**](https://paugram.com/)开发的**Pio看板娘**
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+# 🔍 搜索和内容
 
+- **高级搜索**：由**Pagefind**提供**搜索**功能的技术支持
+- **增强的Markdown**：使用Markdown的**扩展语法**，支持**代码高亮显示**和**数学运算**
+- **内容分类**：使用**标签**和**类别**自动组织文章内容
+- **交互式目录**：长文章支持滚动**导航**
+- **阅读时间估算**：预估阅读文章需要多长时间
+- **RSS订阅源**：通过自动**订阅源生成**，持续跟踪内容更新
+- **评论系统**：支持**Twikoo**评论方案
 
+# 📱 特色页面
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+- **文章**：组织有序的、按时间线展示的**文章列表**
+- **日记**：分享**生活时刻**
+- **相册**：记录**美好瞬间**
+- **追番**：追踪**动漫观看进度**，支持**评分**系统
+- **站点**：展示带有精美卡片的**友链**信息
+- **关于**：可定制的**个人介绍**
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+# 🏹 功能增删改
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+➕️ **游戏**：记录**游戏历程**
 
----
+❌ ~~**项目**：记录成长过程中的**项目经验**~~
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+❌ ~~**技能**：记录个人的**能力特长**~~
+
+❌ ~~**时间线**：记录个人的**成长经历**~~
+
+🛠️ **主页**：将**主页banner图片**由**半屏**改为**全屏**

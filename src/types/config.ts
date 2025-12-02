@@ -29,13 +29,13 @@ export type SiteConfig = {
 	// 特色页面开关配置
 	featurePages: {
 		anime: boolean; // 番剧页面开关
+		game: boolean; // 游戏页面开关
 		diary: boolean; // 日记页面开关
 		friends: boolean; // 友链页面开关
 		projects: boolean; // 项目页面开关
 		skills: boolean; // 技能页面开关
 		timeline: boolean; // 时间线页面开关
 		albums: boolean; // 相册页面开关
-		devices: boolean; // 设备页面开关
 	};
 
 	// 文章列表布局配置
@@ -51,20 +51,20 @@ export type SiteConfig = {
 	};
 
 	// 添加字体配置
-	font: {
-		asciiFont: {
-			fontFamily: string;
-			fontWeight: string | number;
-			localFonts: string[];
-			enableCompress: boolean;
-		};
-		cjkFont: {
-			fontFamily: string;
-			fontWeight: string | number;
-			localFonts: string[];
-			enableCompress: boolean;
-		};
-	};
+	// font: {
+	// 	asciiFont: {
+	// 		fontFamily: string;
+	// 		fontWeight: string | number;
+	// 		localFonts: string[];
+	// 		enableCompress: boolean;
+	// 	};
+	// 	cjkFont: {
+	// 		fontFamily: string;
+	// 		fontWeight: string | number;
+	// 		localFonts: string[];
+	// 		enableCompress: boolean;
+	// 	};
+	// };
 
 	// 添加bangumi配置
 	bangumi?: {
@@ -73,6 +73,11 @@ export type SiteConfig = {
 
 	// 添加番剧页面配置
 	anime?: {
+		mode?: "bangumi" | "local"; // 番剧页面模式
+	};
+
+	// 添加游戏页面配置
+	game?: {
 		mode?: "bangumi" | "local"; // 番剧页面模式
 	};
 
@@ -156,6 +161,7 @@ export enum LinkPreset {
 	Projects = 7,
 	Skills = 8,
 	Timeline = 9,
+	Game = 10,
 }
 
 export type NavBarLink = {

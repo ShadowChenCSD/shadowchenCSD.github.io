@@ -57,29 +57,43 @@ export const ja: Translation = {
 	[Key.publishedAt]: "公開日",
 	[Key.license]: "ライセンス",
 	[Key.anime]: "アニメ",
+	[Key.game]: "ゲーム",
 	[Key.diary]: "日記",
 	[Key.gallery]: "ギャラリー",
-
-	// デバイスページ
-	[Key.devices]: "私のデバイス",
-	[Key.devicesSubtitle]: "ここに私の日常で使用するデバイスを表示します",
 
 	// アニメページ
 	[Key.animeTitle]: "私のアニメリスト",
 	[Key.animeSubtitle]: "私の二次元の旅を記録する",
+	[Key.animeTotal]: "総数",
 	[Key.animeStatusWatching]: "視聴中",
 	[Key.animeStatusCompleted]: "完了",
 	[Key.animeStatusPlanned]: "予定",
-	[Key.animeStatusOnHold]: "一時停止",
-	[Key.animeStatusDropped]: "中断",
-	[Key.animeFilterAll]: "すべて",
+	[Key.animeAvgRating]: "平均評価",
+	[Key.animeActor]: "主役",
 	[Key.animeYear]: "年",
 	[Key.animeStudio]: "スタジオ",
+	[Key.animeFilterAll]: "すべて",
 	[Key.animeEmpty]: "アニメデータなし",
 	[Key.animeEmptyBangumi]:
 		"Bangumiの設定またはネットワーク接続を確認してください",
 	[Key.animeEmptyLocal]:
 		"src/data/anime.tsファイルにアニメ情報を追加してください",
+
+	// 游戏页面
+	[Key.gameTitle]: "ゲーム",
+	[Key.gameSubtitle]: "私のゲームの履歴を記録する",
+	[Key.gameTotal]: "総数",
+	[Key.gameRating]: "評価",
+	[Key.gameStatusPlaying]: "ゲーム中",
+	[Key.gameStatusCompleted]: "完了",
+	[Key.gameStatusPlanned]: "予定",
+	[Key.gameAvgRating]: "平均評価",
+	[Key.gameActor]: "主役",
+	[Key.gameYear]: "年",
+	[Key.gameFilterAll]: "すべて",	
+	[Key.gameEmpty]: "ゲームデータなし",
+	[Key.gameEmptyBangumi]: "Bangumiの設定またはネットワーク接続を確認してください",
+	[Key.gameEmptyLocal]: "src/data/game.tsファイルにアニメ情報を追加してください",
 
 	// 日記ページ
 	[Key.diarySubtitle]: "いつでもどこでも、生活を共有する",
@@ -102,6 +116,7 @@ export const ja: Translation = {
 
 	// アルバムページ
 	[Key.albums]: "アルバム",
+	[Key.albumsCount]: "組のアルバム",
 	[Key.albumsSubtitle]: "生活の美しい瞬間を記録する",
 	[Key.albumsEmpty]: "コンテンツなし",
 	[Key.albumsEmptyDesc]:

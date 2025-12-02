@@ -57,28 +57,46 @@ export const en: Translation = {
 	[Key.publishedAt]: "Published at",
 	[Key.license]: "License",
 	[Key.anime]: "Anime",
+	[Key.game]: "Game",
 	[Key.diary]: "Diary",
 	[Key.gallery]: "Gallery",
 
 	// Anime Page
 	[Key.animeTitle]: "My Anime List",
 	[Key.animeSubtitle]: "Record my anime journey",
+	[Key.animeTotal]: "Total",
 	[Key.animeStatusWatching]: "Watching",
 	[Key.animeStatusCompleted]: "Completed",
 	[Key.animeStatusPlanned]: "Planned",
-	[Key.animeStatusOnHold]: "On Hold",
-	[Key.animeStatusDropped]: "Dropped",
-	[Key.animeFilterAll]: "All",
+	[Key.animeAvgRating]: "AvgRating",
+	[Key.animeActor]: "Actor",
 	[Key.animeYear]: "Year",
 	[Key.animeStudio]: "Studio",
+	[Key.animeFilterAll]: "All",
 	[Key.animeEmpty]: "No anime data",
 	[Key.animeEmptyBangumi]:
 		"Please check Bangumi configuration or network connection",
 	[Key.animeEmptyLocal]:
 		"Please add anime information in src/data/anime.ts file",
 
+	// Game Page
+	[Key.gameTitle]: "My Game List",
+	[Key.gameSubtitle]: "Record my game journey",
+	[Key.gameTotal]: "Total",
+	[Key.gameRating]: "Rating",
+	[Key.gameStatusPlaying]: "Playing",
+	[Key.gameStatusCompleted]: "Completed",
+	[Key.gameStatusPlanned]: "Planned",
+	[Key.gameAvgRating]: "AvgRating",
+	[Key.gameActor]: "Actor",
+	[Key.gameYear]: "Year",
+	[Key.gameFilterAll]: "FilterAll",	
+	[Key.gameEmpty]: "EmptyData",
+	[Key.gameEmptyBangumi]: "Please check Bangumi configs or network connection.",
+	[Key.gameEmptyLocal]: "Please add infos in src/data/game.ts.",
+
 	// Diary Page
-	[Key.diarySubtitle]: "Share life anytime, anywhere",
+	[Key.diarySubtitle]: "Share life",
 	[Key.diaryCount]: "diary entries",
 	[Key.diaryReply]: "Reply",
 	[Key.diaryTips]: "Only show the latest 30 diary entries",
@@ -98,15 +116,12 @@ export const en: Translation = {
 
 	// Albums Page
 	[Key.albums]: "Albums",
+	[Key.albumsCount]: "Groups",
 	[Key.albumsSubtitle]: "Record beautiful moments in life",
 	[Key.albumsEmpty]: "No content",
 	[Key.albumsEmptyDesc]:
 		"No albums have been created yet. Go add some beautiful memories!",
 	[Key.albumsBackToList]: "Back to Albums",
-
-	// Devices Page
-	[Key.devices]: "My Devices",
-	[Key.devicesSubtitle]: "Here are the devices I use in my daily life",
 	[Key.albumsPhotoCount]: "photo",
 	[Key.albumsPhotosCount]: "photos",
 
@@ -137,55 +152,6 @@ export const en: Translation = {
 	[Key.projectsVisit]: "Visit Project",
 	[Key.projectsGitHub]: "GitHub",
 
-	// RSS Page
-	[Key.rss]: "RSS Feed",
-	[Key.rssDescription]: "Subscribe to get latest updates",
-	[Key.rssSubtitle]:
-		"Subscribe via RSS to get the latest articles and updates imediately",
-	[Key.rssLink]: "RSS Link",
-	[Key.rssCopyToReader]: "Copy link to your RSS reader",
-	[Key.rssCopyLink]: "Copy",
-	[Key.rssLatestPosts]: "Latest Posts",
-	[Key.rssWhatIsRSS]: "What is RSS?",
-	[Key.rssWhatIsRSSDescription]:
-		"RSS (Really Simple Syndication) is a standard format for publishing frequently updated content. With RSS, you can:",
-	[Key.rssBenefit1]:
-		"Get the latest website content in time without manually visiting",
-	[Key.rssBenefit2]: "Manage subscriptions to multiple websites in one place",
-	[Key.rssBenefit3]: "Avoid missing important updates and articles",
-	[Key.rssBenefit4]: "Enjoy an ad-free, clean reading experience",
-	[Key.rssHowToUse]:
-		"It is recommended to use Feedly, Inoreader or other RSS readers to subscribe to this site.",
-	[Key.rssCopied]: "RSS link copied to clipboard!",
-	[Key.rssCopyFailed]: "Copy failed, please copy the link manually",
-
-	// Atom Page
-	[Key.atom]: "Atom Feed",
-	[Key.atomDescription]: "Subscribe to get latest updates",
-	[Key.atomSubtitle]:
-		"Subscribe via Atom to get the latest articles and updates immediately",
-	[Key.atomLink]: "Atom Link",
-	[Key.atomCopyToReader]: "Copy link to your Atom reader",
-	[Key.atomCopyLink]: "Copy",
-	[Key.atomLatestPosts]: "Latest Posts",
-	[Key.atomWhatIsAtom]: "What is Atom?",
-	[Key.atomWhatIsAtomDescription]:
-		"Atom (Atom Syndication Format) is an XML-based standard for describing feeds and their items. With Atom, you can:",
-	[Key.atomBenefit1]:
-		"Get the latest website content in time without manually visiting",
-	[Key.atomBenefit2]: "Manage subscriptions to multiple websites in one place",
-	[Key.atomBenefit3]: "Avoid missing important updates and articles",
-	[Key.atomBenefit4]: "Enjoy an ad-free, clean reading experience",
-	[Key.atomHowToUse]:
-		"It is recommended to use Feedly, Inoreader or other Atom readers to subscribe to this site.",
-	[Key.atomCopied]: "Atom link copied to clipboard!",
-	[Key.atomCopyFailed]: "Copy failed, please copy the link manually",
-
-	// Wallpaper mode
-	[Key.wallpaperBanner]: "Banner Mode",
-	[Key.wallpaperFullscreen]: "Fullscreen Mode",
-	[Key.wallpaperNone]: "Hide Wallpaper",
-
 	// Skills Page
 	[Key.skills]: "Skills",
 	[Key.skillsSubtitle]: "My technical skills and expertise",
@@ -212,6 +178,8 @@ export const en: Translation = {
 	[Key.skillsDistribution]: "Skill Distribution",
 	[Key.skillsByLevel]: "By Level",
 	[Key.skillsByCategory]: "By Category",
+
+        // Others
 	[Key.noData]: "No data",
 
 	// Timeline Page
@@ -265,6 +233,55 @@ export const en: Translation = {
 	[Key.hour]: "h",
 	[Key.minute]: "min",
 	[Key.second]: "s",
+
+	// RSS Page
+	[Key.rss]: "RSS Feed",
+	[Key.rssDescription]: "Subscribe to get latest updates",
+	[Key.rssSubtitle]:
+		"Subscribe via RSS to get the latest articles and updates imediately",
+	[Key.rssLink]: "RSS Link",
+	[Key.rssCopyToReader]: "Copy link to your RSS reader",
+	[Key.rssCopyLink]: "Copy",
+	[Key.rssLatestPosts]: "Latest Posts",
+	[Key.rssWhatIsRSS]: "What is RSS?",
+	[Key.rssWhatIsRSSDescription]:
+		"RSS (Really Simple Syndication) is a standard format for publishing frequently updated content. With RSS, you can:",
+	[Key.rssBenefit1]:
+		"Get the latest website content in time without manually visiting",
+	[Key.rssBenefit2]: "Manage subscriptions to multiple websites in one place",
+	[Key.rssBenefit3]: "Avoid missing important updates and articles",
+	[Key.rssBenefit4]: "Enjoy an ad-free, clean reading experience",
+	[Key.rssHowToUse]:
+		"It is recommended to use Feedly, Inoreader or other RSS readers to subscribe to this site.",
+	[Key.rssCopied]: "RSS link copied to clipboard!",
+	[Key.rssCopyFailed]: "Copy failed, please copy the link manually",
+
+	// Atom Page
+	[Key.atom]: "Atom Feed",
+	[Key.atomDescription]: "Subscribe to get latest updates",
+	[Key.atomSubtitle]:
+		"Subscribe via Atom to get the latest articles and updates immediately",
+	[Key.atomLink]: "Atom Link",
+	[Key.atomCopyToReader]: "Copy link to your Atom reader",
+	[Key.atomCopyLink]: "Copy",
+	[Key.atomLatestPosts]: "Latest Posts",
+	[Key.atomWhatIsAtom]: "What is Atom?",
+	[Key.atomWhatIsAtomDescription]:
+		"Atom (Atom Syndication Format) is an XML-based standard for describing feeds and their items. With Atom, you can:",
+	[Key.atomBenefit1]:
+		"Get the latest website content in time without manually visiting",
+	[Key.atomBenefit2]: "Manage subscriptions to multiple websites in one place",
+	[Key.atomBenefit3]: "Avoid missing important updates and articles",
+	[Key.atomBenefit4]: "Enjoy an ad-free, clean reading experience",
+	[Key.atomHowToUse]:
+		"It is recommended to use Feedly, Inoreader or other Atom readers to subscribe to this site.",
+	[Key.atomCopied]: "Atom link copied to clipboard!",
+	[Key.atomCopyFailed]: "Copy failed, please copy the link manually",
+
+	// Wallpaper mode
+	[Key.wallpaperBanner]: "Banner Mode",
+	[Key.wallpaperFullscreen]: "Fullscreen Mode",
+	[Key.wallpaperNone]: "Hide Wallpaper",
 
 	// Site Stats
 	[Key.siteStats]: "Site Statistics",

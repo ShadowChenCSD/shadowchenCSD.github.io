@@ -116,7 +116,7 @@ const mobileNonHomeBannerClass = !isHomePage ? "mobile-hide-banner" : "";
 // 让主内容区域紧贴波浪线下方，波浪线高度约为10-15vh，所以主内容从banner顶部开始
 const mainPanelTop =
 	siteConfig.wallpaperMode.defaultMode === "banner"
-		? `${BANNER_HEIGHT}vh`
+	    ? `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)`
 		: "5.5rem";
 const mobileNonHomeMainTop = !isHomePage ? "5.5rem" : mainPanelTop;
 
@@ -208,10 +208,10 @@ const transparentClass = shouldEnableTransparency
 		const body = document.body;
 		
 		// 定义 banner 高度常量（与 constants.ts 保持一致）
-		const BANNER_HEIGHT = 35;
-		const BANNER_HEIGHT_EXTEND = 30;
+		const BANNER_HEIGHT = 25;
+		const BANNER_HEIGHT_EXTEND = 80;
 		const BANNER_HEIGHT_HOME = BANNER_HEIGHT + BANNER_HEIGHT_EXTEND;
-		const MAIN_PANEL_OVERLAPS_BANNER_HEIGHT = 3.5;
+		const MAIN_PANEL_OVERLAPS_BANNER_HEIGHT = 2.5;
 		
 		// 立即应用 body 类，确保首次渲染就是正确的状态
 		switch(wallpaperMode) {
@@ -236,7 +236,7 @@ const transparentClass = shouldEnableTransparency
 			if (mainContent) {
 				if (wallpaperMode === 'banner') {
 					// 让主内容区域从banner顶部开始，这样波浪线会自然覆盖内容上部
-					mainContent.style.top = `${BANNER_HEIGHT}vh`;
+					mainContent.style.top = `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)`;
 				} else {
 					// fullscreen 或 none 模式
 					mainContent.style.top = '5.5rem';
@@ -604,12 +604,14 @@ const transparentClass = shouldEnableTransparency
             <div class="w-4/5 lg:w-3/4 text-center mb-0">
                 <div class="flex flex-col">
                     {siteConfig.banner.homeText?.title && (
-                        <h1 class="banner-title text-6xl lg:text-8xl text-white drop-shadow-lg mb-2 lg:mb-4">
+                        <h1 class="banner-title text-6xl lg:text-8xl text-white drop-shadow-lg mb-2 lg:mb-4"
+                            style={`font-family: 方正苏新诗柳楷简体; font-weight: 800;`}>
                             {siteConfig.banner.homeText.title}
                         </h1>
                     )}
                     {siteConfig.banner.homeText?.subtitle && (
-                        <h2 class="banner-subtitle text-xl lg:text-3xl text-white/90 drop-shadow-md">
+                        <h2 class="banner-subtitle text-xl lg:text-3xl text-white/90 drop-shadow-md"
+                            style={`font-family: 方正苏新诗柳楷简体; font-weight: 800;`}>
                             <span class="inline-block min-h-[1.2em]">
                                 {siteConfig.banner.homeText.typewriter?.enable ? (
                                     <TypewriterText 
@@ -788,9 +790,10 @@ body.no-banner-mode .absolute.w-full.z-30 {
 /* 桌面端 banner 模式下的主内容区域位置 */
 @media (min-width: 1280px) {
     body.enable-banner .absolute.w-full.z-30 {
-        top: 35vh !important;
+        top: 18rem !important;
     }
 }
+
 
 /* 移动端无侧边栏布局优化 */
 @media (max-width: 768px) {

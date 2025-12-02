@@ -1,0 +1,31 @@
+{
+  "mode": "external",
+  "hidden": true,
+  "title": "测试相册：外链+隐藏",
+  "description": "测试相册的外链功能和隐藏功能",
+  "date": "2025-09-26",
+  "tags": ["外链", "隐藏", "测试"],
+  "layout": "grid",
+  "columns": 1,
+  "cover": "http://ycy360.com/upfile/2020/04/20200412001619_620.jpg",
+  "photos": [
+    {
+      "id": "马尔代夫",
+      "src": "https://www.evoote.com/wp-content/uploads/2023/06/20230610090245-64843c353b53f.jpg",
+      "alt": "海洋",
+      "title": "马尔代夫的海岛",
+      "description": "马尔代夫拥有着美到极致的海景风光，是旅游的热门地以及度蜜月的最佳之地。",
+      "tags": ["海洋", "群岛", "马尔代夫"],
+	  "location": "马尔代夫"
+    },
+	{
+      "id": "威尼斯",
+      "src": "https://www.evoote.com/wp-content/uploads/2023/06/20230610090246-64843c360cdaf.jpg",
+      "alt": "水城",
+      "title": "威尼斯水城",
+      "description": "威尼斯水上城市是文艺复兴的精华，世界上唯一没有汽车的城市，上帝将眼泪流在了这里，却让它更加晶莹和柔情，就好像一个漂浮在碧波上浪漫的梦。",
+      "tags": ["城市", "水域", "威尼斯"],
+	  "location": "威尼斯"
+    }
+  ]
+}
