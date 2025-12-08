@@ -59,7 +59,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "青春ブタ野郎はランドセルガールの夢を見ない / 红书包女孩",
-		status: "watching",
+		status: "planned",
 		rating: 6.9,
 		cover: "/images/anime/青春猪头少年不会梦到红书包女孩.jpg",
 		description: "",
@@ -194,7 +194,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["冒险", "家庭", "亲情", "成长", "音乐", "催泪", "治愈"],
 		studio: "Walt Disney",
 		link: "https://www.bilibili.com/bangumi/play/ss46063",
-		progress: 1,
+		progress: 0,
 		totalEpisodes: 1,
 	},
 	{
@@ -488,7 +488,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["卡牌", "竞技", "热血", "奇幻", "战斗"],
 		studio: "ぎゃろっぷ",
 		link: "https://www.iqiyi.com/v_k41idhhgss.html",
-		progress: 8,
+		progress: 13,
 		totalEpisodes: 180,
 	},
 	{
@@ -502,7 +502,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["冒险", "热血", "科幻", "成长"],
 		studio: "東映アニメーション",
 		link: "https://www.iqiyi.com/v_19rrobthks.html",
-		progress: 50,
+		progress: 0,
 		totalEpisodes: 50,
 	},
 	{
@@ -586,7 +586,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["校园", "恋爱", "奇幻", "战斗", "魔法"],
 		studio: "CLAMP",
 		link: "https://www.bilibili.com/bangumi/play/ss3756",
-		progress: 70,
+		progress: 0,
 		totalEpisodes: 70,
 	},
 	{
@@ -601,7 +601,7 @@ const localAnimeList: AnimeItem[] = [
 		studio: "TMS",
 		link: "https://www.bilibili.com/bangumi/play/ep321808",
 		progress: 0,
-		totalEpisodes: 1237,
+		totalEpisodes: 1242,
 	},
 	{
 		title: "魔動王グランゾート / 魔动王",
@@ -614,7 +614,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["冒险", "动作", "机甲", "战斗", "热血"],
 		studio: "SUNRISE",
 		link: "https://www.bilibili.com/bangumi/play/ss2397",
-		progress: 41,
+		progress: 0,
 		totalEpisodes: 41,
 	},
 	{
@@ -642,7 +642,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["冒险", "动作", "战斗", "热血", "奇幻", "搞笑", "成长"],
 		studio: "東映アニメーション",
 		link: "https://www.agedm.io/detail/20000070",
-		progress: 153,
+		progress: 0,
 		totalEpisodes: 153,
 	},	
 	{
