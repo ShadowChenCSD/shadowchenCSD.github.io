@@ -5,7 +5,7 @@ import Pio from "@components/features/pio/Pio.svelte"; // 使用 Svelte 版本�
 import { PageProgressBar } from "@components/control/PageProgressBar";
 import { pioConfig, profileConfig, siteConfig } from "@/config";
 
-const BANNER_HEIGHT = 35;
+const BANNER_HEIGHT = 75;
 const BANNER_HEIGHT_EXTEND = 30;
 const BANNER_HEIGHT_HOME = BANNER_HEIGHT + BANNER_HEIGHT_EXTEND;
 
@@ -257,7 +257,7 @@ if (siteConfig.font) {
 				transform: translateY(var(--banner-height-extend));
 			}
 			.enable-banner #banner-wrapper {
-				height: var(--banner-height-home);
+				height: var(--banner-height);
 			}
 
 			.enable-banner.lg\:is-home #banner {
@@ -265,11 +265,14 @@ if (siteConfig.font) {
 				transform: translateY(0);
 			}
 			.enable-banner #banner {
-				height: var(--banner-height-home);
+				height: var(--banner-height);
 				transform: translateY(var(--bannerOffset));
 			}
 			.enable-banner.lg\:is-home #main-grid {
-				transform: translateY(var(--banner-height-extend));
+				transform: translateY(calc(var(--banner-height) - 11.5rem));
+			}
+			.enable-banner #main-grid {
+				@apply translate-y-[5rem];
 			}
 			.enable-banner #top-row {
 				height: calc(var(--banner-height-home) - 4.5rem);
