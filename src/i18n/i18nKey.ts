@@ -127,38 +127,6 @@ enum I18nKey {
 	albumsFilterAll = "albumsFilterAll",
 	albumsNoResults = "albumsNoResults",
 
-	// 设备页面
-	devices = "devices",
-	devicesSubtitle = "devicesSubtitle",
-	devicesViewDetails = "devicesViewDetails",
-
-	// 项目展示页面
-	projects = "projects",
-	projectsSubtitle = "projectsSubtitle",
-	projectsAll = "projectsAll",
-	projectsWeb = "projectsWeb",
-	projectsMobile = "projectsMobile",
-	projectsDesktop = "projectsDesktop",
-	projectsOther = "projectsOther",
-	projectTechStack = "projectTechStack",
-	projectLiveDemo = "projectLiveDemo",
-	projectSourceCode = "projectSourceCode",
-	projectDescription = "projectDescription",
-	projectStatus = "projectStatus",
-	projectStatusCompleted = "projectStatusCompleted",
-	projectStatusInProgress = "projectStatusInProgress",
-	projectStatusPlanned = "projectStatusPlanned",
-	projectsTotal = "projectsTotal",
-	projectsCompleted = "projectsCompleted",
-	projectsInProgress = "projectsInProgress",
-	projectsTechStack = "projectsTechStack",
-	projectsFeatured = "projectsFeatured",
-	projectsPlanned = "projectsPlanned",
-	projectsDemo = "projectsDemo",
-	projectsSource = "projectsSource",
-	projectsVisit = "projectsVisit",
-	projectsGitHub = "projectsGitHub",
-
 	// Skills page
 	skills = "skills",
 	skillsSubtitle = "skillsSubtitle",

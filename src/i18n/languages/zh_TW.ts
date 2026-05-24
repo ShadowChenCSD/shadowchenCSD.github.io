@@ -60,11 +60,6 @@ export const zh_TW: Translation = {
 	[Key.anime]: "追番",
 	[Key.diary]: "日記",
 
-	// 設備頁面
-	[Key.devices]: "我的設備",
-	[Key.devicesSubtitle]: "這裡展示了我日常使用的各類設備",
-	[Key.devicesViewDetails]: "查看詳情",
-
 	// 番劇頁面
 	[Key.animeTitle]: "我的追番記錄",
 	[Key.animeSubtitle]: "記錄我的二次元之旅",
@@ -136,33 +131,6 @@ export const zh_TW: Translation = {
 	[Key.albumsFilterAll]: "全部",
 	[Key.albumsNoResults]: "沒有匹配的相冊",
 
-	// 專案展示頁面
-	[Key.projects]: "專案展示",
-	[Key.projectsSubtitle]: "我的開發專案作品集",
-	[Key.projectsAll]: "全部",
-	[Key.projectsWeb]: "網頁應用",
-	[Key.projectsMobile]: "移動應用",
-	[Key.projectsDesktop]: "桌面應用",
-	[Key.projectsOther]: "其他",
-	[Key.projectTechStack]: "技術堆疊",
-	[Key.projectLiveDemo]: "線上展示",
-	[Key.projectSourceCode]: "原始碼",
-	[Key.projectDescription]: "專案描述",
-	[Key.projectStatus]: "專案狀態",
-	[Key.projectStatusCompleted]: "已完成",
-	[Key.projectStatusInProgress]: "進行中",
-	[Key.projectStatusPlanned]: "計劃中",
-	[Key.projectsTotal]: "專案總數",
-	[Key.projectsCompleted]: "已完成",
-	[Key.projectsInProgress]: "進行中",
-	[Key.projectsTechStack]: "技術堆疊統計",
-	[Key.projectsFeatured]: "精選專案",
-	[Key.projectsPlanned]: "計劃中",
-	[Key.projectsDemo]: "線上展示",
-	[Key.projectsSource]: "原始碼",
-	[Key.projectsVisit]: "前往專案",
-	[Key.projectsGitHub]: "GitHub",
-
 	// RSS 頁面
 	[Key.rss]: "RSS 訂閱",
 	[Key.rssDescription]: "訂閱獲取最新更新",
@@ -231,7 +199,7 @@ export const zh_TW: Translation = {
 	[Key.skillsByCategory]: "按分類分布",
 
 	// 時間線頁面
-	[Key.timeline]: "時間線",
+	[Key.timeline]: "流年",
 	[Key.timelineSubtitle]: "成長歷程和重要里程碑",
 	[Key.timelineEducation]: "教育經歷",
 	[Key.timelineWork]: "工作經歷",

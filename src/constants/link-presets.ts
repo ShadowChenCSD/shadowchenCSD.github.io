@@ -39,11 +39,6 @@ export const LinkPresets: Record<LinkPreset, NavBarLink> = {
 		url: "/albums/",
 		icon: "material-symbols:photo-library",
 	},
-	[LinkPreset.Projects]: {
-		name: i18n(I18nKey.projects),
-		url: "/projects/",
-		icon: "material-symbols:work",
-	},
 	[LinkPreset.Skills]: {
 		name: i18n(I18nKey.skills),
 		url: "/skills/",

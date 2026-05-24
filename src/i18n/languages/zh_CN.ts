@@ -131,38 +131,6 @@ export const zh_CN: Translation = {
 	[Key.albumsFilterAll]: "全部",
 	[Key.albumsNoResults]: "没有匹配的相册",
 
-	// 设备页面
-	[Key.devices]: "我的设备",
-	[Key.devicesSubtitle]: "这里展示了我日常使用的各类设备",
-	[Key.devicesViewDetails]: "查看详情",
-
-	// 项目展示页面
-	[Key.projects]: "项目展示",
-	[Key.projectsSubtitle]: "我的开发项目作品集",
-	[Key.projectsAll]: "全部",
-	[Key.projectsWeb]: "网页应用",
-	[Key.projectsMobile]: "移动应用",
-	[Key.projectsDesktop]: "桌面应用",
-	[Key.projectsOther]: "其他",
-	[Key.projectTechStack]: "技术栈",
-	[Key.projectLiveDemo]: "在线演示",
-	[Key.projectSourceCode]: "源代码",
-	[Key.projectDescription]: "项目描述",
-	[Key.projectStatus]: "项目状态",
-	[Key.projectStatusCompleted]: "已完成",
-	[Key.projectStatusInProgress]: "进行中",
-	[Key.projectStatusPlanned]: "计划中",
-	[Key.projectsTotal]: "项目总数",
-	[Key.projectsCompleted]: "已完成",
-	[Key.projectsInProgress]: "进行中",
-	[Key.projectsTechStack]: "技术栈统计",
-	[Key.projectsFeatured]: "精选项目",
-	[Key.projectsPlanned]: "计划中",
-	[Key.projectsDemo]: "在线演示",
-	[Key.projectsSource]: "源代码",
-	[Key.projectsVisit]: "前往",
-	[Key.projectsGitHub]: "GitHub",
-
 	// 技能展示页面
 	[Key.skills]: "技能展示",
 	[Key.skillsSubtitle]: "我的技术技能和专业知识",
@@ -192,7 +160,7 @@ export const zh_CN: Translation = {
 	[Key.noData]: "暂无数据",
 
 	// 时间线页面
-	[Key.timeline]: "时间线",
+	[Key.timeline]: "流年",
 	[Key.timelineSubtitle]: "成长历程和重要里程碑",
 	[Key.timelineEducation]: "教育经历",
 	[Key.timelineWork]: "工作经历",
