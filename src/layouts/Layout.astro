@@ -298,14 +298,17 @@ if (siteConfig.font) {
 	}
 	@layer utilities {
 		@media (min-width: 1280px) {
-			.enable-banner.lg\:is-home #sidebar-sticky {
-				top: calc(1rem - var(--banner-height-extend)) !important;
+			.enable-banner:not(.lg\:is-home) #sidebar-sticky,
+			.enable-banner:not(.lg\:is-home) #left-sidebar-sticky,
+			.enable-banner:not(.lg\:is-home) #right-sidebar-sticky {
+				top: calc(20rem - var(--banner-height-extend)) !important;
 			}
-			.enable-banner.lg\:is-home #left-sidebar-sticky {
-				top: calc(1rem - var(--banner-height-extend)) !important;
-			}
+
+			.enable-banner.lg\:is-home #sidebar-sticky,
+			.enable-banner.lg\:is-home #left-sidebar-sticky,
 			.enable-banner.lg\:is-home #right-sidebar-sticky {
-				top: calc(1rem - var(--banner-height-extend)) !important;
+				position: relative !important;
+				top: auto !important;
 			}
 		}
 		.navbar-hidden {

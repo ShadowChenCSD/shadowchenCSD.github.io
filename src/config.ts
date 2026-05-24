@@ -463,7 +463,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		{
 			// 组件类型：侧栏音乐组件
 			type: "music-sidebar",
-			position: "top",
+			position: "sticky",
 			class: "onload-animation",
 			animationDelay: 100,
 		},
@@ -494,7 +494,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		{
 			// 组件类型：卡片式目录组件
 			type: "card-toc",
-			position: "top",
+			position: "sticky",
 			class: "onload-animation",
 			animationDelay: 200,
 		},
@@ -508,7 +508,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		{
 			// 组件类型：日历组件(移动端不显示)
 			type: "calendar",
-			position: "top",
+			position: "sticky",
 			class: "onload-animation",
 			animationDelay: 250,
 		},
@@ -516,7 +516,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 
 	// 侧栏组件布局配置
 	components: {
-		left: ["profile", "announcement", "categories", "tags"],
+		left: ["profile", "announcement", "categories", "tags", "card-toc"],
 		right: ["site-stats", "calendar","music-sidebar"],
 		drawer: ["profile", "categories", "tags", "site-stats"],
 	},
@@ -574,26 +574,17 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 禁用看板娘以提升性能
-	models: ["/pio/models/pio/model.json"], // 默认模型路径
+	enable: true, // 禁用看板娘以提升性能
+	models: ["/pio/models/yuki-miku/model.json"], // 默认模型路径
 	position: "left", // 模型位置
 	width: 500, // 默认宽度
 	height: 500, // 默认高度
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
-		touch: [
-			"What are you doing?",
-			"Stop touching me!",
-			"HENTAI!",
-			"Don't bully me like that!",
-		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
-	},
+			welcome: "🌸 欢 迎 来 到 本 站 🌸", // 欢迎词
+			touch: ["你 找 我 ？", "不 要 哪 里 都 戳 ！", "看 文 章 要 专 心 ！"], // 触摸提示
+		},
 };
 
 // 相关文章配置
