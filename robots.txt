@@ -3,4 +3,4 @@ Disallow: /
 Allow: /$
 Allow: /posts/
 
-Sitemap: https://shadowchencsd.github.io/sitemap-index.xml
+Sitemap: https://www.shadowchencsd.blog/sitemap-index.xml
