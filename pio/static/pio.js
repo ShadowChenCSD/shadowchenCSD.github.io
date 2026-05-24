@@ -48,7 +48,6 @@ var Paul_Pio = function (prop) {
 		info: tools.create("span", { class: "pio-info" }),
 		night: tools.create("span", { class: "pio-night" }),
 		close: tools.create("span", { class: "pio-close" }),
-
 		dialog: tools.create("div", { class: "pio-dialog" }),
 		show: tools.create("div", { class: "pio-show" }),
 	};
@@ -108,7 +107,7 @@ var Paul_Pio = function (prop) {
 						prop.content.referer.replace(/%t/, `“${referrer.hostname}”`),
 					);
 				} else {
-					modules.message(`欢迎来自 “${referrer.hostname}” 的朋友！`);
+					modules.message(`🌸 欢 迎 来 到 本 站 🌸`);
 				}
 			} else if (prop.tips) {
 				let text,
@@ -152,77 +151,77 @@ var Paul_Pio = function (prop) {
 				);
 			};
 		},
-		// 右侧按钮
-		buttons: () => {
-			// 返回首页 - 使用 Swup 无刷新跳转
-			elements.home.onclick = () => {
-				// 检查 Swup 是否可用
-				if (typeof window !== "undefined" && window.swup) {
-					try {
-						// 使用 Swup 进行无刷新跳转
-						window.swup.navigate("/");
-					} catch (error) {
-						console.error("Swup navigation failed:", error);
-						// 降级到普通跳转
-						location.href = current.root;
-					}
-				} else {
-					// Swup 不可用时使用普通跳转
-					location.href = current.root;
-				}
-			};
-			elements.home.onmouseover = () => {
-				modules.message(prop.content.home || "点击这里回到首页！");
-			};
-			current.menu.appendChild(elements.home);
+		// // 右侧按钮
+		// buttons: () => {
+		// 	// 返回首页 - 使用 Swup 无刷新跳转
+		// 	elements.home.onclick = () => {
+		// 		// 检查 Swup 是否可用
+		// 		if (typeof window !== "undefined" && window.swup) {
+		// 			try {
+		// 				// 使用 Swup 进行无刷新跳转
+		// 				window.swup.navigate("/");
+		// 			} catch (error) {
+		// 				console.error("Swup navigation failed:", error);
+		// 				// 降级到普通跳转
+		// 				location.href = current.root;
+		// 			}
+		// 		} else {
+		// 			// Swup 不可用时使用普通跳转
+		// 			location.href = current.root;
+		// 		}
+		// 	};
+		// 	elements.home.onmouseover = () => {
+		// 		modules.message(prop.content.home || "点击这里回到首页！");
+		// 	};
+		// 	current.menu.appendChild(elements.home);
 
-			// 更换模型
-			if (prop.model && prop.model.length > 1) {
-				elements.skin.onclick = () => {
-					loadlive2d("pio", prop.model[modules.idol()]);
+		// 	// 更换模型
+		// 	if (prop.model && prop.model.length > 1) {
+		// 		elements.skin.onclick = () => {
+		// 			loadlive2d("pio", prop.model[modules.idol()]);
 
-					prop.content.skin &&
-						modules.message(prop.content.skin[1] || "新衣服真漂亮~");
-				};
-				elements.skin.onmouseover = () => {
-					prop.content.skin &&
-						modules.message(prop.content.skin[0] || "想看看我的新衣服吗？");
-				};
-				current.menu.appendChild(elements.skin);
-			}
+		// 			prop.content.skin &&
+		// 				modules.message(prop.content.skin[1] || "新衣服真漂亮~");
+		// 		};
+		// 		elements.skin.onmouseover = () => {
+		// 			prop.content.skin &&
+		// 				modules.message(prop.content.skin[0] || "想看看我的新衣服吗？");
+		// 		};
+		// 		current.menu.appendChild(elements.skin);
+		// 	}
 
-			// 关于我
-			elements.info.onclick = () => {
-				window.open(
-					prop.content.link ||
-						"https://paugram.com/coding/add-poster-girl-with-plugin.html",
-				);
-			};
-			elements.info.onmouseover = () => {
-				modules.message("想了解更多关于我的信息吗？");
-			};
-			current.menu.appendChild(elements.info);
+		// 	// 关于我
+		// 	elements.info.onclick = () => {
+		// 		window.open(
+		// 			prop.content.link ||
+		// 				"https://paugram.com/coding/add-poster-girl-with-plugin.html",
+		// 		);
+		// 	};
+		// 	elements.info.onmouseover = () => {
+		// 		modules.message("想了解更多关于我的信息吗？");
+		// 	};
+		// 	current.menu.appendChild(elements.info);
 
-			// 夜间模式
-			if (prop.night) {
-				elements.night.onclick = () => {
-					typeof prop.night === "function" ? prop.night() : eval(prop.night);
-				};
-				elements.night.onmouseover = () => {
-					modules.message("夜间点击这里可以保护眼睛呢");
-				};
-				current.menu.appendChild(elements.night);
-			}
+		// 	// 夜间模式
+		// 	if (prop.night) {
+		// 		elements.night.onclick = () => {
+		// 			typeof prop.night === "function" ? prop.night() : eval(prop.night);
+		// 		};
+		// 		elements.night.onmouseover = () => {
+		// 			modules.message("夜间点击这里可以保护眼睛呢");
+		// 		};
+		// 		current.menu.appendChild(elements.night);
+		// 	}
 
-			// 关闭看板娘
-			elements.close.onclick = () => {
-				modules.destroy();
-			};
-			elements.close.onmouseover = () => {
-				modules.message(prop.content.close || "QWQ 下次再见吧~");
-			};
-			current.menu.appendChild(elements.close);
-		},
+		// 	// 关闭看板娘
+		// 	elements.close.onclick = () => {
+		// 		modules.destroy();
+		// 	};
+		// 	elements.close.onmouseover = () => {
+		// 		modules.message(prop.content.close || "QWQ 下次再见吧~");
+		// 	};
+		// 	current.menu.appendChild(elements.close);
+		// },
 		// 自定义选择器
 		custom: () => {
 			prop.content.custom.forEach((item) => {
@@ -260,11 +259,11 @@ var Paul_Pio = function (prop) {
 		},
 		fixed: () => {
 			action.touch();
-			action.buttons();
+			// action.buttons();
 		},
 		draggable: () => {
 			action.touch();
-			action.buttons();
+			// action.buttons();
 
 			const body = current.body;
 
