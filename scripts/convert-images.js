@@ -12,7 +12,7 @@ const publicDir = path.join(rootDir, "public");
 const targets = [
 	"assets/home/*.png",
 	"assets/home/*.jpg",
-	"sakura.png",
+	"sakura.webp",
 	"images/albums/**/*.jpg",
 	"images/albums/**/*.jpeg",
 	"images/diary/*.jpg",

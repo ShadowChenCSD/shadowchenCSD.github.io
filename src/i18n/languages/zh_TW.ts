@@ -232,7 +232,7 @@ export const zh_TW: Translation = {
 
 	// 時間線頁面
 	[Key.timeline]: "時間線",
-	[Key.timelineSubtitle]: "我的成長歷程和重要里程碑",
+	[Key.timelineSubtitle]: "成長歷程和重要里程碑",
 	[Key.timelineEducation]: "教育經歷",
 	[Key.timelineWork]: "工作經歷",
 	[Key.timelineProject]: "專案經歷",

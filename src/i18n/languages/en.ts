@@ -248,7 +248,7 @@ export const en: Translation = {
 
 	// Timeline Page
 	[Key.timeline]: "Timeline",
-	[Key.timelineSubtitle]: "My growth journey and important milestones",
+	[Key.timelineSubtitle]: "Growth journey and important milestones",
 	[Key.timelineEducation]: "Education",
 	[Key.timelineWork]: "Work Experience",
 	[Key.timelineProject]: "Project Experience",
