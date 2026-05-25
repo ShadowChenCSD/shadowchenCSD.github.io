@@ -24,7 +24,7 @@ const diaryData: DiaryItem[] = [
 
 // 获取日记列表（按时间倒序）
 export const getDiaryList = (limit?: number) => {
-	const sortedData = [...diaryData].sort(
+	const sortedData = diaryData.sort(
 		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
 	);
 
