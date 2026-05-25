@@ -4,6 +4,7 @@ import { MomentCard } from "@components/features/diary";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
+import { PAGE_SIZE } from "../constants/constants";
 import { getAllTags, getDiaryList } from "../data/diary";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
@@ -46,8 +47,6 @@ const subtitle = i18n(I18nKey.diarySubtitle);
 			console.error("Failed to load Iconify:", error);
 		});
 	</script>
-
-	<script is:inline src="/js/filter-tabs-handler.js"></script>
 
 	<div
 		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
@@ -97,19 +96,33 @@ const subtitle = i18n(I18nKey.diarySubtitle);
 					)
 				}
 
-				<div id="diary-list" class="space-y-4">
+				<div id="diary-list" class="space-y-4" data-page-size={PAGE_SIZE}>
 					{
 						moments.map((moment, index) => (
-							<MomentCard
-								moment={moment}
-								index={index}
-								minutesAgo={minutesAgo}
-								hoursAgo={hoursAgo}
-								daysAgo={daysAgo}
-							/>
+							<div
+								class="diary-entry"
+								data-tags={moment.tags?.join(",") || ""}
+								data-index={index}
+							>
+								<MomentCard
+									moment={moment}
+									index={index}
+									minutesAgo={minutesAgo}
+									hoursAgo={hoursAgo}
+									daysAgo={daysAgo}
+								/>
+							</div>
 						))
 					}
 				</div>
+
+				<div
+					id="diary-pagination"
+					class:list={[
+						"mx-auto mt-8 flex flex-row gap-3 justify-center",
+						{ hidden: moments.length <= PAGE_SIZE },
+					]}
+				></div>
 
 				<div id="no-results" class="hidden text-center py-16">
 					<iconify-icon
@@ -141,4 +154,218 @@ const subtitle = i18n(I18nKey.diarySubtitle);
 			</div>
 		</div>
 	</div>
+
+	<script is:inline>
+		(() => {
+			const HIDDEN = -1;
+			const ADJ_DIST = 2;
+			const VISIBLE = ADJ_DIST * 2 + 1;
+
+			function getPages(currentPage, lastPage) {
+				let count = 1;
+				let l = currentPage;
+				let r = currentPage;
+
+				while (0 < l - 1 && r + 1 <= lastPage && count + 2 <= VISIBLE) {
+					count += 2;
+					l--;
+					r++;
+				}
+				while (0 < l - 1 && count < VISIBLE) {
+					count++;
+					l--;
+				}
+				while (r + 1 <= lastPage && count < VISIBLE) {
+					count++;
+					r++;
+				}
+
+				const pages = [];
+				if (l > 1) pages.push(1);
+				if (l === 3) pages.push(2);
+				if (l > 3) pages.push(HIDDEN);
+				for (let i = l; i <= r; i++) pages.push(i);
+				if (r < lastPage - 2) pages.push(HIDDEN);
+				if (r === lastPage - 2) pages.push(lastPage - 1);
+				if (r < lastPage) pages.push(lastPage);
+				return pages;
+			}
+
+			function initDiaryPagination() {
+				const diaryList = document.getElementById("diary-list");
+				const pagination = document.getElementById("diary-pagination");
+				const noResults = document.getElementById("no-results");
+				const filterTabs = document.querySelectorAll(".filter-tabs-item");
+
+				if (!diaryList || !pagination) {
+					return;
+				}
+
+				const pageSize = Number(diaryList.dataset.pageSize || 12);
+				const entries = Array.from(diaryList.querySelectorAll(".diary-entry"));
+				let activeFilter = "all";
+				let currentPage = 1;
+
+				function getFilteredEntries() {
+					return entries.filter((entry) => {
+						const tags = entry.getAttribute("data-tags") || "";
+						return (
+							activeFilter === "all" ||
+							tags.split(",").filter(Boolean).includes(activeFilter)
+						);
+					});
+				}
+
+				function createIconButton(icon, disabled, onClick, ariaLabel) {
+					const button = document.createElement("button");
+					button.type = "button";
+					button.setAttribute("aria-label", ariaLabel);
+					button.className =
+						"btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11";
+					if (disabled) {
+						button.classList.add("disabled");
+						button.disabled = true;
+					} else {
+						button.addEventListener("click", onClick);
+					}
+
+					const iconEl = document.createElement("iconify-icon");
+					iconEl.setAttribute("icon", icon);
+					iconEl.setAttribute("width", "28");
+					iconEl.setAttribute("height", "28");
+					button.appendChild(iconEl);
+
+					return button;
+				}
+
+				function createPageButton(pageNumber, isActive) {
+					if (pageNumber === HIDDEN) {
+						const more = document.createElement("iconify-icon");
+						more.setAttribute("icon", "material-symbols:more-horiz");
+						more.setAttribute("width", "24");
+						more.setAttribute("height", "24");
+						more.className = "mx-1 self-center text-neutral-700 dark:text-neutral-300";
+						return more;
+					}
+
+					if (isActive) {
+						const current = document.createElement("div");
+						current.className =
+							"h-11 w-11 rounded-lg bg-[var(--primary)] flex items-center justify-center font-bold text-white dark:text-black/70";
+						current.textContent = String(pageNumber);
+						return current;
+					}
+
+					const button = document.createElement("button");
+					button.type = "button";
+					button.className =
+						"btn-card w-11 h-11 rounded-lg overflow-hidden active:scale-[0.85]";
+					button.textContent = String(pageNumber);
+					button.setAttribute("aria-label", `Page ${pageNumber}`);
+					button.addEventListener("click", () => {
+						currentPage = pageNumber;
+						render();
+					});
+					return button;
+				}
+
+				function renderPagination(totalPages) {
+					pagination.innerHTML = "";
+					pagination.classList.toggle("hidden", totalPages <= 1);
+
+					if (totalPages <= 1) {
+						return;
+					}
+
+					const prevButton = createIconButton(
+						"material-symbols:chevron-left-rounded",
+						currentPage === 1,
+						() => {
+							currentPage--;
+							render();
+						},
+						"上一页",
+					);
+
+					const nextButton = createIconButton(
+						"material-symbols:chevron-right-rounded",
+						currentPage === totalPages,
+						() => {
+							currentPage++;
+							render();
+						},
+						"下一页",
+					);
+
+					const pagesWrapper = document.createElement("div");
+					pagesWrapper.className =
+						"bg-[var(--card-bg)] flex flex-row rounded-lg items-center text-neutral-700 dark:text-neutral-300 font-bold";
+
+					getPages(currentPage, totalPages).forEach((pageNumber) => {
+						pagesWrapper.appendChild(
+							createPageButton(pageNumber, pageNumber === currentPage),
+						);
+					});
+
+					pagination.appendChild(prevButton);
+					pagination.appendChild(pagesWrapper);
+					pagination.appendChild(nextButton);
+				}
+
+				function render() {
+					const filteredEntries = getFilteredEntries();
+					const totalPages = Math.max(
+						1,
+						Math.ceil(filteredEntries.length / pageSize),
+					);
+
+					if (currentPage > totalPages) {
+						currentPage = totalPages;
+					}
+
+					const start = (currentPage - 1) * pageSize;
+					const end = start + pageSize;
+
+					entries.forEach((entry) => {
+						entry.classList.add("hidden");
+					});
+
+					filteredEntries.slice(start, end).forEach((entry) => {
+						entry.classList.remove("hidden");
+					});
+
+					if (noResults) {
+						noResults.classList.toggle("hidden", filteredEntries.length > 0);
+					}
+
+					renderPagination(totalPages);
+				}
+
+				filterTabs.forEach((tab) => {
+					if (tab.dataset.diaryPaginationBound === "true") {
+						return;
+					}
+
+					tab.dataset.diaryPaginationBound = "true";
+					tab.addEventListener("click", () => {
+						filterTabs.forEach((item) => item.classList.remove("active"));
+						tab.classList.add("active");
+						activeFilter = tab.dataset.filterValue || "all";
+						currentPage = 1;
+						render();
+					});
+				});
+
+				render();
+			}
+
+			if (document.readyState === "loading") {
+				document.addEventListener("DOMContentLoaded", initDiaryPagination);
+			} else {
+				initDiaryPagination();
+			}
+
+			document.addEventListener("astro:page-load", initDiaryPagination);
+		})();
+	</script>
 </MainGridLayout>

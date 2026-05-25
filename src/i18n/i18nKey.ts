@@ -80,8 +80,6 @@ enum I18nKey {
 	diarySubtitle = "diarySubtitle",
 	diaryNoResults = "diaryNoResults",
 	diaryCount = "diaryCount",
-
-	diaryTips = "diaryTips",
 	diaryMinutesAgo = "diaryMinutesAgo",
 	diaryHoursAgo = "diaryHoursAgo",
 	diaryDaysAgo = "diaryDaysAgo",
