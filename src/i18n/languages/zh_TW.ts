@@ -124,6 +124,8 @@ export const zh_TW: Translation = {
 	[Key.albumsEmpty]: "暫無內容",
 	[Key.albumsEmptyDesc]: "還沒有創建任何相冊，快去添加一些美好的回憶吧！",
 	[Key.albumsBackToList]: "返回相冊",
+	[Key.albumsPrevAlbum]: "上一相冊",
+	[Key.albumsNextAlbum]: "下一相冊",
 	[Key.albumsPhotoCount]: "張照片",
 	[Key.albumsPhotosCount]: "張照片",
 	[Key.albumsFilterAll]: "全部",

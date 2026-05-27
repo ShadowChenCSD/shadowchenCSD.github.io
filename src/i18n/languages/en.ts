@@ -129,6 +129,8 @@ export const en: Translation = {
 	[Key.albumsEmptyDesc]:
 		"No albums have been created yet. Go add some beautiful memories!",
 	[Key.albumsBackToList]: "Back to Albums",
+	[Key.albumsPrevAlbum]: "Previous",
+	[Key.albumsNextAlbum]: "Next",
 
 	[Key.albumsPhotoCount]: "photo",
 	[Key.albumsPhotosCount]: "photos",

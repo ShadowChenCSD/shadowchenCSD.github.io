@@ -7,7 +7,7 @@
 
 /* 瀑布流布局 */
 .gallery-masonry {
-  column-width: 240px;
+  column-width: 320px;
   column-gap: 0.75rem;
 }
 

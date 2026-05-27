@@ -130,6 +130,8 @@ export const ja: Translation = {
 	[Key.albumsEmptyDesc]:
 		"まだアルバムが作成されていません。美しい思い出を追加しましょう!",
 	[Key.albumsBackToList]: "アルバムに戻る",
+	[Key.albumsPrevAlbum]: "前のアルバム",
+	[Key.albumsNextAlbum]: "次のアルバム",
 
 	[Key.albumsPhotoCount]: "件の写真",
 	[Key.albumsPhotosCount]: "件の写真",

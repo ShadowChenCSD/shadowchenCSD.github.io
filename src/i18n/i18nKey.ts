@@ -120,6 +120,8 @@ enum I18nKey {
 	albumsEmpty = "albumsEmpty",
 	albumsEmptyDesc = "albumsEmptyDesc",
 	albumsBackToList = "albumsBackToList",
+	albumsPrevAlbum = "albumsPrevAlbum",
+	albumsNextAlbum = "albumsNextAlbum",
 	albumsPhotoCount = "albumsPhotoCount",
 	albumsPhotosCount = "albumsPhotosCount",
 	albumsFilterAll = "albumsFilterAll",
