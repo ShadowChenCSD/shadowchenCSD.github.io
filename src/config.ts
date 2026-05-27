@@ -277,8 +277,8 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Albums,
 		LinkPreset.Anime,
 		// LinkPreset.Game,
+		LinkPreset.Skills,
 		LinkPreset.Timeline,
-		// LinkPreset.Skills,
 		LinkPreset.Friends,
 		LinkPreset.About,
 		// 支持自定义导航栏链接，支持多级菜单

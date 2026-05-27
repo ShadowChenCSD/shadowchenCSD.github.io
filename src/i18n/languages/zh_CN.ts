@@ -81,7 +81,7 @@ export const zh_CN: Translation = {
 		"请在 src/config.ts 文件中设置您的 Bangumi userId",
 
 	// 短文页面
-	[Key.diarySubtitle]: "随时随地，分享生活",
+	[Key.diarySubtitle]: "分享点滴生活",
 	[Key.diaryNoResults]: "没有匹配的日记",
 	[Key.diaryCount]: "条日记",
 	[Key.diaryMinutesAgo]: "分钟前",
@@ -120,7 +120,7 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
+	[Key.albumsSubtitle]: "记录美好瞬间",
 	[Key.albumsEmpty]: "暂无内容",
 	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
 	[Key.albumsBackToList]: "返回相册",
@@ -131,9 +131,9 @@ export const zh_CN: Translation = {
 	[Key.albumsFilterAll]: "全部",
 	[Key.albumsNoResults]: "没有匹配的相册",
 
-	// 技能展示页面
-	[Key.skills]: "技能展示",
-	[Key.skillsSubtitle]: "我的技术技能和专业知识",
+	// 技能页面
+	[Key.skills]: "技能",
+	[Key.skillsSubtitle]: "展示专业技能",
 	[Key.skillsFrontend]: "前端开发",
 	[Key.skillsBackend]: "后端开发",
 	[Key.skillsDatabase]: "数据库",
@@ -161,7 +161,7 @@ export const zh_CN: Translation = {
 
 	// 时间线页面
 	[Key.timeline]: "流年",
-	[Key.timelineSubtitle]: "成长历程和重要里程碑",
+	[Key.timelineSubtitle]: "记录成长历程",
 	[Key.timelineEducation]: "教育经历",
 	[Key.timelineWork]: "工作经历",
 	[Key.timelineProject]: "项目经历",
