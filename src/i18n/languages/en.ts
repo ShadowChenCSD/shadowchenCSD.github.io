@@ -124,10 +124,9 @@ export const en: Translation = {
 
 	// Albums Page
 	[Key.albums]: "Albums",
-	[Key.albumsSubtitle]: "Record beautiful moments in life",
+	[Key.albumsSubtitle]: "Capture beautiful moments in life",
 	[Key.albumsEmpty]: "No content",
-	[Key.albumsEmptyDesc]:
-		"No albums have been created yet. Go add some beautiful memories!",
+	[Key.albumsEmptyDesc]: "No albums yet. Add some beautiful memories!",
 	[Key.albumsBackToList]: "Back to Albums",
 	[Key.albumsPrevAlbum]: "Previous",
 	[Key.albumsNextAlbum]: "Next",
@@ -139,7 +138,7 @@ export const en: Translation = {
 
 	// RSS Page
 	[Key.rss]: "RSS Feed",
-	[Key.rssDescription]: "Subscribe to get latest updates",
+	[Key.rssDescription]: "Subscribe to get the latest updates",
 	[Key.rssSubtitle]:
 		"Subscribe via RSS to get the latest articles and updates immediately",
 	[Key.rssLink]: "RSS Link",
@@ -155,13 +154,13 @@ export const en: Translation = {
 	[Key.rssBenefit3]: "Avoid missing important updates and articles",
 	[Key.rssBenefit4]: "Enjoy an ad-free, clean reading experience",
 	[Key.rssHowToUse]:
-		"It is recommended to use Feedly, Inoreader or other RSS readers to subscribe to this site.",
+		"We recommend using Feedly, Inoreader, or another RSS reader to subscribe to this site.",
 	[Key.rssCopied]: "RSS link copied to clipboard!",
 	[Key.rssCopyFailed]: "Copy failed, please copy the link manually",
 
 	// Atom Page
 	[Key.atom]: "Atom Feed",
-	[Key.atomDescription]: "Subscribe to get latest updates",
+	[Key.atomDescription]: "Subscribe to get the latest updates",
 	[Key.atomSubtitle]:
 		"Subscribe via Atom to get the latest articles and updates immediately",
 	[Key.atomLink]: "Atom Link",
@@ -170,7 +169,7 @@ export const en: Translation = {
 	[Key.atomLatestPosts]: "Latest Posts",
 	[Key.atomWhatIsAtom]: "What is Atom?",
 	[Key.atomWhatIsAtomDescription]:
-		"Atom (Atom Syndication Format) is an XML-based standard for describing feeds and their items. With Atom, you can:",
+		"Atom Syndication Format is an XML-based standard used to describe feeds and their entries. With Atom, you can:",
 	[Key.atomBenefit1]:
 		"Get latest website content in time without manually visiting",
 	[Key.atomBenefit2]:
@@ -178,7 +177,7 @@ export const en: Translation = {
 	[Key.atomBenefit3]: "Avoid missing important updates and articles",
 	[Key.atomBenefit4]: "Enjoy an ad-free, clean reading experience",
 	[Key.atomHowToUse]:
-		"It is recommended to use Feedly, Inoreader or other Atom readers to subscribe to this site.",
+		"We recommend using Feedly, Inoreader, or another Atom reader to subscribe to this site.",
 	[Key.atomCopied]: "Atom link copied to clipboard!",
 	[Key.atomCopyFailed]: "Copy failed, please copy the link manually",
 
@@ -189,7 +188,7 @@ export const en: Translation = {
 
 	// Skills Page
 	[Key.skills]: "Skills",
-	[Key.skillsSubtitle]: "My technical skills and expertise",
+	[Key.skillsSubtitle]: "Showcase professional skills",
 	[Key.skillsFrontend]: "Frontend Development",
 	[Key.skillsBackend]: "Backend Development",
 	[Key.skillsDatabase]: "Database",
@@ -217,7 +216,7 @@ export const en: Translation = {
 
 	// Timeline Page
 	[Key.timeline]: "Timeline",
-	[Key.timelineSubtitle]: "Growth journey and important milestones",
+	[Key.timelineSubtitle]: "Record the journey of growth",
 	[Key.timelineEducation]: "Education",
 	[Key.timelineWork]: "Work Experience",
 	[Key.timelineProject]: "Project Experience",

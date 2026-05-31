@@ -84,7 +84,7 @@ export const ja: Translation = {
 		"src/config.tsファイルでBangumi userIdを設定してください",
 
 	// 日記ページ
-	[Key.diarySubtitle]: "いつでも、どこでも生活を共有",
+	[Key.diarySubtitle]: "日々の小さな暮らしをシェア",
 	[Key.diaryNoResults]: "一致する日記がありません",
 	[Key.diaryCount]: "件の日記",
 	[Key.diaryMinutesAgo]: "分前",
@@ -125,7 +125,7 @@ export const ja: Translation = {
 
 	// アルバムページ
 	[Key.albums]: "アルバム",
-	[Key.albumsSubtitle]: "人生の美しい瞬間の記録です",
+	[Key.albumsSubtitle]: "美しい瞬間を記録",
 	[Key.albumsEmpty]: "コンテンツはありません",
 	[Key.albumsEmptyDesc]:
 		"まだアルバムが作成されていません。美しい思い出を追加しましょう!",
@@ -219,7 +219,7 @@ export const ja: Translation = {
 
 	// タイムラインページ
 	[Key.timeline]: "タイムライン",
-	[Key.timelineSubtitle]: "成長への旅と重要なマイルストーン",
+	[Key.timelineSubtitle]: "成長の軌跡を記録",
 	[Key.timelineEducation]: "教育",
 	[Key.timelineWork]: "実務経験",
 	[Key.timelineProject]: "プロジェクト経験",

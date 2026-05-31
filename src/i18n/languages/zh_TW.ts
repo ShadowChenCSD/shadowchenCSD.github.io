@@ -27,7 +27,7 @@ export const zh_TW: Translation = {
 
 	[Key.comments]: "評論",
 	[Key.friends]: "友鏈",
-	[Key.friendsSubtitle]: "發現更多優秀網站",
+	[Key.friendsSubtitle]: "發現更多優質網站",
 	[Key.friendsSearchPlaceholder]: "搜索友鏈名稱或描述...",
 	[Key.friendsFilterAll]: "全部",
 	[Key.friendsNoResults]: "未找到匹配的友鏈",
@@ -81,7 +81,7 @@ export const zh_TW: Translation = {
 		"請在 src/config.ts 檔案中設定您的 Bangumi userId",
 
 	// 短文頁面
-	[Key.diarySubtitle]: "隨時隨地，分享生活",
+	[Key.diarySubtitle]: "分享點滴生活",
 	[Key.diaryNoResults]: "沒有匹配的日記",
 	[Key.diaryCount]: "條日記",
 	[Key.diaryMinutesAgo]: "分鐘前",
@@ -120,7 +120,7 @@ export const zh_TW: Translation = {
 
 	// 相冊頁面
 	[Key.albums]: "相冊",
-	[Key.albumsSubtitle]: "記錄生活中的美好瞬間",
+	[Key.albumsSubtitle]: "記錄美好瞬間",
 	[Key.albumsEmpty]: "暫無內容",
 	[Key.albumsEmptyDesc]: "還沒有創建任何相冊，快去添加一些美好的回憶吧！",
 	[Key.albumsBackToList]: "返回相冊",
@@ -172,8 +172,8 @@ export const zh_TW: Translation = {
 	[Key.atomCopyFailed]: "複製失敗，請手動複製鏈接",
 
 	// 技能展示頁面
-	[Key.skills]: "技能展示",
-	[Key.skillsSubtitle]: "我的技術技能和專業知識",
+	[Key.skills]: "技能",
+	[Key.skillsSubtitle]: "展示專業技能",
 	[Key.skillsFrontend]: "前端開發",
 	[Key.skillsBackend]: "後端開發",
 	[Key.skillsDatabase]: "資料庫",
@@ -200,7 +200,7 @@ export const zh_TW: Translation = {
 
 	// 時間線頁面
 	[Key.timeline]: "流年",
-	[Key.timelineSubtitle]: "成長歷程和重要里程碑",
+	[Key.timelineSubtitle]: "記錄成長歷程",
 	[Key.timelineEducation]: "教育經歷",
 	[Key.timelineWork]: "工作經歷",
 	[Key.timelineProject]: "專案經歷",
