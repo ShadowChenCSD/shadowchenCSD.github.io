@@ -1,7 +1,8 @@
----
+﻿---
 import FloatingControls from "@components/control/FloatingControls.astro";
 import { SidebarTOC } from "@components/features/toc";
-import Banner from "@components/layout/Banner.astro";
+import TypewriterText from "@components/atoms/typewriter-text/TypewriterText.astro";
+import Image from "@components/atoms/Image/Image.astro";
 import RightSideBar from "@components/layout/RightSideBar.astro";
 import FullscreenWallpaper from "@components/misc/FullscreenWallpaper.astro";
 import IconifyLoader from "@components/misc/IconifyLoader.astro";
@@ -12,7 +13,7 @@ import type { MarkdownHeading } from "astro";
 import { Icon } from "astro-icon/components";
 
 import { fullscreenWallpaperConfig, siteConfig } from "../config";
-import { BANNER_HEIGHT } from "../constants/constants";
+import { BANNER_HEIGHT, BANNER_HEIGHT_EXTEND } from "../constants/constants";
 import {
 	calculateGridLayout,
 	getBannerImages,
@@ -36,6 +37,14 @@ interface Props {
 
 // 获取 banner 图片
 const bannerImages = await getBannerImages(siteConfig);
+const normalizeToArray = (images: string | string[]): string[] =>
+	Array.isArray(images) ? images : [images];
+const desktopImages = normalizeToArray(bannerImages.desktop).filter(Boolean);
+const mobileImages = normalizeToArray(bannerImages.mobile).filter(Boolean);
+const maxImageCount = Math.max(desktopImages.length, mobileImages.length);
+const isCarouselEnabled =
+	siteConfig.banner.carousel?.enable &&
+	(desktopImages.length > 1 || mobileImages.length > 1);
 
 const {
 	title,
@@ -51,7 +60,9 @@ const hasBannerLink = !!siteConfig.banner.credit.url;
 
 // 检查是否为首页
 const isHomePage = Astro.url.pathname === "/" || Astro.url.pathname === "";
-// 手机端非首页不显示banner的CSS类
+const showBannerTextOverlay = isHomePage && (siteConfig.banner.homeText?.enable ?? false);
+
+// 手机端非首页不显示 banner 的 CSS 类
 const mobileNonHomeBannerClass = !isHomePage ? "mobile-hide-banner" : "";
 
 // 计算主内容区域位置
@@ -127,12 +138,288 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 	</div>
 
 	<!-- Banner 组件 -->
-	<Banner
-		bannerImages={bannerImages}
-		mobileNonHomeBannerClass={mobileNonHomeBannerClass}
-		showTextOverlay={isHomePage &&
-			(siteConfig.banner.homeText?.enable ?? false)}
-	/>
+	<div
+		id="banner-wrapper"
+		class={`absolute z-10 w-full transition duration-700 overflow-hidden ${mobileNonHomeBannerClass}`}
+		style={`top: -${BANNER_HEIGHT_EXTEND}vh`}
+	>
+		{isCarouselEnabled ? (
+			<div id="banner-carousel" class="relative h-full w-full">
+				<ul class="carousel-list h-full w-full">
+					{Array.from({ length: maxImageCount }, (_, index) => {
+						const hasDesktopImage = !!desktopImages[index];
+						const hasMobileImage = !!mobileImages[index];
+						if (!hasDesktopImage && !hasMobileImage) return null;
+						return (
+							<li
+								class={`carousel-item absolute inset-0 transition-all duration-500 ${index === 0 ? "opacity-100 scale-100" : "opacity-0 scale-110"}`}
+							>
+								{hasMobileImage && (
+									<Image
+										alt={`Mobile banner image ${index + 1}`}
+										class="block md:hidden object-cover h-full w-full"
+										src={mobileImages[index]}
+										position={siteConfig.banner.position}
+										widths={[640, 1024, 1536]}
+										sizes="100vw"
+										loading="eager"
+										fetchpriority="high"
+									/>
+								)}
+								{hasDesktopImage && (
+									<Image
+										id={index === 0 ? "banner" : undefined}
+										alt={`Desktop banner image ${index + 1}`}
+										class="hidden md:block object-cover h-full w-full"
+										src={desktopImages[index]}
+										position={siteConfig.banner.position}
+										widths={[1024, 1536, 2048, 2560]}
+										sizes="100vw"
+										loading="eager"
+										fetchpriority="high"
+									/>
+								)}
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		) : (
+			<div id="banner-single-container" class="relative h-full w-full">
+				<script
+					is:inline
+					define:vars={{
+						desktopImages: bannerImages.desktop,
+						mobileImages: bannerImages.mobile,
+						position: siteConfig.banner.position,
+					}}
+				>
+					(function () {
+						const getRandomImage = (images, storageKey) => {
+							if (Array.isArray(images)) {
+								if (images.length === 0) return null;
+								if (images.length === 1) return images[0];
+								const lastIndex = sessionStorage.getItem(storageKey);
+								let newIndex;
+								do {
+									newIndex = Math.floor(Math.random() * images.length);
+								} while (newIndex === parseInt(lastIndex || "-1"));
+								sessionStorage.setItem(storageKey, newIndex.toString());
+								return images[newIndex];
+							}
+							return images || null;
+						};
+
+						const container = document.getElementById("banner-single-container");
+						if (container.querySelector("img")) return;
+
+						const desktopSrc = getRandomImage(desktopImages, "banner_desktop_index");
+						const mobileSrc = getRandomImage(mobileImages, "banner_mobile_index");
+
+						if (mobileSrc) {
+							const mobileImg = document.createElement("img");
+							mobileImg.alt = "Mobile banner image of the blog";
+							mobileImg.className = "block md:hidden object-cover h-full w-full transition duration-700 opacity-100";
+							mobileImg.src = mobileSrc;
+							mobileImg.loading = "eager";
+							mobileImg.fetchPriority = "high";
+							mobileImg.dataset.position = position;
+							container.appendChild(mobileImg);
+						}
+
+						if (desktopSrc) {
+							const desktopImg = document.createElement("img");
+							desktopImg.id = "banner";
+							desktopImg.alt = "Desktop banner image of the blog";
+							desktopImg.className = "hidden md:block object-cover h-full w-full transition duration-700 opacity-100";
+							desktopImg.src = desktopSrc;
+							desktopImg.loading = "eager";
+							desktopImg.fetchPriority = "high";
+							desktopImg.dataset.position = position;
+							container.appendChild(desktopImg);
+						}
+					})();
+				</script>
+			</div>
+		)}
+
+		{showBannerTextOverlay && (
+			<div class="banner-text-overlay absolute inset-0 z-20 flex items-center justify-center">
+				<div class="w-4/5 lg:w-3/4 text-center mb-0">
+					<div class="flex flex-col">
+						{siteConfig.banner.homeText?.title && (
+							<h1 class="banner-title text-6xl lg:text-8xl text-white drop-shadow-lg mb-2 lg:mb-4">
+								{siteConfig.banner.homeText.title}
+							</h1>
+						)}
+						{siteConfig.banner.homeText?.subtitle && (
+							<h2 class="banner-subtitle text-xl lg:text-3xl text-white/90 drop-shadow-md">
+								<span class="inline-block min-h-[1.2em]">
+									{siteConfig.banner.homeText.typewriter?.enable ? (
+										<TypewriterText
+											text={siteConfig.banner.homeText.subtitle}
+											speed={siteConfig.banner.homeText.typewriter.speed}
+											deleteSpeed={siteConfig.banner.homeText.typewriter.deleteSpeed}
+											pauseTime={siteConfig.banner.homeText.typewriter.pauseTime}
+										/>
+									) : Array.isArray(siteConfig.banner.homeText.subtitle) ? (
+										siteConfig.banner.homeText.subtitle[0]
+									) : (
+										siteConfig.banner.homeText.subtitle
+									)}
+								</span>
+							</h2>
+						)}
+					</div>
+				</div>
+			</div>
+		)}
+
+		{siteConfig.banner.waves?.enable && (
+			<div
+				class="waves absolute -bottom-[1px] h-[10vh] max-h-[9.375rem] min-h-[3.125rem] w-full md:h-[15vh]"
+				id="header-waves"
+				style="transform: translateZ(0); will-change: fill;"
+			>
+				<svg
+					class="waves"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 20 150 32"
+					preserveAspectRatio="none"
+					shape-rendering="auto"
+					style="transform: translateZ(0); backface-visibility: hidden;"
+				>
+					<defs>
+						<path
+							id="gentle-wave"
+							d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v48h-352z"
+						></path>
+					</defs>
+					<g class="parallax" style="transform: translateZ(0);">
+						<use xlink:href="#gentle-wave" x="48" y="0" class="opacity-25 fill-[var(--page-bg)]" style="animation-delay: -2s; animation-duration: 7s; will-change: transform;"></use>
+						<use xlink:href="#gentle-wave" x="48" y="3" class="opacity-50 fill-[var(--page-bg)]" style="animation-delay: -3s; animation-duration: 10s; will-change: transform;"></use>
+						<use xlink:href="#gentle-wave" x="48" y="5" class="opacity-75 fill-[var(--page-bg)]" style="animation-delay: -4s; animation-duration: 13s; will-change: transform;"></use>
+						<use xlink:href="#gentle-wave" x="48" y="7" class="fill-[var(--page-bg)]" style="animation-delay: -5s; animation-duration: 20s; will-change: transform;"></use>
+					</g>
+				</svg>
+			</div>
+		)}
+	</div>
+
+	{isCarouselEnabled && (
+		<script
+			is:inline
+			data-swup-ignore-script
+			define:vars={{
+				carouselEnabled: siteConfig.banner.carousel?.enable ?? false,
+				carouselInterval: siteConfig.banner.carousel?.interval || 6,
+			}}
+		>
+			(function () {
+				if (!carouselEnabled) return;
+				const carouselItems = document.querySelectorAll(".carousel-item");
+				if (!carouselItems.length) return;
+
+				const validItems = Array.from(carouselItems).filter((item) => {
+					if (window.innerWidth < 768) {
+						return item.querySelector(".block.md\\:hidden");
+					}
+					return item.querySelector(".hidden.md\\:block");
+				});
+				if (validItems.length <= 1) return;
+
+				let currentIndex = 0;
+				let carouselIntervalId;
+				let isPaused = false;
+				let startX = 0;
+				let startY = 0;
+				let isSwiping = false;
+				const carousel = document.getElementById("banner-carousel");
+
+				function switchToSlide(index) {
+					const currentItem = validItems[currentIndex];
+					currentItem.classList.remove("opacity-100", "scale-100");
+					currentItem.classList.add("opacity-0", "scale-110");
+					currentIndex = index;
+					const nextItem = validItems[currentIndex];
+					nextItem.classList.add("opacity-100", "scale-100");
+					nextItem.classList.remove("opacity-0", "scale-110");
+				}
+
+				carouselItems.forEach((item) => {
+					item.classList.add("opacity-0", "scale-110");
+					item.classList.remove("opacity-100", "scale-100");
+				});
+				validItems[0].classList.add("opacity-100", "scale-100");
+				validItems[0].classList.remove("opacity-0", "scale-110");
+
+				function startCarousel() {
+					clearInterval(carouselIntervalId);
+					carouselIntervalId = setInterval(() => {
+						if (!isPaused) {
+							switchToSlide((currentIndex + 1) % validItems.length);
+						}
+					}, carouselInterval * 1000);
+				}
+
+				if (carousel && "ontouchstart" in window) {
+					carousel.addEventListener("touchstart", (e) => {
+						startX = e.touches[0].clientX;
+						startY = e.touches[0].clientY;
+						isSwiping = false;
+						isPaused = true;
+						clearInterval(carouselIntervalId);
+					}, { passive: true });
+
+					carousel.addEventListener("touchmove", (e) => {
+						if (!startX || !startY) return;
+						const diffX = Math.abs(e.touches[0].clientX - startX);
+						const diffY = Math.abs(e.touches[0].clientY - startY);
+						if (diffX > diffY && diffX > 30) {
+							isSwiping = true;
+							e.preventDefault();
+						}
+					}, { passive: false });
+
+					carousel.addEventListener("touchend", (e) => {
+						if (!startX || !startY || !isSwiping) {
+							isPaused = false;
+							startCarousel();
+							return;
+						}
+						const endX = e.changedTouches[0].clientX;
+						const diffX = startX - endX;
+						if (Math.abs(diffX) > 50) {
+							if (diffX > 0) {
+								switchToSlide((currentIndex + 1) % validItems.length);
+							} else {
+								switchToSlide((currentIndex - 1 + validItems.length) % validItems.length);
+							}
+						}
+						startX = 0;
+						startY = 0;
+						isSwiping = false;
+						isPaused = false;
+						startCarousel();
+					}, { passive: true });
+				}
+
+				if (carousel) {
+					carousel.addEventListener("mouseenter", () => {
+						isPaused = true;
+						clearInterval(carouselIntervalId);
+					});
+					carousel.addEventListener("mouseleave", () => {
+						isPaused = false;
+						startCarousel();
+					});
+				}
+
+				startCarousel();
+			})();
+		</script>
+	)}
 
 	<!-- Main content -->
 	<div
