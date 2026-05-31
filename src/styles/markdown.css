@@ -1,5 +1,9 @@
 @reference "tailwindcss";
 
+.markdown-content {
+  font-family: "黑体", "ZenMaruGothic-Medium", var(--font-sans);
+}
+
 .custom-md {
   h1 {
     @apply text-3xl;
