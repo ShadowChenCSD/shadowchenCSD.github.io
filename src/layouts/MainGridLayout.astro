@@ -143,6 +143,7 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 		class={`absolute z-10 w-full transition duration-700 overflow-hidden ${mobileNonHomeBannerClass}`}
 		style={`top: -${BANNER_HEIGHT_EXTEND}vh`}
 	>
+		<!-- 轮播模式：使用简单的 switchToSlide 方案 -->
 		{isCarouselEnabled ? (
 			<div id="banner-carousel" class="relative h-full w-full">
 				<ul class="carousel-list h-full w-full">
@@ -185,6 +186,7 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 				</ul>
 			</div>
 		) : (
+			<!-- 单图模式：每次会话随机，但避免连续命中同一张 -->
 			<div id="banner-single-container" class="relative h-full w-full">
 				<script
 					is:inline
@@ -243,6 +245,7 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 			</div>
 		)}
 
+		<!-- 首页文字覆盖层：标题/副标题/打字机效果 -->
 		{showBannerTextOverlay && (
 			<div class="banner-text-overlay absolute inset-0 z-20 flex items-center justify-center">
 				<div class="w-4/5 lg:w-3/4 text-center mb-0">
@@ -275,6 +278,7 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 			</div>
 		)}
 
+		<!-- 底部波浪层：视觉衔接 banner 与页面主背景 -->
 		{siteConfig.banner.waves?.enable && (
 			<div
 				class="waves absolute -bottom-[1px] h-[10vh] max-h-[9.375rem] min-h-[3.125rem] w-full md:h-[15vh]"
@@ -307,6 +311,7 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 		)}
 	</div>
 
+	<!-- 轮播行为脚本 -->
 	{isCarouselEnabled && (
 		<script
 			is:inline
