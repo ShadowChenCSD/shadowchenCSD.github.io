@@ -280,7 +280,6 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Skills,
 		LinkPreset.Timeline,
 		LinkPreset.Friends,
-		LinkPreset.About,
 		// 支持自定义导航栏链接，支持多级菜单
 		// {
 		// 	name: "站点",
@@ -407,7 +406,7 @@ export const announcementConfig: AnnouncementConfig = {
 	// link: {
 	// 	enable: true, // 启用链接
 	// 	text: "Learn More", // 链接文本
-	// 	url: "/about/", // 链接 URL
+	// 	url: "/", // 链接 URL
 	// 	external: false, // 内部链接
 	// },
 };

@@ -203,13 +203,12 @@ export interface Favicon {
 export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
-	About = 2,
-	Friends = 3,
-	Anime = 4,
-	Diary = 5,
-	Albums = 6,
-	Skills = 7,
-	Timeline = 8,
+	Friends = 2,
+	Anime = 3,
+	Diary = 4,
+	Albums = 5,
+	Skills = 6,
+	Timeline = 7,
 }
 
 export interface NavBarLink {

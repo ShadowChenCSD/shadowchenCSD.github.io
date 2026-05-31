@@ -1,6 +1,5 @@
 enum I18nKey {
 	home = "home",
-	about = "about",
 	archive = "archive",
 	search = "search",
 	other = "other",
@@ -8,7 +7,6 @@ enum I18nKey {
 	// 导航栏标题
 	navLinks = "navLinks",
 	navMy = "navMy",
-	navAbout = "navAbout",
 	navOthers = "navOthers",
 
 	tags = "tags",
