@@ -5,7 +5,7 @@
   <link href="https://www.shadowchencsd.blog/" rel="alternate" type="text/html"/>
   <link href="https://www.shadowchencsd.blog/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://www.shadowchencsd.blog/</id>
-  <updated>2026-05-27T17:07:03.037Z</updated>
+  <updated>2026-05-31T15:19:44.984Z</updated>
   <language>zh_CN</language>
   <entry>
     <title>Markdown Tutorial</title>
@@ -498,11 +498,11 @@ A |B
 <hr />
 <p>If you're referring to a local resource on the same server, you can use relative paths:</p>
 <p>Code:</p>
-<pre><code>See my [About](/about/) page for details.
+<pre><code>See my [Home](/) page for details.
 </code></pre>
 <p>Preview:</p>
 <hr />
-<p>See my <a href="/about/">About</a> page for details.</p>
+<p>See my <a href="/">Home</a> page for details.</p>
 <hr />
 <h4>Reference</h4>
 <p>You could predefine link references. Format like this: <code>[id]: URL "Title"</code></p>

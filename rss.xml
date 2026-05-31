@@ -482,11 +482,11 @@ A |B
 &lt;hr /&gt;
 &lt;p&gt;If you&apos;re referring to a local resource on the same server, you can use relative paths:&lt;/p&gt;
 &lt;p&gt;Code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;See my [About](/about/) page for details.
+&lt;pre&gt;&lt;code&gt;See my [Home](/) page for details.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Preview:&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;See my &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page for details.&lt;/p&gt;
+&lt;p&gt;See my &lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt; page for details.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4&gt;Reference&lt;/h4&gt;
 &lt;p&gt;You could predefine link references. Format like this: &lt;code&gt;[id]: URL &quot;Title&quot;&lt;/code&gt;&lt;/p&gt;
