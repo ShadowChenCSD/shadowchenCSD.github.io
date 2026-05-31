@@ -1,4 +1,4 @@
-import Key from "../i18nKey";
+﻿import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const ja: Translation = {
@@ -62,7 +62,7 @@ export const ja: Translation = {
 
 	// アニメページ
 	[Key.animeTitle]: "視聴したアニメ",
-	[Key.animeSubtitle]: "アニメの旅の記録です",
+	[Key.animeSubtitle]: "観たアニメを記録、評価はBangumi番組計画より",
 	[Key.animeStatusWatching]: "視聴中",
 	[Key.animeStatusCompleted]: "完了",
 	[Key.animeStatusPlanned]: "検討中",
@@ -135,6 +135,7 @@ export const ja: Translation = {
 
 	[Key.albumsPhotoCount]: "件の写真",
 	[Key.albumsPhotosCount]: "件の写真",
+	[Key.albumsCount]: "组の写真",
 	[Key.albumsFilterAll]: "すべて",
 	[Key.albumsNoResults]: "一致するアルバムがありません",
 
@@ -218,7 +219,7 @@ export const ja: Translation = {
 	[Key.noData]: "データなし",
 
 	// タイムラインページ
-	[Key.timeline]: "タイムライン",
+	[Key.timeline]: "軌跡",
 	[Key.timelineSubtitle]: "成長の軌跡を記録",
 	[Key.timelineEducation]: "教育",
 	[Key.timelineWork]: "実務経験",
@@ -336,3 +337,5 @@ export const ja: Translation = {
 	[Key.smartRecommend]: "スマート",
 	[Key.randomRecommend]: "ランダム",
 };
+
+

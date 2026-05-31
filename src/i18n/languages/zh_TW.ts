@@ -1,4 +1,4 @@
-import Key from "../i18nKey";
+﻿import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const zh_TW: Translation = {
@@ -61,8 +61,8 @@ export const zh_TW: Translation = {
 	[Key.diary]: "日記",
 
 	// 番劇頁面
-	[Key.animeTitle]: "我的追番記錄",
-	[Key.animeSubtitle]: "記錄我的二次元之旅",
+	[Key.animeTitle]: "追番",
+	[Key.animeSubtitle]: "記錄我的動漫劇目，評分來自Bangumi番組計劃",
 	[Key.animeStatusWatching]: "在看",
 	[Key.animeStatusCompleted]: "看過",
 	[Key.animeStatusPlanned]: "想看",
@@ -83,7 +83,7 @@ export const zh_TW: Translation = {
 	// 短文頁面
 	[Key.diarySubtitle]: "分享點滴生活",
 	[Key.diaryNoResults]: "沒有匹配的日記",
-	[Key.diaryCount]: "條日記",
+	[Key.diaryCount]: "條短文",
 	[Key.diaryMinutesAgo]: "分鐘前",
 	[Key.diaryHoursAgo]: "小時前",
 	[Key.diaryDaysAgo]: "天前",
@@ -128,6 +128,7 @@ export const zh_TW: Translation = {
 	[Key.albumsNextAlbum]: "下一相冊",
 	[Key.albumsPhotoCount]: "張照片",
 	[Key.albumsPhotosCount]: "張照片",
+	[Key.albumsCount]: "組照片",
 	[Key.albumsFilterAll]: "全部",
 	[Key.albumsNoResults]: "沒有匹配的相冊",
 
@@ -199,7 +200,7 @@ export const zh_TW: Translation = {
 	[Key.skillsByCategory]: "按分類分布",
 
 	// 時間線頁面
-	[Key.timeline]: "流年",
+	[Key.timeline]: "軌跡",
 	[Key.timelineSubtitle]: "記錄成長歷程",
 	[Key.timelineEducation]: "教育經歷",
 	[Key.timelineWork]: "工作經歷",
@@ -321,3 +322,5 @@ export const zh_TW: Translation = {
 	[Key.smartRecommend]: "智能推薦",
 	[Key.randomRecommend]: "隨機推薦",
 };
+
+

@@ -1,4 +1,4 @@
-import Key from "../i18nKey";
+﻿import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const en: Translation = {
@@ -62,7 +62,7 @@ export const en: Translation = {
 
 	// Anime Page
 	[Key.animeTitle]: "My Anime List",
-	[Key.animeSubtitle]: "Record my anime journey",
+	[Key.animeSubtitle]: "Track my anime series, with ratings from Bangumi",
 	[Key.animeStatusWatching]: "Watching",
 	[Key.animeStatusCompleted]: "Completed",
 	[Key.animeStatusPlanned]: "Planned",
@@ -133,6 +133,7 @@ export const en: Translation = {
 
 	[Key.albumsPhotoCount]: "photo",
 	[Key.albumsPhotosCount]: "photos",
+	[Key.albumsCount]: "groups",
 	[Key.albumsFilterAll]: "All",
 	[Key.albumsNoResults]: "No matching albums",
 
@@ -332,3 +333,5 @@ export const en: Translation = {
 	[Key.smartRecommend]: "Smart",
 	[Key.randomRecommend]: "Random",
 };
+
+

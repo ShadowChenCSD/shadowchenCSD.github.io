@@ -1,4 +1,4 @@
-import Key from "../i18nKey";
+﻿import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
@@ -61,8 +61,8 @@ export const zh_CN: Translation = {
 	[Key.diary]: "日记",
 
 	// 番剧页面
-	[Key.animeTitle]: "我的追番记录",
-	[Key.animeSubtitle]: "记录我的二次元之旅",
+	[Key.animeTitle]: "追番",
+	[Key.animeSubtitle]: "记录我的动漫剧目，评分来自Bangumi番组计划",
 	[Key.animeStatusWatching]: "在看",
 	[Key.animeStatusCompleted]: "看过",
 	[Key.animeStatusPlanned]: "想看",
@@ -83,7 +83,7 @@ export const zh_CN: Translation = {
 	// 短文页面
 	[Key.diarySubtitle]: "分享点滴生活",
 	[Key.diaryNoResults]: "没有匹配的日记",
-	[Key.diaryCount]: "条日记",
+	[Key.diaryCount]: "条短文",
 	[Key.diaryMinutesAgo]: "分钟前",
 	[Key.diaryHoursAgo]: "小时前",
 	[Key.diaryDaysAgo]: "天前",
@@ -128,6 +128,7 @@ export const zh_CN: Translation = {
 	[Key.albumsNextAlbum]: "下一相册",
 	[Key.albumsPhotoCount]: "张照片",
 	[Key.albumsPhotosCount]: "张照片",
+	[Key.albumsCount]: "组照片",
 	[Key.albumsFilterAll]: "全部",
 	[Key.albumsNoResults]: "没有匹配的相册",
 
@@ -160,7 +161,7 @@ export const zh_CN: Translation = {
 	[Key.noData]: "暂无数据",
 
 	// 时间线页面
-	[Key.timeline]: "流年",
+	[Key.timeline]: "轨迹",
 	[Key.timelineSubtitle]: "记录成长历程",
 	[Key.timelineEducation]: "教育经历",
 	[Key.timelineWork]: "工作经历",
@@ -319,3 +320,5 @@ export const zh_CN: Translation = {
 	[Key.smartRecommend]: "智能推荐",
 	[Key.randomRecommend]: "随机推荐",
 };
+
+

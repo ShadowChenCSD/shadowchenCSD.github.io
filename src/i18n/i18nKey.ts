@@ -124,6 +124,7 @@ enum I18nKey {
 	albumsNextAlbum = "albumsNextAlbum",
 	albumsPhotoCount = "albumsPhotoCount",
 	albumsPhotosCount = "albumsPhotosCount",
+	albumsCount = "albumsCount",
 	albumsFilterAll = "albumsFilterAll",
 	albumsNoResults = "albumsNoResults",
 
