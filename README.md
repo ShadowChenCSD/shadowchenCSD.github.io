@@ -72,7 +72,7 @@
    
    # 安装项目依赖
    pnpm install
-```
+   ```
    
 3. **配置博客：**
    - 编辑 `src/config.ts` 自定义博客设置
@@ -84,6 +84,7 @@
    ```bash
    pnpm dev
    ```
+
    博客将在 `http://localhost:4321` 可用
 
 ### 📝 内容管理
@@ -154,3 +155,7 @@
 - 图标来自 [Iconify](https://iconify.design/)
 
 ⭐ 如果您觉得这个项目有帮助，请考虑给它一个星标！
+
+```
+
+```
