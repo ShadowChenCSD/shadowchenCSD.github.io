@@ -12,6 +12,10 @@ export function initAnimeLayoutHandler(options: LayoutHandlerOptions) {
 			return;
 		}
 		animeListContainer.dataset.currentLayout = layout;
+		const mainGrid = document.getElementById("main-grid") as HTMLElement | null;
+		if (mainGrid) {
+			mainGrid.setAttribute("data-layout-mode", layout);
+		}
 
 		const animeItems = Array.from(
 			document.querySelectorAll("[data-anime-status]"),
@@ -55,9 +59,6 @@ export function initAnimeLayoutHandler(options: LayoutHandlerOptions) {
 					rightSidebar.classList.add("hidden-in-grid-mode");
 				}
 			}
-			const mainGrid = document.getElementById(
-				"main-grid",
-			) as HTMLElement | null;
 			if (mainGrid) {
 				mainGrid.style.gridTemplateColumns = "17.5rem 1fr";
 				mainGrid.classList.add("two-column-layout");
@@ -70,13 +71,10 @@ export function initAnimeLayoutHandler(options: LayoutHandlerOptions) {
 					".right-sidebar-container",
 				) as HTMLElement | null;
 				if (rightSidebar) {
-					rightSidebar.style.display = "";
 					rightSidebar.classList.remove("hidden-in-grid-mode");
+					rightSidebar.style.removeProperty("display");
 				}
 			}
-			const mainGrid = document.getElementById(
-				"main-grid",
-			) as HTMLElement | null;
 			if (mainGrid) {
 				mainGrid.style.gridTemplateColumns = "";
 				mainGrid.classList.remove("two-column-layout");
