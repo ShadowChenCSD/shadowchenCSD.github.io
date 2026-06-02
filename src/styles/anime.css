@@ -2,6 +2,10 @@
   container-type: inline-size;
 }
 
+.emoji-icon {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
 .anime-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -28,7 +32,7 @@
 
 @container (min-width: 64rem) {
   .anime-grid-container.anime-grid-mode {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -119,6 +123,66 @@
   border-color: var(--primary);
 }
 
+.anime-filter-tag[data-status="planned"] {
+  background: rgb(254 249 195);
+}
+.anime-filter-tag[data-status="planned"]:hover:not(.anime-active) {
+  background: rgb(254 249 195);
+}
+.anime-filter-tag[data-status="planned"].anime-active {
+  background: rgb(234 179 8);
+  border-color: rgb(234 179 8);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="watching"] {
+  background: rgb(220 252 231);
+}
+.anime-filter-tag[data-status="watching"]:hover:not(.anime-active) {
+  background: rgb(220 252 231);
+}
+.anime-filter-tag[data-status="watching"].anime-active {
+  background: rgb(34 197 94);
+  border-color: rgb(34 197 94);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="completed"] {
+  background: rgb(243 232 255);
+}
+.anime-filter-tag[data-status="completed"]:hover:not(.anime-active) {
+  background: rgb(243 232 255);
+}
+.anime-filter-tag[data-status="completed"].anime-active {
+  background: rgb(168 85 247);
+  border-color: rgb(168 85 247);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="onhold"] {
+  background: rgb(243 244 246);
+}
+.anime-filter-tag[data-status="onhold"]:hover:not(.anime-active) {
+  background: rgb(243 244 246);
+}
+.anime-filter-tag[data-status="onhold"].anime-active {
+  background: rgb(55 65 81);
+  border-color: rgb(55 65 81);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="dropped"] {
+  background: rgb(254 226 226);
+}
+.anime-filter-tag[data-status="dropped"]:hover:not(.anime-active) {
+  background: rgb(254 226 226);
+}
+.anime-filter-tag[data-status="dropped"].anime-active {
+  background: rgb(239 68 68);
+  border-color: rgb(239 68 68);
+  color: #fff;
+}
+
 .anime-grid-container [data-anime-status].anime-hidden {
   display: none !important;
 }
@@ -152,6 +216,55 @@
   border-right-color: var(--primary);
   animation: spin 1s linear infinite;
 }
+
+.anime-pagination {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime-pagination.is-hidden {
+  display: none;
+}
+
+.anime-page-numbers {
+  min-height: 2.75rem;
+}
+
+.anime-page-number {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.anime-page-number:hover:not(:disabled):not(.is-active) {
+  background: var(--btn-card-bg-hover);
+}
+
+.anime-page-number:active:not(:disabled):not(.is-active) {
+  transform: scale(0.85);
+}
+
+.anime-page-number.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.anime-page-ellipsis {
+  margin: 0 0.25rem;
+}
+
+.anime-page-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

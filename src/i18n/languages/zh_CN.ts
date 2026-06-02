@@ -61,12 +61,15 @@ export const zh_CN: Translation = {
 	// 番剧页面
 	[Key.animeTitle]: "追番",
 	[Key.animeSubtitle]: "记录我的动漫剧目，评分来自Bangumi番组计划",
-	[Key.animeStatusWatching]: "在看",
-	[Key.animeStatusCompleted]: "看过",
-	[Key.animeStatusPlanned]: "想看",
-	[Key.animeStatusOnHold]: "搁置",
-	[Key.animeStatusDropped]: "抛弃",
+	[Key.animeStatusWatching]: "追番中",
+	[Key.animeStatusCompleted]: "看完了",
+	[Key.animeStatusPlanned]: "计划中",
+	[Key.animeStatusOnHold]: "搁置了",
+	[Key.animeStatusDropped]: "放弃了",
 	[Key.animeFilterAll]: "全部",
+	[Key.animeTotal]: "总数",
+	[Key.animeAvgRating]: "平均评分",
+	[Key.animeActor]: "主演",
 	[Key.animeYear]: "年份",
 	[Key.animeStudio]: "制作",
 	[Key.animeEmpty]: "暂无追番数据",
@@ -318,5 +321,6 @@ export const zh_CN: Translation = {
 	[Key.smartRecommend]: "智能推荐",
 	[Key.randomRecommend]: "随机推荐",
 };
+
 
 

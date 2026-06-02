@@ -61,12 +61,15 @@ export const zh_TW: Translation = {
 	// 番劇頁面
 	[Key.animeTitle]: "追番",
 	[Key.animeSubtitle]: "記錄我的動漫劇目，評分來自Bangumi番組計劃",
-	[Key.animeStatusWatching]: "在看",
-	[Key.animeStatusCompleted]: "看過",
-	[Key.animeStatusPlanned]: "想看",
-	[Key.animeStatusOnHold]: "擱置",
-	[Key.animeStatusDropped]: "拋棄",
+	[Key.animeStatusWatching]: "追番中",
+	[Key.animeStatusCompleted]: "看完了",
+	[Key.animeStatusPlanned]: "計劃中",
+	[Key.animeStatusOnHold]: "擱置了",
+	[Key.animeStatusDropped]: "放棄了",
 	[Key.animeFilterAll]: "全部",
+	[Key.animeTotal]: "總數",
+	[Key.animeAvgRating]: "平均評分",
+	[Key.animeActor]: "主演",
 	[Key.animeYear]: "年份",
 	[Key.animeStudio]: "製作",
 	[Key.animeEmpty]: "暫無追番資料",
@@ -320,5 +323,6 @@ export const zh_TW: Translation = {
 	[Key.smartRecommend]: "智能推薦",
 	[Key.randomRecommend]: "隨機推薦",
 };
+
 
 

@@ -24,15 +24,21 @@ const {
 	<button class="anime-filter-tag anime-active" data-status="all"
 		>{filterAllLabel}</button
 	>
-	<button class="anime-filter-tag" data-status="watching"
-		>{statusWatchingLabel}</button
-	>
+	<button class="anime-filter-tag" data-status="onhold">
+		{statusOnHoldLabel}
+	</button>
 	<button class="anime-filter-tag" data-status="planned"
 		>{statusPlannedLabel}</button
+	>
+	<button class="anime-filter-tag" data-status="watching"
+		>{statusWatchingLabel}</button
 	>
 	<button class="anime-filter-tag" data-status="completed"
 		>{statusCompletedLabel}</button
 	>
+	<button class="anime-filter-tag" data-status="dropped">
+		{statusDroppedLabel}
+	</button>
 	{
 		showExtendedFilters && (
 			<>

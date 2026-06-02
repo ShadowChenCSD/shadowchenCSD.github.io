@@ -14,6 +14,7 @@ export interface RawAnimeItem {
 	progress?: number | string;
 	totalEpisodes?: number | string;
 	description?: string;
+	actor?: string;
 	year?: string;
 	studio?: string;
 	genre?: string[];
@@ -28,6 +29,7 @@ export interface AnimeItem {
 	progress: number;
 	totalEpisodes: number;
 	description: string;
+	actor: string;
 	year: string;
 	studio: string;
 	genre: string[];
@@ -63,6 +65,7 @@ export function loadAnimeData(filename: string): AnimeItem[] {
 			progress: Number(item.progress) || 0,
 			totalEpisodes: Number(item.totalEpisodes) || 12,
 			description: item.description || "",
+			actor: item.actor || "",
 			year: item.year || "",
 			studio: item.studio || "",
 			genre: Array.isArray(item.genre) ? item.genre : [],

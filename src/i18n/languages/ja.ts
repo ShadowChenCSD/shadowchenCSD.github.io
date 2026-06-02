@@ -67,6 +67,9 @@ export const ja: Translation = {
 	[Key.animeStatusOnHold]: "保留中",
 	[Key.animeStatusDropped]: "中断",
 	[Key.animeFilterAll]: "すべて",
+	[Key.animeTotal]: "合計",
+	[Key.animeAvgRating]: "平均評価",
+	[Key.animeActor]: "出演",
 	[Key.animeYear]: "年",
 	[Key.animeStudio]: "スタジオ",
 	[Key.animeEmpty]: "アニメのデータはありません",
@@ -335,5 +338,6 @@ export const ja: Translation = {
 	[Key.smartRecommend]: "スマート",
 	[Key.randomRecommend]: "ランダム",
 };
+
 
 

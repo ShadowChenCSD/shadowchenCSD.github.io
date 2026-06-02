@@ -67,6 +67,9 @@ export const en: Translation = {
 	[Key.animeStatusOnHold]: "On Hold",
 	[Key.animeStatusDropped]: "Dropped",
 	[Key.animeFilterAll]: "All",
+	[Key.animeTotal]: "Total",
+	[Key.animeAvgRating]: "Average Rating",
+	[Key.animeActor]: "Cast",
 	[Key.animeYear]: "Year",
 	[Key.animeStudio]: "Studio",
 	[Key.animeEmpty]: "No anime data available",
@@ -331,5 +334,6 @@ export const en: Translation = {
 	[Key.smartRecommend]: "Smart",
 	[Key.randomRecommend]: "Random",
 };
+
 
 
