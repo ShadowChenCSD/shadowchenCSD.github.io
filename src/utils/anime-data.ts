@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 
 import localAnimeList from "../data/anime";
@@ -140,7 +140,7 @@ export function getStatusMap(): Record<
 		},
 		completed: {
 			text: i18n(I18nKey.animeStatusCompleted),
-			class: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+			class: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
 			icon: "✓",
 		},
 		planned: {
@@ -150,7 +150,7 @@ export function getStatusMap(): Record<
 		},
 		onhold: {
 			text: i18n(I18nKey.animeStatusOnHold),
-			class: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+			class: "bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-300",
 			icon: "⏸",
 		},
 		dropped: {
@@ -160,3 +160,5 @@ export function getStatusMap(): Record<
 		},
 	};
 }
+
+
