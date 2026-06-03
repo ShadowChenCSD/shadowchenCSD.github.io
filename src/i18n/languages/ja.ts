@@ -1,4 +1,4 @@
-﻿import Key from "../i18nKey";
+import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const ja: Translation = {
@@ -100,8 +100,16 @@ export const ja: Translation = {
 	[Key.gameYear]: "年",
 	[Key.gamePlatform]: "プラットフォーム",
 	[Key.gameEmpty]: "ゲームのデータはありません",
+	[Key.gameEmptyBangumi]:
+		"Bangumiの構成またはネットワークを接続を確認してください",
+	[Key.gameEmptyBilibili]:
+		"Bilibiliの構成またはネットワーク接続を確認してください",
 	[Key.gameEmptyLocal]:
 		"src/data/game.ts ファイルにゲーム情報を追加してください",
+	[Key.gameConfigBilibili]:
+		"src/config.tsファイルでBilibili vmidを設定してください",
+	[Key.gameConfigBangumi]:
+		"src/config.tsファイルでBangumi userIdを設定してください",
 
 	// 日記ページ
 	[Key.diarySubtitle]: "日々の小さな暮らしをシェア",

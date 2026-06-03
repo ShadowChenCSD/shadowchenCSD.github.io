@@ -1,4 +1,4 @@
-﻿import Key from "../i18nKey";
+import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const en: Translation = {
@@ -100,8 +100,16 @@ export const en: Translation = {
 	[Key.gameYear]: "Year",
 	[Key.gamePlatform]: "Platform",
 	[Key.gameEmpty]: "No game data available",
+	[Key.gameEmptyBangumi]:
+		"Please check Bangumi configuration or network connection",
+	[Key.gameEmptyBilibili]:
+		"Please check Bilibili configuration or network connection",
 	[Key.gameEmptyLocal]:
 		"Please add game information in the src/data/game.ts file",
+	[Key.gameConfigBilibili]:
+		"Please set your Bilibili vmid in the src/config.ts file",
+	[Key.gameConfigBangumi]:
+		"Please set your Bangumi userId in the src/config.ts file",
 
 	// Diary Page
 	[Key.diarySubtitle]: "Share life, anytime, anywhere",

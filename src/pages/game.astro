@@ -183,7 +183,7 @@ const gameStats = {
 							statusMap={statusMap}
 							actorLabel={i18n(I18nKey.gameActor)}
 							yearLabel={i18n(I18nKey.gameYear)}
-							studioLabel={i18n(I18nKey.gamePlatform)}
+							platformLabel={i18n(I18nKey.gamePlatform)}
 						/>
 					)
 				}
@@ -528,6 +528,7 @@ const gameStats = {
 				renderPaginationNumbers(currentPage, totalPages, (page) => {
 					currentPage = page;
 					applyPagination();
+					scrollGameListToTop();
 				});
 
 				const shouldShowPagination = filteredItems.length > pageSize;
@@ -536,6 +537,16 @@ const gameStats = {
 					!shouldShowPagination,
 				);
 			};
+
+			function scrollGameListToTop() {
+				const target = document.querySelector(".game-card-base");
+				if (!target) {
+					return;
+				}
+				const rect = target.getBoundingClientRect();
+				const offset = window.scrollY + rect.top - 80;
+				window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+			}
 
 			filterTags.forEach((tag) => {
 				addGameListener(tag, "click", () => {
@@ -549,6 +560,7 @@ const gameStats = {
 					currentStatus = tag.getAttribute("data-status") || "all";
 					currentPage = 1;
 					applyPagination();
+					scrollGameListToTop();
 				});
 			});
 
@@ -558,11 +570,13 @@ const gameStats = {
 				}
 				currentPage--;
 				applyPagination();
+				scrollGameListToTop();
 			});
 
 			addGameListener(nextButton, "click", () => {
 				currentPage++;
 				applyPagination();
+				scrollGameListToTop();
 			});
 
 			applyPagination();

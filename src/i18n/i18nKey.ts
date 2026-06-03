@@ -93,7 +93,11 @@ enum I18nKey {
 	gameYear = "gameYear",
 	gamePlatform = "gamePlatform",
 	gameEmpty = "gameEmpty",
+	gameEmptyBangumi = "gameEmptyBangumi",
+	gameEmptyBilibili = "gameEmptyBilibili",
 	gameEmptyLocal = "gameEmptyLocal",
+	gameConfigBilibili = "gameConfigBilibili",
+	gameConfigBangumi = "gameConfigBangumi",
 
 	// 短文页面
 	diarySubtitle = "diarySubtitle",

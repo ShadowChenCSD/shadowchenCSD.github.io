@@ -1,4 +1,4 @@
-﻿import Key from "../i18nKey";
+import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const zh_TW: Translation = {
@@ -97,7 +97,13 @@ export const zh_TW: Translation = {
 	[Key.gameYear]: "年份",
 	[Key.gamePlatform]: "平台",
 	[Key.gameEmpty]: "暫無遊戲資料",
+	[Key.gameEmptyBangumi]: "請檢查 Bangumi 設定或網路連線",
+	[Key.gameEmptyBilibili]: "請檢查 Bilibili 設定或網路連線",
 	[Key.gameEmptyLocal]: "請在 src/data/game.ts 檔案中新增遊戲資訊",
+	[Key.gameConfigBilibili]:
+		"請在 src/config.ts 檔案中設定您的 Bilibili vmid",
+	[Key.gameConfigBangumi]:
+		"請在 src/config.ts 檔案中設定您的 Bangumi userId",
 
 	// 短文頁面
 	[Key.diarySubtitle]: "分享點滴生活",

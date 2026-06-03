@@ -1,4 +1,4 @@
-﻿---
+---
 import "../styles/anime.css";
 
 import { AnimeFilters, AnimeGrid } from "@components/features/anime";
@@ -568,6 +568,7 @@ const animeStats = {
 				renderPaginationNumbers(currentPage, totalPages, (page) => {
 					currentPage = page;
 					applyPagination();
+					scrollAnimeListToTop();
 				});
 
 				const shouldShowPagination = filteredItems.length > pageSize;
@@ -576,6 +577,16 @@ const animeStats = {
 					!shouldShowPagination,
 				);
 			};
+
+			function scrollAnimeListToTop() {
+				const target = document.querySelector(".anime-card-base");
+				if (!target) {
+					return;
+				}
+				const rect = target.getBoundingClientRect();
+				const offset = window.scrollY + rect.top - 80;
+				window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+			}
 
 			filterTags.forEach((tag) => {
 				addAnimeListener(tag, "click", () => {
@@ -589,6 +600,7 @@ const animeStats = {
 					currentStatus = tag.getAttribute("data-status") || "all";
 					currentPage = 1;
 					applyPagination();
+					scrollAnimeListToTop();
 				});
 			});
 
@@ -598,11 +610,13 @@ const animeStats = {
 				}
 				currentPage--;
 				applyPagination();
+				scrollAnimeListToTop();
 			});
 
 			addAnimeListener(nextButton, "click", () => {
 				currentPage++;
 				applyPagination();
+				scrollAnimeListToTop();
 			});
 
 			applyPagination();
