@@ -1,0 +1,594 @@
+---
+import "../styles/game.css";
+
+import { GameFilters, GameGrid } from "@components/features/game";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+import { siteConfig } from "../config";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import { getGameList, getGameStatusMap } from "../utils/game-data";
+import { widgetManager } from "../utils/widget-manager";
+
+if (!siteConfig.featurePages.game) {
+	return Astro.redirect("/404/");
+}
+
+const hasRightSidebars =
+	widgetManager.getComponentsByPosition("top", "right", "desktop").length >
+		0 ||
+	widgetManager.getComponentsByPosition("sticky", "right", "desktop").length >
+		0;
+
+const gameList = getGameList();
+
+const showEmptyState = gameList.length === 0;
+const emptyDescription = i18n(I18nKey.gameEmptyLocal);
+const statusMap = getGameStatusMap();
+const PAGE_SIZE = 20;
+const showExtendedFilters = false;
+const emptyMessage = i18n(I18nKey.gameEmpty);
+const statusLabelMap = {
+	planned: i18n(I18nKey.gameStatusPlanned),
+	playing: i18n(I18nKey.gameStatusPlaying),
+	completed: i18n(I18nKey.gameStatusCompleted),
+};
+if (statusMap.planned) {
+	statusMap.planned.text = statusLabelMap.planned;
+}
+if (statusMap.playing) {
+	statusMap.playing.text = statusLabelMap.playing;
+}
+if (statusMap.completed) {
+	statusMap.completed.text = statusLabelMap.completed;
+}
+const ratedGameList = gameList.filter((game) => game.rating > 0);
+const gameStats = {
+	total: gameList.length,
+	playing: gameList.filter((game) => game.status === "playing").length,
+	completed: gameList.filter((game) => game.status === "completed").length,
+	planned: gameList.filter((game) => game.status === "planned").length,
+	avgRating:
+		ratedGameList.length > 0
+			? (
+					ratedGameList.reduce((sum, game) => sum + game.rating, 0) /
+					ratedGameList.length
+				).toFixed(1)
+			: "0.0",
+};
+---
+
+<MainGridLayout
+	title={i18n(I18nKey.game)}
+	description={i18n(I18nKey.gameSubtitle)}
+>
+	<div
+		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+	>
+		<div class="card-base game-card-base z-10 px-9 py-6 relative w-full">
+			<div class="relative w-full mb-8">
+				<div class="mb-6">
+					<h1
+						class="text-4xl font-bold text-90 mb-2 relative
+                    before:w-1 before:h-8 before:rounded-md before:bg-(--primary)
+                    before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4"
+					>
+						{i18n(I18nKey.gameTitle)}
+					</h1>
+					<p class="text-75">
+						{i18n(I18nKey.gameSubtitle)}
+					</p>
+				</div>
+
+				<div class="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-5 gap-4 mb-8">
+					<div class="col-span-3 md:col-span-3 lg:col-span-1 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 shadow-sm">
+						<div class="flex items-center gap-3">
+							<div class="text-2xl emoji-icon">📊</div>
+							<div>
+								<div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+									{gameStats.total}
+								</div>
+								<div class="text-sm text-blue-600/70 dark:text-blue-400/70">
+									{i18n(I18nKey.gameTotal)}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-span-3 md:col-span-3 lg:col-span-1 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
+						<div class="flex items-center gap-3">
+							<div class="text-2xl emoji-icon">⭐</div>
+							<div>
+								<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
+									{gameStats.avgRating}
+								</div>
+								<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
+									{i18n(I18nKey.gameAvgRating)}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-lg p-4 shadow-sm">
+						<div class="flex items-center gap-3">
+							<div class="text-2xl emoji-icon">📌</div>
+							<div>
+								<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
+									{gameStats.planned}
+								</div>
+								<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
+									{statusLabelMap.planned}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 shadow-sm">
+						<div class="flex items-center gap-3">
+							<div class="text-2xl emoji-icon">▶️</div>
+							<div>
+								<div class="text-2xl font-bold text-green-600 dark:text-green-400">
+									{gameStats.playing}
+								</div>
+								<div class="text-sm text-green-600/70 dark:text-green-400/70">
+									{statusLabelMap.playing}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 shadow-sm">
+						<div class="flex items-center gap-3">
+							<div class="text-2xl emoji-icon">✅</div>
+							<div>
+								<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
+									{gameStats.completed}
+								</div>
+								<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
+									{statusLabelMap.completed}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-6">
+					<GameFilters
+						filterAllLabel={i18n(I18nKey.gameFilterAll)}
+						statusPlayingLabel={statusLabelMap.playing}
+						statusPlannedLabel={statusLabelMap.planned}
+						statusCompletedLabel={statusLabelMap.completed}
+						statusOnHoldLabel={i18n(I18nKey.gameStatusOnHold)}
+						statusDroppedLabel={i18n(I18nKey.gameStatusDropped)}
+						showExtendedFilters={showExtendedFilters}
+					/>
+				</div>
+			</div>
+
+			<div class="mb-8">
+				{
+					showEmptyState ? (
+						<div class="text-center py-12">
+							<div class="text-5xl mb-4">😢</div>
+							<h3 class="text-xl font-medium text-black/80 dark:text-white/80 mb-2">
+								{emptyMessage}
+							</h3>
+							<p class="text-black/60 dark:text-white/60">
+								{emptyDescription}
+							</p>
+						</div>
+					) : (
+						<GameGrid
+							gameList={gameList}
+							pageSize={PAGE_SIZE}
+							statusMap={statusMap}
+							actorLabel={i18n(I18nKey.gameActor)}
+							yearLabel={i18n(I18nKey.gameYear)}
+							studioLabel={i18n(I18nKey.gamePlatform)}
+						/>
+					)
+				}
+			</div>
+		</div>
+	</div>
+
+	<script is:inline define:vars={{ hasRightSidebars }}>
+		(function () {
+			const containerId = "game-list-container";
+
+			function updateGameListLayout(layout, shouldAnimate = true) {
+				const gameListContainer = document.getElementById(containerId);
+				if (!gameListContainer) {
+					return;
+				}
+				gameListContainer.dataset.currentLayout = layout;
+				const mainGrid = document.getElementById("main-grid");
+				if (mainGrid) {
+					mainGrid.setAttribute("data-layout-mode", layout);
+				}
+
+				const gameItems = Array.from(
+					document.querySelectorAll("[data-game-status]"),
+				);
+				const visibleItems = gameItems.filter(
+					(item) => item.offsetParent !== null,
+				);
+				const firstPositions = new Map();
+				if (shouldAnimate) {
+					visibleItems.forEach((item) => {
+						const rect = item.getBoundingClientRect();
+						firstPositions.set(item, {
+							left: rect.left,
+							top: rect.top,
+							width: rect.width,
+							height: rect.height,
+						});
+					});
+				}
+
+				const style = document.createElement("style");
+				style.innerHTML = `.game-grid-container .group { transition: none !important; }`;
+				document.head.appendChild(style);
+				gameListContainer.classList.remove(
+					"game-list-mode",
+					"game-grid-mode",
+				);
+				gameListContainer.classList.remove(
+					"grid-cols-1",
+					"md:grid-cols-2",
+					"lg:grid-cols-3",
+				);
+				if (layout === "grid") {
+					gameListContainer.classList.add("game-grid-mode");
+					if (hasRightSidebars) {
+						const rightSidebar = document.querySelector(
+							".right-sidebar-container",
+						);
+						if (rightSidebar) {
+							rightSidebar.style.display = "none";
+							rightSidebar.classList.add("hidden-in-grid-mode");
+						}
+					}
+					if (mainGrid) {
+						mainGrid.style.gridTemplateColumns = "17.5rem 1fr";
+						mainGrid.classList.add("two-column-layout");
+					}
+				} else {
+					gameListContainer.classList.add("game-list-mode");
+					gameListContainer.classList.add(
+						"grid-cols-1",
+						"lg:grid-cols-2",
+					);
+					if (hasRightSidebars) {
+						const rightSidebar = document.querySelector(
+							".right-sidebar-container",
+						);
+						if (rightSidebar) {
+							rightSidebar.classList.remove(
+								"hidden-in-grid-mode",
+							);
+							rightSidebar.style.removeProperty("display");
+						}
+					}
+					if (mainGrid) {
+						mainGrid.style.gridTemplateColumns = "";
+						mainGrid.classList.remove("two-column-layout");
+					}
+				}
+
+				void gameListContainer.offsetHeight;
+				if (!shouldAnimate) {
+					if (style.parentNode) {
+						style.parentNode.removeChild(style);
+					}
+					return;
+				}
+
+				requestAnimationFrame(() => {
+					if (style.parentNode) {
+						style.parentNode.removeChild(style);
+					}
+
+					visibleItems.forEach((item) => {
+						const first = firstPositions.get(item);
+						if (!first) {
+							return;
+						}
+						const last = item.getBoundingClientRect();
+
+						const deltaX = Math.round(first.left - last.left);
+						const deltaY = Math.round(first.top - last.top);
+						const deltaW = first.width / last.width;
+						const deltaH = first.height / last.height;
+
+						if (
+							Math.abs(deltaX) < 1 &&
+							Math.abs(deltaY) < 1 &&
+							Math.abs(deltaW - 1) < 0.01 &&
+							Math.abs(deltaH - 1) < 0.01
+						) {
+							return;
+						}
+
+						item.style.willChange = "transform";
+						item.style.transition = "none";
+						item.style.transformOrigin = "top left";
+						item.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(${deltaW}, ${deltaH})`;
+					});
+
+					void gameListContainer.offsetHeight;
+					requestAnimationFrame(() => {
+						visibleItems.forEach((item) => {
+							item.style.transition =
+								"transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)";
+							item.style.transform = "";
+						});
+						setTimeout(() => {
+							visibleItems.forEach((item) => {
+								item.style.transition = "";
+								item.style.transformOrigin = "";
+								item.style.transform = "";
+								item.style.willChange = "";
+							});
+						}, 500);
+					});
+				});
+			}
+
+			function initGameLayout() {
+				const gameListContainer = document.getElementById(containerId);
+				if (!gameListContainer) {
+					return false;
+				}
+				const currentLayout =
+					localStorage.getItem("postListLayout") || "list";
+				updateGameListLayout(currentLayout, false);
+				requestAnimationFrame(() => {
+					gameListContainer.classList.remove("opacity-0");
+				});
+				return true;
+			}
+
+			let retryCount = 0;
+			const maxRetries = 10;
+
+			function tryInit() {
+				if (initGameLayout()) {
+					return;
+				}
+				if (retryCount < maxRetries) {
+					retryCount++;
+					const delay = Math.min(
+						100 * Math.pow(1.5, retryCount),
+						1000,
+					);
+					setTimeout(tryInit, delay);
+				} else {
+					setTimeout(() => {
+						const gameListContainer =
+							document.getElementById(containerId);
+						if (gameListContainer) {
+							const currentLayout =
+								localStorage.getItem("postListLayout") ||
+								"list";
+							updateGameListLayout(currentLayout, false);
+							gameListContainer.classList.remove("opacity-0");
+						}
+					}, 2000);
+				}
+			}
+
+			if (document.readyState === "loading") {
+				document.addEventListener("DOMContentLoaded", tryInit);
+			} else {
+				tryInit();
+			}
+
+			window.addEventListener("layoutChange", (event) => {
+				updateGameListLayout(event.detail.layout);
+			});
+		})();
+	</script>
+
+	<script is:inline>
+		if (typeof window.gameControlState === "undefined") {
+			window.gameControlState = {
+				listeners: [],
+				swupListenersBound: false,
+			};
+		}
+
+		function addGameListener(element, type, handler) {
+			element.addEventListener(type, handler);
+			window.gameControlState.listeners.push([element, type, handler]);
+		}
+
+		function clearGameListeners() {
+			window.gameControlState.listeners.forEach((listener) => {
+				const [element, type, handler] = listener;
+				element.removeEventListener(type, handler);
+			});
+			window.gameControlState.listeners = [];
+		}
+
+		function renderPaginationNumbers(currentPage, totalPages, onPageChange) {
+			const pageNumbersContainer =
+				document.getElementById("game-page-numbers");
+			if (!pageNumbersContainer) {
+				return;
+			}
+			pageNumbersContainer.innerHTML = "";
+
+			const appendPageButton = (page) => {
+				const pageButton = document.createElement("button");
+				pageButton.type = "button";
+				pageButton.textContent = String(page);
+				pageButton.className = "game-page-number";
+				if (page === currentPage) {
+					pageButton.classList.add("is-active");
+					pageButton.disabled = true;
+				} else {
+					addGameListener(pageButton, "click", () => onPageChange(page));
+				}
+				pageNumbersContainer.appendChild(pageButton);
+			};
+
+			const appendEllipsis = () => {
+				const ellipsis = document.createElement("span");
+				ellipsis.className = "game-page-ellipsis";
+				ellipsis.textContent = "...";
+				pageNumbersContainer.appendChild(ellipsis);
+			};
+
+			if (totalPages <= 7) {
+				for (let page = 1; page <= totalPages; page++) {
+					appendPageButton(page);
+				}
+				return;
+			}
+
+			appendPageButton(1);
+			const start = Math.max(2, currentPage - 1);
+			const end = Math.min(totalPages - 1, currentPage + 1);
+
+			if (start > 2) {
+				appendEllipsis();
+			}
+			for (let page = start; page <= end; page++) {
+				appendPageButton(page);
+			}
+			if (end < totalPages - 1) {
+				appendEllipsis();
+			}
+			appendPageButton(totalPages);
+		}
+
+		function initGameFiltersAndPagination() {
+			const filterTags = Array.from(
+				document.querySelectorAll(".game-filter-tag"),
+			);
+			const listContainer = document.getElementById("game-list-container");
+			const paginationContainer = document.getElementById("game-pagination");
+			const prevButton = document.getElementById("game-page-prev");
+			const nextButton = document.getElementById("game-page-next");
+
+			if (
+				!listContainer ||
+				!paginationContainer ||
+				!prevButton ||
+				!nextButton
+			) {
+				return;
+			}
+
+			clearGameListeners();
+
+			const gameItems = Array.from(
+				listContainer.querySelectorAll("[data-game-status]"),
+			);
+			const pageSize = Math.max(
+				1,
+				Number(listContainer.dataset.pageSize || "20"),
+			);
+			let currentStatus = "all";
+			let currentPage = 1;
+
+			const getFilteredItems = () =>
+				gameItems.filter((item) => {
+					const status = item.getAttribute("data-game-status");
+					return currentStatus === "all" || status === currentStatus;
+				});
+
+			const applyPagination = () => {
+				const filteredItems = getFilteredItems();
+				const totalPages = Math.max(
+					1,
+					Math.ceil(filteredItems.length / pageSize),
+				);
+				if (currentPage > totalPages) {
+					currentPage = totalPages;
+				}
+
+				const startIndex = (currentPage - 1) * pageSize;
+				const endIndex = startIndex + pageSize;
+				const visibleItems = new Set(
+					filteredItems.slice(startIndex, endIndex),
+				);
+
+				gameItems.forEach((item) => {
+					if (visibleItems.has(item)) {
+						item.classList.remove("game-hidden");
+						return;
+					}
+					item.classList.add("game-hidden");
+				});
+
+				prevButton.disabled = currentPage <= 1;
+				nextButton.disabled = currentPage >= totalPages;
+
+				renderPaginationNumbers(currentPage, totalPages, (page) => {
+					currentPage = page;
+					applyPagination();
+				});
+
+				const shouldShowPagination = filteredItems.length > pageSize;
+				paginationContainer.classList.toggle(
+					"is-hidden",
+					!shouldShowPagination,
+				);
+			};
+
+			filterTags.forEach((tag) => {
+				addGameListener(tag, "click", () => {
+					if (tag.classList.contains("game-active")) {
+						return;
+					}
+					filterTags.forEach((button) =>
+						button.classList.remove("game-active"),
+					);
+					tag.classList.add("game-active");
+					currentStatus = tag.getAttribute("data-status") || "all";
+					currentPage = 1;
+					applyPagination();
+				});
+			});
+
+			addGameListener(prevButton, "click", () => {
+				if (currentPage <= 1) {
+					return;
+				}
+				currentPage--;
+				applyPagination();
+			});
+
+			addGameListener(nextButton, "click", () => {
+				currentPage++;
+				applyPagination();
+			});
+
+			applyPagination();
+		}
+
+		document.addEventListener("DOMContentLoaded", initGameFiltersAndPagination);
+
+		function setupSwupListeners() {
+			if (!window.swup || window.gameControlState.swupListenersBound) {
+				return;
+			}
+			window.gameControlState.swupListenersBound = true;
+			window.swup.hooks.on("content:replace", () =>
+				setTimeout(initGameFiltersAndPagination, 150),
+			);
+			window.swup.hooks.on("page:view", () =>
+				setTimeout(initGameFiltersAndPagination, 150),
+			);
+		}
+
+		if (typeof window !== "undefined") {
+			if (window.swup) {
+				setupSwupListeners();
+			} else {
+				document.addEventListener("swup:enable", setupSwupListeners);
+			}
+		}
+	</script>
+</MainGridLayout>

@@ -1,0 +1,42 @@
+---
+interface Props {
+	filterAllLabel: string;
+	statusPlayingLabel: string;
+	statusPlannedLabel: string;
+	statusCompletedLabel: string;
+	statusOnHoldLabel?: string;
+	statusDroppedLabel?: string;
+	showExtendedFilters: boolean;
+}
+
+const {
+	filterAllLabel,
+	statusPlayingLabel,
+	statusPlannedLabel,
+	statusCompletedLabel,
+	statusOnHoldLabel,
+	statusDroppedLabel,
+	showExtendedFilters,
+} = Astro.props;
+---
+
+<div class="game-filter-container flex flex-wrap gap-2">
+	<button class="game-filter-tag game-active" data-status="all"
+		>{filterAllLabel}</button
+	>
+	<button class="game-filter-tag" data-status="onhold">
+		{statusOnHoldLabel}
+	</button>
+	<button class="game-filter-tag" data-status="planned"
+		>{statusPlannedLabel}</button
+	>
+	<button class="game-filter-tag" data-status="playing"
+		>{statusPlayingLabel}</button
+	>
+	<button class="game-filter-tag" data-status="completed"
+		>{statusCompletedLabel}</button
+	>
+	<button class="game-filter-tag" data-status="dropped">
+		{statusDroppedLabel}
+	</button>
+</div>

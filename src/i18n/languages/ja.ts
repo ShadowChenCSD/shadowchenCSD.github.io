@@ -56,6 +56,7 @@ export const ja: Translation = {
 	[Key.publishedAt]: "公開日",
 	[Key.license]: "ライセンス",
 	[Key.anime]: "視聴したアニメ",
+	[Key.game]: "ゲーム",
 	[Key.diary]: "日記",
 
 	// アニメページ
@@ -63,13 +64,13 @@ export const ja: Translation = {
 	[Key.animeSubtitle]: "観たアニメを記録、評価はBangumi番組計画より",
 	[Key.animeStatusWatching]: "視聴中",
 	[Key.animeStatusCompleted]: "完了",
-	[Key.animeStatusPlanned]: "検討中",
+	[Key.animeStatusPlanned]: "予定中",
 	[Key.animeStatusOnHold]: "保留中",
 	[Key.animeStatusDropped]: "中断",
 	[Key.animeFilterAll]: "すべて",
 	[Key.animeTotal]: "合計",
 	[Key.animeAvgRating]: "平均評価",
-	[Key.animeActor]: "出演",
+	[Key.animeActor]: "主役",
 	[Key.animeYear]: "年",
 	[Key.animeStudio]: "スタジオ",
 	[Key.animeEmpty]: "アニメのデータはありません",
@@ -83,6 +84,24 @@ export const ja: Translation = {
 		"src/config.tsファイルでBilibili vmidを設定してください",
 	[Key.animeConfigBangumi]:
 		"src/config.tsファイルでBangumi userIdを設定してください",
+
+	// ゲームページ
+	[Key.gameTitle]: "ゲーム",
+	[Key.gameSubtitle]: "ゲームを記録、評価はBangumiの番組計画より",
+	[Key.gameStatusPlaying]: "プレイ中",
+	[Key.gameStatusCompleted]: "完了",
+	[Key.gameStatusPlanned]: "予定中",
+	[Key.gameStatusOnHold]: "保留中",
+	[Key.gameStatusDropped]: "中断",
+	[Key.gameFilterAll]: "すべて",
+	[Key.gameTotal]: "合計",
+	[Key.gameAvgRating]: "平均評価",
+	[Key.gameActor]: "主役",
+	[Key.gameYear]: "年",
+	[Key.gamePlatform]: "プラットフォーム",
+	[Key.gameEmpty]: "ゲームのデータはありません",
+	[Key.gameEmptyLocal]:
+		"src/data/game.ts ファイルにゲーム情報を追加してください",
 
 	// 日記ページ
 	[Key.diarySubtitle]: "日々の小さな暮らしをシェア",

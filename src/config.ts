@@ -41,6 +41,7 @@ export const siteConfig: SiteConfig = {
 	// 特色页面开关配置（关闭未使用的页面有助于提升 SEO，关闭后请记得在 navbarConfig 中移除对应链接）
 	featurePages: {
 		anime: true, // 番剧页面开关
+		game: true, // 游戏页面开关
 		diary: true, // 日记页面开关
 		friends: true, // 友链页面开关
 		skills: true, // 技能页面开关
@@ -276,7 +277,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Diary,
 		LinkPreset.Albums,
 		LinkPreset.Anime,
-		// LinkPreset.Game,
+		LinkPreset.Game,
 		LinkPreset.Skills,
 		LinkPreset.Timeline,
 		LinkPreset.Friends,

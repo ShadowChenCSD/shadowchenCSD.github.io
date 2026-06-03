@@ -24,6 +24,11 @@ export const LinkPresets: Record<LinkPreset, NavBarLink> = {
 		url: "/anime/",
 		icon: "material-symbols:movie",
 	},
+	[LinkPreset.Game]: {
+		name: i18n(I18nKey.game),
+		url: "/game/",
+		icon: "material-symbols:sports-esports",
+	},
 	[LinkPreset.Diary]: {
 		name: i18n(I18nKey.diary),
 		url: "/diary/",

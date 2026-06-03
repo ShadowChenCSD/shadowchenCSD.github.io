@@ -1,0 +1,92 @@
+---
+import GameCard from "./GameCard.astro";
+import { Icon } from "astro-icon/components";
+
+interface StatusInfo {
+	text: string;
+	class: string;
+	icon: string;
+}
+
+interface GameItem {
+	title: string;
+	cover: string;
+	link: string;
+	status: string;
+	rating: number;
+	description: string;
+	actor: string;
+	year: string;
+	platform: string;
+	genre: string[];
+}
+
+interface Props {
+	gameList: GameItem[];
+	pageSize: number;
+	statusMap: Record<string, StatusInfo>;
+	actorLabel: string;
+	yearLabel: string;
+	platformLabel: string;
+}
+
+const { gameList, pageSize, statusMap, actorLabel, yearLabel, platformLabel } = 
+	Astro.props;
+---
+
+<div
+	id="game-list-container"
+	data-page-size={pageSize}
+	class="game-grid-container grid gap-4 md:gap-6 opacity-0 transition-opacity duration-300"
+>
+	{
+		gameList.map((game, index) => {
+			const statusInfo = statusMap[game.status] || {
+				text: game.status,
+				class: "btn-regular",
+				icon: "?",
+			};
+			return (
+				<GameCard
+					game={game}
+					itemIndex={index}
+					statusInfo={statusInfo}
+					actorLabel={actorLabel}
+					yearLabel={yearLabel}
+					platformLabel={platformLabel}
+				/>
+			);
+		})
+	}
+</div>
+
+<nav
+	id="game-pagination"
+	class="game-pagination is-hidden mt-8"
+	aria-label="Game pagination"
+>
+	<button
+		id="game-page-prev"
+		type="button"
+		class="game-page-btn btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11"
+	>
+		<Icon
+			name="material-symbols:chevron-left-rounded"
+			class="text-[1.75rem]"
+		/>
+	</button>
+	<div
+		id="game-page-numbers"
+		class="game-page-numbers bg-[var(--card-bg)] flex flex-row rounded-lg items-center text-neutral-700 dark:text-neutral-300 font-bold"
+	/>
+	<button
+		id="game-page-next"
+		type="button"
+		class="game-page-btn btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11"
+	>
+		<Icon
+			name="material-symbols:chevron-right-rounded"
+			class="text-[1.75rem]"
+		/>
+	</button>
+</nav>

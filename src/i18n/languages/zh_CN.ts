@@ -56,6 +56,7 @@ export const zh_CN: Translation = {
 	[Key.publishedAt]: "发布于",
 	[Key.license]: "许可协议",
 	[Key.anime]: "追番",
+	[Key.game]: "游戏",
 	[Key.diary]: "日记",
 
 	// 番剧页面
@@ -80,6 +81,23 @@ export const zh_CN: Translation = {
 		"请在 src/config.ts 文件中设置您的 Bilibili vmid",
 	[Key.animeConfigBangumi]:
 		"请在 src/config.ts 文件中设置您的 Bangumi userId",
+
+	// 游戏页面
+	[Key.gameTitle]: "游戏",
+	[Key.gameSubtitle]: "记录我的游戏历程，评分来自Bangumi番组计划",
+	[Key.gameStatusPlaying]: "游玩中",
+	[Key.gameStatusCompleted]: "通关了",
+	[Key.gameStatusPlanned]: "计划中",
+	[Key.gameStatusOnHold]: "搁置了",
+	[Key.gameStatusDropped]: "弃坑了",
+	[Key.gameFilterAll]: "全部",
+	[Key.gameTotal]: "总数",
+	[Key.gameAvgRating]: "平均评分",
+	[Key.gameActor]: "主演",
+	[Key.gameYear]: "年份",
+	[Key.gamePlatform]: "平台",
+	[Key.gameEmpty]: "暂无游戏数据",
+	[Key.gameEmptyLocal]: "请在 src/data/game.ts 文件中添加游戏信息",
 
 	// 短文页面
 	[Key.diarySubtitle]: "分享点滴生活",
