@@ -3,22 +3,17 @@
 	import { i18n } from "@i18n/translation";
 	import { onMount } from "svelte";
 
-	import { sidebarLayoutConfig, siteConfig } from "../../config";
+	import { siteConfig } from "../../config";
 
 	type LayoutMode = "list" | "grid";
 
 	export let currentLayout: LayoutMode = "list";
 
 	let mounted = false;
-	let isSmallScreen = false;
 	let isSwitching = false;
 	let userPreference: LayoutMode = "list";
-	let mediaQueryList: MediaQueryList | null = null;
 
-	const BREAKPOINT =
-		sidebarLayoutConfig.responsive?.breakpoints?.desktop ?? 1280;
-
-	$: currentLayout = isSmallScreen ? "list" : userPreference;
+	$: currentLayout = userPreference;
 
 	$: if (mounted) {
 		dispatchLayoutChange(currentLayout);
@@ -48,7 +43,7 @@
 	}
 
 	function switchLayout() {
-		if (!mounted || isSmallScreen || isSwitching) {
+		if (!mounted || isSwitching) {
 			return;
 		}
 
@@ -62,10 +57,6 @@
 
 	function onAnimationEnd() {
 		isSwitching = false;
-	}
-
-	function handleMediaQueryChange(e: MediaQueryListEvent | MediaQueryList) {
-		isSmallScreen = !e.matches;
 	}
 
 	onMount(() => {
@@ -84,15 +75,6 @@
 		} else {
 			userPreference = defaultLayout;
 			updateStorage(defaultLayout);
-		}
-
-		mediaQueryList = window.matchMedia(`(min-width: ${BREAKPOINT}px)`);
-		handleMediaQueryChange(mediaQueryList);
-
-		if (mediaQueryList.addEventListener) {
-			mediaQueryList.addEventListener("change", handleMediaQueryChange);
-		} else {
-			mediaQueryList.addListener(handleMediaQueryChange);
 		}
 
 		const handleCustomEvent = (
@@ -137,16 +119,6 @@
 		}
 
 		return () => {
-			if (mediaQueryList) {
-				if (mediaQueryList.removeEventListener) {
-					mediaQueryList.removeEventListener(
-						"change",
-						handleMediaQueryChange,
-					);
-				} else {
-					mediaQueryList.removeListener(handleMediaQueryChange);
-				}
-			}
 			window.removeEventListener(
 				"layoutChange",
 				handleCustomEvent as EventListener,
@@ -162,7 +134,7 @@
 	});
 </script>
 
-{#if mounted && siteConfig.postListLayout.allowSwitch && !isSmallScreen}
+{#if mounted && siteConfig.postListLayout.allowSwitch}
 	<button
 		type="button"
 		aria-label={userPreference === "list"

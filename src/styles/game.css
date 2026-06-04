@@ -1,7 +1,3 @@
-.game-card-base {
-  container-type: inline-size;
-}
-
 .emoji-icon {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
 }
@@ -15,24 +11,16 @@
 
 /* === Grid Mode === */
 .game-grid-container.game-grid-mode {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
-
-@container (min-width: 30rem) {
+@media (min-width: 800px) {
+  .game-grid-container.game-grid-mode {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1280px) {
   .game-grid-container.game-grid-mode {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@container (min-width: 48rem) {
-  .game-grid-container.game-grid-mode {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@container (min-width: 64rem) {
-  .game-grid-container.game-grid-mode {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -40,58 +28,16 @@
 .game-grid-container.game-list-mode {
   grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .game-grid-container.game-list-mode {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.game-grid-container.game-list-mode .group {
-  display: flex;
-  flex-direction: row;
-  min-height: 12rem;
-}
-
-.game-grid-container.game-list-mode .game-cover-container {
-  width: 8.5rem;
-  height: auto;
-  aspect-ratio: 2/3;
-  flex-shrink: 0;
-}
-@media (min-width: 768px) {
-  .game-grid-container.game-list-mode .game-cover-container {
-    width: 11rem;
+@media (min-width: 1280px) {
+  .game-grid-container.game-list-mode {
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.game-grid-container.game-list-mode .p-3 {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0.75rem 1rem;
-  min-width: 0;
-}
-
-.game-grid-container.game-list-mode h3 {
-  -webkit-line-clamp: unset;
-  line-clamp: unset;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.game-grid-container.game-list-mode .p-3 .flex.flex-wrap span {
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.game-grid-container.game-list-mode .group p.text-xs {
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
 }
 
 .game-filter-container {
