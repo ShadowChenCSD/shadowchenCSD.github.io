@@ -7,12 +7,14 @@
    Banner 文本样式
    ========================================================================== */
 .banner-title {
+  font-family: "方正苏新诗柳楷简体", "萝莉体 第二版", "ZenMaruGothic-Medium", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   animation: fadeInUp 1s ease-out;
   font-weight: bold;
 }
 
 .banner-subtitle {
+  font-family: "方正苏新诗柳楷简体", "萝莉体 第二版", "ZenMaruGothic-Medium", sans-serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   animation: fadeInUp 1s ease-out 0.3s both;
   min-height: 1.5em;
