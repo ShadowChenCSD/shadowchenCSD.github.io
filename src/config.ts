@@ -54,7 +54,7 @@ export const siteConfig: SiteConfig = {
 	// 	// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 	// 	mode: "logo",
 	// 	// 顶栏标题文本
-	// 	text: "MizukiUI",
+	// 	text: "个人博客",
 	// 	// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 	// 	icon: "assets/home/home.webp",
 	// 	// 网站Logo图片路径
@@ -88,10 +88,10 @@ export const siteConfig: SiteConfig = {
 	anime: {
 		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
 	},
-
-	// game: {
-	// 	mode: "local", // 游戏页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
-	// },
+	
+	game: {
+		mode: "local", // 游戏页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+	},
 
 	// 文章列表布局配置
 	postListLayout: {
@@ -127,17 +127,22 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
-			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-			], // 桌面横幅图片
+		desktop: [
+				"/assets/desktop-banner/1.jpg",
+				"/assets/desktop-banner/2.jpg",
+				"/assets/desktop-banner/3.jpg",
+				"/assets/desktop-banner/4.jpg",
+				"/assets/desktop-banner/5.jpg",
+				"/assets/desktop-banner/6.jpg",
+				"/assets/desktop-banner/7.png",
+				"/assets/desktop-banner/8.jpg",
+		], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
+				"/assets/mobile-banner/1.jpg",
+				"/assets/mobile-banner/2.jpg",
+				"/assets/mobile-banner/3.jpg",
+				"/assets/mobile-banner/4.jpg",
+				"/assets/mobile-banner/5.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -223,14 +228,14 @@ export const siteConfig: SiteConfig = {
 			fontFamily: "ZenMaruGothic-Medium",
 			fontWeight: "400",
 			localFonts: ["ZenMaruGothic-Medium.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+			enableCompress: false, // 启用字体子集优化，减少字体文件大小
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
 			fontFamily: "萝莉体 第二版",
 			fontWeight: "500",
 			localFonts: ["萝莉体 第二版.ttf"],
-			enableCompress: true, // 启用字体子集优化，减少字体文件大小
+			enableCompress: false, // 启用字体子集优化，减少字体文件大小
 		},
 	},
 	showLastModified: false, // 控制"上次编辑"卡片显示的开关
@@ -248,16 +253,21 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
+			"/assets/desktop-banner/1.jpg",
+			"/assets/desktop-banner/2.jpg",
+			"/assets/desktop-banner/3.jpg",
+			"/assets/desktop-banner/4.jpg",
+			"/assets/desktop-banner/5.jpg",
+			"/assets/desktop-banner/6.jpg",
+			"/assets/desktop-banner/7.png",
+			"/assets/desktop-banner/8.jpg",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
+			"/assets/mobile-banner/1.jpg",
+			"/assets/mobile-banner/2.jpg",
+			"/assets/mobile-banner/3.jpg",
+			"/assets/mobile-banner/4.jpg",
+			"/assets/mobile-banner/5.jpg",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -301,13 +311,13 @@ export const navBarConfig: NavBarConfig = {
 		// 		},
 		// 	],
 		// },
-		],
+	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
-	bio: "世界は大きい、君は行かなければならない",
+	avatar: "/images/avatar/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "逍遥之韶",
+	bio: "欲穷千里目，更上一层楼。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -316,23 +326,18 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibili",
 			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://space.bilibili.com/393361071",
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/ShadowChenCSD",
 		},
 	],
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: false,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
@@ -402,7 +407,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "这是公告示例内容。", // 公告内容
+	content: "博客内容陆续更新中……", // 公告内容
 	closable: false, // 允许用户关闭公告
 	// link: {
 	// 	enable: true, // 启用链接
@@ -571,7 +576,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 禁用看板娘以提升性能
+	enable: true, // 禁用看板娘以提升性能
 	models: ["/pio/models/yuki-miku/model.json"], // 默认模型路径
 	position: "left", // 模型位置
 	width: 500, // 默认宽度

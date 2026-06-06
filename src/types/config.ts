@@ -126,6 +126,11 @@ export interface SiteConfig {
 		mode?: "bangumi" | "local" | "bilibili"; // 番剧页面模式
 	};
 
+	// 添加游戏页面配置
+	game?: {
+		mode?: "bangumi" | "local" | "bilibili"; // 游戏页面模式
+	};
+
 	// 标签样式配置
 	tagStyle?: {
 		useNewStyle?: boolean; // 是否使用新样式（悬停高亮样式）还是旧样式（外框常亮样式）
