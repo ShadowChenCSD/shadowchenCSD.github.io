@@ -89,7 +89,7 @@ export const friendsData: FriendItem[] = [
 		id: 8,
 		title: "魔搭社区",
 		imgurl: "/links/modelscope.png",
-		desc: "国内开源大模型站点，提供前沿的AI模型，更新速度慢于HuggingFace",
+		desc: "国内开源大模型站点，提供前沿的AI模型",
 		siteurl: "https://modelscope.cn",
 		tags: ["开源大模型站点"],
 	},
