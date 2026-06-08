@@ -14,15 +14,23 @@ export interface DiaryItem {
 // 示例日记数据
 const diaryData: DiaryItem[] = [
 	{
-		id: 13,
+		id: 14,
 		content: "🎮 2026-05-17：《阴阳师》，签到3500天！🎯",
 		date: "2026-05-17T19:30:00+08:00",
 		images: [
-			"/images/diary/阴阳师·签到3500天.png",
+			"/images/diary/阴阳师·签到3500天·达成.webp",
+			"/images/diary/阴阳师·签到3500天·寄语.webp",
+			"/images/diary/阴阳师·签到3500天.webp",
+			"/images/diary/阴阳师·签到3000天.webp",
+			"/images/diary/阴阳师·签到2500天.webp",
+			"/images/diary/阴阳师·签到2000天.webp",
+			"/images/diary/阴阳师·签到1500天.webp",
+			"/images/diary/阴阳师·签到999天.webp",
+			"/images/diary/阴阳师·签到500天.webp",
 		],
 	},
 	{
-		id: 12,
+		id: 13,
 		content: "🎮 2026-02-05：《真三国无双·起源》，梦幻四英杰，全成就达成！🌸",
 		date: "2026-02-05T19:30:00+08:00",
 		images: [
@@ -31,12 +39,20 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 11,
+		id: 12,
 		content: "🎮 2026-01-23：《真三国无双·起源》，梦幻四英杰，启动！⚔️",
 		date: "2026-01-23T20:00:00+08:00",
 		images: [
 			"/images/diary/真三国无双·起源·梦幻四英杰·启动-1.jpg",
 			"/images/diary/真三国无双·起源·梦幻四英杰·启动-2.jpg",
+		],
+	},
+	{
+		id: 11,
+		content: "🎮 2025-12-16：《鸣潮》，漂泊者，开始拯救世界！⚔️",
+		date: "2025-12-16T12:30:00+08:00",
+		images: [
+			"/images/diary/鸣潮.webp",
 		],
 	},
 	{
@@ -62,7 +78,7 @@ const diaryData: DiaryItem[] = [
 	},
 	{
 		id: 8,
-		content: "🎮 2025-11-21：《丝之歌》，跳蚤节，打破塞斯记录！🪧",
+		content: "🎮 2025-11-21：《丝之歌》，跳蚤节，打破赛斯记录！🪧",
 		date: "2025-11-21T16:30:00+08:00",
 		images: [
 			"/images/diary/丝之歌·跳蚤节·赛斯-1.jpg",
@@ -118,7 +134,7 @@ const diaryData: DiaryItem[] = [
 		content: "🎮 2025-04-01：《真三国无双·起源》，朱和牺牲！💔",
 		date: "2025-04-01T19:30:00+08:00",
 		images: [
-			"/images/diary/真三国无双·起源·朱和.png",
+			"/images/diary/真三国无双·起源·朱和.webp",
 		],
 	},
 	{
@@ -126,8 +142,8 @@ const diaryData: DiaryItem[] = [
 		content: "🎮 2025-03-15：《真三国无双·起源》，启动！⚔️",
 		date: "2025-03-15T19:30:00+08:00",
 		images: [
-			"/images/diary/真三国无双·起源·启动-1.png",
-			"/images/diary/真三国无双·起源·启动-2.png",
+			"/images/diary/真三国无双·起源·启动-1.webp",
+			"/images/diary/真三国无双·起源·启动-2.webp",
 		],
 	},
 ];
