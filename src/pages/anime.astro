@@ -5,6 +5,7 @@ import { AnimeFilters, AnimeGrid } from "@components/features/anime";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
+import { PAGE_CAPACITY_ANIME_AND_GAME } from "../constants/constants";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import {
@@ -60,7 +61,6 @@ if (
 }
 
 const statusMap = getStatusMap();
-const PAGE_SIZE = 20;
 const showExtendedFilters = ANIME_MODE === "bangumi";
 const emptyMessage = i18n(I18nKey.animeEmpty);
 const statusLabelMap = {
@@ -219,7 +219,7 @@ const animeStats = {
 					) : (
 						<AnimeGrid
 							animeList={animeList}
-							pageSize={PAGE_SIZE}
+							pageCapacity={PAGE_CAPACITY_ANIME_AND_GAME}
 							statusMap={statusMap}
 							actorLabel={i18n(I18nKey.animeActor)}
 							yearLabel={i18n(I18nKey.animeYear)}
@@ -525,9 +525,9 @@ const animeStats = {
 			const animeItems = Array.from(
 				listContainer.querySelectorAll("[data-anime-status]"),
 			);
-			const pageSize = Math.max(
+			const pageCapacity = Math.max(
 				1,
-				Number(listContainer.dataset.pageSize || "20"),
+				Number(listContainer.dataset.pageCapacity || "20"),
 			);
 			let currentStatus = "all";
 			let currentPage = 1;
@@ -542,14 +542,14 @@ const animeStats = {
 				const filteredItems = getFilteredItems();
 				const totalPages = Math.max(
 					1,
-					Math.ceil(filteredItems.length / pageSize),
+					Math.ceil(filteredItems.length / pageCapacity),
 				);
 				if (currentPage > totalPages) {
 					currentPage = totalPages;
 				}
 
-				const startIndex = (currentPage - 1) * pageSize;
-				const endIndex = startIndex + pageSize;
+				const startIndex = (currentPage - 1) * pageCapacity;
+				const endIndex = startIndex + pageCapacity;
 				const visibleItems = new Set(
 					filteredItems.slice(startIndex, endIndex),
 				);
@@ -571,7 +571,7 @@ const animeStats = {
 					scrollAnimeListToTop();
 				});
 
-				const shouldShowPagination = filteredItems.length > pageSize;
+				const shouldShowPagination = filteredItems.length > pageCapacity;
 				paginationContainer.classList.toggle(
 					"is-hidden",
 					!shouldShowPagination,

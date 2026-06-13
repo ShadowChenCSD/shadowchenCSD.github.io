@@ -25,20 +25,27 @@ interface AnimeItem {
 
 interface Props {
 	animeList: AnimeItem[];
-	pageSize: number;
+	pageCapacity: number;
 	statusMap: Record<string, StatusInfo>;
 	actorLabel: string;
 	yearLabel: string;
 	studioLabel: string;
 }
 
-const { animeList, pageSize, statusMap, actorLabel, yearLabel, studioLabel } =
+const {
+	animeList,
+	pageCapacity,
+	statusMap,
+	actorLabel,
+	yearLabel,
+	studioLabel,
+} =
 	Astro.props;
 ---
 
 <div
 	id="anime-list-container"
-	data-page-size={pageSize}
+	data-page-capacity={pageCapacity}
 	class="anime-grid-container grid gap-4 md:gap-6 opacity-0 transition-opacity duration-300"
 >
 	{

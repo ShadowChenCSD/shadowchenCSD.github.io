@@ -23,20 +23,26 @@ interface GameItem {
 
 interface Props {
 	gameList: GameItem[];
-	pageSize: number;
+	pageCapacity: number;
 	statusMap: Record<string, StatusInfo>;
 	actorLabel: string;
 	yearLabel: string;
 	platformLabel: string;
 }
 
-const { gameList, pageSize, statusMap, actorLabel, yearLabel, platformLabel } = 
-	Astro.props;
+const {
+	gameList,
+	pageCapacity,
+	statusMap,
+	actorLabel,
+	yearLabel,
+	platformLabel,
+} = Astro.props;
 ---
 
 <div
 	id="game-list-container"
-	data-page-size={pageSize}
+	data-page-capacity={pageCapacity}
 	class="game-grid-container grid gap-4 md:gap-6 opacity-0 transition-opacity duration-300"
 >
 	{

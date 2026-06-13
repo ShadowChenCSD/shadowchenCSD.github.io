@@ -5,6 +5,7 @@ import { GameFilters, GameGrid } from "@components/features/game";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
+import { PAGE_CAPACITY_ANIME_AND_GAME } from "../constants/constants";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { getGameList, getGameStatusMap } from "../utils/game-data";
@@ -25,7 +26,6 @@ const gameList = getGameList();
 const showEmptyState = gameList.length === 0;
 const emptyDescription = i18n(I18nKey.gameEmptyLocal);
 const statusMap = getGameStatusMap();
-const PAGE_SIZE = 20;
 const showExtendedFilters = false;
 const emptyMessage = i18n(I18nKey.gameEmpty);
 const statusLabelMap = {
@@ -179,7 +179,7 @@ const gameStats = {
 					) : (
 						<GameGrid
 							gameList={gameList}
-							pageSize={PAGE_SIZE}
+							pageCapacity={PAGE_CAPACITY_ANIME_AND_GAME}
 							statusMap={statusMap}
 							actorLabel={i18n(I18nKey.gameActor)}
 							yearLabel={i18n(I18nKey.gameYear)}
@@ -485,9 +485,9 @@ const gameStats = {
 			const gameItems = Array.from(
 				listContainer.querySelectorAll("[data-game-status]"),
 			);
-			const pageSize = Math.max(
+			const pageCapacity = Math.max(
 				1,
-				Number(listContainer.dataset.pageSize || "20"),
+				Number(listContainer.dataset.pageCapacity || "20"),
 			);
 			let currentStatus = "all";
 			let currentPage = 1;
@@ -502,14 +502,14 @@ const gameStats = {
 				const filteredItems = getFilteredItems();
 				const totalPages = Math.max(
 					1,
-					Math.ceil(filteredItems.length / pageSize),
+					Math.ceil(filteredItems.length / pageCapacity),
 				);
 				if (currentPage > totalPages) {
 					currentPage = totalPages;
 				}
 
-				const startIndex = (currentPage - 1) * pageSize;
-				const endIndex = startIndex + pageSize;
+				const startIndex = (currentPage - 1) * pageCapacity;
+				const endIndex = startIndex + pageCapacity;
 				const visibleItems = new Set(
 					filteredItems.slice(startIndex, endIndex),
 				);
@@ -531,7 +531,7 @@ const gameStats = {
 					scrollGameListToTop();
 				});
 
-				const shouldShowPagination = filteredItems.length > pageSize;
+				const shouldShowPagination = filteredItems.length > pageCapacity;
 				paginationContainer.classList.toggle(
 					"is-hidden",
 					!shouldShowPagination,

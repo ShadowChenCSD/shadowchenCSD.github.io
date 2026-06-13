@@ -4,7 +4,7 @@ import { MomentCard } from "@components/features/diary";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
-import { PAGE_SIZE } from "../constants/constants";
+import { PAGE_CAPACITY_POST_AND_DIARY } from "../constants/constants";
 import { getAllTags, getDiaryList } from "../data/diary";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
@@ -97,7 +97,11 @@ const diaryCount = i18n(I18nKey.diaryCount);
 					)
 				}
 
-				<div id="diary-list" class="space-y-4" data-page-size={PAGE_SIZE}>
+				<div
+					id="diary-list"
+					class="space-y-4"
+					data-page-capacity={PAGE_CAPACITY_POST_AND_DIARY}
+				>
 					{
 						moments.map((moment, index) => (
 							<div
@@ -121,7 +125,7 @@ const diaryCount = i18n(I18nKey.diaryCount);
 					id="diary-pagination"
 					class:list={[
 						"mx-auto mt-8 flex flex-row gap-3 justify-center",
-						{ hidden: moments.length <= PAGE_SIZE },
+						{ hidden: moments.length <= PAGE_CAPACITY_POST_AND_DIARY },
 					]}
 				></div>
 
@@ -202,7 +206,7 @@ const diaryCount = i18n(I18nKey.diaryCount);
 					return;
 				}
 
-				const pageSize = Number(diaryList.dataset.pageSize || 12);
+				const pageCapacity = Number(diaryList.dataset.pageCapacity || 12);
 				const entries = Array.from(diaryList.querySelectorAll(".diary-entry"));
 				let activeFilter = "all";
 				let currentPage = 1;
@@ -317,15 +321,15 @@ const diaryCount = i18n(I18nKey.diaryCount);
 					const filteredEntries = getFilteredEntries();
 					const totalPages = Math.max(
 						1,
-						Math.ceil(filteredEntries.length / pageSize),
+						Math.ceil(filteredEntries.length / pageCapacity),
 					);
 
 					if (currentPage > totalPages) {
 						currentPage = totalPages;
 					}
 
-					const start = (currentPage - 1) * pageSize;
-					const end = start + pageSize;
+					const start = (currentPage - 1) * pageCapacity;
+					const end = start + pageCapacity;
 
 					entries.forEach((entry) => {
 						entry.classList.add("hidden");
