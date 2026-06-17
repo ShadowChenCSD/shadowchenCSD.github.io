@@ -1,5 +1,5 @@
 export const PAGE_CAPACITY_POST_AND_DIARY = 12;
-export const PAGE_CAPACITY_ANIME_AND_GAME = 20;
+export const PAGE_CAPACITY_ANIME_AND_GAME = 24;
 
 export const LIGHT_MODE = "light",
 	DARK_MODE = "dark";

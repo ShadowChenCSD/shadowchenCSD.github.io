@@ -66,7 +66,7 @@ export const zh_CN: Translation = {
 	[Key.animeStatusCompleted]: "看完了",
 	[Key.animeStatusPlanned]: "计划中",
 	[Key.animeStatusOnHold]: "搁置了",
-	[Key.animeStatusDropped]: "放弃了",
+	[Key.animeStatusDropped]: "弃坑了",
 	[Key.animeFilterAll]: "全部",
 	[Key.animeTotal]: "总数",
 	[Key.animeAvgRating]: "平均评分",
