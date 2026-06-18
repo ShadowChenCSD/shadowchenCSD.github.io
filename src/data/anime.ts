@@ -677,7 +677,7 @@ const localAnimeList: AnimeItem[] = [
 		title: "遊☆戯☆王 デュエルモンスターズ 5D's",
 		status: "planned",
 		rating: 7.9,
-		cover: "/images/anime/游戏王·怪兽之决斗·5Ds.webp",
+		cover: "/images/anime/游戏王·怪兽之决斗·5D's.webp",
 		description: "",
 		actor: "不动游星，杰克・亚特拉斯，十六夜秋",
 		year: "2008",
