@@ -80,7 +80,7 @@ const localAnimeList: AnimeItem[] = [
 		actor: "小猪妖，蛤蟆精，黄鼠狼精，猩猩怪",
 		year: "2025",
 		genre: ["冒险", "热血", "奇幻", "剧情", "成长", "搞笑"],
-		studio: "上海美术电影制片厂有限公司",
+		studio: "上海美术电影制片厂",
 		link: "https://www.bilibili.com/bangumi/play/ep2060436",
 		progress: 1,
 		totalEpisodes: 1,
@@ -591,7 +591,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "缘之空",
-		status: "planned",
+		status: "watching",
 		rating: 6.6,
 		cover: "/images/anime/缘之空.jpg",
 		description: "",
@@ -801,7 +801,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "倒霉熊",
-		status: "onhold",
+		status: "watching",
 		rating: 6.4,
 		cover: "/images/anime/倒霉熊.webp",
 		description: "",
@@ -857,7 +857,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "哈尔的移动城堡",
-		status: "onhold",
+		status: "planned",
 		rating: 7.9,
 		cover: "/images/anime/哈尔的移动城堡.webp",
 		description: "",
@@ -1025,7 +1025,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "宝莲灯",
-		status: "onhold",
+		status: "planned",
 		rating: 7.3,
 		cover: "/images/anime/宝莲灯.webp",
 		description: "",
@@ -1053,7 +1053,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "西游记",
-		status: "planned",
+		status: "onhold",
 		rating: 7.6,
 		cover: "/images/anime/西游记.jpg",
 		description: "",
@@ -1109,7 +1109,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "宝可梦",
-		status: "planned",
+		status: "onhold",
 		rating: 7.9,
 		cover: "/images/anime/宝可梦.webp",
 		description: "",
@@ -1165,7 +1165,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "海尔兄弟",
-		status: "dropped",
+		status: "watching",
 		rating: 6.7,
 		cover: "/images/anime/海尔兄弟.webp",
 		description: "",
@@ -1221,7 +1221,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "魔动王",
-		status: "watching",
+		status: "onhold",
 		rating: 7.2,
 		cover: "/images/anime/魔动王.jpg",
 		description: "",
@@ -1235,7 +1235,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "魔女宅急便",
-		status: "onhold",
+		status: "planned",
 		rating: 7.8,
 		cover: "/images/anime/魔女宅急便.webp",
 		description: "",
@@ -1333,7 +1333,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "龙珠",
-		status: "watching",
+		status: "onhold",
 		rating: 8.2,
 		cover: "/images/anime/龙珠.jpeg",
 		description: "",
