@@ -32,6 +32,10 @@ const { anime, itemIndex = 0, statusInfo, actorLabel, yearLabel, studioLabel } =
 
 const progressPercent =
 	anime.totalEpisodes > 0 ? (anime.progress / anime.totalEpisodes) * 100 : 0;
+const isProgressComplete = anime.progress == anime.totalEpisodes;
+const shouldShowProgress =
+	anime.status === "watching" ||
+	(anime.status === "dropped" && !isProgressComplete);
 const ratingDisplay = anime.rating.toFixed(1);
 ---
 
@@ -127,7 +131,7 @@ const ratingDisplay = anime.rating.toFixed(1);
 		</div>
 
 		{
-			["watching", "dropped"].includes(anime.status) && (
+			shouldShowProgress && (
 				<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2">
 					<div class="w-full bg-white/20 rounded-full h-1.5 mb-1">
 						<div
