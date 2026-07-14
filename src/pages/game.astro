@@ -32,6 +32,8 @@ const statusLabelMap = {
 	planned: i18n(I18nKey.gameStatusPlanned),
 	playing: i18n(I18nKey.gameStatusPlaying),
 	completed: i18n(I18nKey.gameStatusCompleted),
+	favorite: i18n(I18nKey.gameStatusFavorite),
+	onhold: i18n(I18nKey.gameStatusOnHold),
 };
 if (statusMap.planned) {
 	statusMap.planned.text = statusLabelMap.planned;
@@ -42,12 +44,17 @@ if (statusMap.playing) {
 if (statusMap.completed) {
 	statusMap.completed.text = statusLabelMap.completed;
 }
+if (statusMap.favorite) {
+	statusMap.favorite.text = statusLabelMap.favorite;
+}
 const ratedGameList = gameList.filter((game) => game.rating > 0);
 const gameStats = {
 	total: gameList.length,
 	playing: gameList.filter((game) => game.status === "playing").length,
 	completed: gameList.filter((game) => game.status === "completed").length,
+	favorite: gameList.filter((game) => game.status === "favorite").length,
 	planned: gameList.filter((game) => game.status === "planned").length,
+	onhold: gameList.filter((game) => game.status === "onhold").length,
 	avgRating:
 		ratedGameList.length > 0
 			? (
@@ -113,10 +120,10 @@ const gameStats = {
 							<div class="text-2xl emoji-icon">📌</div>
 							<div>
 								<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
-									{gameStats.planned}
+									{gameStats.onhold + gameStats.planned}
 								</div>
 								<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
-									{statusLabelMap.planned}
+									{statusLabelMap.onhold}、{statusLabelMap.planned}
 								</div>
 							</div>
 						</div>
@@ -141,10 +148,10 @@ const gameStats = {
 							<div class="text-2xl emoji-icon">✅</div>
 							<div>
 								<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
-									{gameStats.completed}
+									{gameStats.completed + gameStats.favorite}
 								</div>
 								<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
-									{statusLabelMap.completed}
+									{statusLabelMap.completed}、{statusLabelMap.favorite}
 								</div>
 							</div>
 						</div>
@@ -157,6 +164,7 @@ const gameStats = {
 						statusPlayingLabel={statusLabelMap.playing}
 						statusPlannedLabel={statusLabelMap.planned}
 						statusCompletedLabel={statusLabelMap.completed}
+						statusFavoriteLabel={statusLabelMap.favorite}
 						statusOnHoldLabel={i18n(I18nKey.gameStatusOnHold)}
 						statusDroppedLabel={i18n(I18nKey.gameStatusDropped)}
 						showExtendedFilters={showExtendedFilters}

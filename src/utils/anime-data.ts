@@ -146,6 +146,11 @@ export function getStatusMap(): Record<
 		planned: {
 			text: i18n(I18nKey.animeStatusPlanned),
 			class: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+			icon: "⏰︎",
+		},
+		favorite: {
+			text: i18n(I18nKey.animeStatusFavorite),
+			class: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
 			icon: "❤",
 		},
 		onhold: {

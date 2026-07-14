@@ -152,6 +152,18 @@
   color: #fff;
 }
 
+.anime-filter-tag[data-status="favorite"] {
+  background: rgb(255 237 213);
+}
+.anime-filter-tag[data-status="favorite"]:hover:not(.anime-active) {
+  background: rgb(255 237 213);
+}
+.anime-filter-tag[data-status="favorite"].anime-active {
+  background: rgb(249 115 22);
+  border-color: rgb(249 115 22);
+  color: #fff;
+}
+
 .anime-filter-tag[data-status="onhold"] {
   background: rgb(243 244 246);
 }

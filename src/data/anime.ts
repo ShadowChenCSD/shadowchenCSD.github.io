@@ -1,7 +1,7 @@
 // 本地番剧数据配置
 export interface AnimeItem {
 	title: string;
-	status: "onhold" | "planned" | "watching" | "completed" | "dropped";
+	status: "onhold" | "planned" | "watching" | "completed" | "dropped" | "favorite";
 	rating: number;
 	cover: string;
 	description: string;
@@ -87,7 +87,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "浪浪山小妖怪",
-		status: "completed",
+		status: "favorite",
 		rating: 7.1,
 		cover: "/images/anime/浪浪山小妖怪.webp",
 		description: "",
@@ -157,7 +157,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "铃芽之旅",
-		status: "completed",
+		status: "favorite",
 		rating: 6.6,
 		cover: "/images/anime/铃芽之旅.webp",
 		description: "",
@@ -171,7 +171,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "白蛇：青蛇劫起",
-		status: "dropped",
+		status: "completed",
 		rating: 5.4,
 		cover: "/images/anime/白蛇：青蛇劫起.webp",
 		description: "",
@@ -269,7 +269,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "天气之子",
-		status: "completed",
+		status: "favorite",
 		rating: 7.1,
 		cover: "/images/anime/天气之子.webp",
 		description: "",
@@ -283,7 +283,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "青春猪头少年不会梦到怀梦美少女",
-		status: "completed",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/anime/青春猪头少年不会梦到怀梦美少女.jpg",
 		description: "",
@@ -297,7 +297,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "白蛇：缘起",
-		status: "completed",
+		status: "favorite",
 		rating: 6.7,
 		cover: "/images/anime/白蛇：缘起.webp",
 		description: "",
@@ -325,7 +325,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "青春猪头少年不会梦到兔女郎学姐",
-		status: "completed",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/anime/青春猪头少年不会梦到兔女郎学姐.jpg",
 		description: "",
@@ -409,7 +409,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "疯狂动物城",
-		status: "completed",
+		status: "favorite",
 		rating: 7.7,
 		cover: "/images/anime/疯狂动物城.webp",
 		description: "",
@@ -437,7 +437,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "遊☆戯☆王：THE DARK SIDE OF DIMENSIONS",
-		status: "completed",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/anime/游戏王：次元之暗面.webp",
 		description: "",
@@ -479,7 +479,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "你的名字",
-		status: "completed",
+		status: "favorite",
 		rating: 8.1,
 		cover: "/images/anime/你的名字。.webp",
 		description: "",
@@ -507,7 +507,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "西游记之大圣归来",
-		status: "completed",
+		status: "favorite",
 		rating: 6.7,
 		cover: "/images/anime/西游记之大圣归来.jpg",
 		description: "",
@@ -577,7 +577,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "言叶之庭",
-		status: "completed",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/anime/言叶之庭.webp",
 		description: "",
@@ -605,7 +605,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "恋爱选举与巧克力",
-		status: "completed",
+		status: "favorite",
 		rating: 6.4,
 		cover: "/images/anime/恋爱选举与巧克力.webp",
 		description: "",
@@ -675,7 +675,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "秦时明月之诸子百家",
-		status: "dropped",
+		status: "completed",
 		rating: 7.3,
 		cover: "/images/anime/秦时明月之诸子百家.jpeg",
 		description: "",
@@ -689,7 +689,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "遊☆戯☆王 〜超融合!時空を越えた絆〜 ",
-		status: "completed",
+		status: "favorite",
 		rating: 6.6,
 		cover: "/images/anime/游戏王·超融合！超越时空的羁绊.jpeg",
 		description: "",
@@ -745,7 +745,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "CLANNAD AFTER STORY 杏篇",
-		status: "completed",
+		status: "favorite",
 		rating: 7.6,
 		cover: "/images/anime/CLANNAD AFTER STORY 杏篇.jpg",
 		description: "",
@@ -759,7 +759,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "CLANNAD AFTER STORY",
-		status: "completed",
+		status: "favorite",
 		rating: 9.2,
 		cover: "/images/anime/CLANNAD AFTER STORY.webp",
 		description: "",
@@ -773,7 +773,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "秦时明月之夜尽天明",
-		status: "dropped",
+		status: "completed",
 		rating: 7.1,
 		cover: "/images/anime/秦时明月之夜尽天明.jpeg",
 		description: "",
@@ -815,7 +815,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "CLANNAD 智代篇",
-		status: "completed",
+		status: "favorite",
 		rating: 7.7,
 		cover: "/images/anime/CLANNAD 智代篇.jpg",
 		description: "",
@@ -829,7 +829,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "CLANNAD",
-		status: "completed",
+		status: "favorite",
 		rating: 8.4,
 		cover: "/images/anime/CLANNAD.webp",
 		description: "",
@@ -857,7 +857,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "秒速5厘米",
-		status: "completed",
+		status: "favorite",
 		rating: 7.9,
 		cover: "/images/anime/秒速5厘米.webp",
 		description: "",
@@ -871,7 +871,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "秦时明月之百步飞剑",
-		status: "dropped",
+		status: "completed",
 		rating: 7.0,
 		cover: "/images/anime/秦时明月之百步飞剑.jpg",
 		description: "",
@@ -941,7 +941,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "遊☆戯☆王：光のピラミッド",
-		status: "completed",
+		status: "favorite",
 		rating: 6.6,
 		cover: "/images/anime/游戏王：光之金字塔.webp",
 		description: "",
@@ -1053,7 +1053,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "千与千寻",
-		status: "completed",
+		status: "favorite",
 		rating: 8.6,
 		cover: "/images/anime/千与千寻.webp",
 		description: "",
@@ -1291,7 +1291,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "海尔兄弟",
-		status: "dropped",
+		status: "onhold",
 		rating: 6.7,
 		cover: "/images/anime/海尔兄弟.webp",
 		description: "",
@@ -1403,7 +1403,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "葫芦小金刚",
-		status: "completed",
+		status: "favorite",
 		rating: 7.2,
 		cover: "/images/anime/葫芦小金刚.jpeg",
 		description: "",
@@ -1417,7 +1417,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "龙猫",
-		status: "completed",
+		status: "favorite",
 		rating: 8.2,
 		cover: "/images/anime/龙猫.webp",
 		description: "",
@@ -1487,7 +1487,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "天空之城",
-		status: "completed",
+		status: "favorite",
 		rating: 8.5,
 		cover: "/images/anime/天空之城.webp",
 		description: "",
@@ -1501,7 +1501,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "葫芦兄弟",
-		status: "completed",
+		status: "favorite",
 		rating: 7.8,
 		cover: "/images/anime/葫芦兄弟.webp",
 		description: "",

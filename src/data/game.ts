@@ -1,7 +1,7 @@
 // 本地游戏数据配置
 export interface GameItem {
 	title: string;
-	status: "onhold" | "planned" | "playing" | "completed" | "dropped";
+	status: "onhold" | "planned" | "playing" | "completed" | "favorite" | "dropped";
 	rating: number;
 	cover: string;
 	description: string;
@@ -18,7 +18,7 @@ const localGameList: GameItem[] = [
 		status: "onhold",
 		rating: 0.0,
 		cover: "/images/games/仙剑奇侠传四 重制版.jpeg",
-		description: "",
+		description: "尚未发布。",
 		actor: "云天河，韩菱纱，柳梦璃，慕容紫英",
 		year: "∞",
 		genre: ["角色扮演", "回合制", "冒险", "恋爱", "奇幻", "剧情"],
@@ -30,7 +30,7 @@ const localGameList: GameItem[] = [
 		status: "onhold",
 		rating: 0.0,
 		cover: "/images/games/最终幻想7 REVELATION.jpg",
-		description: "",
+		description: "尚未发布。",
 		actor: "克劳德，蒂法，爱丽丝，巴雷特",
 		year: "2027",
 		genre: ["角色扮演", "回合制", "冒险", "恋爱", "奇幻", "剧情"],
@@ -39,7 +39,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "空洞骑士 丝之歌",
-		status: "completed",
+		status: "favorite",
 		rating: 7.9,
 		cover: "/images/games/空洞骑士 丝之歌.jpg",
 		description: "后续有DLC：“悲恸之海”。",
@@ -63,11 +63,11 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "真・三国无双 起源",
-		status: "completed",
+		status: "favorite",
 		rating: 7.8,
 		cover: "/images/games/真・三国无双 起源.webp",
 		description: "后续有DLC：“梦幻四英杰”。",
-		actor: "紫鸾",
+		actor: "紫鸾，朱和，白鸾",
 		year: "2025",
 		genre: ["角色扮演", "动作", "剧情", "无双", "历史", "开放世界"],
 		platform: "PC，NS，PS，Xbox",
@@ -111,7 +111,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "幸福的二人房",
-		status: "onhold",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/幸福的二人房.jpg",
 		description: "有5个最终结局。Steam版本有内容阉割。",
@@ -171,7 +171,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "最终幻想7 REMAKE INTERGRADE",
-		status: "completed",
+		status: "favorite",
 		rating: 7.6,
 		cover: "/images/games/最终幻想7 REMAKE.jpg",
 		description: "包含DLC：“尤菲的新篇章”。",
@@ -183,7 +183,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "胡闹厨房！全都好吃",
-		status: "completed",
+		status: "favorite",
 		rating: 7.5,
 		cover: "/images/games/胡闹厨房！全都好吃.webp",
 		description: "包含：胡闹厨房1、胡闹厨房2和全部DLC。",
@@ -303,7 +303,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "空洞骑士",
-		status: "completed",
+		status: "favorite",
 		rating: 8.3,
 		cover: "/images/games/空洞骑士.jpg",
 		description: "后续有DLC：“隐藏的梦”、“格林剧团”、“生命血”和“寻神者”。",
@@ -319,7 +319,7 @@ const localGameList: GameItem[] = [
 		rating: 5.8,
 		cover: "/images/games/阴阳师.jpg",
 		description: "",
-		actor: "晴明，神乐，源博雅，八百比丘尼",
+		actor: "晴明，神乐，源博雅，八百比丘尼，源赖光",
 		year: "2016",
 		genre: ["角色扮演", "回合制", "收集", "养成", "对战", "和风"],
 		platform: "PC，iOS，Android",
@@ -339,7 +339,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "英雄无敌3 高清版",
-		status: "completed",
+		status: "favorite",
 		rating: 7.1,
 		cover: "/images/games/英雄无敌3 高清版.jpg",
 		description: "仅有本传内容：“埃拉西亚的光复”，不包含DLC。",
@@ -363,10 +363,10 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "植物大战僵尸 2：奇妙时空之旅",
-		status: "completed",
+		status: "favorite",
 		rating: 5.4,
 		cover: "/images/games/植物大战僵尸2.jpg",
-		description: "包含：神秘埃及、海盗港湾、狂野西部、遥远未来、黑暗时代、巨浪沙滩、极寒冰窟、失落之城、武林寺庙、摇滚年代、恐龙危机、摩登世界。",
+		description: "场景：神秘埃及、海盗港湾、狂野西部、遥远未来、黑暗时代、巨浪沙滩、极寒冰窟、失落之城、武林寺庙、摇滚年代、恐龙危机、摩登世界。",
 		actor: "疯狂的戴夫",
 		year: "2013",
 		genre: ["模拟经营", "塔防", "休闲", "战略"],
@@ -375,7 +375,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑奇侠传五前传",
-		status: "completed",
+		status: "favorite",
 		rating: 7.5,
 		cover: "/images/games/仙剑奇侠传五前传.jpeg",
 		description: "后续有DLC：“梦华幻斗”。",
@@ -387,7 +387,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "真・三国无双6 猛将传 DX",
-		status: "completed",
+		status: "favorite",
 		rating: 7.2,
 		cover: "/images/games/真・三国无双6 猛将传 DX.jpg",
 		description: "包括：“故事模式”，“编年史模式”，“传奇模式”和“挑战模式”。",
@@ -399,7 +399,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "风卷残云",
-		status: "completed",
+		status: "favorite",
 		rating: 6.9,
 		cover: "/images/games/风卷残云.jpg",
 		description: "后续有DLC：“风云变幻”，“江湖传奇”。",
@@ -429,13 +429,13 @@ const localGameList: GameItem[] = [
 		description: "后续有DLC：“魔灵幻像”，“暮雨今夕”，“前尘若梦”。",
 		actor: "姜云凡，唐雨柔，龙幽，小蛮",
 		year: "2011",
-		genre: ["角色扮演", "回合制", "冒险", "恋爱", "剧情", "奇幻"],
+		genre: ["角色扮演", "回合制", "冒险", "恋爱", "奇幻", "剧情"],
 		platform: "PC",
 		link: "https://store.steampowered.com/app/1569930",
 	},
 	{
 		title: "古剑奇谭：琴心剑魄今何在",
-		status: "completed",
+		status: "favorite",
 		rating: 7.8,
 		cover: "/images/games/古剑奇谭.jpg",
 		description: "后续有DLC：“千古剑灵”，“天墉旧事”，“彼岸浮灯”，“醉梦江湖”和“桃花幻梦”。",
@@ -447,10 +447,10 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "植物大战僵尸",
-		status: "completed",
+		status: "favorite",
 		rating: 8.2,
 		cover: "/images/games/植物大战僵尸.jpg",
-		description: "",
+		description: "场景：前院·白天，前院·夜晚，泳池·白天，泳池·夜晚，屋顶·白天，屋顶·夜晚。",
 		actor: "疯狂的戴夫",
 		year: "2009",
 		genre: ["模拟经营", "塔防", "休闲", "战略"],
@@ -459,7 +459,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "红色警戒3 起义",
-		status: "completed",
+		status: "favorite",
 		rating: 6.8,
 		cover: "/images/games/红色警戒3·起义.jpg",
 		description: "新增：挑战模式",
@@ -471,7 +471,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "红色警戒3",
-		status: "completed",
+		status: "favorite",
 		rating: 6.8,
 		cover: "/images/games/红色警戒3.jpeg",
 		description: "包括：苏俄、盟军、昇阳帝国三个国家。",
@@ -495,7 +495,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑奇侠传四",
-		status: "completed",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/games/仙剑奇侠传四.jpeg",
 		description: "Steam版为配音版本，原版无配音。",
@@ -510,7 +510,7 @@ const localGameList: GameItem[] = [
 		status: "onhold",
 		rating: 7.2,
 		cover: "/images/games/智代After.jpg",
-		description: "",
+		description: "Steam版本为全年龄版。",
 		actor: "冈崎朋也，坂上智代，坂上鹰文",
 		year: "2005",
 		genre: ["角色扮演", "视觉小说", "恋爱", "治愈", "生活", "18R"],
@@ -522,7 +522,7 @@ const localGameList: GameItem[] = [
 		status: "onhold",
 		rating: 8.9,
 		cover: "/images/games/CLANNAD.webp",
-		description: "",
+		description: "Steam版本为新版UI界面，原版是旧版UI界面。",
 		actor: "冈崎朋也，古河渚，藤林杏，坂上智代，一之濑琴美",
 		year: "2004",
 		genre: ["角色扮演", "视觉小说", "恋爱", "治愈", "生活"],
@@ -531,7 +531,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑奇侠传三外传·问情篇",
-		status: "completed",
+		status: "favorite",
 		rating: 7.0,
 		cover: "/images/games/仙剑奇侠传三外传.jpg",
 		description: "有3个最终结局，其中一个是完美结局。",
@@ -543,7 +543,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑奇侠传三",
-		status: "completed",
+		status: "favorite",
 		rating: 7.8,
 		cover: "/images/games/仙剑奇侠传三.jpg",
 		description: "有5个最终结局，其中1个是完美结局。",
@@ -567,7 +567,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "决战坦克",
-		status: "completed",
+		status: "favorite",
 		rating: 7.2,
 		cover: "/images/games/决战坦克.jpg",
 		description: "包含5种特殊子弹：快速弹，穿甲弹，燃烧弹，爆破弹，埋地雷。",
@@ -579,7 +579,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "天龙八部",
-		status: "completed",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/games/天龙八部.jpeg",
 		description: "有三个版本：傲立中原版、六脉神剑版、天佛降世版。",
@@ -603,7 +603,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "幽城幻剑录",
-		status: "completed",
+		status: "favorite",
 		rating: 8.7,
 		cover: "/images/games/幽城幻剑录.jpg",
 		description: "有3个最终结局，其中1个是原版结局，2个是女主结局。",
@@ -651,7 +651,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "红色警戒2：尤里的复仇",
-		status: "completed",
+		status: "favorite",
 		rating: 7.8,
 		cover: "/images/games/红色警戒2·尤里的复仇.jpg",
 		description: "三大阵营：苏俄、盟军、尤里。",
@@ -663,7 +663,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "红色警戒2",
-		status: "completed",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/games/红色警戒2.jpg",
 		description: "两大阵营：苏俄、盟军。",
@@ -687,7 +687,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "破碎虚空",
-		status: "completed",
+		status: "favorite",
 		rating: 5.0,
 		cover: "/images/games/破碎虚空.jpg",
 		description: "有3个最终结局，其中1个为悲惨结局。",
@@ -699,7 +699,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "无人岛物语 4",
-		status: "completed",
+		status: "favorite",
 		rating: 7.0,
 		cover: "/images/games/无人岛物语4.jpeg",
 		description: "有10个最终结局，其中1个为高难度的隐藏结局。",
@@ -711,7 +711,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "大富翁 4",
-		status: "completed",
+		status: "favorite",
 		rating: 7.9,
 		cover: "/images/games/大富翁4.jpg",
 		description: "后续有DLC：“超时空之旅”。",
@@ -723,7 +723,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Diablo / 暗黑破坏神",
-		status: "completed",
+		status: "favorite",
 		rating: 7.7,
 		cover: "/images/games/暗黑破坏神.jpeg",
 		description: "后续有DLC：“地狱火”。",
@@ -735,7 +735,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "金庸群侠传",
-		status: "completed",
+		status: "favorite",
 		rating: 8.3,
 		cover: "/images/games/金庸群侠传.jpeg",
 		description: "有2个最终结局。",
@@ -747,7 +747,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑奇侠传",
-		status: "completed",
+		status: "favorite",
 		rating: 8.6,
 		cover: "/images/games/仙剑奇侠传.jpg",
 		description: "有两个版本：“95版”和“98柔情版”，剧情内容完全一致，游戏体验略有区别。",
@@ -771,7 +771,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "BattleCity / 坦克大战",
-		status: "completed",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/games/BattleCity.png",
 		description: "",

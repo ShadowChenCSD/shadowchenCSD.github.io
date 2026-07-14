@@ -67,6 +67,8 @@ const statusLabelMap = {
 	planned: i18n(I18nKey.animeStatusPlanned),
 	watching: i18n(I18nKey.animeStatusWatching),
 	completed: i18n(I18nKey.animeStatusCompleted),
+	favorite: i18n(I18nKey.animeStatusFavorite),
+	onhold: i18n(I18nKey.animeStatusOnHold),
 };
 if (statusMap.planned) {
 	statusMap.planned.text = statusLabelMap.planned;
@@ -77,12 +79,17 @@ if (statusMap.watching) {
 if (statusMap.completed) {
 	statusMap.completed.text = statusLabelMap.completed;
 }
+if (statusMap.favorite) {
+	statusMap.favorite.text = statusLabelMap.favorite;
+}
 const ratedAnimeList = animeList.filter((anime) => anime.rating > 0);
 const animeStats = {
 	total: animeList.length,
 	watching: animeList.filter((anime) => anime.status === "watching").length,
 	completed: animeList.filter((anime) => anime.status === "completed").length,
+	favorite: animeList.filter((anime) => anime.status === "favorite").length,
 	planned: animeList.filter((anime) => anime.status === "planned").length,
+	onhold: animeList.filter((anime) => anime.status === "onhold").length,
 	avgRating:
 		ratedAnimeList.length > 0
 			? (
@@ -150,10 +157,10 @@ const animeStats = {
 							<div class="text-2xl emoji-icon">📌</div>
 							<div>
 								<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
-									{animeStats.planned}
+									{animeStats.onhold + animeStats.planned}
 								</div>
 								<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
-									{statusLabelMap.planned}
+									{statusLabelMap.onhold}、{statusLabelMap.planned}
 								</div>
 							</div>
 						</div>
@@ -180,10 +187,10 @@ const animeStats = {
 							<div class="text-2xl emoji-icon">✅</div>
 							<div>
 								<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
-									{animeStats.completed}
+									{animeStats.completed + animeStats.favorite}
 								</div>
 								<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
-									{statusLabelMap.completed}
+									{statusLabelMap.completed}、{statusLabelMap.favorite}
 								</div>
 							</div>
 						</div>
@@ -197,6 +204,7 @@ const animeStats = {
 						statusWatchingLabel={statusLabelMap.watching}
 						statusPlannedLabel={statusLabelMap.planned}
 						statusCompletedLabel={statusLabelMap.completed}
+						statusFavoriteLabel={statusLabelMap.favorite}
 						statusOnHoldLabel={i18n(I18nKey.animeStatusOnHold)}
 						statusDroppedLabel={i18n(I18nKey.animeStatusDropped)}
 						showExtendedFilters={showExtendedFilters}

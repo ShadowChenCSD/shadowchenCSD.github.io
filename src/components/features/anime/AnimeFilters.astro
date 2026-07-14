@@ -4,6 +4,7 @@ interface Props {
 	statusWatchingLabel: string;
 	statusPlannedLabel: string;
 	statusCompletedLabel: string;
+	statusFavoriteLabel: string;
 	statusOnHoldLabel?: string;
 	statusDroppedLabel?: string;
 	showExtendedFilters: boolean;
@@ -14,6 +15,7 @@ const {
 	statusWatchingLabel,
 	statusPlannedLabel,
 	statusCompletedLabel,
+	statusFavoriteLabel,
 	statusOnHoldLabel,
 	statusDroppedLabel,
 	showExtendedFilters,
@@ -33,12 +35,15 @@ const {
 	<button class="anime-filter-tag" data-status="watching"
 		>{statusWatchingLabel}</button
 	>
-	<button class="anime-filter-tag" data-status="completed"
-		>{statusCompletedLabel}</button
-	>
 	<button class="anime-filter-tag" data-status="dropped">
 		{statusDroppedLabel}
 	</button>
+	<button class="anime-filter-tag" data-status="completed"
+		>{statusCompletedLabel}</button
+	>
+	<button class="anime-filter-tag" data-status="favorite"
+		>{statusFavoriteLabel}</button
+	>
 	{
 		showExtendedFilters && (
 			<>

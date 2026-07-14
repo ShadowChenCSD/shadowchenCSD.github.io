@@ -24,7 +24,12 @@ export function getGameStatusMap(): Record<
 		planned: {
 			text: i18n(I18nKey.gameStatusPlanned),
 			class: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
-			icon: "❤",
+			icon: "⏰︎",
+		},
+		favorite: {
+			text: i18n(I18nKey.gameStatusFavorite),
+			class: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+			icon: "︎❤",
 		},
 		onhold: {
 			text: i18n(I18nKey.gameStatusOnHold),
