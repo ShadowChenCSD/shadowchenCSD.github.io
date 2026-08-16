@@ -447,27 +447,36 @@ const gameStats = {
 				pageNumbersContainer.appendChild(ellipsis);
 			};
 
-			if (totalPages <= 7) {
-				for (let page = 1; page <= totalPages; page++) {
-					appendPageButton(page);
+			const getVisiblePageNumbers = () => {
+				if (totalPages <= 5) {
+					return Array.from({ length: totalPages }, (_, index) => index + 1);
 				}
-				return;
-			}
 
-			appendPageButton(1);
-			const start = Math.max(2, currentPage - 1);
-			const end = Math.min(totalPages - 1, currentPage + 1);
+				let pages;
+				if (currentPage === 1 || currentPage === totalPages) {
+					pages = [1, 2, totalPages - 1, totalPages];
+				} else if (currentPage === 2) {
+					pages = [1, 2, 3, totalPages - 1, totalPages];
+				} else if (currentPage === totalPages - 1) {
+					pages = [1, 2, totalPages - 2, totalPages - 1, totalPages];
+				} else {
+					pages = [1, currentPage - 1, currentPage, currentPage + 1, totalPages];
+				}
 
-			if (start > 2) {
-				appendEllipsis();
-			}
-			for (let page = start; page <= end; page++) {
+				return pages
+					.filter((page, index, pages) => pages.indexOf(page) === index)
+					.sort((a, b) => a - b);
+			};
+
+			let previousPage = 0;
+
+			getVisiblePageNumbers().forEach((page) => {
+				if (page - previousPage > 1) {
+					appendEllipsis();
+				}
 				appendPageButton(page);
-			}
-			if (end < totalPages - 1) {
-				appendEllipsis();
-			}
-			appendPageButton(totalPages);
+				previousPage = page;
+			});
 		}
 
 		function initGameFiltersAndPagination() {
