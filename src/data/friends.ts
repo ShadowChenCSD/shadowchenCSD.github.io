@@ -51,7 +51,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "/links/bangumi.webp",
 		desc: "由Sai发起的ACG分享与交流项目",
 		siteurl: "https://bgm.tv",
-		tags: ["ACGN", "在线数据库", "社区"],
+		tags: ["ACGN", "在线数据库", "科学上网", "社区"],
 	},
 	{
 		id: 12,

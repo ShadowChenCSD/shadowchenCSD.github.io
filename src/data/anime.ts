@@ -87,7 +87,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "浪浪山小妖怪",
-		status: "favorite",
+		status: "completed",
 		rating: 7.1,
 		cover: "/images/anime/浪浪山小妖怪.webp",
 		description: "",
@@ -297,7 +297,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "白蛇：缘起",
-		status: "favorite",
+		status: "completed",
 		rating: 6.7,
 		cover: "/images/anime/白蛇：缘起.webp",
 		description: "",
@@ -576,6 +576,20 @@ const localAnimeList: AnimeItem[] = [
 		totalEpisodes: 148,
 	},
 	{
+		title: "秦时明月之龙腾万里",
+		status: "dropped",
+		rating: 5.4,
+		cover: "/images/anime/秦时明月之龙腾万里.jpeg",
+		description: "",
+		actor: "荆天明，项少羽，小黎，盖聂，卫庄",
+		year: "2013",
+		genre: ["武侠", "战斗", "热血", "历史", "奇幻"],
+		studio: "玄机科技",
+		link: "https://v.youku.com/v_show/id_XODI2Njg5OTI0.html",
+		progress: 1,
+		totalEpisodes: 1,
+	},
+	{
 		title: "言叶之庭",
 		status: "favorite",
 		rating: 7.4,
@@ -591,7 +605,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "冰雪奇缘",
-		status: "completed",
+		status: "favorite",
 		rating: 7.3,
 		cover: "/images/anime/冰雪奇缘.webp",
 		description: "",
@@ -885,7 +899,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "雪之少女",
-		status: "completed",
+		status: "favorite",
 		rating: 7.7,
 		cover: "/images/anime/Kanon.webp",
 		description: "",
@@ -899,7 +913,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "青空",
-		status: "completed",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/anime/Air.webp",
 		description: "",
@@ -964,7 +978,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["卡牌", "竞技", "热血", "奇幻", "战斗"],
 		studio: "ぎゃろっぷ",
 		link: "https://www.iqiyi.com/v_k41idhhgss.html",
-		progress: 22,
+		progress: 23,
 		totalEpisodes: 180,
 	},
 	{
