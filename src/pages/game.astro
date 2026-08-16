@@ -34,6 +34,7 @@ const statusLabelMap = {
 	completed: i18n(I18nKey.gameStatusCompleted),
 	favorite: i18n(I18nKey.gameStatusFavorite),
 	onhold: i18n(I18nKey.gameStatusOnHold),
+	dropped: i18n(I18nKey.gameStatusDropped),
 };
 if (statusMap.planned) {
 	statusMap.planned.text = statusLabelMap.planned;
@@ -55,6 +56,7 @@ const gameStats = {
 	favorite: gameList.filter((game) => game.status === "favorite").length,
 	planned: gameList.filter((game) => game.status === "planned").length,
 	onhold: gameList.filter((game) => game.status === "onhold").length,
+	dropped: gameList.filter((game) => game.status === "dropped").length,
 	avgRating:
 		ratedGameList.length > 0
 			? (
@@ -87,71 +89,118 @@ const gameStats = {
 					</p>
 				</div>
 
-				<div class="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-5 gap-4 mb-8">
-					<div class="col-span-3 md:col-span-3 lg:col-span-1 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 shadow-sm">
-						<div class="flex items-center gap-3">
-							<div class="text-2xl emoji-icon">📊</div>
-							<div>
-								<div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
-									{gameStats.total}
+				<div class="space-y-4 mb-8">
+					<div class="grid grid-cols-1 min-[800px]:grid-cols-3 gap-4">
+						<div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">📊</div>
+								<div>
+									<div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+										{gameStats.total}
+									</div>
+									<div class="text-sm text-blue-600/70 dark:text-blue-400/70">
+										{i18n(I18nKey.gameTotal)}
+									</div>
 								</div>
-								<div class="text-sm text-blue-600/70 dark:text-blue-400/70">
-									{i18n(I18nKey.gameTotal)}
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">⭐</div>
+								<div>
+									<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
+										{gameStats.avgRating}
+									</div>
+									<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
+										{i18n(I18nKey.gameAvgRating)}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="hidden min-[800px]:block bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">❌</div>
+								<div>
+									<div class="text-2xl font-bold text-red-600 dark:text-red-400">
+										{gameStats.dropped}
+									</div>
+									<div class="text-sm text-red-600/70 dark:text-red-400/70">
+										{statusLabelMap.dropped}
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-span-3 md:col-span-3 lg:col-span-1 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
-						<div class="flex items-center gap-3">
-							<div class="text-2xl emoji-icon">⭐</div>
-							<div>
-								<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
-									{gameStats.avgRating}
-								</div>
-								<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
-									{i18n(I18nKey.gameAvgRating)}
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-lg p-4 shadow-sm">
-						<div class="flex items-center gap-3">
-							<div class="text-2xl emoji-icon">📌</div>
-							<div>
-								<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
-									{gameStats.onhold + gameStats.planned}
-								</div>
-								<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
-									{statusLabelMap.onhold}、{statusLabelMap.planned}
+					<div class="hidden min-[800px]:grid min-[800px]:grid-cols-5 gap-4">
+						<div class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/30 dark:to-gray-700/30 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">⏸</div>
+								<div>
+									<div class="text-2xl font-bold text-gray-700 dark:text-gray-300">
+										{gameStats.onhold}
+									</div>
+									<div class="text-sm text-gray-700/70 dark:text-gray-300/70">
+										{statusLabelMap.onhold}
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 shadow-sm">
-						<div class="flex items-center gap-3">
-							<div class="text-2xl emoji-icon">▶️</div>
-							<div>
-								<div class="text-2xl font-bold text-green-600 dark:text-green-400">
-									{gameStats.playing}
-								</div>
-								<div class="text-sm text-green-600/70 dark:text-green-400/70">
-									{statusLabelMap.playing}
+						<div class="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">📌</div>
+								<div>
+									<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
+										{gameStats.planned}
+									</div>
+									<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
+										{statusLabelMap.planned}
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-span-2 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 shadow-sm">
-						<div class="flex items-center gap-3">
-							<div class="text-2xl emoji-icon">✅</div>
-							<div>
-								<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
-									{gameStats.completed + gameStats.favorite}
+						<div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">▶️</div>
+								<div>
+									<div class="text-2xl font-bold text-green-600 dark:text-green-400">
+										{gameStats.playing}
+									</div>
+									<div class="text-sm text-green-600/70 dark:text-green-400/70">
+										{statusLabelMap.playing}
+									</div>
 								</div>
-								<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
-									{statusLabelMap.completed}、{statusLabelMap.favorite}
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">✅</div>
+								<div>
+									<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
+										{gameStats.completed}
+									</div>
+									<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
+										{statusLabelMap.completed}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">❤</div>
+								<div>
+									<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
+										{gameStats.favorite}
+									</div>
+									<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
+										{statusLabelMap.favorite}
+									</div>
 								</div>
 							</div>
 						</div>

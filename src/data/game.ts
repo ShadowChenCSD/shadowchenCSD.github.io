@@ -291,7 +291,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "永劫无间",
-		status: "planned",
+		status: "onhold",
 		rating: 6.0,
 		cover: "/images/games/永劫无间.jpeg",
 		description: "",

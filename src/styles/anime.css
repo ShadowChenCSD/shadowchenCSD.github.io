@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .anime-grid-container.anime-grid-mode {
     grid-template-columns: repeat(3, 1fr);
   }
