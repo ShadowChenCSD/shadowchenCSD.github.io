@@ -14,12 +14,6 @@ export interface DiaryItem {
 // 示例日记数据
 const diaryData: DiaryItem[] = [
 	{
-		id: 16,
-		content: "🛠️ 2026-08-14：获得ChatGPT Plus一个月的免费使用额度！😍",
-		date: "2026-08-14T19:30:00+08:00",
-		images: ["/images/diary/ChatGPT Plus Free.png"],
-	},
-	{
 		id: 15,
 		content: "🎮 2026-08-14：《阴阳师》，PC端推送强制升级！退出、升级，必须二选一！😤",
 		date: "2026-08-14T19:30:00+08:00",
