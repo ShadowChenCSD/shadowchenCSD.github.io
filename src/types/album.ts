@@ -21,4 +21,5 @@ export interface AlbumGroup {
 	location?: string;
 	tags?: string[];
 	photos: Photo[];
+	columns?: number;
 }

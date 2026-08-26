@@ -35,6 +35,7 @@ const allAlbums = await scanAlbums();
 const currentIndex = allAlbums.findIndex((a) => a.id === album.id);
 const prevAlbum = currentIndex > 0 ? allAlbums[currentIndex - 1] : null;
 const nextAlbum = currentIndex < allAlbums.length - 1 ? allAlbums[currentIndex + 1] : null;
+const galleryColumns = allAlbums[currentIndex]?.columns ?? album.columns;
 ---
 
 <MainGridLayout title={album.title} description={album.description || album.title}>
@@ -102,7 +103,10 @@ const nextAlbum = currentIndex < allAlbums.length - 1 ? allAlbums[currentIndex +
 	<div class="w-full rounded-(--radius-large) overflow-hidden relative mt-4">
 		<div class="card-base z-10 px-6 py-6 relative w-full">
 			{album.photos.length > 0 ? (
-				<div class="gallery-masonry">
+				<div
+					class="gallery-masonry"
+					style={galleryColumns ? `column-count: ${galleryColumns}` : undefined}
+				>
 					{album.photos.map((photo: Photo) => (
 						<PhotoCard
 							src={photo.src}

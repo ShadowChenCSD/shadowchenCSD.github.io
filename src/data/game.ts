@@ -1767,7 +1767,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "松鼠大作战 2",
-		status: "playing",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/games/松鼠大作战2.png",
 		description: "共9关。有日版和美版之分。",
@@ -2007,7 +2007,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "松鼠大作战",
-		status: "playing",
+		status: "favorite",
 		rating: 7.5,
 		cover: "/images/games/松鼠大作战.png",
 		description: "共11关，可以跳关。有日版和美版之分。",
@@ -2031,7 +2031,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "DOUBLE DRAGON III / 双截龙 3",
-		status: "playing",
+		status: "favorite",
 		rating: 7.0,
 		cover: "/images/games/双截龙3.png",
 		description: "共5关：美国，中国，日本，意大利，埃及。",
@@ -2343,7 +2343,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Rush'n Attack / 绿色兵团",
-		status: "playing",
+		status: "favorite",
 		rating: 6.9,
 		cover: "/images/games/绿色兵团.png",
 		description: "共6关。",

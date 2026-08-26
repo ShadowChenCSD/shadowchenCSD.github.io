@@ -3,6 +3,16 @@ import * as path from "node:path";
 
 import type { AlbumGroup, Photo } from "../types/album";
 
+const MAX_ALBUM_COLUMNS = 6;
+
+function parseAlbumColumns(value: unknown): number | undefined {
+	const columns = Number(value);
+	if (!Number.isFinite(columns) || columns < 1) {
+		return undefined;
+	}
+	return Math.min(Math.floor(columns), MAX_ALBUM_COLUMNS);
+}
+
 export async function scanAlbums(): Promise<AlbumGroup[]> {
 	const albumsDir = path.join(process.cwd(), "public/images/albums");
 	const albums: AlbumGroup[] = [];
@@ -101,6 +111,7 @@ async function processAlbumFolder(
 		location: info.location || "",
 		tags: info.tags || [],
 		photos,
+		columns: parseAlbumColumns(info.columns),
 	};
 }
 
