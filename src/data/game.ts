@@ -63,7 +63,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "FATAL FURY City of Wolves / 饿狼传说：群狼之城",
-		status: "playing",
+		status: "planned",
 		rating: 6.1,
 		cover: "/images/games/饿狼传说：群狼之城.jpg",
 		description: "目前发售了三张季票。",
@@ -123,7 +123,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Monument Valley 3 / 纪念碑谷 3",
-		status: "playing",
+		status: "planned",
 		rating: 7.2,
 		cover: "/images/games/纪念碑谷3.jpg",
 		description: "",
@@ -135,7 +135,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "植物大战僵尸：重植版",
-		status: "planned",
+		status: "onhold",
 		rating: 5.0,
 		cover: "/images/games/植物大战僵尸：重植版.jpg",
 		description: "重制的新版本，游戏体验有略微提升，字体、特效反而不如原作。",
@@ -207,7 +207,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "超级马里奥兄弟 惊奇",
-		status: "onhold",
+		status: "playing",
 		rating: 8.4,
 		cover: "/images/games/超级马里奥兄弟 惊奇.jpg",
 		description: "",
@@ -495,7 +495,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "马里奥网球 王牌",
-		status: "onhold",
+		status: "playing",
 		rating: 6.6,
 		cover: "/images/games/马里奥网球 王牌.jpeg",
 		description: "",
@@ -603,7 +603,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Monument Valley 2 / 纪念碑谷 2",
-		status: "playing",
+		status: "planned",
 		rating: 7.2,
 		cover: "/images/games/纪念碑谷2.jpg",
 		description: "",
@@ -639,7 +639,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "VOEZ / 兰空",
-		status: "planned",
+		status: "onhold",
 		rating: 6.6,
 		cover: "/images/games/兰空.jpg",
 		description: "",
@@ -999,7 +999,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "英雄无敌6",
-		status: "playing",
+		status: "planned",
 		rating: 6.4,
 		cover: "/images/games/英雄无敌6.jpg",
 		description: "后续有DLC：“荒夷海盗”，“死亡之舞”和“黑暗之影”。",
@@ -1047,7 +1047,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "The Treasures of Montezuma 2 / 蒙特祖玛的宝藏2",
-		status: "planned",
+		status: "playing",
 		rating: 6.7,
 		cover: "/images/games/蒙特祖玛的宝藏2.jpg",
 		description: "",
@@ -1155,7 +1155,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "LUXOR：Amun Rising / 埃及祖玛：阿蒙神叛乱",
-		status: "planned",
+		status: "playing",
 		rating: 0.0,
 		cover: "/images/games/埃及祖玛：阿蒙神叛乱.jpg",
 		description: "Steam版本无法正常进入游戏，或与系统版本有关。另有HD版本可以正常运行。",
@@ -1167,7 +1167,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "LUXOR / 埃及祖玛",
-		status: "planned",
+		status: "playing",
 		rating: 0.0,
 		cover: "/images/games/埃及祖玛.jpg",
 		description: "Steam版本无法正常进入游戏，或与系统版本有关。另有HD版本可以正常运行。",
@@ -1323,7 +1323,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "魔塔",
-		status: "planned",
+		status: "playing",
 		rating: 7.1,
 		cover: "/images/games/魔塔 Flash版.png",
 		description: "胖老鼠工作室版本，共21层或24层。",
@@ -1767,7 +1767,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "松鼠大作战 2",
-		status: "completed",
+		status: "favorite",
 		rating: 8.0,
 		cover: "/images/games/松鼠大作战2.png",
 		description: "共9关。有日版和美版之分。",
@@ -2007,7 +2007,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "松鼠大作战",
-		status: "completed",
+		status: "favorite",
 		rating: 7.5,
 		cover: "/images/games/松鼠大作战.png",
 		description: "共11关，可以跳关。有日版和美版之分。",
@@ -2199,7 +2199,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Flying Hero / 救火英雄",
-		status: "playing",
+		status: "dropped",
 		rating: 5.9,
 		cover: "/images/games/救火英雄.png",
 		description: "类《打砖块》玩法，共32关。",
@@ -2247,10 +2247,10 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: 	"忍者神龟",
-		status: "playing",
+		status: "completed",
 		rating: 6.3,
 		cover: "/images/games/忍者神龟.png",
-		description: "共6关。",
+		description: "共6关。可以切换4个角色，游戏难度较高，游戏内容很充实。",
 		actor: "莱昂纳多，米开朗基罗，多纳泰罗，拉斐尔",
 		year: "1989",
 		genre: ["角色扮演", "冒险", "动作", "平台跳跃", "剧情"],
@@ -2391,7 +2391,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "The Legend of Kage / 影子传说",
-		status: "playing",
+		status: "dropped",
 		rating: 6.7,
 		cover: "/images/games/影子传说.png",
 		description: "游戏关卡实则只有四关，但是一个周目要循环3次。二周目结束后有公主盛装彩蛋。",
