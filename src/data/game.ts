@@ -135,7 +135,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "植物大战僵尸：重植版",
-		status: "onhold",
+		status: "planned",
 		rating: 5.0,
 		cover: "/images/games/植物大战僵尸：重植版.jpg",
 		description: "重制的新版本，游戏体验有略微提升，字体、特效反而不如原作。",
@@ -211,7 +211,7 @@ const localGameList: GameItem[] = [
 		rating: 8.4,
 		cover: "/images/games/超级马里奥兄弟 惊奇.jpg",
 		description: "",
-		actor: "马里奥，路易吉，奇诺比珂",
+		actor: "马里奥，路易吉",
 		year: "2023",
 		genre: ["角色扮演", "平台跳跃", "冒险", "奇幻", "音乐", "剧情", "多人合作"],
 		platform: "NS",
@@ -497,7 +497,7 @@ const localGameList: GameItem[] = [
 		title: "马里奥网球 王牌",
 		status: "playing",
 		rating: 6.6,
-		cover: "/images/games/马里奥网球 王牌.jpeg",
+		cover: "/images/games/马里奥网球 王牌.webp",
 		description: "",
 		actor: "马里奥，路易吉",
 		year: "2018",
@@ -555,7 +555,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Nine Parchments / 九张羊皮纸",
-		status: "onhold",
+		status: "planned",
 		rating: 6.1,
 		cover: "/images/games/九张羊皮纸.jpg",
 		description: "",
@@ -639,7 +639,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "VOEZ / 兰空",
-		status: "onhold",
+		status: "planned",
 		rating: 6.6,
 		cover: "/images/games/兰空.jpg",
 		description: "",
@@ -915,7 +915,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "The Treasures of Montezuma 4 / 蒙特祖玛的宝藏4",
-		status: "planned",
+		status: "playing",
 		rating: 6.7,
 		cover: "/images/games/蒙特祖玛的宝藏4.jpg",
 		description: "",
@@ -987,7 +987,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "The Treasures of Montezuma 3 / 蒙特祖玛的宝藏3",
-		status: "planned",
+		status: "playing",
 		rating: 6.9,
 		cover: "/images/games/蒙特祖玛的宝藏3.jpg",
 		description: "",
@@ -1335,7 +1335,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Betty Bad / 坏女孩贝蒂",
-		status: "onhold",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/坏女孩贝蒂.webp",
 		description: "",
@@ -1347,7 +1347,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Peter Pan: Adventures in Never Land / 彼得·潘在梦幻岛的冒险",
-		status: "onhold",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/彼得·潘在梦幻岛的冒险.jpg",
 		description: "",
@@ -1359,7 +1359,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "暴力摩托 2002",
-		status: "onhold",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/暴力摩托 2002.jpg",
 		description: "共8个角色，5张地图：城市公路、城镇街道、山腰公路、沿海公路和内华达山脉。",
@@ -1371,7 +1371,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "抢滩登陆战 2002",
-		status: "onhold",
+		status: "planned",
 		rating: 6.4,
 		cover: "/images/games/抢滩登陆战 2002.jpg",
 		description: "",
@@ -1527,7 +1527,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "抢滩登陆战 2000",
-		status: "onhold",
+		status: "planned",
 		rating: 6.2,
 		cover: "/images/games/抢滩登陆战 2000.jpg",
 		description: "",
@@ -1971,7 +1971,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "功夫成龙",
-		status: "favorite",
+		status: "completed",
 		rating: 6.8,
 		cover: "/images/games/功夫成龙.png",
 		description: "共5关。最终BOSS战有2轮。有日版和美版之分。",
@@ -2247,7 +2247,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: 	"忍者神龟",
-		status: "completed",
+		status: "favorite",
 		rating: 6.3,
 		cover: "/images/games/忍者神龟.png",
 		description: "共6关。可以切换4个角色，游戏难度较高，游戏内容很充实。",
@@ -2391,10 +2391,10 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "The Legend of Kage / 影子传说",
-		status: "dropped",
+		status: "completed",
 		rating: 6.7,
 		cover: "/images/games/影子传说.png",
-		description: "游戏关卡实则只有四关，但是一个周目要循环3次。二周目结束后有公主盛装彩蛋。",
+		description: "游戏关卡实则只有四关，但是一个周目要循环3次。二周目结束后有公主盛装彩蛋。BOSS战要先打蝴蝶。",
 		actor: "影",
 		year: "1986",
 		genre: ["角色扮演", "平台跳跃", "冒险", "剧情"],
@@ -2523,7 +2523,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Ice Climber / 敲冰块",
-		status: "dropped",
+		status: "completed",
 		rating: 6.8,
 		cover: "/images/games/敲冰块.png",
 		description: "共32关。游戏设定不错，但跳跃的手感做得很差，云朵的移动速度也很快，导致游戏难度很高。",
