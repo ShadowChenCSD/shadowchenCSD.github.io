@@ -15,7 +15,7 @@ export interface DiaryItem {
 const diaryData: DiaryItem[] = [
 	{
 		id: 15,
-		content: "🎮 2026-08-14：《阴阳师》，PC端推送强制升级！退出、升级，必须二选一！😤",
+		content: "🎮 2026-08-14：《阴阳师》，PC端推送强制升级！退坑，升级，二选一！😤",
 		date: "2026-08-14T19:30:00+08:00",
 		images: ["/images/diary/阴阳师·强制升级.jpg"],
 	},
