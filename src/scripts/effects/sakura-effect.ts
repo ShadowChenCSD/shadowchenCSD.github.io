@@ -29,7 +29,14 @@ export class SakuraEffectHandler {
 		}
 
 		this.config = sakuraConfig;
-		initSakura(sakuraConfig);
+
+		// 读取用户偏好（localStorage），决定是否自动启动樱花特效
+		// config.enable 为 true 时才会进入此方法，这里仅根据用户偏好决定是否运行
+		const userPreference = localStorage.getItem("sakura-enabled");
+		const shouldAutoStart = userPreference === null ? sakuraConfig.enable : userPreference === "true";
+
+		// 始终以 enable:true 创建管理器，确保运行时 toggle() 可以正常启动特效
+		initSakura({ ...sakuraConfig, enable: true }, shouldAutoStart);
 		this.initialized = true;
 		(window as any).sakuraInitialized = true;
 	}

@@ -376,12 +376,12 @@ export class SakuraManager {
 let globalSakuraManager: SakuraManager | null = null;
 
 // 初始化樱花特效
-export function initSakura(config: SakuraConfig): void {
+export function initSakura(config: SakuraConfig, autoStart = true): void {
 	if (globalSakuraManager) {
 		globalSakuraManager.updateConfig(config);
 	} else {
 		globalSakuraManager = new SakuraManager(config);
-		if (config.enable) {
+		if (config.enable && autoStart) {
 			globalSakuraManager.init();
 		}
 	}

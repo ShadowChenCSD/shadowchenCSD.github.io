@@ -1,11 +1,12 @@
 ---
 import type { MarkdownHeading } from "astro";
 
-import { musicPlayerConfig, siteConfig } from "../../config";
+import { musicPlayerConfig, sakuraConfig, siteConfig } from "../../config";
 import FloatingTOC from "../features/toc/FloatingTOC.astro";
 import BackToHome from "./BackToHome.astro";
 import BackToTop from "./BackToTop.astro";
 import MusicFabButton from "./MusicFabButton.svelte";
+import SakuraFabButton from "./SakuraFabButton.svelte";
 
 interface Props {
 	headings?: MarkdownHeading[];
@@ -15,6 +16,13 @@ const { headings = [] } = Astro.props;
 ---
 
 <div class="floating-controls-container">
+	{
+		sakuraConfig.enable && (
+			<div class="floating-control-item" data-control-key="sakura">
+				<SakuraFabButton client:idle />
+			</div>
+		)
+	}
 	{
 		musicPlayerConfig.enable &&
 			musicPlayerConfig.showFloatingPlayer &&
