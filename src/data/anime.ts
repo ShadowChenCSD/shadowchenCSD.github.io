@@ -73,7 +73,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "青春猪头少年不会梦到圣诞服女郎",
-		status: "onhold",
+		status: "planned",
 		rating: 6.8,
 		cover: "/images/anime/青春猪头少年不会梦到圣诞服女郎.jpg",
 		description: "",
@@ -101,7 +101,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "白蛇：浮生",
-		status: "onhold",
+		status: "planned",
 		rating: 6.2,
 		cover: "/images/anime/白蛇：浮生.webp",
 		description: "",
@@ -1006,7 +1006,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["卡牌", "竞技", "热血", "奇幻", "战斗"],
 		studio: "ぎゃろっぷ",
 		link: "https://www.iqiyi.com/v_k41idhhgss.html",
-		progress: 24,
+		progress: 26,
 		totalEpisodes: 180,
 	},
 	{
@@ -1179,7 +1179,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "宝莲灯",
-		status: "watching",
+		status: "planned",
 		rating: 7.3,
 		cover: "/images/anime/宝莲灯.webp",
 		description: "",
@@ -1599,7 +1599,7 @@ const localAnimeList: AnimeItem[] = [
 	},
 	{
 		title: "大闹天宫",
-		status: "watching",
+		status: "planned",
 		rating: 8.6,
 		cover: "/images/anime/大闹天宫.webp",
 		description: "",
