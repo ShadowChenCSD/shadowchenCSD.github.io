@@ -265,7 +265,7 @@ export const ja: Translation = {
 	[Key.timelineExperience]: "実務経験",
 	[Key.timelineCurrent]: "現在のステータス",
 	[Key.timelineHistory]: "履歴",
-	[Key.timelineAchievements]: "実績",
+	[Key.timelineAchievements]: "過去の経歴",
 	[Key.timelineStartDate]: "開始日",
 	[Key.timelineDuration]: "期間",
 

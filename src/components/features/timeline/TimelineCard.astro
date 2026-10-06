@@ -61,8 +61,8 @@ const formatDate = (dateString: string) => {
 const getDuration = (startDate: string, endDate?: string) => {
 	const start = new Date(startDate);
 	const end = endDate ? new Date(endDate) : new Date();
-	const diffTime = Math.abs(end.getTime() - start.getTime());
-	const diffMonths = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 30));
+	// 只精确到月
+	const diffMonths = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth()) + 1;
 
 	if (diffMonths < 12) {
 		return `${diffMonths} ${i18n(I18nKey.timelineMonths)}`;
@@ -174,7 +174,11 @@ const hasLinks = item.links && item.links.length > 0;
 				item.achievements && item.achievements.length > 0 && (
 					<div class="mb-4">
 						<h4 class="text-xs font-semibold text-black/50 dark:text-white/50 uppercase tracking-wider mb-2">
-							{i18n(I18nKey.timelineAchievements)}
+							{
+								item.type === "achievement"
+									? i18n(I18nKey.timelineAchievement)
+									: i18n(I18nKey.timelineAchievements)
+							}
 						</h4>
 						<ul class="space-y-1.5">
 							{item.achievements.map((achievement) => (

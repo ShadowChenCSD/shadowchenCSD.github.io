@@ -262,7 +262,7 @@ export const en: Translation = {
 	[Key.timelineExperience]: "Work Experience",
 	[Key.timelineCurrent]: "Current Status",
 	[Key.timelineHistory]: "History",
-	[Key.timelineAchievements]: "Achievements",
+	[Key.timelineAchievements]: "Past Experience",
 	[Key.timelineStartDate]: "Start Date",
 	[Key.timelineDuration]: "Duration",
 

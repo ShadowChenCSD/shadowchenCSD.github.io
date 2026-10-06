@@ -204,7 +204,7 @@ export const zh_CN: Translation = {
 	[Key.timelineExperience]: "工作经验",
 	[Key.timelineCurrent]: "当前状态",
 	[Key.timelineHistory]: "历史记录",
-	[Key.timelineAchievements]: "成就荣誉",
+	[Key.timelineAchievements]: "过往经历",
 	[Key.timelineStartDate]: "开始日期",
 	[Key.timelineDuration]: "持续时间",
 

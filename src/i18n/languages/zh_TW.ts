@@ -243,7 +243,7 @@ export const zh_TW: Translation = {
 	[Key.timelineExperience]: "工作經驗",
 	[Key.timelineCurrent]: "當前狀態",
 	[Key.timelineHistory]: "歷史記錄",
-	[Key.timelineAchievements]: "成就榮譽",
+	[Key.timelineAchievements]: "過往經歷",
 	[Key.timelineStartDate]: "開始日期",
 	[Key.timelineDuration]: "持續時間",
 
