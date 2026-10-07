@@ -484,7 +484,7 @@ export const skillsData: Skill[] = [
 		id: "stable diffusion",
 		name: "Stable Diffusion",
 		description: "Stability AI开源的扩散文生图模型，可本地部署与定制训练。",
-		icon: "logos:stability-ai",
+		icon: "logos:stability-ai-icon",
 		category: "ai",
 		level: "expert",
 		color: "#C31EFF",
