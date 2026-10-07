@@ -1431,7 +1431,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Betty Bad / 坏女孩贝蒂",
-		status: "playing",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/坏女孩贝蒂.webp",
 		description: "",
@@ -1443,7 +1443,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Peter Pan: Adventures in Never Land / 彼得·潘在梦幻岛的冒险",
-		status: "playing",
+		status: "planned",
 		rating: 0.0,
 		cover: "/images/games/彼得·潘在梦幻岛的冒险.jpg",
 		description: "",
@@ -1515,7 +1515,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "明星三缺一 2002",
-		status: "completed",
+		status: "favorite",
 		rating: 0.0,
 		cover: "/images/games/明星三缺一 2002.jpg",
 		description: "有秘籍。",
@@ -1779,7 +1779,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "魔法の塔 / 魔塔",
-		status: "playing",
+		status: "planned",
 		rating: 7.5,
 		cover: "/images/games/魔塔 原版.jpg",
 		description: "初代版本共50层。有PC-9801版本和Win移植版本，推荐体验前者。",
@@ -1851,7 +1851,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: 	"星之卡比 梦之泉物语",
-		status: "playing",
+		status: "planned",
 		rating: 7.6,
 		cover: "/images/games/星之卡比.png",
 		description: "共8关。有日版和美版之分。",
@@ -2127,7 +2127,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "DOUBLE DRAGON III / 双截龙 3",
-		status: "completed",
+		status: "favorite",
 		rating: 7.0,
 		cover: "/images/games/双截龙3.png",
 		description: "共5关：美国，中国，日本，意大利，埃及。",
@@ -2223,7 +2223,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "西游记世界2 天界的魔神",
-		status: "playing",
+		status: "planned",
 		rating: 7.0,
 		cover: "/images/games/西游记世界2.png",
 		description: "共7关。",
@@ -2331,7 +2331,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "DOUBLE DRAGON II / 双截龙 2",
-		status: "completed",
+		status: "favorite",
 		rating: 7.3,
 		cover: "/images/games/双截龙2.png",
 		description: "共9关，第9关是最终BOSS决战。有日版和美版之分。",
@@ -2367,7 +2367,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "DOUBLE DRAGON / 双截龙",
-		status: "completed",
+		status: "favorite",
 		rating: 6.2,
 		cover: "/images/games/双截龙.png",
 		description: "共4关。mode A是冒险模式，mode B是单挑格斗模式。部分敌人倒地后可以追加击打。",
@@ -2403,7 +2403,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "西游记世界",
-		status: "playing",
+		status: "planned",
 		rating: 7.0,
 		cover: "/images/games/西游记世界.png",
 		description: "共11关。",
@@ -2439,7 +2439,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Rush'n Attack / 绿色兵团",
-		status: "completed",
+		status: "favorite",
 		rating: 6.9,
 		cover: "/images/games/绿色兵团.png",
 		description: "共6关。",

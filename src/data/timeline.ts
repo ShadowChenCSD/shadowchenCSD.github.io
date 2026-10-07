@@ -166,6 +166,7 @@ export const timelineData: TimelineItem[] = [
 		startDate: "2014-12-01",
 		endDate: "2014-12-30",
 		location: "江苏省，苏州市，姑苏区",
+		organization: "考点：苏州大学，东校区",
 		skills: ["政治", "英语", "数学", "信号与线性系统"],
 		achievements: [
 			"📋政治：70/100，英语一：48/100，数学一：92/150，专业课：125/150，总分：335/500。",

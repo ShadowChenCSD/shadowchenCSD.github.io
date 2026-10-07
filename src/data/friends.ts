@@ -13,6 +13,14 @@ export interface FriendItem {
 // 友情链接数据
 export const friendsData: FriendItem[] = [
 	{
+		id: 18,
+		title: "图标集",
+		imgurl: "/links/iconify.svg",
+		desc: "官方图标集浏览网站",
+		siteurl: "https://icon-sets.iconify.design/",
+		tags: ["图标", "社区"],
+	},
+	{
 		id: 17,
 		title: "库街区：鸣潮",
 		imgurl: "/links/鸣潮.webp",
