@@ -5,7 +5,7 @@ import { SkillCard } from "@components/features/skills";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
-import { skillsData } from "../data/skills";
+import { skillsData, type Skill } from "../data/skills";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 
@@ -13,7 +13,21 @@ if (!siteConfig.featurePages.skills) {
 	return Astro.redirect("/404/");
 }
 
-const categories = [...new Set(skillsData.map((skill) => skill.category))];
+// 分类标签的固定展示顺序（数据中不存在的分类不会显示）
+const categoryOrder: Skill["category"][] = [
+	"frontend",
+	"backend",
+	"embedded",
+	"database",
+	"library",
+	"ai",
+	"tools",
+	"other",
+];
+const presentCategories = new Set(skillsData.map((skill) => skill.category));
+const categories = categoryOrder.filter((category) =>
+	presentCategories.has(category),
+);
 
 const getCategoryText = (category: string) => {
 	switch (category) {
@@ -21,12 +35,18 @@ const getCategoryText = (category: string) => {
 			return i18n(I18nKey.skillsFrontend);
 		case "backend":
 			return i18n(I18nKey.skillsBackend);
+		case "embedded":
+			return i18n(I18nKey.skillsEmbedded);
 		case "database":
 			return i18n(I18nKey.skillsDatabase);
 		case "tools":
 			return i18n(I18nKey.skillsTools);
+		case "library":
+			return i18n(I18nKey.skillsLibrary);
+		case "ai":
+			return i18n(I18nKey.skillsAI);
 		case "other":
-			return i18n(I18nKey.skillsOther);
+			return i18n(I18nKey.skillsOthers);
 		default:
 			return category;
 	}
@@ -38,10 +58,16 @@ const getCategoryIcon = (category: string) => {
 			return "material-symbols:web";
 		case "backend":
 			return "material-symbols:dns";
+		case "embedded":
+			return "material-symbols:memory";
 		case "database":
 			return "material-symbols:storage";
 		case "tools":
 			return "material-symbols:build";
+		case "library":
+			return "material-symbols:package-2";
+		case "ai":
+			return "material-symbols:smart-toy";
 		case "other":
 			return "material-symbols:widgets";
 		default:
@@ -91,7 +117,7 @@ const subtitle = i18n(I18nKey.skillsSubtitle);
 			</div>
 
 			<div id="skills-grid" class="grid gap-6 items-start">
-				{skillsData.map((skill) => <SkillCard skill={skill} />)}
+				{skillsData.map((skill, index) => <SkillCard skill={skill} index={index} />)}
 			</div>
 
 			<div id="no-results" class="hidden text-center py-16">
@@ -110,18 +136,38 @@ const subtitle = i18n(I18nKey.skillsSubtitle);
 </MainGridLayout>
 
 <style is:global>
+	/* List layout: 3 / 2 / 1 (breakpoints 1440 / 1024) */
 	#skills-grid {
 		grid-template-columns: 1fr;
 	}
 
-	@media (min-width: 640px) {
+	@media (min-width: 1024px) {
 		#skills-grid {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 
+	@media (min-width: 1440px) {
+		#skills-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	/* Grid layout: 4 / 3 / 2 / 1 (breakpoints 1440 / 1280 / 960 / 640; 960 keeps 2 columns) */
 	#main-grid[data-layout-mode="grid"] #skills-grid {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	@media (max-width: 1439px) {
+		#main-grid[data-layout-mode="grid"] #skills-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 1279px) {
+		#main-grid[data-layout-mode="grid"] #skills-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 639px) {
