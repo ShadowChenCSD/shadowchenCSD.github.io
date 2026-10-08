@@ -437,8 +437,9 @@ const animeStats = {
 				if (!animeListContainer) {
 					return false;
 				}
+				const forced = window.getForcedLayout?.(location.pathname);
 				const currentLayout =
-					localStorage.getItem("postListLayout") || "list";
+					forced || localStorage.getItem("postListLayout") || "grid";
 				updateAnimeListLayout(currentLayout, false);
 				requestAnimationFrame(() => {
 					animeListContainer.classList.remove("opacity-0");
@@ -465,9 +466,11 @@ const animeStats = {
 						const animeListContainer =
 							document.getElementById(containerId);
 						if (animeListContainer) {
+							const forced = window.getForcedLayout?.(location.pathname);
 							const currentLayout =
+								forced ||
 								localStorage.getItem("postListLayout") ||
-								"list";
+								"grid";
 							updateAnimeListLayout(currentLayout, false);
 							animeListContainer.classList.remove("opacity-0");
 						}

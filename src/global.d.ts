@@ -87,6 +87,9 @@ declare global {
 		__mizukiRightSidebarResizeHandler?: () => void;
 		__mizukiRightSidebarSwupHooked?: boolean;
 		__mizukiRightSidebarManagerInitialized?: boolean;
+
+		// Page→forced layout mapping (injected by GridScripts.astro)
+		getForcedLayout?: (pathname: string) => "list" | "grid" | null;
 	}
 
 	interface Fancybox {

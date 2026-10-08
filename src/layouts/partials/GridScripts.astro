@@ -32,6 +32,34 @@ const {
 		pageScaling,
 	}}
 >
+	/**
+	 * 页面→强制布局模式的映射
+	 * - 主页（/ + /page/N/ 分页）     → 强制 list
+	 * - 相册 / 番剧 / 游戏           → 强制 grid
+	 * - 其他页面                     → 不强制，由用户偏好决定
+	 */
+	(function () {
+		function getForcedLayout(pathname) {
+			const path = pathname || "";
+
+			if (
+				/^\/albums\/?$/.test(path) ||
+				/^\/anime\/?$/.test(path) ||
+				/^\/game\/?$/.test(path)
+			) {
+				return "grid";
+			}
+
+			if (path === "/" || /^\/page\/\d+\/?$/.test(path)) {
+				return "list";
+			}
+
+			return null;
+		}
+
+		window.getForcedLayout = getForcedLayout;
+	})();
+
 	// 立即执行，在页面渲染前应用壁纸模式和布局模式，避免闪烁
 	(function () {
 		const wallpaperMode =
@@ -76,8 +104,10 @@ const {
 			// 立即应用布局模式，避免闪烁
 			const mainGrid = document.getElementById("main-grid");
 			if (mainGrid) {
+				const forced = window.getForcedLayout(location.pathname);
 				const savedLayout = localStorage.getItem("postListLayout");
-				const currentLayout = savedLayout || defaultPostListLayout;
+				const currentLayout =
+					forced || savedLayout || defaultPostListLayout;
 				mainGrid.setAttribute("data-layout-mode", currentLayout);
 
 				// 根据布局模式显示或隐藏右侧边栏
@@ -279,27 +309,16 @@ const {
 	function setupSwupLayoutSync() {
 		// @ts-ignore
 		if (typeof window !== "undefined" && window.swup) {
-			// 关键：在 content:replace 之前（animation:out:start）就准备好布局状态
-			// @ts-ignore
-			window.swup.hooks.on("animation:out:start", function () {
-				// 保存当前布局状态，以便在新页面中立即应用
-				const savedLayout = localStorage.getItem("postListLayout");
-				if (savedLayout) {
-					// @ts-ignore
-					window.__pendingLayoutMode = savedLayout;
-				}
-			});
-
 			// 在内容替换后立即应用布局，不等待其他脚本
+			// content:replace 时 location.pathname 已指向新页面
 			// @ts-ignore
 			window.swup.hooks.on("content:replace", function () {
 				const mainGrid = document.getElementById("main-grid");
 				if (mainGrid) {
-					// @ts-ignore
+					const forced = window.getForcedLayout(location.pathname);
+					const savedLayout = localStorage.getItem("postListLayout");
 					const currentLayout =
-						window.__pendingLayoutMode ||
-						localStorage.getItem("postListLayout") ||
-						defaultPostListLayout;
+						forced || savedLayout || defaultPostListLayout;
 					mainGrid.setAttribute("data-layout-mode", currentLayout);
 
 					const rightSidebar = document.querySelector(
@@ -349,10 +368,6 @@ const {
 							);
 						}
 					}
-
-					// 清除临时状态
-					// @ts-ignore
-					delete window.__pendingLayoutMode;
 				}
 			});
 
@@ -382,8 +397,10 @@ const {
 		requestAnimationFrame(function () {
 			const mainGrid = document.getElementById("main-grid");
 			if (mainGrid) {
+				const forced = window.getForcedLayout(location.pathname);
 				const savedLayout = localStorage.getItem("postListLayout");
-				const currentLayout = savedLayout || defaultPostListLayout;
+				const currentLayout =
+					forced || savedLayout || defaultPostListLayout;
 				mainGrid.setAttribute("data-layout-mode", currentLayout);
 
 				if (currentLayout === "grid") {
@@ -410,8 +427,10 @@ const {
 		document.addEventListener("DOMContentLoaded", function () {
 			const mainGrid = document.getElementById("main-grid");
 			if (mainGrid) {
+				const forced = window.getForcedLayout(location.pathname);
 				const savedLayout = localStorage.getItem("postListLayout");
-				const currentLayout = savedLayout || defaultPostListLayout;
+				const currentLayout =
+					forced || savedLayout || defaultPostListLayout;
 				mainGrid.setAttribute("data-layout-mode", currentLayout);
 
 				if (currentLayout === "grid") {

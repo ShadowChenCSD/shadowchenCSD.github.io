@@ -396,8 +396,9 @@ const gameStats = {
 				if (!gameListContainer) {
 					return false;
 				}
+				const forced = window.getForcedLayout?.(location.pathname);
 				const currentLayout =
-					localStorage.getItem("postListLayout") || "list";
+					forced || localStorage.getItem("postListLayout") || "grid";
 				updateGameListLayout(currentLayout, false);
 				requestAnimationFrame(() => {
 					gameListContainer.classList.remove("opacity-0");
@@ -424,9 +425,11 @@ const gameStats = {
 						const gameListContainer =
 							document.getElementById(containerId);
 						if (gameListContainer) {
+							const forced = window.getForcedLayout?.(location.pathname);
 							const currentLayout =
+								forced ||
 								localStorage.getItem("postListLayout") ||
-								"list";
+								"grid";
 							updateGameListLayout(currentLayout, false);
 							gameListContainer.classList.remove("opacity-0");
 						}

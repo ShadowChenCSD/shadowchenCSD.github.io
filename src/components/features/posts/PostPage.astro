@@ -43,10 +43,11 @@ const initialLayoutClass = defaultLayout === "grid" ? "grid-mode" : "list-mode";
 				return;
 			}
 
+			const forced = window.getForcedLayout?.(location.pathname);
 			const savedLayout = localStorage.getItem("postListLayout");
 			const defaultLayout =
 				postListContainer.getAttribute("data-default-layout") || "list";
-			const currentLayout = savedLayout || defaultLayout;
+			const currentLayout = forced || savedLayout || defaultLayout;
 
 			const hasGridClass =
 				postListContainer.classList.contains("grid-mode");
@@ -128,12 +129,13 @@ const initialLayoutClass = defaultLayout === "grid" ? "grid-mode" : "list-mode";
 		clearTimeout(resizeTimeout);
 		resizeTimeout = window.setTimeout(() => {
 			if (window.innerWidth >= 769) {
+				const forced = window.getForcedLayout?.(location.pathname);
 				const savedLayout = localStorage.getItem("postListLayout");
 				const defaultLayout =
 					document
 						.getElementById("post-list-container")
 						?.getAttribute("data-default-layout") || "list";
-				updatePostListLayout(savedLayout || defaultLayout);
+				updatePostListLayout(forced || savedLayout || defaultLayout);
 			}
 		}, 100);
 	});

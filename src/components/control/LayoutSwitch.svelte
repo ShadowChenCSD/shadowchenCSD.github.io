@@ -62,20 +62,29 @@
 	onMount(() => {
 		mounted = true;
 
-		const sessionLayout = getSavedSessionLayout();
-		const defaultLayout = siteConfig.postListLayout
-			.defaultMode as LayoutMode;
-
-		if (sessionLayout === "list" || sessionLayout === "grid") {
-			userPreference = sessionLayout;
-
-			if (localStorage.getItem("postListLayout") !== sessionLayout) {
-				localStorage.setItem("postListLayout", sessionLayout);
-			}
+		// 先查页面是否强制布局，强制则覆盖用户偏好
+		let initialLayout: LayoutMode;
+		const forced = window.getForcedLayout?.(location.pathname);
+		if (forced === "list" || forced === "grid") {
+			initialLayout = forced;
+			updateStorage(forced);
 		} else {
-			userPreference = defaultLayout;
-			updateStorage(defaultLayout);
+			const sessionLayout = getSavedSessionLayout();
+			const defaultLayout = siteConfig.postListLayout
+				.defaultMode as LayoutMode;
+
+			if (sessionLayout === "list" || sessionLayout === "grid") {
+				initialLayout = sessionLayout;
+
+				if (localStorage.getItem("postListLayout") !== sessionLayout) {
+					localStorage.setItem("postListLayout", sessionLayout);
+				}
+			} else {
+				initialLayout = defaultLayout;
+				updateStorage(defaultLayout);
+			}
 		}
+		userPreference = initialLayout;
 
 		const handleCustomEvent = (
 			event: CustomEvent<{ layout: LayoutMode }>,
@@ -87,6 +96,13 @@
 
 		const handleSwupEvent = () => {
 			setTimeout(() => {
+				const forced = window.getForcedLayout?.(location.pathname);
+				if (forced === "list" || forced === "grid") {
+					userPreference = forced;
+					updateStorage(forced);
+					return;
+				}
+
 				const saved = getSavedSessionLayout();
 				if (saved === "list" || saved === "grid") {
 					userPreference = saved;
