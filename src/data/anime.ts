@@ -1006,7 +1006,7 @@ const localAnimeList: AnimeItem[] = [
 		genre: ["卡牌", "竞技", "热血", "奇幻", "战斗"],
 		studio: "ぎゃろっぷ",
 		link: "https://www.iqiyi.com/v_k41idhhgss.html",
-		progress: 28,
+		progress: 30,
 		totalEpisodes: 180,
 	},
 	{

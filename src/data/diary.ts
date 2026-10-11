@@ -1,4 +1,4 @@
-// 日记数据配置
+﻿// 日记数据配置
 // 用于管理日记页面的数据
 
 export interface DiaryItem {
@@ -14,13 +14,13 @@ export interface DiaryItem {
 // 示例日记数据
 const diaryData: DiaryItem[] = [
 	{
-		id: 19,
+		id: 20,
 		content: "🎮 2026-08-14：《阴阳师》，PC端推送强制升级！退坑，升级，二选一！😤",
 		date: "2026-08-14T19:30:00+08:00",
 		images: ["/images/diary/阴阳师·强制升级.jpg"],
 	},
 	{
-		id: 18,
+		id: 19,
 		content: "🎮 2026-05-17：《阴阳师》，签到3500天！🎯",
 		date: "2026-05-17T19:30:00+08:00",
 		images: [
@@ -36,7 +36,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 17,
+		id: 18,
 		content: "🎮 2026-02-05：《真三国无双·起源》，梦幻四英杰，全成就达成！🌸",
 		date: "2026-02-05T19:30:00+08:00",
 		images: [
@@ -45,7 +45,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 16,
+		id: 17,
 		content: "🎮 2026-01-23：《真三国无双·起源》，梦幻四英杰，启动！⚔️",
 		date: "2026-01-23T20:00:00+08:00",
 		images: [
@@ -54,7 +54,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 15,
+		id: 16,
 		content: "🎮 2025-12-16：《鸣潮》，漂泊者，开始拯救世界！⚔️",
 		date: "2025-12-16T12:30:00+08:00",
 		images: [
@@ -62,13 +62,13 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 14,
+		id: 15,
 		content: "🎮 2025-11-27：《丝之歌》，达成30小时、100%完成度成就！🏃💯",
 		date: "2025-11-27T12:30:00+08:00",
 		images: ["/images/diary/丝之歌·极速圆满.jpg"],
 	},
 	{
-		id: 13,
+		id: 14,
 		content: "🎮 2025-11-21：《丝之歌》，8个忆痕全收集！🍺",
 		date: "2025-11-21T18:30:00+08:00",
 		images: [
@@ -83,7 +83,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 12,
+		id: 13,
 		content: "🎮 2025-11-21：《丝之歌》，跳蚤节，打破赛斯记录！🪧",
 		date: "2025-11-21T16:30:00+08:00",
 		images: [
@@ -97,19 +97,19 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 11,
+		id: 12,
 		content: "🎮 2025-11-13：《丝之歌》，达成5小时速通成就！🏃",
 		date: "2025-11-13T16:30:00+08:00",
 		images: ["/images/diary/丝之歌·疾丝跑者.jpg"],
 	},
 	{
-		id: 10,
+		id: 11,
 		content: "🎮 2025-11-11：《丝之歌》，达成100%完成度成就！💯",
 		date: "2025-11-11T12:30:00+08:00",
 		images: ["/images/diary/丝之歌·圆满无缺.jpg"],
 	},
 	{
-		id: 9,
+		id: 10,
 		content: "🎮 2025-11-10：《丝之歌》，跳蚤节，获胜！🪧",
 		date: "2025-11-10T16:30:00+08:00",
 		images: [
@@ -118,7 +118,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 8,
+		id: 9,
 		content: "🎮 2025-10-31：《丝之歌》，终局：姐妹情深！🌈🌸",
 		date: "2025-10-31T11:30:00+08:00",
 		images: [
@@ -127,7 +127,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 7,
+		id: 8,
 		content: "⛓️‍💥 2025-09-30：今天是在LingoAce的最后一天！🎈",
 		date: "2025-09-30T19:30:00+08:00",
 		images: [
@@ -135,7 +135,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		content: "🎮 2025-09-05：《丝之歌》，开始冒险！🗺️⚔️",
 		date: "2025-09-05T19:30:00+08:00",
 		images: [
@@ -144,7 +144,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		content: "⛓️‍💥 2025-07-08：今天是在Cloudsway的最后一天！🎈",
 		date: "2025-07-08T19:30:00+08:00",
 		images: [
@@ -153,7 +153,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		content: "🎮 2025-04-01：《真三国无双·起源》，朱和牺牲！💔",
 		date: "2025-04-01T19:30:00+08:00",
 		images: [
@@ -161,7 +161,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		content: "🎮 2025-03-15：《真三国无双·起源》，启动！⚔️",
 		date: "2025-03-15T19:30:00+08:00",
 		images: [
@@ -170,7 +170,7 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		content: "⛓️‍💥 2024-06-30：今天是在OMRON的最后一天！🎈",
 		date: "2024-06-30T19:30:00+08:00",
 		images: [
@@ -178,11 +178,27 @@ const diaryData: DiaryItem[] = [
 		],
 	},
 	{
-		id: 1,
+		id: 2,
 		content: "🖥️ 2023-07-30：台式机，组装！⚔️",
 		date: "2023-07-30T19:30:00+08:00",
 		images: [
 			"/images/diary/台式机组装.jpg",
+		],
+	},
+	{
+		id: 1,
+		content: "🎮 2021-11-05：发布决战坦克MOD！⚔️",
+		date: "2021-11-05T19:30:00+08:00",
+		images: [
+			"/images/diary/决战坦克示例关卡-01.avif",
+			"/images/diary/决战坦克示例关卡-02.avif",
+			"/images/diary/决战坦克示例关卡-03.avif",
+			"/images/diary/决战坦克示例关卡-04.avif",
+			"/images/diary/决战坦克示例关卡-05.avif",
+			"/images/diary/决战坦克示例关卡-06.avif",
+			"/images/diary/决战坦克示例关卡-07.avif",
+			"/images/diary/决战坦克示例关卡-08.avif",
+			"/images/diary/决战坦克示例关卡-09.avif",
 		],
 	},
 ];
