@@ -14,6 +14,22 @@ export interface DiaryItem {
 // 示例日记数据
 const diaryData: DiaryItem[] = [
 	{
+		id: 22,
+		content: "🎮 2026-10-14：阴阳师签到10年！弃坑啦！🎯",
+		date: "2026-10-10T23:30:00+08:00",
+		images: ["/images/diary/阴阳师·签到3650天.webp"],
+	},
+	{
+		id: 21,
+		content: "🎮 2026-10-10：Switch升级：1代皮卡丘限定版 → 2代橙蓝经典版！🌸",
+		date: "2026-10-10T19:30:00+08:00",
+		images: [
+			"/images/diary/Switch-1.jpg",
+			"/images/diary/Switch-2.jpg",
+			"/images/diary/Switch-3.jpg",
+		],
+	},
+	{
 		id: 20,
 		content: "🎮 2026-08-14：《阴阳师》，PC端推送强制升级！退坑，升级，二选一！😤",
 		date: "2026-08-14T19:30:00+08:00",
