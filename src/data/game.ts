@@ -111,7 +111,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "咚奇刚 蕉力全开",
-		status: "planned",
+		status: "playing",
 		rating: 8.2,
 		cover: "/images/games/咚奇刚 蕉力全开.jpg",
 		description: "",
@@ -159,7 +159,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "植物大战僵尸：重植版",
-		status: "planned",
+		status: "playing",
 		rating: 5.0,
 		cover: "/images/games/植物大战僵尸：重植版.jpg",
 		description: "重制的新版本，游戏体验有略微提升，字体、特效反而不如原作。",
@@ -327,7 +327,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "永劫无间",
-		status: "planned",
+		status: "onhold",
 		rating: 6.0,
 		cover: "/images/games/永劫无间.jpeg",
 		description: "",
@@ -591,7 +591,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Nine Parchments / 九张羊皮纸",
-		status: "planned",
+		status: "onhold",
 		rating: 6.1,
 		cover: "/images/games/九张羊皮纸.jpg",
 		description: "",
@@ -675,7 +675,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "VOEZ / 兰空",
-		status: "planned",
+		status: "onhold",
 		rating: 6.6,
 		cover: "/images/games/兰空.jpg",
 		description: "",
@@ -747,7 +747,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Onmyoji / 阴阳师",
-		status: "playing",
+		status: "dropped",
 		rating: 5.8,
 		cover: "/images/games/阴阳师.jpg",
 		description: "每月至少推出1~2名新角色，新角色的爆率不断降低，式神皮肤只推出氪金皮肤，剧情质量不断下滑，游戏正反馈急剧下降。",
@@ -1551,7 +1551,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "浣花洗剑录",
-		status: "planned",
+		status: "playing",
 		rating: 7.7,
 		cover: "/images/games/浣花洗剑录.jpg",
 		description: "",
@@ -1575,7 +1575,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "仙剑客栈",
-		status: "planned",
+		status: "playing",
 		rating: 6.8,
 		cover: "/images/games/仙剑客栈.webp",
 		description: "",
@@ -1587,7 +1587,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "武林群侠传",
-		status: "planned",
+		status: "onhold",
 		rating: 8.1,
 		cover: "/images/games/武林群侠传.webp",
 		description: "",
@@ -1647,7 +1647,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Metal Slug 3 / 合金弹头3",
-		status: "onhold",
+		status: "planned",
 		rating: 8.1,
 		cover: "/images/games/合金弹头3.png",
 		description: "",
@@ -1695,7 +1695,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Metal Slug X / 合金弹头X",
-		status: "onhold",
+		status: "planned",
 		rating: 7.6,
 		cover: "/images/games/合金弹头X.png",
 		description: "",
@@ -1767,7 +1767,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Metal Slug 2 / 合金弹头2",
-		status: "onhold",
+		status: "planned",
 		rating: 7.6,
 		cover: "/images/games/合金弹头2.png",
 		description: "",
@@ -1779,7 +1779,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Metal Slug / 合金弹头",
-		status: "onhold",
+		status: "planned",
 		rating: 7.5,
 		cover: "/images/games/合金弹头.png",
 		description: "",
@@ -1791,7 +1791,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "魔法の塔 / 魔塔",
-		status: "playing",
+		status: "planned",
 		rating: 7.5,
 		cover: "/images/games/魔塔 原版.jpg",
 		description: "初代版本共50层。有PC-9801版本和Win移植版本，推荐体验前者。",
@@ -1863,7 +1863,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: 	"星之卡比 梦之泉物语",
-		status: "planned",
+		status: "playing",
 		rating: 7.6,
 		cover: "/images/games/星之卡比.png",
 		description: "共8关。有日版和美版之分。",
@@ -1995,7 +1995,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "忍者神龟3 曼哈顿计划",
-		status: "playing",
+		status: "favorite",
 		rating: 7.4,
 		cover: "/images/games/忍者神龟3.png",
 		description: "共8关。",
@@ -2235,7 +2235,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "西游记世界2 天界的魔神",
-		status: "planned",
+		status: "playing",
 		rating: 7.0,
 		cover: "/images/games/西游记世界2.png",
 		description: "共7关。",
@@ -2247,10 +2247,10 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "忍者神龟2 街机游戏",
-		status: "playing",
+		status: "completed",
 		rating: 7.3,
 		cover: "/images/games/忍者神龟2.png",
-		description: "共7关。",
+		description: "共7关。可以切换4个角色，游戏难度较高，确认基本的游戏雏形。",
 		actor: "莱昂纳多，米开朗基罗，多纳泰罗，拉斐尔",
 		year: "1990",
 		genre: ["角色扮演", "动作", "剧情", "多人合作"],
@@ -2415,7 +2415,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "西游记世界",
-		status: "planned",
+		status: "playing",
 		rating: 7.0,
 		cover: "/images/games/西游记世界.png",
 		description: "共11关。",
