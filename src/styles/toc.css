@@ -109,6 +109,11 @@
   background: color-mix(in oklab, var(--primary) 26%, var(--line-color));
 }
 
+.toc-item.toc-level-0 .toc-badge-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
 .toc-badge-dot-sm {
   width: 0.34rem;
   height: 0.34rem;

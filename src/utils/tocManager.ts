@@ -108,9 +108,9 @@ export class TOCManager {
 			.replace(/>/g, "&gt;");
 	}
 
-	private generateBadgeContent(depth: number, heading1Count: number): string {
+	private generateBadgeContent(depth: number): string {
 		if (depth === this.minDepth) {
-			return heading1Count.toString();
+			return '<span class="toc-badge-dot"></span>';
 		}
 		if (depth === this.minDepth + 1) {
 			return '<span class="toc-badge-dot"></span>';
@@ -137,7 +137,6 @@ export class TOCManager {
 		}
 
 		let tocHTML = "";
-		let heading1Count = 1;
 
 		filteredHeadings.forEach((heading) => {
 			const depth = Number.parseInt(heading.tagName.charAt(1), 10);
@@ -152,13 +151,7 @@ export class TOCManager {
 				return;
 			}
 
-			const badgeContent = this.generateBadgeContent(
-				depth,
-				heading1Count,
-			);
-			if (depth === this.minDepth) {
-				heading1Count++;
-			}
+			const badgeContent = this.generateBadgeContent(depth);
 
 			let headingText = this.getCleanTextContent(heading)
 				.replace(/#+\s*$/, "")
@@ -195,7 +188,7 @@ export class TOCManager {
 		  aria-label="${escapedHeadingText}"
 		  title="${escapedHeadingText}"
         >
-			  <div class="toc-badge ${depth === this.minDepth ? "toc-badge-index" : ""}">
+			  <div class="toc-badge">
             ${badgeContent}
           </div>
 			  <div class="toc-label ${depth <= this.minDepth + 1 ? "toc-label-primary" : "toc-label-secondary"}">${headingText}</div>
