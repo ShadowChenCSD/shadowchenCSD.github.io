@@ -51,7 +51,7 @@ const iconWebpSrc = hasIconPngFallback ? iconSrc.replace(/\.png$/i, ".webp") : i
 ---
 <div id="navbar" class="z-50 onload-animation group" data-transparent-mode={navbarTransparentMode} data-is-home={isHomePage}>
     <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation -->
-    <div class:list={[className, "!overflow-visible max-w-[var(--page-width)] h-[4.5rem] mx-auto flex items-center justify-between px-4"]}>
+    <div class:list={[className, "!overflow-visible @container w-full h-[4.5rem] flex items-center justify-between px-4"]}>
         <a href={url('/')} class="btn-plain scale-animation rounded-lg h-[2.5rem] md:h-[3.25rem] md:[.enable-banner_&]:h-[2.5rem] md:[.enable-banner_&]:group-[.scrolled]:h-[3.25rem] px-5 font-bold active:scale-95 shrink-0 transition-all duration-300">
             <div class="flex flex-row items-center text-md">
 				{/* 使用navbarTitle配置或默认配置 */}
@@ -86,12 +86,12 @@ const iconWebpSrc = hasIconPngFallback ? iconSrc.replace(/\.png$/i, ".webp") : i
                 )}
             </div>
         </a>
-        <div id="navbar-links-container" class="hidden md:flex items-center space-x-1 transition-opacity duration-300">
+        <div id="navbar-links-container" class="hidden lg:flex items-center gap-0.5 @[860px]:gap-1 min-w-0 transition-opacity duration-300">
             {links.map((l) => {
                 return <DropdownMenu link={l} />;
             })}
         </div>
-        <div class="flex items-center gap-1">
+        <div id="navbar-actions" class="flex items-center gap-0.5 @[860px]:gap-1 shrink-0">
             <div id="search-container">
                 <Search client:only="svelte"></Search>
             </div>
@@ -113,7 +113,7 @@ const iconWebpSrc = hasIconPngFallback ? iconSrc.replace(/\.png$/i, ".webp") : i
                 <WallpaperSwitch client:only="svelte"></WallpaperSwitch>
             </div>
             <ThemeSwitch client:only="svelte"></ThemeSwitch>
-            <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 md:!hidden" id="nav-menu-switch">
+            <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 lg:!hidden" id="nav-menu-switch">
                 <Icon name="material-symbols:unfold-more" class="text-[1.25rem]"></Icon>
             </button>
         </div>
@@ -121,6 +121,17 @@ const iconWebpSrc = hasIconPngFallback ? iconSrc.replace(/\.png$/i, ".webp") : i
         <DisplaySettings client:only="svelte"></DisplaySettings>
     </div>
 </div>
+
+<style is:global>
+	/* 紧凑模式（导航卡片内容区小于 860px）：收窄右侧操作按钮，
+	   保证 Logo、全部导航入口与操作按钮始终容纳在导航栏内，随页面宽度自适应 */
+	@container (max-width: 859.98px) {
+		#navbar-actions > button,
+		#navbar-actions > div > button {
+			width: 2.25rem;
+		}
+	}
+</style>
 
 <script>
 	const searchContainer = document.getElementById("search-container");

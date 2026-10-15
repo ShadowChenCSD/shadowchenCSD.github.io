@@ -224,13 +224,20 @@ const albumsCount = i18n(I18nKey.albumsCount);
 		}
 	}
 
+	/* 网格模式：<768 单栏，768~1024 双栏，>1024 三栏 */
 	#main-grid[data-layout-mode="grid"] #albums-grid {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 	}
 
-	@media (max-width: 639px) {
+	@media (min-width: 768px) and (max-width: 1079px) {
 		#main-grid[data-layout-mode="grid"] #albums-grid {
-			grid-template-columns: 1fr;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 1080px) {
+		#main-grid[data-layout-mode="grid"] #albums-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
 
