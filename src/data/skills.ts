@@ -5,7 +5,7 @@ export interface Skill {
 	id: string;
 	name: string;
 	description: string;
-	icon: string; // Iconify icon name, or local image path starting with "/" (e.g. /favicon/xxx.ico)
+	icon: string; // Iconify 图标名（如 "logos:arm"），或图片地址：本地路径（以 "/" 开头）、外链（http:// 或 https://）或 data URI
 	category: "frontend" | "backend" | "embedded" | "database" | "library" | "tools" | "ai" | "other";
 	level: "beginner" | "primary" | "intermediate" | "advanced" | "expert" | "other";
 	color?: string; // Skill card theme color
@@ -43,7 +43,7 @@ export const skillsData: Skill[] = [
 		id: "beyond compare",
 		name: "Beyond Compare",
 		description: "文件与文件夹对比工具，用于代码差异比对与三方合并。",
-		icon: "/favicon/BeyondCompare.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/BeyondCompare.ico",
 		category: "tools",
 		level: "intermediate",
 		color: "#2130D7",
@@ -142,7 +142,7 @@ export const skillsData: Skill[] = [
 		id: "etcher",
 		name: "Etcher",
 		description: "跨平台系统镜像烧录工具，用于制作可启动U盘。",
-		icon: "/favicon/Etcher.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/Etcher.ico",
 		category: "embedded",
 		level: "advanced",
 		color: "#77FF77",
@@ -205,7 +205,7 @@ export const skillsData: Skill[] = [
 		id: "hex editor neo",
 		name: "Hex Editor Neo",
 		description: "Windows下的十六进制编辑器，用于查看与修改二进制文件。",
-		icon: "/favicon/HexEditorNeo.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/HexEditorNeo.ico",
 		category: "tools",
 		level: "intermediate",
 		color: "#00EEFF",
@@ -268,7 +268,7 @@ export const skillsData: Skill[] = [
 		id: "meld",
 		name: "Meld",
 		description: "开源的可视化文件差异对比与合并工具。",
-		icon: "/favicon/meld.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/meld.ico",
 		category: "tools",
 		level: "expert",
 		color: "#FF9100",
@@ -295,7 +295,7 @@ export const skillsData: Skill[] = [
 		id: "MobaXterm",
 		name: "MobaXterm",
 		description: "集成SSH、X11与多种网络工具的一站式远程终端。",
-		icon: "/favicon/MobaXterm.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/MobaXterm.ico",
 		category: "tools",
 		level: "advanced",
 		color: "#000000",
@@ -538,7 +538,7 @@ export const skillsData: Skill[] = [
 		id: "typora",
 		name: "Typora",
 		description: "Markdown编辑器，写作与排版体验简洁。",
-		icon: "/favicon/Typora.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/Typora.ico",
 		category: "other",
 		level: "advanced",
 		color: "#000000",
@@ -547,7 +547,7 @@ export const skillsData: Skill[] = [
 		id: "ultraEdit",
 		name: "UltraEdit",
 		description: "功能强大的文本、代码与十六进制编辑器。",
-		icon: "/favicon/UltraEdit.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/UltraEdit.ico",
 		category: "tools",
 		level: "intermediate",
 		color: "#B66600",
@@ -574,7 +574,7 @@ export const skillsData: Skill[] = [
 		id: "WinSCP",
 		name: "WinSCP",
 		description: "Windows下的SFTP/FTP客户端，用于远程文件管理。",
-		icon: "/favicon/WinSCP.ico",
+		icon: "http://tn260vxlu.hd-bkt.clouddn.com/public/favicon/WinSCP.ico",
 		category: "tools",
 		level: "intermediate",
 		color: "#009C00",

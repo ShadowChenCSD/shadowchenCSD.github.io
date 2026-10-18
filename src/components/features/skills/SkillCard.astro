@@ -9,6 +9,13 @@ const { skill, index = 0 } = Astro.props as SkillCardProps;
 const skillColor = skill.color || "#3B82F6";
 const animationDelay = `${index * 20}ms`;
 
+// 图片类图标：本地路径（/）、外链（http/https/协议相对）或 data URI，其余按 Iconify 图标名处理
+const isImageIcon =
+	/^(https?:)?\/\//i.test(skill.icon) ||
+	skill.icon.startsWith("/") ||
+	skill.icon.startsWith("data:");
+const isRemoteIcon = /^(https?:)?\/\//i.test(skill.icon);
+
 const getLevelText = (level: string) => {
 	switch (level) {
 		case "expert":
@@ -57,12 +64,13 @@ const getLevelWidth = (level: string) => {
 				class="w-16 h-16 flex-shrink-0 rounded-lg flex items-center justify-center"
 				style={`background-color: ${skillColor}20`}
 			>
-				{skill.icon.startsWith("/") ? (
+				{isImageIcon ? (
 					<img
 						src={skill.icon}
 						alt={skill.name}
 						class="w-10 h-10 object-contain"
 						loading="eager"
+						referrerpolicy={isRemoteIcon ? "no-referrer" : undefined}
 					/>
 				) : (
 					<Icon
