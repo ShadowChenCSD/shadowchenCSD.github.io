@@ -111,7 +111,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "咚奇刚 蕉力全开",
-		status: "playing",
+		status: "planned",
 		rating: 8.2,
 		cover: "/images/games/咚奇刚 蕉力全开.jpg",
 		description: "",
@@ -195,7 +195,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "Monopoly / 地产大亨",
-		status: "planned",
+		status: "playing",
 		rating: 6.3,
 		cover: "/images/games/地产大亨.jpg",
 		description: "线下游玩体验良好，不推荐线上版本，服务器问题较多。",
@@ -411,7 +411,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "健身环大冒险",
-		status: "playing",
+		status: "planned",
 		rating: 7.8,
 		cover: "/images/games/健身环大冒险.jpg",
 		description: "",
@@ -459,7 +459,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "古剑奇谭三：梦付千秋星垂野",
-		status: "favorite",
+		status: "completed",
 		rating: 7.4,
 		cover: "/images/games/古剑奇谭三.jpg",
 		description: "",
@@ -531,7 +531,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "马里奥网球 王牌",
-		status: "playing",
+		status: "planned",
 		rating: 6.6,
 		cover: "/images/games/马里奥网球 王牌.webp",
 		description: "",
@@ -1551,7 +1551,7 @@ const localGameList: GameItem[] = [
 	},
 	{
 		title: "浣花洗剑录",
-		status: "playing",
+		status: "planned",
 		rating: 7.7,
 		cover: "/images/games/浣花洗剑录.jpg",
 		description: "",
