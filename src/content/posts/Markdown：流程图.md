@@ -1,10 +1,10 @@
----
+﻿---
 title: Markdown：流程图
 published: 2023-10-20
 description: 介绍如何在Markdown文档中使用Mermaid流程图。
 tags: [Markdown, 文章撰写]
 category: 博客
-image: "/posts/markdown.png"
+image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/markdown.png"
 ---
 # 1. 流程图：flow
 
