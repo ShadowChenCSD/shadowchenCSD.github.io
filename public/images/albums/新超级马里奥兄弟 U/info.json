@@ -1,9 +1,108 @@
 {
+	"mode": "external",
 	"title": "新 超级马里奥兄弟 U 豪华版",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/cover.jpg",
 	"hidden": false,
 	"description": "游戏截图",
 	"date": "2019-01-11",
 	"tags": ["平台跳跃", "冒险", "动作", "游戏"],
 	"layout": "masonry",
-	"columns": 4
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/地图.jpg",
+			"width": 1575,
+			"height": 744
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡01：橡栗平原.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡02：甜点沙漠.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡03：薄荷诸岛.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡04：冰冻大地.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡05：苏打丛林.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡06：岩石山脉.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡07：棉花糖云海.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡08：桃花公主城堡.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/关卡09：特别星星.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/结局：库巴飞船.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/结局：桃花城堡.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/剧终.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/酷霸王和酷霸二世-1.jpg",
+			"width": 700,
+			"height": 783
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/酷霸王和酷霸二世-2.jpg",
+			"width": 800,
+			"height": 674
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/桃花公主城堡.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/新超级路易吉 U 全五星通关.jpg",
+			"width": 1280,
+			"height": 500
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/新超级马里奥兄弟 U 全五星通关.jpg",
+			"width": 1280,
+			"height": 425
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/新超级马里奥兄弟 U/宣传图.jpg",
+			"width": 5184,
+			"height": 3232
+		}
+	]
 }

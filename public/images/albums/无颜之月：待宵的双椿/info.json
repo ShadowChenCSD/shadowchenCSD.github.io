@@ -1,9 +1,73 @@
 {
+	"mode": "external",
 	"title": "无颜之月：待宵的双椿",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/cover.jpg",
 	"hidden": false,
 	"description": "新版本的角色立绘",
 	"date": "2025-09-26",
 	"tags": ["恋爱", "18R", "游戏"],
 	"layout": "masonry",
-	"columns": 4
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/仓木铃菜.jpg",
+			"width": 750,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/仓木铃菜·版画.jpg",
+			"width": 750,
+			"height": 1333
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/仓木由利子·版画.jpg",
+			"width": 750,
+			"height": 1333
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/春川知美.jpg",
+			"width": 750,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/春川知美·版画.jpg",
+			"width": 750,
+			"height": 1333
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/东衣绪.jpg",
+			"width": 750,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/东衣绪·版画.jpg",
+			"width": 750,
+			"height": 1333
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/栗原沙也加.jpg",
+			"width": 750,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/栗原沙也加·版画.jpg",
+			"width": 750,
+			"height": 1333
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/宣传图.jpg",
+			"width": 1536,
+			"height": 2048
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/羽山浩一.jpg",
+			"width": 750,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/无颜之月：待宵的双椿/泽口千贺子·版画.jpg",
+			"width": 750,
+			"height": 1333
+		}
+	]
 }

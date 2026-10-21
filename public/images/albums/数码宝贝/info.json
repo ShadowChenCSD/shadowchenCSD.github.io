@@ -1,9 +1,68 @@
 {
+	"mode": "external",
 	"title": "数码宝贝",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/cover.jpg",
 	"hidden": false,
 	"description": "角色 & 伙伴",
 	"date": "1999-03-07",
 	"tags": ["冒险", "战斗", "奇幻", "动画"],
 	"layout": "masonry",
-	"columns": 5
+	"columns": 5,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/八神 光.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/八神 太一.jpg",
+			"width": 597,
+			"height": 838
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/城户 丈.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/高石 岳.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/集体照.jpg",
+			"width": 2560,
+			"height": 1919
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/泉 光子郎.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/石田 大和.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/太刀川 美美.jpg",
+			"width": 596,
+			"height": 839
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/天女兽.jpg",
+			"width": 1920,
+			"height": 2650
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/天使兽.jpg",
+			"width": 1920,
+			"height": 2660
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/数码宝贝/武之内 空.jpg",
+			"width": 596,
+			"height": 839
+		}
+	]
 }

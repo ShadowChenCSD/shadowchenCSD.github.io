@@ -1,9 +1,73 @@
 {
+	"mode": "external",
 	"title": "忍者神龟：施莱德的复仇",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/cover.jpg",
 	"hidden": false,
 	"description": "游戏宣传",
 	"date": "2022-06-16",
 	"tags": ["角色扮演", "冒险", "动作", "游戏"],
 	"layout": "masonry",
-	"columns": 3
+	"columns": 3,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/logo.png",
+			"width": 720,
+			"height": 355
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/忍者神龟：施莱德的复仇 次元震撼.jpg",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/忍者神龟：施莱德的复仇 激进爬行动物.jpg",
+			"width": 1631,
+			"height": 961
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/忍者神龟：施莱德的复仇 终极版.avif",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/宣传图-1.png",
+			"width": 1920,
+			"height": 1077
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/宣传图-2.png",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/宣传图-3.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/游戏截图-1.png",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/游戏截图-2.png",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/游戏截图-3.png",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/游戏截图-4.png",
+			"width": 1920,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/忍者神龟：施莱德的复仇/主角团.png",
+			"width": 1920,
+			"height": 1080
+		}
+	]
 }

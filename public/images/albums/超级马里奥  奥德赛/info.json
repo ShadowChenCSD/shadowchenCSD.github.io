@@ -1,9 +1,63 @@
 {
+	"mode": "external",
 	"title": "超级马里奥 奥德赛",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/cover.jpg",
 	"hidden": false,
 	"description": "游戏宣传",
 	"date": "2017-01-13",
 	"tags": ["平台跳跃", "冒险", "动作", "游戏"],
 	"layout": "masonry",
-	"columns": 3
+	"columns": 3,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/标题.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/结局.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/结局01.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/结局02.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/决战01.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/决战02.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/决战03.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/决战04.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/宣传图.jpg",
+			"width": 1777,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/超级马里奥  奥德赛/致谢.jpg",
+			"width": 1280,
+			"height": 720
+		}
+	]
 }

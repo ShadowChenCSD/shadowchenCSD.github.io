@@ -38,6 +38,12 @@ export async function scanAlbums(): Promise<AlbumGroup[]> {
 		}
 	}
 
+	// Fisher-Yates shuffle — 每次构建随机顺序
+	for (let i = albums.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[albums[i], albums[j]] = [albums[j], albums[i]];
+	}
+
 	return albums;
 }
 
