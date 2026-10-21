@@ -1,9 +1,193 @@
 {
+	"mode": "external",
 	"title": "决战坦克",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/cover.jpg",
 	"hidden": false,
 	"description": "关卡地图",
 	"date": "2003-08-08",
 	"tags": ["平面射击", "游戏"],
 	"layout": "grid",
-	"columns": 4
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/00.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/01.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/02.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/03.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/04.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/05.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/06.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/07.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/08.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/09.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/10.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/11.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/12.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/13.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/14.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/15.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/16.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/17.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/18.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/19.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/20.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/21.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/22.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/23.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/24.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/25.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/26.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/27.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/28.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/29.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/30.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/31.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/32.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/33.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/34.png",
+			"width": 640,
+			"height": 480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/决战坦克/35.png",
+			"width": 640,
+			"height": 480
+		}
+	]
 }

@@ -1,9 +1,248 @@
 {
+	"mode": "external",
 	"title": "阴阳师",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/cover.jpg",
 	"hidden": false,
 	"description": "手办，同人插画，游戏截图",
 	"date": "2016-09-02",
 	"tags": ["卡牌收集", "角色养成", "和风", "竞技", "游戏"],
 	"layout": "masonry",
-	"columns": 4
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/八百比丘尼·实物图.jpg",
+			"width": 3000,
+			"height": 4000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/八百比丘尼·实物渲染图·01.jpg",
+			"width": 900,
+			"height": 1262
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/八百比丘尼·实物渲染图·02.jpg",
+			"width": 900,
+			"height": 1262
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/八百比丘尼·实物渲染图·03.jpg",
+			"width": 900,
+			"height": 1262
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/白狼·实物渲染图01.jpg",
+			"width": 943,
+			"height": 1205
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/白狼·实物渲染图02.jpg",
+			"width": 957,
+			"height": 1225
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/彼岸花·实物图.jpg",
+			"width": 6000,
+			"height": 4000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·蝶步韶华.jpg",
+			"width": 1005,
+			"height": 980
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·概念图.jpg",
+			"width": 2160,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·花笠舞歌.jpg",
+			"width": 2283,
+			"height": 3750
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·离岛之歌.jpg",
+			"width": 3508,
+			"height": 1974
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·十六夜.jpg",
+			"width": 1630,
+			"height": 1040
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·实物图.jpg",
+			"width": 3791,
+			"height": 2858
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·疏影落雪-1.jpg",
+			"width": 912,
+			"height": 707
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·疏影落雪-2.jpg",
+			"width": 880,
+			"height": 697
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·疏影落雪-3.jpg",
+			"width": 1080,
+			"height": 1772
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火·线稿.jpg",
+			"width": 2160,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火-1.png",
+			"width": 1132,
+			"height": 800
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/不知火-2.jpg",
+			"width": 2900,
+			"height": 1973
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/大阴阳师：成就达成.png",
+			"width": 1401,
+			"height": 788
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/非酋·初级.jpeg",
+			"width": 1623,
+			"height": 194
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/非酋·高级.jpeg",
+			"width": 1624,
+			"height": 198
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/非酋·中级.jpeg",
+			"width": 1621,
+			"height": 197
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/非洲·大阴阳师.png",
+			"width": 897,
+			"height": 248
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/非洲·阴阳师.jpeg",
+			"width": 1624,
+			"height": 197
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/集体照.jpg",
+			"width": 4000,
+			"height": 2500
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/空相面灵气.jpg",
+			"width": 1080,
+			"height": 1550
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/孔雀明王&晴明.jpg",
+			"width": 3072,
+			"height": 3860
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/孔雀明王.jpg",
+			"width": 2048,
+			"height": 1536
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/两面佛.jpg",
+			"width": 1000,
+			"height": 1250
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/络新妇·心网春蔷.jpg",
+			"width": 1080,
+			"height": 1123
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/沐浴.jpg",
+			"width": 1820,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/签到3333天.jpg",
+			"width": 2048,
+			"height": 1380
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/青行灯·概念图.jpg",
+			"width": 2048,
+			"height": 2373
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/青行灯·实物渲染图01.jpg",
+			"width": 900,
+			"height": 917
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/青行灯·实物渲染图02.jpg",
+			"width": 900,
+			"height": 1162
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/青行灯·实物渲染图03.jpg",
+			"width": 900,
+			"height": 1145
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/青行灯·实物渲染图04.jpg",
+			"width": 900,
+			"height": 1164
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/神社.jpg",
+			"width": 800,
+			"height": 1184
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/四人组.png",
+			"width": 1424,
+			"height": 927
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·概念图.jpg",
+			"width": 2048,
+			"height": 3042
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·实物图.jpg",
+			"width": 2048,
+			"height": 3072
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·实物渲染图01.jpg",
+			"width": 2048,
+			"height": 2966
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·实物渲染图02.jpg",
+			"width": 2048,
+			"height": 2966
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·樱雨刀舞·概念图.jpg",
+			"width": 1728,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/妖刀姬·樱雨刀舞·线稿.jpg",
+			"width": 1728,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/阴阳师/阴阳师：成就达成.png",
+			"width": 2048,
+			"height": 1536
+		}
+	]
 }

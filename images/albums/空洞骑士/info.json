@@ -1,9 +1,128 @@
 {
+	"mode": "external",
 	"title": "空洞骑士 & 空洞骑士·丝之歌",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/cover.jpg",
 	"hidden": false,
 	"description": "同人插画",
 	"date": "2017-02-24",
 	"tags": ["平台跳跃", "冒险", "动作", "游戏"],
 	"layout": "masonry",
-	"columns": 5
+	"columns": 5,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/标题：空洞骑士.jpg",
+			"width": 1800,
+			"height": 1200
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/标题：空洞骑士：丝之歌.jpg",
+			"width": 1280,
+			"height": 720
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/场景.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/大黄蜂-1.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/大黄蜂-2.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/格林.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/空洞骑士.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士-1.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士-2.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士-3.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士-4.jpg",
+			"width": 1748,
+			"height": 1181
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和大黄蜂-1.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和大黄蜂-2.jpg",
+			"width": 1080,
+			"height": 2160
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和大黄蜂-3.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和大黄蜂-4.jpg",
+			"width": 721,
+			"height": 1024
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和大黄蜂和空洞骑士.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和格林.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和格林之子.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/小骑士和守望者骑士.jpg",
+			"width": 1080,
+			"height": 1920
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/宣传：大黄蜂.jpg",
+			"width": 1440,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/宣传：大黄蜂·宽屏.jpg",
+			"width": 1920,
+			"height": 1085
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/宣传：小骑士.jpg",
+			"width": 1440,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/空洞骑士/拥抱虚空.jpg",
+			"width": 1080,
+			"height": 1080
+		}
+	]
 }
