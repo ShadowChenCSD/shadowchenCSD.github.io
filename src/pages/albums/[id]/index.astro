@@ -1,0 +1,361 @@
+---
+import { PhotoCard } from "@components/features/albums";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+import { siteConfig } from "../../../config";
+import { PAGE_CAPACITY_ALBUMS } from "../../../constants/constants";
+import I18nKey from "../../../i18n/i18nKey";
+import { i18n } from "../../../i18n/translation";
+import type { AlbumGroup, Photo } from "../../../types/album";
+import { scanAlbums } from "../../../utils/album-scanner";
+
+if (!siteConfig.featurePages.albums) {
+	return Astro.redirect("/404/");
+}
+
+export const getStaticPaths = async () => {
+	const albumsData = await scanAlbums();
+	return albumsData.map((album) => ({
+		params: { id: album.id },
+		props: { album },
+	}));
+};
+
+interface Props {
+	album: AlbumGroup;
+}
+
+const { album } = Astro.props;
+
+if (!album) {
+	return Astro.redirect("/404/");
+}
+
+const allAlbums = await scanAlbums();
+const currentIndex = allAlbums.findIndex((a) => a.id === album.id);
+const prevAlbum = currentIndex > 0 ? allAlbums[currentIndex - 1] : null;
+const nextAlbum = currentIndex < allAlbums.length - 1 ? allAlbums[currentIndex + 1] : null;
+const galleryColumns = allAlbums[currentIndex]?.columns ?? album.columns;
+---
+
+<MainGridLayout title={album.title} description={album.description || album.title}>
+	<script>
+		import("../../../scripts/right-sidebar-layout.js");
+		import { loadIconify } from "../../../utils/icon-loader";
+
+		loadIconify().catch((error) => {
+			console.error("Failed to load Iconify:", error);
+		});
+	</script>
+
+	<div class="card-base px-6 py-4 mb-4 flex items-center relative">
+				<a
+					href="/albums/"
+					class="inline-flex shrink-0 items-center gap-1.5 text-sm text-white bg-[var(--primary)] hover:bg-[var(--primary-dark,var(--primary))] px-3 py-1.5 rounded-lg transition-colors"
+				>
+					<Icon name="material-symbols:arrow-back" class="text-base" />
+					{i18n(I18nKey.albumsBackToList)}
+				</a>
+
+				<div class="flex-1 flex items-center justify-center min-w-0">
+					<span class="text-lg font-bold text-black truncate">
+						{album.title}
+					</span>
+				</div>
+
+				<div class="ml-auto flex shrink-0 items-center gap-1.5">
+					{
+						prevAlbum ? (
+							<a
+								href={`/albums/${prevAlbum.id}/`}
+								class="inline-flex items-center gap-1.5 text-sm text-white bg-[var(--primary)] hover:bg-[var(--primary-dark,var(--primary))] px-3 py-1.5 rounded-lg transition-colors"
+							>
+								<Icon name="material-symbols:chevron-left" class="text-base" />
+								{i18n(I18nKey.albumsPrevAlbum)}
+							</a>
+						) : (
+							<span class="inline-flex items-center gap-1.5 text-sm text-white/30 bg-[var(--primary)]/30 px-3 py-1.5 rounded-lg cursor-not-allowed">
+								<Icon name="material-symbols:chevron-left" class="text-base" />
+								{i18n(I18nKey.albumsPrevAlbum)}
+							</span>
+						)
+					}
+					{
+						nextAlbum ? (
+							<a
+								href={`/albums/${nextAlbum.id}/`}
+								class="inline-flex items-center gap-1.5 text-sm text-white bg-[var(--primary)] hover:bg-[var(--primary-dark,var(--primary))] px-3 py-1.5 rounded-lg transition-colors"
+							>
+								{i18n(I18nKey.albumsNextAlbum)}
+								<Icon name="material-symbols:chevron-right" class="text-base" />
+							</a>
+						) : (
+							<span class="inline-flex items-center gap-1.5 text-sm text-white/30 bg-[var(--primary)]/30 px-3 py-1.5 rounded-lg cursor-not-allowed">
+								{i18n(I18nKey.albumsNextAlbum)}
+								<Icon name="material-symbols:chevron-right" class="text-base" />
+							</span>
+						)
+					}
+				</div>
+		</div>
+
+	<!-- Photo Masonry Grid -->
+	<div class="w-full rounded-(--radius-large) overflow-hidden relative mt-4">
+		<div class="card-base z-10 px-6 py-6 relative w-full">
+			{album.photos.length > 0 ? (
+				<>
+					<div
+						id="album-photos-container"
+						data-page-capacity={PAGE_CAPACITY_ALBUMS}
+						class="gallery-masonry"
+						style={galleryColumns ? `column-count: ${galleryColumns}` : undefined}
+					>
+						{album.photos.map((photo: Photo) => (
+							<PhotoCard
+								src={photo.src}
+								alt={photo.alt || photo.title || ""}
+								albumId={album.id}
+							/>
+						))}
+					</div>
+
+					<nav
+						id="album-pagination"
+						class="album-pagination is-hidden mt-8"
+						aria-label="Album photo pagination"
+					>
+						<button
+							id="album-page-prev"
+							type="button"
+							class="album-page-btn btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11"
+						>
+							<Icon
+								name="material-symbols:chevron-left-rounded"
+								class="text-[1.75rem]"
+							/>
+						</button>
+						<div
+							id="album-page-numbers"
+							class="album-page-numbers bg-[var(--card-bg)] flex flex-row rounded-lg items-center text-neutral-700 dark:text-neutral-300 font-bold"
+						/>
+						<button
+							id="album-page-next"
+							type="button"
+							class="album-page-btn btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11"
+						>
+							<Icon
+								name="material-symbols:chevron-right-rounded"
+								class="text-[1.75rem]"
+							/>
+						</button>
+					</nav>
+				</>
+			) : (
+				<div class="flex flex-col items-center justify-center py-16 text-neutral-400 dark:text-neutral-500">
+					<Icon name="material-symbols:photo-library" class="text-6xl mb-4 opacity-50" />
+					<p class="text-lg">{i18n(I18nKey.albumsEmpty)}</p>
+				</div>
+			)}
+		</div>
+	</div>
+
+	<script is:inline>
+		if (typeof window.albumPhotoControlState === "undefined") {
+			window.albumPhotoControlState = {
+				listeners: [],
+				swupListenersBound: false,
+			};
+		}
+
+		function addAlbumPhotoListener(element, type, handler) {
+			element.addEventListener(type, handler);
+			window.albumPhotoControlState.listeners.push([element, type, handler]);
+		}
+
+		function clearAlbumPhotoListeners() {
+			window.albumPhotoControlState.listeners.forEach((listener) => {
+				const [element, type, handler] = listener;
+				element.removeEventListener(type, handler);
+			});
+			window.albumPhotoControlState.listeners = [];
+		}
+
+		function renderAlbumPaginationNumbers(currentPage, totalPages, onPageChange) {
+			const pageNumbersContainer =
+				document.getElementById("album-page-numbers");
+			if (!pageNumbersContainer) {
+				return;
+			}
+			pageNumbersContainer.innerHTML = "";
+
+			const appendPageButton = (page) => {
+				const pageButton = document.createElement("button");
+				pageButton.type = "button";
+				pageButton.textContent = String(page);
+				pageButton.className = "album-page-number";
+				if (page === currentPage) {
+					pageButton.classList.add("is-active");
+					pageButton.disabled = true;
+				} else {
+					addAlbumPhotoListener(pageButton, "click", () => onPageChange(page));
+				}
+				pageNumbersContainer.appendChild(pageButton);
+			};
+
+			const appendEllipsis = () => {
+				const ellipsis = document.createElement("span");
+				ellipsis.className = "album-page-ellipsis";
+				ellipsis.textContent = "...";
+				pageNumbersContainer.appendChild(ellipsis);
+			};
+
+			const getVisiblePageNumbers = () => {
+				if (totalPages <= 5) {
+					return Array.from({ length: totalPages }, (_, index) => index + 1);
+				}
+
+				let pages;
+				if (currentPage === 1 || currentPage === totalPages) {
+					pages = [1, 2, totalPages - 1, totalPages];
+				} else if (currentPage === 2) {
+					pages = [1, 2, 3, totalPages - 1, totalPages];
+				} else if (currentPage === totalPages - 1) {
+					pages = [1, 2, totalPages - 2, totalPages - 1, totalPages];
+				} else {
+					pages = [1, currentPage - 1, currentPage, currentPage + 1, totalPages];
+				}
+
+				return pages
+					.filter((page, index, pages) => pages.indexOf(page) === index)
+					.sort((a, b) => a - b);
+			};
+
+			let previousPage = 0;
+
+			getVisiblePageNumbers().forEach((page) => {
+				if (page - previousPage > 1) {
+					appendEllipsis();
+				}
+				appendPageButton(page);
+				previousPage = page;
+			});
+		}
+
+		function initAlbumPhotosPagination() {
+			const listContainer = document.getElementById("album-photos-container");
+			const paginationContainer = document.getElementById("album-pagination");
+			const prevButton = document.getElementById("album-page-prev");
+			const nextButton = document.getElementById("album-page-next");
+
+			if (
+				!listContainer ||
+				!paginationContainer ||
+				!prevButton ||
+				!nextButton
+			) {
+				return;
+			}
+
+			clearAlbumPhotoListeners();
+
+			const photoItems = Array.from(
+				listContainer.querySelectorAll("[data-album-photo]"),
+			);
+			const pageCapacity = Math.max(
+				1,
+				Number(listContainer.dataset.pageCapacity || "60"),
+			);
+			let currentPage = 1;
+
+			const applyPagination = () => {
+				const totalPages = Math.max(
+					1,
+					Math.ceil(photoItems.length / pageCapacity),
+				);
+				if (currentPage > totalPages) {
+					currentPage = totalPages;
+				}
+
+				const startIndex = (currentPage - 1) * pageCapacity;
+				const endIndex = startIndex + pageCapacity;
+				const visibleItems = new Set(
+					photoItems.slice(startIndex, endIndex),
+				);
+
+				photoItems.forEach((item) => {
+					if (visibleItems.has(item)) {
+						item.classList.remove("album-photo-hidden");
+						return;
+					}
+					item.classList.add("album-photo-hidden");
+				});
+
+				prevButton.disabled = currentPage <= 1;
+				nextButton.disabled = currentPage >= totalPages;
+
+				renderAlbumPaginationNumbers(currentPage, totalPages, (page) => {
+					currentPage = page;
+					applyPagination();
+					scrollAlbumPhotosToTop();
+				});
+
+				const shouldShowPagination = photoItems.length > pageCapacity;
+				paginationContainer.classList.toggle(
+					"is-hidden",
+					!shouldShowPagination,
+				);
+			};
+
+			function scrollAlbumPhotosToTop() {
+				const target = document.querySelector("#album-photos-container");
+				if (!target) {
+					return;
+				}
+				const rect = target.getBoundingClientRect();
+				const offset = window.scrollY + rect.top - 80;
+				window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+			}
+
+			addAlbumPhotoListener(prevButton, "click", () => {
+				if (currentPage <= 1) {
+					return;
+				}
+				currentPage--;
+				applyPagination();
+				scrollAlbumPhotosToTop();
+			});
+
+			addAlbumPhotoListener(nextButton, "click", () => {
+				currentPage++;
+				applyPagination();
+				scrollAlbumPhotosToTop();
+			});
+
+			applyPagination();
+		}
+
+		document.addEventListener("DOMContentLoaded", initAlbumPhotosPagination);
+
+		function setupAlbumSwupListeners() {
+			if (!window.swup || window.albumPhotoControlState.swupListenersBound) {
+				return;
+			}
+			window.albumPhotoControlState.swupListenersBound = true;
+			window.swup.hooks.on("content:replace", () =>
+				setTimeout(initAlbumPhotosPagination, 150),
+			);
+			window.swup.hooks.on("page:view", () =>
+				setTimeout(initAlbumPhotosPagination, 150),
+			);
+		}
+
+		if (typeof window !== "undefined") {
+			if (window.swup) {
+				setupAlbumSwupListeners();
+			} else {
+				document.addEventListener("swup:enable", setupAlbumSwupListeners);
+			}
+		}
+	</script>
+</MainGridLayout>

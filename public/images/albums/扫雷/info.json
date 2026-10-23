@@ -1,0 +1,38 @@
+{
+	"mode": "external",
+	"title": "扫雷",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/cover.jpg",
+	"hidden": false,
+	"description": "极限二选一 & 最快完成记录",
+	"date": "1992-03-18",
+	"tags": ["解谜", "益智", "限时", "游戏"],
+	"layout": "grid",
+	"columns": 2,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/01.png",
+			"width": 2251,
+			"height": 1316
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/02.png",
+			"width": 2151,
+			"height": 1263
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/03.png",
+			"width": 2222,
+			"height": 1300
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/04.png",
+			"width": 2320,
+			"height": 1358
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/扫雷/最高纪录.png",
+			"width": 2320,
+			"height": 1356
+		}
+	]
+}

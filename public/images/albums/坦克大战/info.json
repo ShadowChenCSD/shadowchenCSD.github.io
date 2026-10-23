@@ -1,0 +1,193 @@
+{
+	"mode": "external",
+	"title": "坦克大战",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/cover.jpg",
+	"hidden": false,
+	"description": "关卡地图",
+	"date": "1985-09-09",
+	"tags": ["平面射击", "游戏"],
+	"layout": "grid",
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/00.png",
+			"width": 5120,
+			"height": 4480
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/01.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/02.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/03.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/04.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/05.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/06.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/07.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/08.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/09.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/10.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/11.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/12.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/13.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/14.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/15.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/16.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/17.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/18.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/19.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/20.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/21.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/22.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/23.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/24.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/25.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/26.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/27.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/28.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/29.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/30.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/31.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/32.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/33.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/34.png",
+			"width": 2048,
+			"height": 1792
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/坦克大战/35.png",
+			"width": 2048,
+			"height": 1792
+		}
+	]
+}

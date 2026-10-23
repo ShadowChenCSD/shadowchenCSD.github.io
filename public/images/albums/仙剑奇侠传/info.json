@@ -1,0 +1,223 @@
+{
+	"mode": "external",
+	"title": "仙剑奇侠传",
+	"cover": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/cover.jpg",
+	"hidden": false,
+	"description": "同人插画 & 游戏截图",
+	"date": "1995-07-15",
+	"tags": ["角色扮演", "冒险", "恋爱", "游戏"],
+	"layout": "masonry",
+	"columns": 4,
+	"photos": [
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·姜云凡.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·李逍遥.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·林月如.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·柳梦璃.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·龙葵.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·慕容紫英.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·唐雪见.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·唐雨柔.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·小蛮.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·云天河.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·赵灵儿.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/Online·重楼.jpg",
+			"width": 2048,
+			"height": 1277
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/白茉晴.jpg",
+			"width": 1600,
+			"height": 1600
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/衡道众.jpg",
+			"width": 1440,
+			"height": 900
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/结局：大团圆.jpg",
+			"width": 2560,
+			"height": 1200
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/景天战胜重楼.jpg",
+			"width": 1680,
+			"height": 1050
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/李逍遥手办·实物图.jpg",
+			"width": 3072,
+			"height": 3885
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/李逍遥手办·宣传图-1.jpg",
+			"width": 1080,
+			"height": 1229
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/李逍遥手办·宣传图-2.jpg",
+			"width": 1080,
+			"height": 1620
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/李逍遥手办·宣传图-4.jpg",
+			"width": 1080,
+			"height": 1443
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/立绘：白茉晴.jpg",
+			"width": 1080,
+			"height": 1632
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/立绘：桑游.jpg",
+			"width": 1080,
+			"height": 1632
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/立绘：修吾.jpg",
+			"width": 1080,
+			"height": 1632
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/立绘：月清疏.jpg",
+			"width": 1080,
+			"height": 1632
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/联动：李逍遥.jpg",
+			"width": 1080,
+			"height": 1152
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/联动：林月如.jpg",
+			"width": 1080,
+			"height": 1239
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/联动：林月如·比武招亲.jpg",
+			"width": 1080,
+			"height": 934
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/联动：赵灵儿.jpg",
+			"width": 1080,
+			"height": 1239
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/联动：赵灵儿·莲花池.jpg",
+			"width": 999,
+			"height": 884
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/龙游&小蛮.png",
+			"width": 2400,
+			"height": 1500
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/暮菖兰.png",
+			"width": 3200,
+			"height": 1700
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/拼奇积木-1.jpg",
+			"width": 4000,
+			"height": 3000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/拼奇积木-2.jpg",
+			"width": 4000,
+			"height": 3000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/拼奇积木-3.jpg",
+			"width": 3807,
+			"height": 2490
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/巧翎.jpg",
+			"width": 1080,
+			"height": 1872
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/仙剑客栈.png",
+			"width": 1600,
+			"height": 1200
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/宣传图.jpg",
+			"width": 2340,
+			"height": 1080
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/月清疏&白茉晴.jpg",
+			"width": 887,
+			"height": 1000
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/月清疏·解封.jpg",
+			"width": 1080,
+			"height": 2231
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/月清疏·战斗参考.jpg",
+			"width": 634,
+			"height": 1098
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/月清疏·走出萍溪村.jpg",
+			"width": 1080,
+			"height": 1775
+		},
+		{
+			"src": "http://tn260vxlu.hd-bkt.clouddn.com/public/images/albums/仙剑奇侠传/赵灵儿.jpg",
+			"width": 1616,
+			"height": 1080
+		}
+	]
+}

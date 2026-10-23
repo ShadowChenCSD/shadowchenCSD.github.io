@@ -1,0 +1,721 @@
+---
+import "../styles/anime.css";
+
+import { AnimeFilters, AnimeGrid } from "@components/features/anime";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+import { siteConfig } from "../config";
+import { PAGE_CAPACITY_ANIME_AND_GAME } from "../constants/constants";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import {
+	getAnimeList,
+	getAnimeSourceConfigs,
+	getStatusMap,
+} from "../utils/anime-data";
+import { widgetManager } from "../utils/widget-manager";
+
+if (!siteConfig.featurePages.anime) {
+	return Astro.redirect("/404/");
+}
+
+const hasRightSidebars =
+	widgetManager.getComponentsByPosition("top", "right", "desktop").length >
+		0 ||
+	widgetManager.getComponentsByPosition("sticky", "right", "desktop").length >
+		0;
+
+const ANIME_MODE = siteConfig.anime?.mode || "bangumi";
+const sourceConfigs = getAnimeSourceConfigs();
+const { animeList, currentConfig } = getAnimeList(ANIME_MODE, sourceConfigs);
+
+let emptyDescription = "";
+let showEmptyState = false;
+
+if (
+	ANIME_MODE === "bilibili" &&
+	(!siteConfig.bilibili?.vmid || siteConfig.bilibili.vmid === "")
+) {
+	showEmptyState = true;
+	emptyDescription = i18n(I18nKey.animeConfigBilibili);
+} else if (
+	ANIME_MODE === "bangumi" &&
+	siteConfig.bangumi?.userId === "your-user-id"
+) {
+	showEmptyState = true;
+	emptyDescription = i18n(I18nKey.animeConfigBangumi);
+} else if (animeList.length === 0) {
+	showEmptyState = true;
+	if (
+		currentConfig &&
+		currentConfig.type === "json" &&
+		"emptyDescription" in currentConfig &&
+		currentConfig.emptyDescription
+	) {
+		emptyDescription = currentConfig.emptyDescription;
+	} else if (ANIME_MODE === "local") {
+		emptyDescription = i18n(I18nKey.animeEmptyLocal);
+	} else {
+		emptyDescription = "No anime data found.";
+	}
+}
+
+const statusMap = getStatusMap();
+const showExtendedFilters = ANIME_MODE === "bangumi";
+const emptyMessage = i18n(I18nKey.animeEmpty);
+const statusLabelMap = {
+	planned: i18n(I18nKey.animeStatusPlanned),
+	watching: i18n(I18nKey.animeStatusWatching),
+	completed: i18n(I18nKey.animeStatusCompleted),
+	favorite: i18n(I18nKey.animeStatusFavorite),
+	onhold: i18n(I18nKey.animeStatusOnHold),
+	dropped: i18n(I18nKey.animeStatusDropped),
+};
+if (statusMap.planned) {
+	statusMap.planned.text = statusLabelMap.planned;
+}
+if (statusMap.watching) {
+	statusMap.watching.text = statusLabelMap.watching;
+}
+if (statusMap.completed) {
+	statusMap.completed.text = statusLabelMap.completed;
+}
+if (statusMap.favorite) {
+	statusMap.favorite.text = statusLabelMap.favorite;
+}
+if (statusMap.onhold) {
+	statusMap.onhold.text = statusLabelMap.onhold;
+}
+if (statusMap.dropped) {
+	statusMap.dropped.text = statusLabelMap.dropped;
+}
+const ratedAnimeList = animeList.filter((anime) => anime.rating > 0);
+const animeStats = {
+	total: animeList.length,
+	watching: animeList.filter((anime) => anime.status === "watching").length,
+	completed: animeList.filter((anime) => anime.status === "completed").length,
+	favorite: animeList.filter((anime) => anime.status === "favorite").length,
+	planned: animeList.filter((anime) => anime.status === "planned").length,
+	onhold: animeList.filter((anime) => anime.status === "onhold").length,
+	dropped: animeList.filter((anime) => anime.status === "dropped").length,
+	avgRating:
+		ratedAnimeList.length > 0
+			? (
+					ratedAnimeList.reduce((sum, anime) => sum + anime.rating, 0) /
+					ratedAnimeList.length
+				).toFixed(1)
+			: "0.0",
+};
+---
+
+<MainGridLayout
+	title={i18n(I18nKey.anime)}
+	description={i18n(I18nKey.animeSubtitle)}
+>
+	<div
+		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+	>
+		<div class="card-base anime-card-base z-10 px-9 py-6 relative w-full">
+			<div class="relative w-full mb-8">
+				<div class="mb-6">
+					<h1
+						class="text-4xl font-bold text-90 mb-2 relative
+                    before:w-1 before:h-8 before:rounded-md before:bg-(--primary)
+                    before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-4"
+					>
+						{i18n(I18nKey.animeTitle)}
+					</h1>
+					<p class="text-75">
+						{i18n(I18nKey.animeSubtitle)}
+					</p>
+				</div>
+
+				<div class="space-y-4 mb-8">
+					<div class="grid grid-cols-1 min-[800px]:grid-cols-3 gap-4">
+						<div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">📊</div>
+								<div>
+									<div class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+										{animeStats.total}
+									</div>
+									<div class="text-sm text-blue-600/70 dark:text-blue-400/70">
+										{i18n(I18nKey.animeTotal)}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">⭐</div>
+								<div>
+									<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
+										{animeStats.avgRating}
+									</div>
+									<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
+										{i18n(I18nKey.animeAvgRating)}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="hidden min-[800px]:block bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">❌</div>
+								<div>
+									<div class="text-2xl font-bold text-red-600 dark:text-red-400">
+										{animeStats.dropped}
+									</div>
+									<div class="text-sm text-red-600/70 dark:text-red-400/70">
+										{statusLabelMap.dropped}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="hidden min-[800px]:grid min-[800px]:grid-cols-5 gap-4">
+						<div class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/30 dark:to-gray-700/30 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">⏸</div>
+								<div>
+									<div class="text-2xl font-bold text-gray-700 dark:text-gray-300">
+										{animeStats.onhold}
+									</div>
+									<div class="text-sm text-gray-700/70 dark:text-gray-300/70">
+										{statusLabelMap.onhold}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">📌</div>
+								<div>
+									<div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
+										{animeStats.planned}
+									</div>
+									<div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">
+										{statusLabelMap.planned}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">▶️</div>
+								<div>
+									<div class="text-2xl font-bold text-green-600 dark:text-green-400">
+										{animeStats.watching}
+									</div>
+									<div class="text-sm text-green-600/70 dark:text-green-400/70">
+										{statusLabelMap.watching}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">✅</div>
+								<div>
+									<div class="text-2xl font-bold text-purple-600 dark:text-purple-400">
+										{animeStats.completed}
+									</div>
+									<div class="text-sm text-purple-600/70 dark:text-purple-400/70">
+										{statusLabelMap.completed}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4 shadow-sm">
+							<div class="flex items-center gap-3">
+								<div class="text-2xl emoji-icon">❤</div>
+								<div>
+									<div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
+										{animeStats.favorite}
+									</div>
+									<div class="text-sm text-orange-600/70 dark:text-orange-400/70">
+										{statusLabelMap.favorite}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-6">
+					<AnimeFilters
+						filterAllLabel={i18n(I18nKey.animeFilterAll)}
+						statusWatchingLabel={statusLabelMap.watching}
+						statusPlannedLabel={statusLabelMap.planned}
+						statusCompletedLabel={statusLabelMap.completed}
+						statusFavoriteLabel={statusLabelMap.favorite}
+						statusOnHoldLabel={statusLabelMap.onhold}
+						statusDroppedLabel={statusLabelMap.dropped}
+						showExtendedFilters={showExtendedFilters}
+					/>
+				</div>
+			</div>
+
+			<div class="mb-8">
+				{
+					showEmptyState ? (
+						<div class="text-center py-12">
+							<div class="text-5xl mb-4">😢</div>
+							<h3 class="text-xl font-medium text-black/80 dark:text-white/80 mb-2">
+								{emptyMessage}
+							</h3>
+							<p class="text-black/60 dark:text-white/60">
+								{emptyDescription}
+							</p>
+						</div>
+					) : (
+						<AnimeGrid
+							animeList={animeList}
+							pageCapacity={PAGE_CAPACITY_ANIME_AND_GAME}
+							statusMap={statusMap}
+							actorLabel={i18n(I18nKey.animeActor)}
+							yearLabel={i18n(I18nKey.animeYear)}
+							studioLabel={i18n(I18nKey.animeStudio)}
+						/>
+					)
+				}
+			</div>
+		</div>
+	</div>
+
+	<script is:inline define:vars={{ hasRightSidebars }}>
+		(function () {
+			const containerId = "anime-list-container";
+
+			function updateAnimeListLayout(layout, shouldAnimate = true) {
+				const animeListContainer = document.getElementById(containerId);
+				if (!animeListContainer) {
+					return;
+				}
+				animeListContainer.dataset.currentLayout = layout;
+				const mainGrid = document.getElementById("main-grid");
+				if (mainGrid) {
+					mainGrid.setAttribute("data-layout-mode", layout);
+				}
+
+				const animeItems = Array.from(
+					document.querySelectorAll("[data-anime-status]"),
+				);
+				const visibleItems = animeItems.filter(
+					(item) => item.offsetParent !== null,
+				);
+				const firstPositions = new Map();
+				if (shouldAnimate) {
+					visibleItems.forEach((item) => {
+						const rect = item.getBoundingClientRect();
+						firstPositions.set(item, {
+							left: rect.left,
+							top: rect.top,
+							width: rect.width,
+							height: rect.height,
+						});
+					});
+				}
+
+				const style = document.createElement("style");
+				style.innerHTML = `.anime-grid-container .group { transition: none !important; }`;
+				document.head.appendChild(style);
+				animeListContainer.classList.remove(
+					"anime-list-mode",
+					"anime-grid-mode",
+				);
+				animeListContainer.classList.remove(
+					"grid-cols-1",
+					"md:grid-cols-2",
+					"lg:grid-cols-3",
+				);
+				if (layout === "grid") {
+					animeListContainer.classList.add("anime-grid-mode");
+					if (hasRightSidebars) {
+						const rightSidebar = document.querySelector(
+							".right-sidebar-container",
+						);
+						if (rightSidebar) {
+							rightSidebar.style.display = "none";
+							rightSidebar.classList.add("hidden-in-grid-mode");
+						}
+					}
+					if (mainGrid) {
+						mainGrid.style.gridTemplateColumns = "17.5rem 1fr";
+						mainGrid.classList.add("two-column-layout");
+					}
+				} else {
+					animeListContainer.classList.add("anime-list-mode");
+					animeListContainer.classList.add(
+						"grid-cols-1",
+						"lg:grid-cols-2",
+					);
+					if (hasRightSidebars) {
+						const rightSidebar = document.querySelector(
+							".right-sidebar-container",
+						);
+						if (rightSidebar) {
+							rightSidebar.classList.remove(
+								"hidden-in-grid-mode",
+							);
+							rightSidebar.style.removeProperty("display");
+						}
+					}
+					if (mainGrid) {
+						mainGrid.style.gridTemplateColumns = "";
+						mainGrid.classList.remove("two-column-layout");
+					}
+				}
+
+				void animeListContainer.offsetHeight;
+				if (!shouldAnimate) {
+					if (style.parentNode) {
+						style.parentNode.removeChild(style);
+					}
+					return;
+				}
+
+				requestAnimationFrame(() => {
+					if (style.parentNode) {
+						style.parentNode.removeChild(style);
+					}
+
+					visibleItems.forEach((item) => {
+						const first = firstPositions.get(item);
+						if (!first) {
+							return;
+						}
+						const last = item.getBoundingClientRect();
+
+						const deltaX = Math.round(first.left - last.left);
+						const deltaY = Math.round(first.top - last.top);
+						const deltaW = first.width / last.width;
+						const deltaH = first.height / last.height;
+
+						if (
+							Math.abs(deltaX) < 1 &&
+							Math.abs(deltaY) < 1 &&
+							Math.abs(deltaW - 1) < 0.01 &&
+							Math.abs(deltaH - 1) < 0.01
+						) {
+							return;
+						}
+
+						item.style.willChange = "transform";
+						item.style.transition = "none";
+						item.style.transformOrigin = "top left";
+						item.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(${deltaW}, ${deltaH})`;
+					});
+
+					void animeListContainer.offsetHeight;
+					requestAnimationFrame(() => {
+						visibleItems.forEach((item) => {
+							item.style.transition =
+								"transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)";
+							item.style.transform = "";
+						});
+						setTimeout(() => {
+							visibleItems.forEach((item) => {
+								item.style.transition = "";
+								item.style.transformOrigin = "";
+								item.style.transform = "";
+								item.style.willChange = "";
+							});
+						}, 500);
+					});
+				});
+			}
+
+			function initAnimeLayout() {
+				const animeListContainer = document.getElementById(containerId);
+				if (!animeListContainer) {
+					return false;
+				}
+				const forced = window.getForcedLayout?.(location.pathname);
+				const currentLayout =
+					forced || localStorage.getItem("postListLayout") || "grid";
+				updateAnimeListLayout(currentLayout, false);
+				requestAnimationFrame(() => {
+					animeListContainer.classList.remove("opacity-0");
+				});
+				return true;
+			}
+
+			let retryCount = 0;
+			const maxRetries = 10;
+
+			function tryInit() {
+				if (initAnimeLayout()) {
+					return;
+				}
+				if (retryCount < maxRetries) {
+					retryCount++;
+					const delay = Math.min(
+						100 * Math.pow(1.5, retryCount),
+						1000,
+					);
+					setTimeout(tryInit, delay);
+				} else {
+					setTimeout(() => {
+						const animeListContainer =
+							document.getElementById(containerId);
+						if (animeListContainer) {
+							const forced = window.getForcedLayout?.(location.pathname);
+							const currentLayout =
+								forced ||
+								localStorage.getItem("postListLayout") ||
+								"grid";
+							updateAnimeListLayout(currentLayout, false);
+							animeListContainer.classList.remove("opacity-0");
+						}
+					}, 2000);
+				}
+			}
+
+			if (document.readyState === "loading") {
+				document.addEventListener("DOMContentLoaded", tryInit);
+			} else {
+				tryInit();
+			}
+
+			window.addEventListener("layoutChange", (event) => {
+				updateAnimeListLayout(event.detail.layout);
+			});
+		})();
+	</script>
+
+	<script is:inline>
+		if (typeof window.animeControlState === "undefined") {
+			window.animeControlState = {
+				listeners: [],
+				swupListenersBound: false,
+			};
+		}
+
+		function addAnimeListener(element, type, handler) {
+			element.addEventListener(type, handler);
+			window.animeControlState.listeners.push([element, type, handler]);
+		}
+
+		function clearAnimeListeners() {
+			window.animeControlState.listeners.forEach((listener) => {
+				const [element, type, handler] = listener;
+				element.removeEventListener(type, handler);
+			});
+			window.animeControlState.listeners = [];
+		}
+
+		function renderPaginationNumbers(currentPage, totalPages, onPageChange) {
+			const pageNumbersContainer =
+				document.getElementById("anime-page-numbers");
+			if (!pageNumbersContainer) {
+				return;
+			}
+			pageNumbersContainer.innerHTML = "";
+
+			const appendPageButton = (page) => {
+				const pageButton = document.createElement("button");
+				pageButton.type = "button";
+				pageButton.textContent = String(page);
+				pageButton.className = "anime-page-number";
+				if (page === currentPage) {
+					pageButton.classList.add("is-active");
+					pageButton.disabled = true;
+				} else {
+					addAnimeListener(pageButton, "click", () => onPageChange(page));
+				}
+				pageNumbersContainer.appendChild(pageButton);
+			};
+
+			const appendEllipsis = () => {
+				const ellipsis = document.createElement("span");
+				ellipsis.className = "anime-page-ellipsis";
+				ellipsis.textContent = "...";
+				pageNumbersContainer.appendChild(ellipsis);
+			};
+
+			if (totalPages <= 5) {
+				for (let page = 1; page <= totalPages; page++) {
+					appendPageButton(page);
+				}
+				return;
+			}
+
+			const getVisiblePageNumbers = () => {
+				let pages;
+				if (currentPage === 1 || currentPage === totalPages) {
+					pages = [1, 2, totalPages - 1, totalPages];
+				} else if (currentPage === 2) {
+					pages = [1, 2, 3, totalPages - 1, totalPages];
+				} else if (currentPage === totalPages - 1) {
+					pages = [1, 2, totalPages - 2, totalPages - 1, totalPages];
+				} else {
+					pages = [1, currentPage - 1, currentPage, currentPage + 1, totalPages];
+				}
+
+				return pages
+					.filter((page, index, pages) => pages.indexOf(page) === index)
+					.sort((a, b) => a - b);
+			};
+
+			let previousPage = 0;
+
+			getVisiblePageNumbers().forEach((page) => {
+				if (page - previousPage > 1) {
+					appendEllipsis();
+				}
+				appendPageButton(page);
+				previousPage = page;
+			});
+		}
+
+		function initAnimeFiltersAndPagination() {
+			const filterTags = Array.from(
+				document.querySelectorAll(".anime-filter-tag"),
+			);
+			const listContainer = document.getElementById("anime-list-container");
+			const paginationContainer = document.getElementById("anime-pagination");
+			const prevButton = document.getElementById("anime-page-prev");
+			const nextButton = document.getElementById("anime-page-next");
+
+			if (
+				!listContainer ||
+				!paginationContainer ||
+				!prevButton ||
+				!nextButton
+			) {
+				return;
+			}
+
+			clearAnimeListeners();
+
+			const animeItems = Array.from(
+				listContainer.querySelectorAll("[data-anime-status]"),
+			);
+			const pageCapacity = Math.max(
+				1,
+				Number(listContainer.dataset.pageCapacity || "20"),
+			);
+			let currentStatus = "all";
+			let currentPage = 1;
+
+			const getFilteredItems = () =>
+				animeItems.filter((item) => {
+					const status = item.getAttribute("data-anime-status");
+					return currentStatus === "all" || status === currentStatus;
+				});
+
+			const applyPagination = () => {
+				const filteredItems = getFilteredItems();
+				const totalPages = Math.max(
+					1,
+					Math.ceil(filteredItems.length / pageCapacity),
+				);
+				if (currentPage > totalPages) {
+					currentPage = totalPages;
+				}
+
+				const startIndex = (currentPage - 1) * pageCapacity;
+				const endIndex = startIndex + pageCapacity;
+				const visibleItems = new Set(
+					filteredItems.slice(startIndex, endIndex),
+				);
+
+				animeItems.forEach((item) => {
+					if (visibleItems.has(item)) {
+						item.classList.remove("anime-hidden");
+						return;
+					}
+					item.classList.add("anime-hidden");
+				});
+
+				prevButton.disabled = currentPage <= 1;
+				nextButton.disabled = currentPage >= totalPages;
+
+				renderPaginationNumbers(currentPage, totalPages, (page) => {
+					currentPage = page;
+					applyPagination();
+					scrollAnimeListToTop();
+				});
+
+				const shouldShowPagination = filteredItems.length > pageCapacity;
+				paginationContainer.classList.toggle(
+					"is-hidden",
+					!shouldShowPagination,
+				);
+			};
+
+			function scrollAnimeListToTop() {
+				const target = document.querySelector(".anime-card-base");
+				if (!target) {
+					return;
+				}
+				const rect = target.getBoundingClientRect();
+				const offset = window.scrollY + rect.top - 80;
+				window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+			}
+
+			filterTags.forEach((tag) => {
+				addAnimeListener(tag, "click", () => {
+					if (tag.classList.contains("anime-active")) {
+						return;
+					}
+					filterTags.forEach((button) =>
+						button.classList.remove("anime-active"),
+					);
+					tag.classList.add("anime-active");
+					currentStatus = tag.getAttribute("data-status") || "all";
+					currentPage = 1;
+					applyPagination();
+					scrollAnimeListToTop();
+				});
+			});
+
+			addAnimeListener(prevButton, "click", () => {
+				if (currentPage <= 1) {
+					return;
+				}
+				currentPage--;
+				applyPagination();
+				scrollAnimeListToTop();
+			});
+
+			addAnimeListener(nextButton, "click", () => {
+				currentPage++;
+				applyPagination();
+				scrollAnimeListToTop();
+			});
+
+			applyPagination();
+		}
+
+		document.addEventListener("DOMContentLoaded", initAnimeFiltersAndPagination);
+
+		function setupSwupListeners() {
+			if (!window.swup || window.animeControlState.swupListenersBound) {
+				return;
+			}
+			window.animeControlState.swupListenersBound = true;
+			window.swup.hooks.on("content:replace", () =>
+				setTimeout(initAnimeFiltersAndPagination, 150),
+			);
+			window.swup.hooks.on("page:view", () =>
+				setTimeout(initAnimeFiltersAndPagination, 150),
+			);
+		}
+
+		if (typeof window !== "undefined") {
+			if (window.swup) {
+				setupSwupListeners();
+			} else {
+				document.addEventListener("swup:enable", setupSwupListeners);
+			}
+		}
+	</script>
+</MainGridLayout>
