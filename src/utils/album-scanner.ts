@@ -38,11 +38,14 @@ export async function scanAlbums(): Promise<AlbumGroup[]> {
 		}
 	}
 
-	// Fisher-Yates shuffle — 每次构建随机顺序
-	for (let i = albums.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[albums[i], albums[j]] = [albums[j], albums[i]];
-	}
+	// 按名称排序：先英文（A-Z），再中文（按拼音）
+	albums.sort((a, b) => {
+		const isEnglish = (s: string) => /^[A-Za-z0-9]/.test(s);
+		const ea = isEnglish(a.title) ? 0 : 1;
+		const eb = isEnglish(b.title) ? 0 : 1;
+		if (ea !== eb) return ea - eb;
+		return a.title.localeCompare(b.title, "zh-CN");
+	});
 
 	return albums;
 }

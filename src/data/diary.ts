@@ -15,7 +15,7 @@ export interface DiaryItem {
 const diaryData: DiaryItem[] = [
 	{
 		id: 22,
-		content: "🎮 2026-10-14：阴阳师签到10年！弃坑啦！🎯",
+		content: "🎮 2026-10-14：阴阳师签到10年啦！弃坑！🎯",
 		date: "2026-10-10T23:30:00+08:00",
 		images: ["http://tn260vxlu.hd-bkt.clouddn.com/public/images/diary/阴阳师·签到3650天.webp"],
 	},
