@@ -12,15 +12,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/RPi_4B.jpg"
 
 ![网络拓扑结构](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/科学上网：软路由%20+%20OpenClash插件/网络拓扑结构.jpg)
 
-
-
 :::important[核心思想]
 
 通过将**树莓派**刷入**OpenWrt系统**后作为**旁路由**使用，在旁路由里加载**open-clash插件**，实现**科学上网**。
 
 :::
-
-
 
 **解决方案**：采用**非侵入式**的工作方式
 
@@ -59,7 +55,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/RPi_4B.jpg"
 
 ![OpenWrt系统镜像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/科学上网：软路由%20+%20OpenClash插件/OpenWrt系统镜像.jpg)
 
-- 选择**版本**：初始化的情况下，推荐下载**ext4-factory版本**或**squashfs-factory版本**。
+- 选择**版本**：初始化的情况下，推荐下载**ext4-factory版本**或**squashfs-factory版本**
   - **squashfs**：重置系统更方便
   - **ext4**：固件扩容更简单
   - **factory**：初始化系统时使用
@@ -109,8 +105,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/RPi_4B.jpg"
 
 ​	由于**OpenWrt系统的默认IP地址**为**192.168.1.1**，因此要先把**上位机的IP地址**改到**和OpenWrt在同一网段下**，才能访问OpenWrt系统。
 
-- 通过**控制面板**→**网络和共享中心**，选中需要修改的**网络**，选择**属性**，双击 **Internet协议版本4(TCP/IPv4)** 修改上位机的网络信息，下述信息供参考：
-
+- 通过**控制面板**→**网络和共享中心**，选中需要修改的**网络**，选择**属性**，双击 **Internet协议版本4(TCP/IPv4)** 修改上位机的网络信息，下述信息供参考。
 
 ![修改上位机IP地址](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/科学上网：软路由%20+%20OpenClash插件/修改上位机IP地址.jpg)
 

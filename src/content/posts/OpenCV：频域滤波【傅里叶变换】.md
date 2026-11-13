@@ -40,7 +40,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 - 通过**函数**`numpy.fft.fftshift()`，实现**傅里叶变换的频谱移动**。
 - **函数原型**：`spectrum_shift = numpy.fft.fftshift( spectrum )`
 - **参数说明**：
-  - **spectrum_shift **：表示**转变后的频谱**。
+  - **spectrum\_shift**：表示**转变后的频谱**。
   - **spectrum**：表示**原始频谱**。
 
 :::note[注意]
@@ -66,7 +66,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 - 通过**函数**`numpy.fft.ifftshift()`，实现**傅里叶变换的频谱移动**，和函数`numpy.fft.fftshift()`的操作过程相反。
 - **函数原型**：`spectrum_shift = numpy.fft.ifftshift( spectrum )`
 - **参数说明**：
-  - **spectrum_shift **：表示**转变后的频谱**。
+  - **spectrum\_shift**：表示**转变后的频谱**。
   - **spectrum**：表示**原始频谱**。
 
 :::note[注意]

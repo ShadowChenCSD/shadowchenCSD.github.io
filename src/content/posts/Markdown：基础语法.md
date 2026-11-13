@@ -1,6 +1,6 @@
 ﻿---
 title: Markdown：基础语法
-published: 2023-10-16
+published: 2023-01-16
 description: 介绍撰写Markdown文档的基本语法规则。
 tags: [Markdown, 文章撰写]
 category: 博客

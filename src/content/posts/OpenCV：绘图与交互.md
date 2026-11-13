@@ -73,7 +73,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/OpenCV.png"
 - 调用函数`cv2.polylines()`
   - 函数原型：`img = cv2.polylines(img, pts, isClosed, color, thickness, lineType)`
   - 函数参数：
-    - **pts**：多边形的**各个顶点**
+    - **pts**：多边形的**各个顶点**。
     - **isClosed**：**闭合标记**，用来指示多边形是否是封闭的。
       - **True**：将最后一个点与第一个点连接，让多边形闭合。
       - **False**：仅仅将各个点依次连接起来，构成一条曲线。

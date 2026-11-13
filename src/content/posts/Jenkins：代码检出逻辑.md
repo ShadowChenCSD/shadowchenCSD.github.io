@@ -19,11 +19,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 ​		Use 'svn update' whenever possible, making the build faster. But this causes the artifacts from the previous build to remain when a new build starts.
 
-- **首次构建**
-  - **把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
-
-- **后续构建**
-  - **SVN update**
+- **首次构建：把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
+- **后续构建：`SVN update`。**
 
 ## 特点
 
@@ -40,11 +37,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 ​		Delete everything first, then perform "svn checkout". While this takes time to execute, it ensures that the workspace is in the pristine state.
 
-- **首次构建**
-  - **把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
-
-- **后续构建**
-  - **把工作目录下再清空，重新check-out一份完整的项目到工作目录下。**
+- **首次构建：把工作目录下的所有文件清空，然后`checkout`一份完整的项目到工作目录下。**
+- **后续构建：把工作目录下再清空，重新`checkout`一份完整的项目到工作目录下。**
 
 ## 特点
 
@@ -59,11 +53,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 ## 描述
 
-- **首次构建**
-  - **报警提示：“没有用于SVN checkout的目录”。**
-
-- **后续构建**
-  - **目录不更新。**
+- **首次构建：报警提示：“没有用于SVN checkout的目录”。**
+- **后续构建：目录不更新。**
 
 ## 特点
 
@@ -79,11 +70,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 ​		Jenkins will first remove all the unversioned/modified files/directories, as well as files/directories ignored by "svn:ignore", then execute "svn update". This emulates the fresh check out behaviour without the cost of full checkout.
 
-- **首次构建**
-  - **把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
-
-- **后续构建**
-  - **先删除unversioned/ignored文件，再SVN update。**
+- **首次构建：把工作目录下的所有文件清空，然后`checkout`一份完整的项目到工作目录下。**
+- **后续构建：先删除unversioned/ignored文件，再`SVN update`。**
 
 ## 特点
 
@@ -100,11 +88,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 ​		Do 'svn revert' before doing 'svn update'. This slows down builds a bit, but this prevents files from getting modified by builds.
 
-- **首次构建**
-  - **把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
-
-- **后续构建**
-  - **先SVN revert，再SVN update。**
+- **首次构建：把工作目录下的所有文件清空，然后check-out一份完整的项目到工作目录下。**
+- **后续构建：先`SVN revert`，再`SVN update`。**
 
 ## 特点
 

@@ -122,7 +122,6 @@ row, col, ch = src.shape
 watermark = cv2.imread("watermark.png")
 
 # 非盲处理
-watermark = 
 idx = watermark[:,:,:]>0
 watermark[idx] = 1
 

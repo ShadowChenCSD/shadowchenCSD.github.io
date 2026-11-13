@@ -1,6 +1,6 @@
 ﻿---
 title: Markdown：扩展语法
-published: 2023-10-18
+published: 2023-01-18
 description: 介绍撰写Markdown文档的扩展语法规则。
 image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/markdown.png"
 tags: [Markdown, 文章撰写]

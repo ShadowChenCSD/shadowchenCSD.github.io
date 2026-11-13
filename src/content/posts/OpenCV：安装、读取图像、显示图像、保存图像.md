@@ -36,7 +36,7 @@ img = cv2.imread(filename[, flags])
 ```
 
 - **img**：**返回值**，其值是**读取到的图像数据**。如果读取图像失败，则返回**None**。
-- **filename**：**图像的文件名（可包含路径）**。
+- **filename**：**图像的文件名（不可包含路径）**。
 - **flags**：**读取标记**，该标记**控制读取文件的类型**。
 
 | 值                             | **含义**                                                     | **数值** |
@@ -62,8 +62,27 @@ img = cv2.imread(filename[, flags])
 - **`.pgm`**, **`.ppm`**
 - **`.tiff`**
 
+# 3. 读取包含中文路径的图像
 
-# 3. 保存图像：cv2.imwrite()
+- `cv2.imread()` 的**底层由 C++ 实现**，**对中文路径支持不佳**，当路径中包含中文时通常会**读取失败并返回 `None`**。
+- **解决方案**：先用 `np.fromfile()` 以**二进制方式**把文件内容读入内存，再通过 `cv2.imdecode()` **解码成图像**。
+
+```python
+img = cv2.imdecode(np.fromfile(filename, dtype=np.uint8), [flags])
+```
+
+- **img**：**返回值**，与 `cv2.imread()` 的返回值一致，**读取失败时返回 None**。
+- **filename**：**图像的文件名（可包含中文路径）**。
+- **flags**：**读取标记**，与 `cv2.imread()` 的 **flags 完全相同**（如 `cv2.IMREAD_COLOR`、`cv2.IMREAD_GRAYSCALE` 等），可省略。
+
+```python
+import cv2
+import numpy as np
+
+img = cv2.imdecode(np.fromfile("图片/中文路径.png", dtype=np.uint8), cv2.IMREAD_COLOR)
+```
+
+# 4. 保存图像：cv2.imwrite()
 
 - 函数`cv2.imwrite()`用来**保存图像**。
 
@@ -72,11 +91,37 @@ ret = cv2.imwrite(filename, img[, params])
 ```
 
 - **ret**：**返回值**。如果图像保存成功，返回**True**，否则，返回**False**。
-- **filename**：**图像的文件名（可包含路径）**。
+- **filename**：**图像的文件名（不可包含路径）**。
 - **img**：**图像数据**。
 - **params**：**保存类型的参数**，可选。
 
-# 4. 显示图像
+# 5. 保存包含中文路径的图像
+
+- `cv2.imwrite()` **无法正确保存到中文路径**，会**返回 `False`** 或直接**抛出异常**。
+- **解决方案**：先用 `cv2.imencode()` 把图像**编码成内存中的缓冲区**，再用 numpy 的 `tofile()` **写入磁盘**。
+
+```python
+success, encoded = cv2.imencode(ext, img[, params])
+if success:
+    encoded.tofile(filename)
+```
+
+- **success**：**返回值**。编码成功返回**True**，否则返回**False**。
+- **ext**：**文件扩展名**，如 `".png"`、`".jpg"`，**决定图像的编码格式**，需与 `filename` 的扩展名保持一致。
+- **encoded**：**编码后的图像数据**（numpy 数组），可通过 `tofile()` 写入文件。
+- **filename**：**图像的文件名（可包含中文路径）**。
+
+```python
+import cv2
+
+img = cv2.imread("logo.png")
+
+success, encoded = cv2.imencode(".png", img)
+if success:
+    encoded.tofile("图片/中文路径-保存.png")
+```
+
+# 6. 显示图像
 
 ## 新建窗口：cv2.namedWindow()
 
@@ -102,7 +147,7 @@ None = cv2.imshow( winname, img )
 ret = cv2.waitKey( [delay] )
 ```
 
-- **ret**：**返回值**。如果按键没有被按下，则返回**-1**，否则，返回**该按键对应的ASCII码**。
+- **ret**：**返回值**。如果按键没有被按下，则返回 **-1** ，否则，返回**该按键对应的ASCII码**。
 - **delay**：**等待键盘触发的时间，默认为0**。值为**零或负数**时，**表示无限等待**。时间单位为ms。
 
 
@@ -120,7 +165,7 @@ None = cv2.destroyWindow( winname )
 None = cv2.destroyAllWindows()
 ```
 
-# 5. 示例
+# 7. 示例
 
 ```python
 import cv2
