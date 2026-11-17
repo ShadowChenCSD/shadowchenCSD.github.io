@@ -88,6 +88,12 @@
     }
   }
 
+  /* --- 图片 --- */
+  /* 单独占一行的图片默认居中显示 */
+  p > img:only-child {
+    margin-inline: auto;
+  }
+
   /* --- 表格样式 --- */
   .table-wrapper {
     @apply w-full overflow-x-auto m-0 rounded-(--radius-large);
@@ -137,6 +143,22 @@
     color: var(--btn-content);
     font-weight: 600;
     text-align: left;
+  }
+
+  /* 遵循 Markdown 表格中声明的对齐方式 */
+  th[align="left"],
+  td[align="left"] {
+    text-align: left;
+  }
+
+  th[align="center"],
+  td[align="center"] {
+    text-align: center;
+  }
+
+  th[align="right"],
+  td[align="right"] {
+    text-align: right;
   }
 
   tr:last-child td {
