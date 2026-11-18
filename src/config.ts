@@ -128,24 +128,24 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 		desktop: [
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/1.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/2.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/3.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/4.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/5.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/6.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/7.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/1.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/2.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/3.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/4.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/5.jpg",
+			"https://image.shadowchen.top/public/assets/desktop-banner/6.jpg",
+			"https://image.shadowchen.top/public/assets/desktop-banner/7.webp",
 		], // 桌面横幅图片
 			mobile: [
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/1.jpg",	
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/2.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/3.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/4.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/5.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/6.jpeg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/7.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/8.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/9.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/1.jpg",	
+			"https://image.shadowchen.top/public/assets/mobile-banner/2.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/3.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/4.jpg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/5.jpg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/6.jpeg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/7.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/8.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/9.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -256,24 +256,24 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/1.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/2.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/3.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/4.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/5.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/6.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/desktop-banner/7.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/1.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/2.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/3.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/4.webp",
+			"https://image.shadowchen.top/public/assets/desktop-banner/5.jpg",
+			"https://image.shadowchen.top/public/assets/desktop-banner/6.jpg",
+			"https://image.shadowchen.top/public/assets/desktop-banner/7.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/1.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/2.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/3.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/4.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/5.jpg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/6.jpeg",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/7.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/8.webp",
-			"http://tn260vxlu.hd-bkt.clouddn.com/public/assets/mobile-banner/9.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/1.jpg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/2.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/3.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/4.jpg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/5.jpg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/6.jpeg",
+			"https://image.shadowchen.top/public/assets/mobile-banner/7.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/8.webp",
+			"https://image.shadowchen.top/public/assets/mobile-banner/9.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
