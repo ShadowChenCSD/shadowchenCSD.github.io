@@ -4,7 +4,7 @@ published: 2025-01-18
 description: 介绍AdvancedLivePortrait组件，实现人脸表情控制的方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 安装插件
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 # 3. 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/表情控制.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/表情控制.jpg)
 
 # 4. 使用方法
 
@@ -47,10 +47,10 @@ pip install -r requirements.txt
 
 |       参考图        |      生成图      |
 | :-----------------: | :--------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/girl.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/1.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/girl.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/1.jpg) |
 
 |      生成图      |      生成图      |      生成图      |
 | :--------------: | :--------------: | :--------------: |
-| ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/2.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/3.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/4.jpg) |
-| ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/5.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/6.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/7.jpg) |
+| ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/2.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/3.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/4.jpg) |
+| ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/5.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/6.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：AdvancedLivePortrait组件：表情控制/7.jpg) |
 

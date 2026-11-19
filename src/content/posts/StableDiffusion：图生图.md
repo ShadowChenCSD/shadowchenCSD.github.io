@@ -4,7 +4,7 @@ published: 2024-11-03
 description: 介绍如何使用WebUI、ComfyUI进行图生图。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. WebUI
@@ -42,11 +42,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - 确定**模型**、**提示词**、**原始图像**
 
-![WebUI图生图·操作流程](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/WebUI图生图·操作流程1.jpg)
+![WebUI图生图·操作流程](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/WebUI图生图·操作流程1.jpg)
 
 - 设置**AI参数**
 
-![WebUI图生图·操作流程](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/WebUI图生图·操作流程2.jpg)
+![WebUI图生图·操作流程](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/WebUI图生图·操作流程2.jpg)
 
 - 点击**生成**，进行**图生图**
 
@@ -63,35 +63,35 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### SD 1.5模型，K采样器
 
-![SD_1.5_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/SD_1.5_工作流.jpg)
+![SD_1.5_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/SD_1.5_工作流.jpg)
 
 ### SDXL模型，K采样器
 
-![SDXL_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/SDXL_工作流_K采样器.jpg)
+![SDXL_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/SDXL_工作流_K采样器.jpg)
 
-### ~~SDXL模型，自定义采样器~~
+### ~~SDXL模型，自定义采样器（不常用）~~
 
-![SDXL_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/SDXL_工作流_自定义采样器.jpg)
+![SDXL_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/SDXL_工作流_自定义采样器.jpg)
 
-### ~~SD 3.5模型，K采样器~~
+### ~~SD 3.5模型，K采样器（生图效果差，几乎不用）~~
 
-![SD_3.5_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/SD_3.5_工作流.jpg)
+![SD_3.5_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/SD_3.5_工作流.jpg)
 
-### ~~FLUX 1模型，K采样器~~
+### ~~FLUX 1模型，K采样器（不常用）~~
 
 - **CFG必须为1.0**
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/FLUX_1_工作流_K采样器.jpg)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/FLUX_1_工作流_K采样器.jpg)
 
 ### FLUX 1模型，自定义采样器
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/FLUX_1_工作流_自定义采样器.jpg)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/FLUX_1_工作流_自定义采样器.jpg)
 
 ### FLUX 2模型，自定义采样器
 
 - FLUX 2不再使用**去噪强度**参数，而是直接执行**图像编辑**操作
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/FLUX_2_工作流_自定义采样器.png)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/FLUX_2_工作流_自定义采样器.png)
 
 ## 2.2 载入模型
 
@@ -131,7 +131,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |        真实场景         |          动漫风格          |
 | :---------------------: | :------------------------: |
-| ![真实场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/person.jpg) | ![动漫风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/person_2D.jpg) |
+| ![真实场景](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/person.jpg) | ![动漫风格](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/person_2D.jpg) |
 
 
 ## 3.2 动漫风格 转 真实场景
@@ -140,7 +140,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |          动漫风格          |           真实场景            |
 | :------------------------: | :---------------------------: |
-| ![动漫风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/character.jpg) | ![真实场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/character_3D.jpg) |
+| ![动漫风格](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/character.jpg) | ![真实场景](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/character_3D.jpg) |
 
 
 ## 3.3 油画 转 动漫风格
@@ -149,7 +149,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |                 油画                 |                  动漫风格                   |
 | :----------------------------------: | :-----------------------------------------: |
-| ![油画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel.jpg) | ![动漫风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel_2D.jpg) |
+| ![油画](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel.jpg) | ![动漫风格](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel_2D.jpg) |
 
 
 ## 3.4 油画 转 真实场景
@@ -158,4 +158,4 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |                 油画                 |                  真实场景                   |
 | :----------------------------------: | :-----------------------------------------: |
-| ![油画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel.jpg) | ![真实场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel_3D.jpg) |
+| ![油画](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel.jpg) | ![真实场景](https://image.shadowchen.top/src/posts/StableDiffusion：图生图/Het-meisje-met-de-parel_3D.jpg) |

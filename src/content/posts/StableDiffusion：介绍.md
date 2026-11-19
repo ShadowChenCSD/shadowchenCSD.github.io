@@ -5,7 +5,7 @@ description: 介绍StableDiffusion的基础功能，包括图像生成、图像�
 tags: [AIGC·图像, 图像生成, 图像编辑, StableDiffusion, Flux]
 category: AIGC
 pinned: true
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 基本原理
@@ -20,7 +20,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
     - **扩散模型**：在潜在空间工作，通过逐步去噪生成图像
     - **VAE（变分自编码器）**：编码器将图像压缩到潜在空间，解码器将潜在空间中的特征还原为像素级图像
 
-![AI绘图原理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/AI绘图原理.jpg)
+![AI绘图原理](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/AI绘图原理.jpg)
 
 # 2. 图像生成
 
@@ -44,11 +44,11 @@ worst quality, grayscale, simple background, bad hands, bad feet, bad anatomy, w
 
 |       动漫风格-1        |       动漫风格-2        |
 | :---------------------: | :---------------------: |
-| ![文生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/文生图-1.jpg) | ![文生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/文生图-2.jpg) |
+| ![文生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/文生图-1.jpg) | ![文生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/文生图-2.jpg) |
 
 |       真实风格-1        |       真实风格-2        |
 | :---------------------: | :---------------------: |
-| ![文生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/文生图-3.jpg) | ![文生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/文生图-4.jpg) |
+| ![文生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/文生图-3.jpg) | ![文生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/文生图-4.jpg) |
 
 ## 2.2 图生图（img-to-img）
 
@@ -68,7 +68,7 @@ worst quality, grayscale, simple background, bad hands, bad feet, bad anatomy, w
 
 |                参考图                 |        AI生成图         |        AI生成图         |        AI生成图         |
 | :-----------------------------------: | :---------------------: | :---------------------: | :---------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Het-meisje-met-deparel.jpg) | ![图生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/图生图-1.jpg) | ![图生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/图生图-2.jpg) | ![图生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/图生图-3.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Het-meisje-met-deparel.jpg) | ![图生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/图生图-1.jpg) | ![图生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/图生图-2.jpg) | ![图生图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/图生图-3.jpg) |
 
 ## 2.3 局部重绘（inpaint）
 
@@ -76,11 +76,11 @@ worst quality, grayscale, simple background, bad hands, bad feet, bad anatomy, w
 
 |        参考图         |        蒙版图         |
 | :-------------------: | :-------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![蒙版图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/mask-1.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![蒙版图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/mask-1.jpg) |
 
 |   生成图：yellow shirt    | 生成图：light green sweater |   生成图：pink sweater    |
 | :-----------------------: | :-------------------------: | :-----------------------: |
-| ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/局部重绘-1.jpg) |  ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/局部重绘-2.jpg)  | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/局部重绘-3.jpg) |
+| ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/局部重绘-1.jpg) |  ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/局部重绘-2.jpg)  | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/局部重绘-3.jpg) |
 
 ## 2.4 扩图（outpaint)
 
@@ -94,7 +94,7 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
 
 |        参考图         |        蒙版图         |      生成图       |
 | :-------------------: | :-------------------: | :---------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-2.jpg) | ![蒙版图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/mask-2.jpg) | ![扩图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/扩图.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-2.jpg) | ![蒙版图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/mask-2.jpg) | ![扩图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/扩图.jpg) |
 
 ## 2.5 高清放大（upscale）
 
@@ -102,7 +102,7 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
 
 |  参考图：768 * 1024   | 生成图：1536 * 2048 |
 | :-------------------: | :-----------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-2.jpg) |  ![放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/放大.jpg)  |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-2.jpg) |  ![放大](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/放大.jpg)  |
 
 # 3. 图像编辑
 
@@ -120,12 +120,12 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/3.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/3.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/2.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/2.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -145,16 +145,16 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/10.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/10.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/11.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/11.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/12.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/12.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -175,16 +175,16 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/01.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/40.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/01.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/40.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/11.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/43.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/11.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/43.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/44.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/44.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -207,28 +207,28 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/19.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/19.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/20.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/20.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/16.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/25.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/16.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/25.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/26.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/11.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/22.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/11.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/22.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/14.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/24.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/14.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/24.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -250,20 +250,20 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/01.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/27.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/01.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/27.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/30.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/30.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/31.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/31.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/23.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/23.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -284,20 +284,20 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/32.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/32.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/34.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/34.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/36.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/36.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/37.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/37.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -318,20 +318,20 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/55.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/55.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/58.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/58.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/59.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/59.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/60.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/60.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -351,16 +351,16 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/45.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/45.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/47.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/47.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/49.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/49.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -382,20 +382,20 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/104.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/104.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/105.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/105.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/106.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/106.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/107.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/107.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -419,17 +419,17 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td rowspan="3" style="vertical-align: middle;"><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/108.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/110.png" width="512" /></td>
+      <td rowspan="3" style="vertical-align: middle;"><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/108.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/110.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/111.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/112.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/111.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/112.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/113.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/114.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/113.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/114.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -452,13 +452,13 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
      <tr align="center">
-      <td rowspan="3" style="vertical-align: middle;"><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/115.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/116.png" width="512" /></td>
+      <td rowspan="3" style="vertical-align: middle;"><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/115.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/116.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/117.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/118.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/117.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/118.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -482,28 +482,28 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/64.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/64.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/68.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/68.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/74.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/74.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/76.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/76.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/14.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/77.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/14.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/77.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/80.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/80.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -524,16 +524,16 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/100.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/100.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/101.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/101.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/103.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/103.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -553,16 +553,16 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/22.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/85.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/22.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/85.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/23.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/86.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/23.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/86.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/25.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Kontext/89.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/25.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Kontext/89.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -573,32 +573,32 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
 
 |        参考图         |      Canny图像      |     HED图像     |       Lineart图像       |
 | :-------------------: | :-----------------: | :-------------: | :---------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Canny.jpg) | ![HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/HED.jpg) | ![Lineart](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Lineart.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Canny.jpg) | ![HED](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/HED.jpg) | ![Lineart](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Lineart.jpg) |
 
 |       动漫风格        |       动漫风格        |       真人风格        |       真人风格        |
 | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Canny-1.jpg) | ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Canny-2.jpg) | ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Canny-3.jpg) | ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Canny-4.jpg) |
+| ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Canny-1.jpg) | ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Canny-2.jpg) | ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Canny-3.jpg) | ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Canny-4.jpg) |
 
 ## 4.2 深度检测：Depth
 
 |        参考图         |        Depth图像        |
 | :-------------------: | :---------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![Depth图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-1.jpg) | ![Depth图像](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth.jpg) |
 
 |       动漫风格        |       动漫风格        |       真人风格        |
 | :-------------------: | :-------------------: | :-------------------: |
-| ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-1.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-3.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-5.jpg) |
-| ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-2.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-4.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Depth-6.jpg) |
+| ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-1.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-3.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-5.jpg) |
+| ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-2.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-4.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Depth-6.jpg) |
 
 ## 4.3 姿态检测：Pose
 
 |        参考图         |         Openpose图像          |
 | :-------------------: | :---------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/girl-3.jpg) | ![Openpose图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Openpose.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/girl-3.jpg) | ![Openpose图像](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Openpose.jpg) |
 
 |          动漫风格           |          真人风格           |
 | :-------------------------: | :-------------------------: |
-| ![Openpose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Openpose-1.jpg) | ![Openpose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Openpose-2.jpg) |
+| ![Openpose](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Openpose-1.jpg) | ![Openpose](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Openpose-2.jpg) |
 
 
 # 5. 风格参考：LoRA模型
@@ -607,42 +607,42 @@ The image is a portrait of a young Asian woman sitting on a wooden chair. She is
 
 |      AI生成图       |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: | :-----------------: |
-| ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/汉服-1.jpg) | ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/汉服-2.jpg) | ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/汉服-3.jpg) |
+| ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/汉服-1.jpg) | ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/汉服-2.jpg) | ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/汉服-3.jpg) |
 
 ## 4.2 手办
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/手办-1.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/手办-2.jpg) |
+| ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/手办-1.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/手办-2.jpg) |
 
 |      AI生成图       |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: | :-----------------: |
-| ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/手办-3.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/手办-4.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/手办-5.jpg) |
+| ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/手办-3.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/手办-4.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/手办-5.jpg) |
 
 ## 5.3 沁彩
 
 |   AI生成图：人物    |   AI生成图：人物    |
 | :-----------------: | :-----------------: |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-1.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-2.jpg) |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-3.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-4.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-1.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-2.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-3.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-4.jpg) |
 
 |   AI生成图：场景    |   AI生成图：场景    |
 | :-----------------: | :-----------------: |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-5.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-6.jpg) |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-7.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/沁彩-8.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-5.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-6.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-7.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/沁彩-8.jpg) |
 
 ## 5.4 Q版手绘
 
 |      AI生成图：半身       |      AI生成图：半身       |
 | :-----------------------: | :-----------------------: |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Q版手绘-1.jpg) | ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Q版手绘-2.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Q版手绘-1.jpg) | ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Q版手绘-2.jpg) |
 
 |      AI生成图：全身       |      AI生成图：全身       |      AI生成图：全身       |
 | :-----------------------: | :-----------------------: | :-----------------------: |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Q版手绘-3.jpg) | ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Q版手绘-4.jpg) | ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/Q版手绘-5.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Q版手绘-3.jpg) | ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Q版手绘-4.jpg) | ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/Q版手绘-5.jpg) |
 
 ## 5.5 水彩小场景
 
 |              AI生成图              |              AI生成图              |              AI生成图              |              AI生成图              |
 | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: |
-| ![水彩·小场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/水彩·小场景-01.jpg) | ![水彩·小场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/水彩·小场景-02.jpg) | ![水彩·小场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/水彩·小场景-03.jpg) | ![水彩·小场景](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：介绍/水彩·小场景-04.jpg) |
+| ![水彩·小场景](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/水彩·小场景-01.jpg) | ![水彩·小场景](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/水彩·小场景-02.jpg) | ![水彩·小场景](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/水彩·小场景-03.jpg) | ![水彩·小场景](https://image.shadowchen.top/src/posts/StableDiffusion：介绍/水彩·小场景-04.jpg) |

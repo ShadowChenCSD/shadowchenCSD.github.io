@@ -4,7 +4,7 @@ published: 2024-12-12
 description: 介绍如何ControlNet模型控制图像的结构。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
+image: "https://image.shadowchen.top/public/posts/ControlNet.png"
 ---
 
 # 1. 说明
@@ -13,7 +13,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
 
 ​		常用的**ControlNet处理**包括：基于**Canny边缘**生图、基于**Depth深度**生图、基于**HED柔和边缘**生图、基于**Pose姿态控制**生图、**Blur去模糊**、**Gray灰度上色**、**UpScale放大**等。
 
-![ControlNet](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/ControlNet.jpg)
+![ControlNet](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/ControlNet.jpg)
 
 # 2. 预处理
 
@@ -42,11 +42,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
 
 |              OpenPose-FaceOnly              |             OpenPose              |            OpenPose-Face            |            OpenPose-Full            |
 | :-----------------------------------------: | :-------------------------------: | :---------------------------------: | :---------------------------------: |
-| ![OpenPose-FaceOnly](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-FaceOnly.jpg) | ![OpenPose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Default.jpg) | ![OpenPose-Face](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Face.jpg) | ![OpenPose-Full](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Full.jpg) |
+| ![OpenPose-FaceOnly](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-FaceOnly.jpg) | ![OpenPose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Default.jpg) | ![OpenPose-Face](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Face.jpg) | ![OpenPose-Full](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Full.jpg) |
 
 |             OpenPose              |            OpenPose-Hand            |            OpenPose-Full            |
 | :-------------------------------: | :---------------------------------: | :---------------------------------: |
-| ![OpenPose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Default.jpg) | ![OpenPose-Hand](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Hand.jpg) | ![OpenPose-Full](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/OpenPose-Full.jpg) |
+| ![OpenPose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Default.jpg) | ![OpenPose-Hand](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Hand.jpg) | ![OpenPose-Full](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/OpenPose-Full.jpg) |
 
 # 3. 流程步骤
 
@@ -89,27 +89,27 @@ Step 1. **选择大模型**作为绘制图像的基础模型（以**SD 1.5**为�
 
 Step 2. **撰写提示词**（**必须**，否则图像生成结果很随机）
 
-![撰写提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/撰写提示词.jpg)
+![撰写提示词](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/撰写提示词.jpg)
 
 Step 3. **设定参数**
 
-![设定参数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/设定参数.jpg)
+![设定参数](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/设定参数.jpg)
 
 Step 4. **打开ControlNet插件，导入参考图**（原图或信息图）
 
-![导入参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/导入参考图.jpg)
+![导入参考图](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/导入参考图.jpg)
 
 Step 5. 勾选**启用**，配置**预处理器**，配置**模型**——可点击💥按钮，**预览骨架提取效果**
 
-![ControlNet配置](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/ControlNet配置.jpg)
+![ControlNet配置](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/ControlNet配置.jpg)
 
 Step 6. 点击**生成**按钮
 
-![生成](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/生成.jpg)
+![生成](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/生成.jpg)
 
 Step 7. **效果图**
 
-![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/效果图.jpg)
+![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/效果图.jpg)
 
 ## 4.4 参数设定参考
 
@@ -131,7 +131,7 @@ Step 7. **效果图**
 
 ​		一般可以使用[**comfyui_controlnet_aux**](https://github.com/Fannovel16/comfyui_controlnet_aux)这个**预处理器**，它支持多种**预处理效果**。
 
-![comfyui_controlnet_aux](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/comfyui_controlnet_aux.jpg)
+![comfyui_controlnet_aux](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/comfyui_controlnet_aux.jpg)
 
 ## 5.2 模型下载
 
@@ -156,95 +156,95 @@ Step 7. **效果图**
 - **存放**：`comfyUI/models/controlnet`
 - **功能支持**：**Canny**、**Tile**、**Depth**、**Blur**、**Pose**、**Gray**、**Low Quality**
 
-![ControlNet-Union-Pro：Canny+Pose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：Canny+Pose.jpg)
+![ControlNet-Union-Pro：Canny+Pose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：Canny+Pose.jpg)
 
-![ControlNet-Union-Pro：Depth&Blur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：Depth+Blur.jpg)
+![ControlNet-Union-Pro：Depth&Blur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：Depth+Blur.jpg)
 
-![ControlNet-Union-Pro：LowQuality&Gray](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：LowQuality+Gray.jpg)
+![ControlNet-Union-Pro：LowQuality&Gray](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/ControlNet-Union-Pro：LowQuality+Gray.jpg)
 
 ## 5.3 工作流：SD 1.5
 
 ### Canny
 
-![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Canny.jpg)
+![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Canny.jpg)
 
 ### Depth
 
-![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Depth.jpg)
+![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Depth.jpg)
 
 ### HED
 
-![HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_HED.jpg)
+![HED](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_HED.jpg)
 
 ### Lineart
 
-![Lineart](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Lineart.jpg)
+![Lineart](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Lineart.jpg)
 
 ### Lineart_anime
 
-![Lineart_anime](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Lineart_anime.jpg)
+![Lineart_anime](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Lineart_anime.jpg)
 
 ### Openpose
 
-![Openpose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Openpose.jpg)
+![Openpose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_1.5_Openpose.jpg)
 
 ## 5.4 工作流：SD 3.5
 
 ### Canny
 
-![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Canny.jpg)
+![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Canny.jpg)
 
 ### Depth
 
-![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Depth.jpg)
+![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Depth.jpg)
 
 ### Blur
 
-![Blur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Blur.jpg)
+![Blur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Blur.jpg)
 
 ### Depth+Canny
 
-![Depth+Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Depth+Canny.jpg)
+![Depth+Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/SD_3.5_Depth+Canny.jpg)
 
 ## 5.5 工作流：FLUX：Xlabs
 
 ### Canny
 
-![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Canny.jpg)
+![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Canny.jpg)
 
 ### Depth
 
-![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Depth.jpg)
+![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Depth.jpg)
 
 ### HED
 
-![HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_HED.jpg)
+![HED](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_HED.jpg)
 
 ### Depth+HED
 
-![Depth+HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Depth+HED.jpg)
+![Depth+HED](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_Xlabs_Depth+HED.jpg)
 
 ## 5.6 工作流：FLUX：ControlNet-Union-Pro
 
 ### Canny
 
-![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Canny.jpg)
+![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Canny.jpg)
 
 ### Depth
 
-![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Depth.jpg)
+![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Depth.jpg)
 
 ### OpenPose
 
-![OpenPose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_OpenPose.jpg)
+![OpenPose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_OpenPose.jpg)
 
 ### HED
 
-![HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_HED.jpg)
+![HED](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_HED.jpg)
 
 ### Gray
 
-![Gray](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Gray.jpg)
+![Gray](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/FLUX_ControlNet-Union-Pro_Gray.jpg)
 
 # 6. 示例图
 
@@ -254,14 +254,14 @@ Step 7. **效果图**
 
 |   参考图 & 控制图   |              CetusMix              |                DarkSushiMix                |              DreamGirl               |              DreamGirl               |
 | :-----------------: | :--------------------------------: | :----------------------------------------: | :----------------------------------: | :----------------------------------: |
-|  ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/girl.jpg)  | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：CetusMix_1.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DarkSushiMix_1.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_1.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_3.jpg) |
-| ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：CetusMix_2.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DarkSushiMix_2.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_2.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_4.jpg) |
+|  ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/girl.jpg)  | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：CetusMix_1.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DarkSushiMix_1.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_1.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_3.jpg) |
+| ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：CetusMix_2.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DarkSushiMix_2.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_2.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：DreamGirl_4.jpg) |
 
 ### SD 3.5
 
 |                         参考图                          |                   控制图                    |           效果图            |
 | :-----------------------------------------------------: | :-----------------------------------------: | :-------------------------: |
-| ![Het meisje met de parel](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel.jpg) | ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Canny.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Canny：SD3.5.jpg) |
+| ![Het meisje met de parel](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel.jpg) | ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Canny.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Canny：SD3.5.jpg) |
 
 ## 6.2 线条控制：HED
 
@@ -269,8 +269,8 @@ Step 7. **效果图**
 
 |  参考图 & 控制图  |             CetusMix             |             DreamGirl              |
 | :---------------: | :------------------------------: | :--------------------------------: |
-| ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/girl.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/HED：CetusMix_1.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/HED：DreamGirl_1.jpg) |
-|  ![HED](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/HED.jpg)  | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/HED：CetusMix_2.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/HED：DreamGirl_2.jpg) |
+| ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/girl.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/HED：CetusMix_1.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/HED：DreamGirl_1.jpg) |
+|  ![HED](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/HED.jpg)  | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/HED：CetusMix_2.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/HED：DreamGirl_2.jpg) |
 
 ## 6.3 线条控制：Lineart
 
@@ -278,8 +278,8 @@ Step 7. **效果图**
 
 |     参考图 & 控制图     |                  RealisticVision                   |                RevAnimated                 |
 | :---------------------: | :------------------------------------------------: | :----------------------------------------: |
-|     ![boy](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/boy.jpg)     | ![RealisticVision](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart：RealisticVision_1.jpg) | ![RevAnimated](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart：RevAnimated_1.jpg) |
-| ![lineart](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/lineart.jpg) | ![RealisticVision](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart：RealisticVision_2.jpg) | ![RevAnimated](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart：RevAnimated_2.jpg) |
+|     ![boy](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/boy.jpg)     | ![RealisticVision](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart：RealisticVision_1.jpg) | ![RevAnimated](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart：RevAnimated_1.jpg) |
+| ![lineart](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/lineart.jpg) | ![RealisticVision](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart：RealisticVision_2.jpg) | ![RevAnimated](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart：RevAnimated_2.jpg) |
 
 ## 6.4 线条控制：Lineart_anime
 
@@ -287,7 +287,7 @@ Step 7. **效果图**
 
 |           参考图            |               控制图                |                 CetusMix                 |                   DarkSushiMix                   |
 | :-------------------------: | :---------------------------------: | :--------------------------------------: | :----------------------------------------------: |
-| ![AnimeGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/AnimeGirl.jpg) | ![lineart_anime](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/lineart_anime.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart_anime：CetusMix.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Lineart_anime：DarkSushiMix.jpg) |
+| ![AnimeGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/AnimeGirl.jpg) | ![lineart_anime](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/lineart_anime.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart_anime：CetusMix.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Lineart_anime：DarkSushiMix.jpg) |
 
 ## 6.5 深度控制：Depth
 
@@ -295,14 +295,14 @@ Step 7. **效果图**
 
 |   参考图 & 控制图   |               CuteYukiMix                |                DarkSushiMix                |              DreamGirl               |
 | :-----------------: | :--------------------------------------: | :----------------------------------------: | :----------------------------------: |
-|  ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/girl.jpg)  | ![CuteYukiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：CuteYukiMix_1.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：DarkSushiMix_1.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：DreamGirl_1.jpg) |
-| ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth.jpg) | ![CuteYukiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：CuteYukiMix_2.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：DarkSushiMix_2.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：DreamGirl_2.jpg) |
+|  ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/girl.jpg)  | ![CuteYukiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：CuteYukiMix_1.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：DarkSushiMix_1.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：DreamGirl_1.jpg) |
+| ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth.jpg) | ![CuteYukiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：CuteYukiMix_2.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：DarkSushiMix_2.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：DreamGirl_2.jpg) |
 
 ### SD 3.5
 
 |                         参考图                          |                   控制图                    |           效果图            |
 | :-----------------------------------------------------: | :-----------------------------------------: | :-------------------------: |
-| ![Het meisje met de parel](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Depth.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth：SD3.5.jpg) |
+| ![Het meisje met de parel](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Depth.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth：SD3.5.jpg) |
 
 ## 6.6 姿态控制：Openpose
 
@@ -310,8 +310,8 @@ Step 7. **效果图**
 
 |       参考图 & 控制图       |                 CetusMix                 |                 DarkSushiMix                  |
 | :-------------------------: | :--------------------------------------: | :-------------------------------------------: |
-| ![AnimeGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/AnimeGirl.jpg) | ![CuteYukiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Openpose：CetusMix_1.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Openpose：DarkSushiMix_1.jpg) |
-|  ![openpose](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/openpose.jpg)  | ![CuteYukiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Openpose：CetusMix_2.jpg) | ![DarkSushiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Openpose：DarkSushiMix_2.jpg) |
+| ![AnimeGirl](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/AnimeGirl.jpg) | ![CuteYukiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Openpose：CetusMix_1.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Openpose：DarkSushiMix_1.jpg) |
+|  ![openpose](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/openpose.jpg)  | ![CuteYukiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Openpose：CetusMix_2.jpg) | ![DarkSushiMix](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Openpose：DarkSushiMix_2.jpg) |
 
 ## 6.7 去模糊：Blur
 
@@ -319,8 +319,8 @@ Step 7. **效果图**
 
 |           参考图            |             生成图              |
 | :-------------------------: | :-----------------------------: |
-| ![duck-blur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/duck-blur.jpg) | ![duck-deblur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/duck-deblur.jpg) |
-| ![girl-blur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/girl-blur.jpg) | ![girl-deblur](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/girl-deblur.jpg) |
+| ![duck-blur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/duck-blur.jpg) | ![duck-deblur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/duck-deblur.jpg) |
+| ![girl-blur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/girl-blur.jpg) | ![girl-deblur](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/girl-deblur.jpg) |
 
 ## 6.8 组合使用
 
@@ -328,8 +328,8 @@ Step 7. **效果图**
 
 |                控制图：Canny                |                控制图：Depth                |
 | :-----------------------------------------: | :-----------------------------------------: |
-| ![Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Canny.jpg) | ![Depth](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Depth.jpg) |
+| ![Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Canny.jpg) | ![Depth](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Het-meisje-met-de-parel-Depth.jpg) |
 
 |                  生成图                  |                  生成图                  |
 | :--------------------------------------: | :--------------------------------------: |
-| ![Depth+Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth+Canny：SD3.5_1.jpg) | ![Depth+Canny](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet模型/Depth+Canny：SD3.5_2.jpg) |
+| ![Depth+Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth+Canny：SD3.5_1.jpg) | ![Depth+Canny](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet模型/Depth+Canny：SD3.5_2.jpg) |

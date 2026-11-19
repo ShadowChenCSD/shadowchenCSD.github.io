@@ -4,24 +4,24 @@ published: 2024-11-18
 description: 介绍如何撰写提示词，生成符合预期的AI图像。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 重要意义
 
 - 与AI科学高效沟通的**桥梁**
 
-![提示词意义](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词撰写/提示词意义.jpg)
+![提示词意义](https://image.shadowchen.top/src/posts/StableDiffusion：提示词撰写/提示词意义.jpg)
 
 # 2. 使用场景
 
 ## 2.1 WebUI
 
-![WebUI-提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词撰写/WebUI-提示词.jpg)
+![WebUI-提示词](https://image.shadowchen.top/src/posts/StableDiffusion：提示词撰写/WebUI-提示词.jpg)
 
 ## 2.2 ComfyUI
 
-![ComfyUI-提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词撰写/ComfyUI-提示词.jpg)
+![ComfyUI-提示词](https://image.shadowchen.top/src/posts/StableDiffusion：提示词撰写/ComfyUI-提示词.jpg)
 
 # 3. 包含内容
 

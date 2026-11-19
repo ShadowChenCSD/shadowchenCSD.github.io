@@ -4,7 +4,7 @@ published: 2024-11-20
 description: 介绍如何根据输入图像反推提示词，以满足其他业务的需求。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 说明
@@ -34,13 +34,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 2.3 提示词反推
 
-![WD14反推](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/WebUI-WD14反推.jpg)
+![WD14反推](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/WebUI-WD14反推.jpg)
 
 ## 2.4 提示词反推+图像再生成
 
 |     参考图像      |     AI生成图像：CetusMix      |
 | :---------------: | :---------------------------: |
-| ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/WebUI-WD14再生成.jpg) |
+| ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/WebUI-WD14再生成.jpg) |
 
 
 # 3. WD 14反推：ComfyUI方式
@@ -65,15 +65,15 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 3.3 提示词反推
 
-![WD14反推](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14反推.jpg)
+![WD14反推](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14反推.jpg)
 
 ## 3.4 提示词反推+图像再生成
 
-![WD14反推+图像再生成](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14反推+SD3.5文生图.jpg)
+![WD14反推+图像再生成](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14反推+SD3.5文生图.jpg)
 
 |     参考图像      |      AI生成图像：CetusMix       |
 | :---------------: | :-----------------------------: |
-| ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14再生成.jpg) |
+| ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-WD14再生成.jpg) |
 
 
 # 4. Florence 2反推：WebUI方式
@@ -103,13 +103,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 4.4 提示词反推
 
-![Florence 2反推](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/WebUI-Florence2反推.jpg)
+![Florence 2反推](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/WebUI-Florence2反推.jpg)
 
 ## 4.5 提示词反推+图像再生成
 
 |     参考图像      |        AI生成图像：CetusMix        |
 | :---------------: | :--------------------------------: |
-| ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/WebUI-Florence2再生成.jpg) |
+| ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/WebUI-Florence2再生成.jpg) |
 
 
 # 5. Florence 2反推：ComfyUI方式
@@ -140,21 +140,16 @@ pip install -r requirements.txt
 
 ## 5.3 提示词反推
 
-![Florence2反推](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2反推.jpg)
+![Florence2反推](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2反推.jpg)
 
 ## 5.4 提示词反推+图像再生成
 
-![Florence2反推+图像再生成](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2_反推+Flux文生图.jpg)
+![Florence2反推+图像再生成](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2_反推+Flux文生图.jpg)
 
 |     参考图像      |           AI生成图像：FLUX           |
 | :---------------: | :----------------------------------: |
-| ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2再生成.jpg) |
+| ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/girl.jpg) | ![girl](https://image.shadowchen.top/src/posts/StableDiffusion：提示词反推/ComfyUI-Florence2再生成.jpg) |
 
-
-# 6. 使用经验
-
-​		**通过提示词反推出来的结果，不一定十分准确**。如果需要**精确出图**，建议**分步处理**：
-
-1. **用提示词反推方案，获得提示词**
-2. **对提示词内容进行修正**
-3. **生成图像**
+:::note[注意]
+通过提示词反推出来的结果，不一定十分准确。如果需要**精确出图**，需要**对提示词内容进行修正**。
+:::

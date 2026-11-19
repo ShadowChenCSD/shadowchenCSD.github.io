@@ -4,7 +4,7 @@ published: 2024-10-28
 description: 介绍如何安装StableDiffusion插件。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 说明
@@ -19,7 +19,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - 管理插件的页面：**“扩展”标签**
 
-![扩展管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：插件安装/扩展安装.jpg)
+![扩展管理](https://image.shadowchen.top/src/posts/StableDiffusion：插件安装/扩展安装.jpg)
 
 - 管理插件的位置：`WebUI/extensions`，**每一个扩展插件是一个单独的文件夹**
 
@@ -28,42 +28,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 1. 从Github代码仓库找到扩展插件，获取**仓库链接**
 2. **粘贴仓库链接**，予以**安装**
 
-![URL链接安装](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：插件安装/安装方式一.jpg)
+![URL链接安装](https://image.shadowchen.top/src/posts/StableDiffusion：插件安装/安装方式一.jpg)
 
 ## 2.3 安装方式二：手动下载包文件安装
 
 1. **将下载好的扩展插件文件夹，放置在扩展插件文件夹内**
    - **已安装**列表下显示了当前安装的插件
 
-![手动安装](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：插件安装/安装方式二.jpg)
+![手动安装](https://image.shadowchen.top/src/posts/StableDiffusion：插件安装/安装方式二.jpg)
 
 2. 扩展插件安装完成后，需要点击“**Apply and restart UI**”，重启UI予以激活
 
-# 3. WebUI插件推荐
+# 3. ComfyUI插件安装
 
-## 3.1 界面汉化包
-
-- 仓库地址：[**stable-diffusion-webui-localization-zh_Hans**](https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans)
-
-## 3.2 提示词自动补全、翻译
-
-- 仓库地址：[**a1111-sd-webui-tagcomplete**](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)
-
-## 3.3 提示词反推
-
-- 仓库地址：[**stable-diffusion-webui-wd14-tagger**](https://github.com/picobyte/stable-diffusion-webui-wd14-tagger)
-
-## 3.4 图库浏览器
-
-- 仓库地址：[**sd-webui-images-browser**](https://github.com/Akegarasu/sd-webui-images-browser)
-
-# 4. ComfyUI插件安装
-
-## 4.1 管理位置
+## 3.1 管理位置
 
 - 管理插件的位置：`ComfyUI/custom_nodes`，**每一个扩展是一个单独的文件夹**
 
-## 4.2 安装方式一：手动下载包文件安装
+## 3.2 安装方式一：手动下载包文件安装
 
 1. 进入插件文件夹
 
@@ -85,26 +67,24 @@ pip install -r requirements.txt
 
 3. **重新启动ComfyUI**，插件会自动激活
 
-## 4.3 安装方式二：通过ComfyUI Manager自动下载安装
+## 3.3 安装方式二：通过ComfyUI Manager自动下载安装
 
-1. 打开`ComfyUI Manger`，选择`Custom Nodes Manager`。![ComfyUI Manger](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：插件安装/ComfyUI-Manager.jpg)
+1. 打开`ComfyUI Manger`，选择`Custom Nodes Manager`。![ComfyUI Manger](https://image.shadowchen.top/src/posts/StableDiffusion：插件安装/ComfyUI-Manager.jpg)
 
-2. 在搜索框里可以`搜索插件`，在搜索结果中，可以查看**插件名称**、**插件版本**、**更新插件**、**切换插件版本**、**禁用插件**、**卸载插件**等功能。![Custom_Nodes_Manager](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：插件安装/Custom_Nodes_Manager.jpg)
+2. 在搜索框里可以`搜索插件`，在搜索结果中，可以查看**插件名称**、**插件版本**、**更新插件**、**切换插件版本**、**禁用插件**、**卸载插件**等功能。![Custom_Nodes_Manager](https://image.shadowchen.top/src/posts/StableDiffusion：插件安装/Custom_Nodes_Manager.jpg)
 
-# 5. ComfyUI插件推荐
+# 4. 插件推荐
 
-## 5.1 节点管理器
+## 4.1 WebUI插件推荐
 
-- 仓库地址：[**ComfyUI_Manager**](https://github.com/ltdrdata/ComfyUI-Manager)
+- 界面汉化包：[**stable-diffusion-webui-localization-zh_Hans**](https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans)
+- 提示词自动补全、翻译：[**a1111-sd-webui-tagcomplete**](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)
+- 提示词反推：[**stable-diffusion-webui-wd14-tagger**](https://github.com/picobyte/stable-diffusion-webui-wd14-tagger)
+- 图库浏览器：[**sd-webui-images-browser**](https://github.com/Akegarasu/sd-webui-images-browser)
 
-## 5.2 核心功能
+## 4.2 ComfyUI插件推荐
 
-- 仓库地址：[**ComfyUI_essentials**](https://github.com/cubiq/ComfyUI_essentials)
-
-## 5.3 ControlNet组件
-
-- 仓库地址：[**comfyui_controlnet_aux**](https://github.com/Fannovel16/comfyui_controlnet_aux)
-
-## 5.4 从URL获取图像
-
-- 仓库地址：[**ComfyUI-load-image-from-url**](https://github.com/tsogzark/ComfyUI-load-image-from-url)
+- 节点管理器：[**ComfyUI_Manager**](https://github.com/ltdrdata/ComfyUI-Manager)
+- 核心功能：[**ComfyUI_essentials**](https://github.com/cubiq/ComfyUI_essentials)
+- ControlNet组件：[**comfyui_controlnet_aux**](https://github.com/Fannovel16/comfyui_controlnet_aux)
+- 从URL获取图像：[**ComfyUI-load-image-from-url**](https://github.com/tsogzark/ComfyUI-load-image-from-url)

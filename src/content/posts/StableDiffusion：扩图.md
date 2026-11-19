@@ -4,14 +4,14 @@ published: 2024-11-28
 description: 介绍如何使用WebUI或ComfyUI，对图像进行外扩补充。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 背景
 
 ​		当 **`对图像的尺寸不满意，期待图像扩充至更大`** 的情况时，可以使用扩图功能。
 
-# 2. WebUI实现：Poor man‘s outpainting
+# 2. WebUI实现：Poor man's outpainting
 
 ## 2.1 上传参考图
 
@@ -27,13 +27,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
   - **原图**尺寸：**768 * 768**
   - **扩图**尺寸：**1024 * 768**
 
-![WebUI扩图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/WebUI_扩图.jpg)
+![WebUI扩图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/WebUI_扩图.jpg)
 
 ## 2.4 效果图
 
 |  参考图：768 * 768  |     参考图：768 * 1024      |
 | :-----------------: | :-------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/WebUI_效果图.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/WebUI_效果图.jpg) |
 
 # 3. ComfyUI实现方式：Flux Fill模型
 
@@ -47,11 +47,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ​		可以使用**FLUX系列局部重绘专用的FLUX-Fill模型**，进行**扩图**， **效果较好**。
 
-![Flux_Fill_扩图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/Flux_Fill_扩图.png)
+![Flux_Fill_扩图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/Flux_Fill_扩图.png)
 
 ## 3.3 效果图
 
 |  参考图：768 * 768   |      参考图：768 * 1024       |
 | :------------------: | :---------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/girl.jpg)  | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/ComfyUI_效果图.jpg) |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/plane.jpg) |   ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：扩图/plane_扩图.jpg)   |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/girl.jpg)  | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/ComfyUI_效果图.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/plane.jpg) |   ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：扩图/plane_扩图.jpg)   |

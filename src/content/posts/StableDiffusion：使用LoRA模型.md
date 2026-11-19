@@ -4,7 +4,7 @@ published: 2024-12-05
 description: 介绍如何在WebUI和ComfyUI中使用LoRA模型，生成特定风格、特定角色的图像。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
+image: "https://image.shadowchen.top/public/posts/LoRA.png"
 ---
 
 # 1. 介绍
@@ -25,11 +25,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 - 在**附加模型选单**中选择需要使用的**Lora**模型
 
-![附加模型选单](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/附加模型选单.jpg)
+![附加模型选单](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/附加模型选单.jpg)
 
 - 在**提示词**里输入：**\<lora:模型名称:权重\>**
 
-  ![LoRA使用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/WebUI：LoRA使用.jpg)
+  ![LoRA使用](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/WebUI：LoRA使用.jpg)
 
 ## 2.3 ComfyUI环境
 
@@ -37,19 +37,19 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
   - **SD 1.5** + **LoRA**
 
-  ![LoRA使用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SD1.5+LoRA.jpg)
+  ![LoRA使用](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SD1.5+LoRA.jpg)
 
   - **SDXL** + **LoRA**
 
-  ![LoRA使用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SDXL+LoRA.jpg)
+  ![LoRA使用](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SDXL+LoRA.jpg)
 
   - **SD 3.5** + **LoRA**
 
-  ![LoRA使用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SD3.5+LoRA.jpg)
+  ![LoRA使用](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：SD3.5+LoRA.jpg)
   
   - **FLUX** + **LoRA**
   
-  ![LoRA使用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：FLUX+LoRA.jpg)
+  ![LoRA使用](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/ComfyUI：FLUX+LoRA.jpg)
 
 ## 2.4 权重设定
 
@@ -82,85 +82,85 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |        AI生成图         |        AI生成图         |
 | :---------------------: | :---------------------: |
-| ![纳西妲](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纳西妲-1.jpg) | ![纳西妲](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纳西妲-2.jpg) |
+| ![纳西妲](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纳西妲-1.jpg) | ![纳西妲](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纳西妲-2.jpg) |
 
 ## 3.2 手办
 
 |      AI生成图       |
 | :-----------------: |
-| ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-1.jpg) |
+| ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-1.jpg) |
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-2.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-3.jpg) |
+| ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-2.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-3.jpg) |
 
 |      AI生成图       |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: | :-----------------: |
-| ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-4.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-5.jpg) | ![手办](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/手办-6.jpg) |
+| ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-4.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-5.jpg) | ![手办](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/手办-6.jpg) |
 
 ## 3.3 汝瓷
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![汝瓷](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汝瓷-1.jpg) | ![汝瓷](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汝瓷-2.jpg) |
+| ![汝瓷](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汝瓷-1.jpg) | ![汝瓷](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汝瓷-2.jpg) |
 
 |      AI生成图       |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: | :-----------------: |
-| ![汝瓷](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汝瓷-3.jpg) | ![汝瓷](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汝瓷-4.jpg) | ![汝瓷](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汝瓷-5.jpg) |
+| ![汝瓷](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汝瓷-3.jpg) | ![汝瓷](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汝瓷-4.jpg) | ![汝瓷](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汝瓷-5.jpg) |
 
 ## 3.4 汉服
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汉服-1.jpg) | ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汉服-2.jpg) |
-| ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汉服-3.jpg) | ![汉服](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/汉服-4.jpg) |
+| ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汉服-1.jpg) | ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汉服-2.jpg) |
+| ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汉服-3.jpg) | ![汉服](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/汉服-4.jpg) |
 
 ## 3.5 沁彩
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-1.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-2.jpg) |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-3.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-4.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-1.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-2.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-3.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-4.jpg) |
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-5.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-6.jpg) |
-| ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-7.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/沁彩-8.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-5.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-6.jpg) |
+| ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-7.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/沁彩-8.jpg) |
 
 ## 3.6 墨心
 
 |      AI生成图       |
 | :-----------------: |
-| ![墨心](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/墨心-1.jpg) |
+| ![墨心](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/墨心-1.jpg) |
 
 |      AI生成图       |      AI生成图       |
 | :-----------------: | :-----------------: |
-| ![墨心](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/墨心-2.jpg) | ![墨心](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/墨心-3.jpg) |
+| ![墨心](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/墨心-2.jpg) | ![墨心](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/墨心-3.jpg) |
 
 ##  3.7 Q版手绘
 
 |         AI生成图          |
 | :-----------------------: |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-1.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-1.jpg) |
 
 |         AI生成图          |         AI生成图          |
 | :-----------------------: | :-----------------------: |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-2.jpg) | ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-3.jpg) |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-4.jpg) | ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-5.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-2.jpg) | ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-3.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-4.jpg) | ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/Q版手绘-5.jpg) |
 
 ## 3.8 吉卜力风格
 
 |        AI生成图         |        AI生成图         |
 | :---------------------: | :---------------------: |
-| ![吉卜力](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/吉卜力-1.jpg) | ![吉卜力](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/吉卜力-2.jpg) |
-| ![吉卜力](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/吉卜力-3.jpg) | ![吉卜力](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/吉卜力-4.jpg) |
+| ![吉卜力](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/吉卜力-1.jpg) | ![吉卜力](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/吉卜力-2.jpg) |
+| ![吉卜力](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/吉卜力-3.jpg) | ![吉卜力](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/吉卜力-4.jpg) |
 
 ## 3.9 清透水彩插画
 
 |              AI生成图               |              AI生成图               |
 | :---------------------------------: | :---------------------------------: |
-| ![清透水彩插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-1.jpg) | ![清透水彩插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-2.jpg) |
-| ![清透水彩插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-3.jpg) | ![清透水彩插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-4.jpg) |
+| ![清透水彩插画](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-1.jpg) | ![清透水彩插画](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-2.jpg) |
+| ![清透水彩插画](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-3.jpg) | ![清透水彩插画](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/清透水彩插画-4.jpg) |
 
 
 ## 3.10 新海诚风格
@@ -172,8 +172,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |            AI生成图             |            AI生成图             |
 | :-----------------------------: | :-----------------------------: |
-| ![新海诚风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-1.jpg) | ![新海诚风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-2.jpg) |
-| ![新海诚风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-3.jpg) | ![新海诚风格](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-4.jpg) |
+| ![新海诚风格](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-1.jpg) | ![新海诚风格](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-2.jpg) |
+| ![新海诚风格](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-3.jpg) | ![新海诚风格](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/新海诚风格-4.jpg) |
 
 ## 3.11 人像写实
 
@@ -185,8 +185,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |          AI生成图           |          AI生成图           |
 | :-------------------------: | :-------------------------: |
-| ![人像写实](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/人像写实-1.jpg) | ![人像写实](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/人像写实-2.jpg) |
-| ![人像写实](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/人像写实-3.jpg) | ![人像写实](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/人像写实-4.jpg) |
+| ![人像写实](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/人像写实-1.jpg) | ![人像写实](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/人像写实-2.jpg) |
+| ![人像写实](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/人像写实-3.jpg) | ![人像写实](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/人像写实-4.jpg) |
 
 ## 3.12 纪实摄影
 
@@ -200,23 +200,23 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |           AI生成图           |           AI生成图           |
 | :--------------------------: | :--------------------------: |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-1.jpg)  | ![场景摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-2.jpg)  |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-3.jpg)  | ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-4.jpg)  |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-1.jpg)  | ![场景摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-2.jpg)  |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-3.jpg)  | ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-4.jpg)  |
 
 |           AI生成图           |           AI生成图           |
 | :--------------------------: | :--------------------------: |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-5.jpg)  | ![场景摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-6.jpg)  |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-7.jpg)  | ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-8.jpg)  |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-5.jpg)  | ![场景摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-6.jpg)  |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-7.jpg)  | ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-8.jpg)  |
 
 |           AI生成图           |           AI生成图           |
 | :--------------------------: | :--------------------------: |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-9.jpg)  | ![场景摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-10.jpg) |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-11.jpg) | ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-12.jpg) |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-9.jpg)  | ![场景摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-10.jpg) |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-11.jpg) | ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-12.jpg) |
 
 |           AI生成图           |           AI生成图           |
 | :------------------------: | :--------------------------: |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-13.jpg) | ![场景摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-14.jpg) |
-| ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-15.jpg) | ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-16.jpg) |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-13.jpg) | ![场景摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-14.jpg) |
+| ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-15.jpg) | ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/纪实摄影-16.jpg) |
 
 ## 3.13 游戏渲染
 
@@ -229,9 +229,9 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |          AI生成图           |          AI生成图           |
 | :-------------------------: | :-------------------------: |
-| ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-1.jpg) | ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-2.jpg) |
-| ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-3.jpg) | ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-4.jpg) |
-| ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-5.jpg) | ![游戏渲染](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-6.jpg) |
+| ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-1.jpg) | ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-2.jpg) |
+| ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-3.jpg) | ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-4.jpg) |
+| ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-5.jpg) | ![游戏渲染](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/游戏渲染-6.jpg) |
 
 ## 3.14 淡水彩
 
@@ -244,6 +244,6 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/LoRA.png"
 
 |        AI生成图         |        AI生成图         |
 | :---------------------: | :---------------------: |
-| ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-1.jpg) | ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-2.jpg) |
-| ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-3.jpg) | ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-4.jpg) |
-| ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-5.jpg) | ![淡水彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：使用LoRA模型/淡水彩-6.jpg) |
+| ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-1.jpg) | ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-2.jpg) |
+| ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-3.jpg) | ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-4.jpg) |
+| ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-5.jpg) | ![淡水彩](https://image.shadowchen.top/src/posts/StableDiffusion：使用LoRA模型/淡水彩-6.jpg) |

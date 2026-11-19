@@ -4,7 +4,7 @@ published: 2025-01-24
 description: 介绍使用CR Prompt List节点，实现参数堆叠的功能，达到同一提示词批量出图的效果。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 介绍
@@ -24,62 +24,62 @@ git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
 
 ## 工作流
 
-![SD1.5_文生图_批量模型](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型.jpg)
+![SD1.5_文生图_批量模型](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型.jpg)
 
 ## 示例图
 
 |                 AnyPastel-fp16                 |                 CetusMix                 |                 majicMix                 |
 | :--------------------------------------------: | :--------------------------------------: | :--------------------------------------: |
-| ![AnyPastel-fp16](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-1.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-2.jpg) | ![majicMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-3.jpg) |
+| ![AnyPastel-fp16](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-1.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-2.jpg) | ![majicMix](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量模型-3.jpg) |
 
 # 4. 实验：SD1.5\_文生图\_批量LoRA
 
 ## 工作流
 
-![SD1.5_文生图_批量LoRA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA.jpg)
+![SD1.5_文生图_批量LoRA](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA.jpg)
 
 ## 示例图
 
 |                 Q版手绘                 |                 沁彩                 |                 大概是盲盒                 |                 青也                 |
 | :-------------------------------------: | :----------------------------------: | :----------------------------------------: | :----------------------------------: |
-| ![Q版手绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-1.jpg) | ![沁彩](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-2.jpg) | ![大概是盲盒](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-3.jpg) | ![青也](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-4.jpg) |
+| ![Q版手绘](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-1.jpg) | ![沁彩](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-2.jpg) | ![大概是盲盒](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-3.jpg) | ![青也](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量LoRA-4.jpg) |
 
 # 5. 实验：SD1.5\_文生图\_批量提示词
 
 ## 工作流
 
-![SD1.5_文生图_批量提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词.jpg)
+![SD1.5_文生图_批量提示词](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词.jpg)
 
 ## 示例图
 
 |                  提示词-1                  |                  提示词-2                  |                  提示词-3                  |                  提示词-4                  |
 | :----------------------------------------: | :----------------------------------------: | :----------------------------------------: | :----------------------------------------: |
-| ![提示词-1](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-1.jpg) | ![提示词-2](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-2.jpg) | ![提示词-3](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-3.jpg) | ![提示词-4](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-4.jpg) |
+| ![提示词-1](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-1.jpg) | ![提示词-2](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-2.jpg) | ![提示词-3](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-3.jpg) | ![提示词-4](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/SD1.5_文生图_批量提示词-4.jpg) |
 
 # 6. 实验：FLUX\_文生图\_批量LoRA
 
 ## 工作流
 
-![FLUX_文生图_批量LoRA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA.jpg)
+![FLUX_文生图_批量LoRA](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA.jpg)
 
 ## 示例图
 
 |                梧桐_厚涂_插画                 |                手绘淡水彩小场景治愈风插画                 |                胶片_CCD                 |
 | :-------------------------------------------: | :-------------------------------------------------------: | :-------------------------------------: |
-| ![梧桐_厚涂_插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-1.jpg) | ![手绘淡水彩小场景治愈风插画](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-2.jpg) | ![胶片_CCD](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-3.jpg) |
+| ![梧桐_厚涂_插画](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-1.jpg) | ![手绘淡水彩小场景治愈风插画](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-2.jpg) | ![胶片_CCD](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-3.jpg) |
 
 |                春日胶片类型                 |                胶片摄影_日系_Film_Grain                 |                纪实摄影                 |
 | :-----------------------------------------: | :-----------------------------------------------------: | :-------------------------------------: |
-| ![春日胶片类型](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-4.jpg) | ![胶片摄影_日系_Film_Grain](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-5.jpg) | ![纪实摄影](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-6.jpg) |
+| ![春日胶片类型](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-4.jpg) | ![胶片摄影_日系_Film_Grain](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-5.jpg) | ![纪实摄影](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量LoRA-6.jpg) |
 
 # 7. 实验：FLUX\_文生图\_批量提示词
 
 ## 工作流
 
-![FLUX_文生图_批量提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词.jpg)
+![FLUX_文生图_批量提示词](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词.jpg)
 
 ## 示例图
 
 |                 提示词-1                  |                 提示词-2                  |                 提示词-3                  |
 | :---------------------------------------: | :---------------------------------------: | :---------------------------------------: |
-| ![提示词-1](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-1.jpg) | ![提示词-2](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-2.jpg) | ![提示词-3](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-3.jpg) |
+| ![提示词-1](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-1.jpg) | ![提示词-2](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-2.jpg) | ![提示词-3](https://image.shadowchen.top/src/posts/StableDiffusion：批量出图/FLUX_文生图_批量提示词-3.jpg) |

@@ -4,7 +4,7 @@ published: 2024-12-03
 description: 介绍使用AI进行抠图技术，包括Florence 2方案、SAM 2方案以及RMBG方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1.说明
@@ -34,14 +34,14 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 2.3 节点使用
 
-![Florence2：抠图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/Florence2：抠图.jpg)
+![Florence2：抠图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/Florence2：抠图.jpg)
 
 ## 2.4 示例参考
 
 |      参考图       |                准确抠图：cloth                |                不准确抠图：person                 |
 | :---------------: | :-------------------------------------------: | :-----------------------------------------------: |
-| ![模特](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特.jpg) |          ![抠图效果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果1.jpg)           |            ![抠图效果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果2.jpg)             |
-| ![模特](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特.jpg) | ![准确抠图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-Florence2-准确抠图-蒙版.jpg) | ![不准确抠图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-Florence2-不准确抠图-蒙版.jpg) |
+| ![模特](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特.jpg) |          ![抠图效果](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果1.jpg)           |            ![抠图效果](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果2.jpg)             |
+| ![模特](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特.jpg) | ![准确抠图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-Florence2-准确抠图-蒙版.jpg) | ![不准确抠图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-Florence2-不准确抠图-蒙版.jpg) |
 
 # 3. Florence 2 + SAM 2
 
@@ -63,13 +63,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 3.3 节点使用
 
-![Florence2+SAM2：抠图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/Florence2+SAM2：抠图.jpg)
+![Florence2+SAM2：抠图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/Florence2+SAM2：抠图.jpg)
 
 ## 3.4 示例参考
 
 |       参考图        |           Florence 2目标检测            |                效果图：蒙版                |           效果图           |
 | :-----------------: | :-------------------------------------: | :----------------------------------------: | :------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特.jpg) | ![Florence2目标检测](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-目标检测.jpg) | ![抠图效果：蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-SAM2-抠图-蒙版.jpg) | ![抠图效果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果3.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特.jpg) | ![Florence2目标检测](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-目标检测.jpg) | ![抠图效果：蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-SAM2-抠图-蒙版.jpg) | ![抠图效果](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果3.jpg) |
 
 # 4. Image Remove Bg
 
@@ -88,14 +88,14 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ## 4.3 节点使用
 
-![Image Remove Bg：抠图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/Image-Remove-Bg：抠图.jpg)
+![Image Remove Bg：抠图](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/Image-Remove-Bg：抠图.jpg)
 
 ## 4.4 示例参考
 
 |      参考图       |                  效果图：RMBG-1.4                  |                  效果图：RMBG-2.0                  |                     效果图：Inspyrenet                      |
 | :---------------: | :------------------------------------------------: | :------------------------------------------------: | :---------------------------------------------------------: |
-| ![模特](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特.jpg) |            ![抠图效果4](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果4.jpg)             |            ![抠图效果5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果5.jpg)             |                 ![抠图效果6](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/抠图效果6.jpg)                 |
-| ![模特](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特.jpg) | ![模特-1.4-抠图-蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-RMBG-1.4-抠图-蒙版.jpg) | ![模特-2.0-抠图-蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-RMBG-2.0-抠图-蒙版.jpg) | ![模特-InsPyrence-抠图-蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：抠图/模特-InsPyrence-抠图-蒙版.jpg) |
+| ![模特](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特.jpg) |            ![抠图效果4](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果4.jpg)             |            ![抠图效果5](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果5.jpg)             |                 ![抠图效果6](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/抠图效果6.jpg)                 |
+| ![模特](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特.jpg) | ![模特-1.4-抠图-蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-RMBG-1.4-抠图-蒙版.jpg) | ![模特-2.0-抠图-蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-RMBG-2.0-抠图-蒙版.jpg) | ![模特-InsPyrence-抠图-蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：抠图/模特-InsPyrence-抠图-蒙版.jpg) |
 
 
 # 5. 总结

@@ -4,7 +4,7 @@ published: 2024-11-01
 description: 介绍如何使用WebUI、ComfyUI进行文生图。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. WebUI
@@ -36,7 +36,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - 点击**生成**按钮
 
-![WebUI文生图·操作流程](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/WebUI文生图·操作流程.jpg)
+![WebUI文生图·操作流程](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/WebUI文生图·操作流程.jpg)
 
 ## 1.6 浏览AI生成的图片
 
@@ -44,7 +44,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ## 1.7 示例
 
-![WebUI示例图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/WebUI示例图.jpg)
+![WebUI示例图](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/WebUI示例图.jpg)
 
 # 2. ComfyUI
 
@@ -54,33 +54,33 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### SD 1.5模型，K采样器
 
-![SD_1.5_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/SD_1.5_工作流.jpg)
+![SD_1.5_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/SD_1.5_工作流.jpg)
 
 ### SDXL模型，K采样器
 
-![SDXL_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/SDXL_工作流_K采样器.jpg)
+![SDXL_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/SDXL_工作流_K采样器.jpg)
 
-### ~~SDXL模型，自定义采样器~~
+### ~~SDXL模型，自定义采样器（不常用）~~
 
-![SDXL_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/SDXL_工作流_自定义采样器.jpg)
+![SDXL_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/SDXL_工作流_自定义采样器.jpg)
 
-### ~~SD 3.5模型，K采样器~~
+### ~~SD 3.5模型，K采样器（生图效果差，几乎不用）~~
 
-![SD_3.5_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/SD_3.5_工作流.jpg)
+![SD_3.5_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/SD_3.5_工作流.jpg)
 
-### ~~FLUX 1模型，K采样器~~
+### ~~FLUX 1模型，K采样器（不常用）~~
 
 - **CFG必须为1.0**
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/FLUX_1_工作流_K采样器.jpg)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/FLUX_1_工作流_K采样器.jpg)
 
 ### FLUX 1模型，自定义采样器
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/FLUX_1_工作流_自定义采样器.jpg)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/FLUX_1_工作流_自定义采样器.jpg)
 
 ### FLUX 2模型，自定义采样器
 
-![FLUX_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/FLUX_2_工作流_自定义采样器.png)
+![FLUX_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/FLUX_2_工作流_自定义采样器.png)
 
 ## 2.2 载入模型
 
@@ -114,7 +114,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ## 2.6 示例
 
-![ComfyUI示例图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ComfyUI示例图.jpg)
+![ComfyUI示例图](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ComfyUI示例图.jpg)
 
 # 3. 动漫人物、动漫场景
 
@@ -126,115 +126,115 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### Anything V5
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-3.jpg)
 
 ### CetusMix
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-5.jpg)
 
 ### Counterfeit
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Counterfeit-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Counterfeit-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Counterfeit-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Counterfeit-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Counterfeit-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Counterfeit-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Counterfeit-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Counterfeit-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Counterfeit-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Counterfeit-5.jpg)
 
 ### cuteYukiMix
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-5.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/cuteYukiMix-6.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/cuteYukiMix-6.jpg)
 
 ### DarkSushiMix
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-5.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-6.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-6.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-7.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-7.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-8.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-8.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-9.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-9.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DarkSushiMix-10.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DarkSushiMix-10.jpg)
 
 ### NeverEndingDream
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/NeverEndingDream-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/NeverEndingDream-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/NeverEndingDream-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/NeverEndingDream-2.jpg)
 
 ### ReVAnimated
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-2.jpg)
 
 ## 3.3 动漫场景
 
 ### Anything V5
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-5.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-6.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-6.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-7.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-7.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/AnythingV5-8.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/AnythingV5-8.jpg)
 
 ### CetusMix
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-6.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-6.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-7.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-7.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/CetusMix-8.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/CetusMix-8.jpg)
 
 ### ReVAnimated
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-4.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-5.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-5.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/ReVAnimated-6.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/ReVAnimated-6.jpg)
 
 # 4. 真实人物、真实场景
 
@@ -246,34 +246,34 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### Deliberate
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Deliberate-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Deliberate-1.jpg)
 
 ### RealisticVision
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/RealisticVision-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/RealisticVision-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/RealisticVision-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/RealisticVision-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/RealisticVision-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/RealisticVision-3.jpg)
 
 ### DreamGirl
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DreamGirl-1.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DreamGirl-1.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DreamGirl-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DreamGirl-2.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DreamGirl-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DreamGirl-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/DreamGirl-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/DreamGirl-4.jpg)
 
 ## 4.3 场景
 
 ### Deliberate
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/Deliberate-2.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/Deliberate-2.jpg)
 
 ### NeverEndingDream
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/NeverEndingDream-3.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/NeverEndingDream-3.jpg)
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：文生图/NeverEndingDream-4.jpg)
+![](https://image.shadowchen.top/src/posts/StableDiffusion：文生图/NeverEndingDream-4.jpg)

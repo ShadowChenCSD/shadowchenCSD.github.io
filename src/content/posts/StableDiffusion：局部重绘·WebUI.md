@@ -4,7 +4,7 @@ published: 2024-11-23
 description: 介绍如何使用WebUI对图像进行局部重绘。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 局部重绘
@@ -17,7 +17,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 1. 使用局部重绘功能，导入图片
 
-![局部重绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘.jpg)
+![局部重绘](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘.jpg)
 
 ### 2. 涂抹需要重绘的范围
 
@@ -27,7 +27,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
   - **大笔触**：更**高效**地**圈定重绘区域**
   - **小笔触**：更**精确**地**控制区域边缘**
 
-![局部重绘·选择区域](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·选择区域.jpg)
+![局部重绘·选择区域](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·选择区域.jpg)
 
 ### 3. 添加提示词
 
@@ -45,12 +45,12 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |       原图        |                 生成图                  |
 | :---------------: | :-------------------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/原图.jpg) | ![局部重绘·生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·生成图.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/原图.jpg) | ![局部重绘·生成图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·生成图.jpg) |
 
 
 ## 1.3 核心参数解析
 
-![局部重绘：选择区域](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·参数设定.jpg)
+![局部重绘：选择区域](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/局部重绘·参数设定.jpg)
 
 - **蒙版边缘模糊度**：决定重绘区域边缘和其他部分如何接触（**羽化**）
   - 默认数值：**4**
@@ -80,11 +80,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 1. 使用涂鸦重绘功能，导入图片
 
-![涂鸦重绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘.jpg)
+![涂鸦重绘](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘.jpg)
 
 ### 2. 利用调色盘，涂抹想要重绘的范围
 
-![涂鸦重绘·选择区域](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘·选择区域.jpg)
+![涂鸦重绘·选择区域](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘·选择区域.jpg)
 
 ### 3. 添加提示词
 
@@ -98,7 +98,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |       原图        |                 生成图                  |
 | :---------------: | :-------------------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/原图.jpg) | ![涂鸦重绘·生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘·生成图.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/原图.jpg) | ![涂鸦重绘·生成图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/涂鸦重绘·生成图.jpg) |
 
 
 # 3. 蒙版重绘
@@ -114,7 +114,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 - 导入**参考图**
 - 导入**重绘区域蒙版图**
 
-![蒙版重绘](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·WebUI/蒙版重绘.jpg)
+![蒙版重绘](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·WebUI/蒙版重绘.jpg)
 
 **step 2. 参数调整**
 

@@ -4,7 +4,7 @@ published: 2024-11-05
 description: 详细讲述AI生图时、核心参数的使用说明。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 参数说明
@@ -13,21 +13,21 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI的参数**
 
-![参数设定](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-参数设定.jpg)
+![参数设定](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-参数设定.jpg)
 
 - **ComfyUI的参数**
 
-![参数设定](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-参数设定.jpg)
+![参数设定](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-参数设定.jpg)
 
 # 2. 基础模型
 
 - **WebUI**
 
-![模型](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-模型.jpg)
+![模型](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-模型.jpg)
 
 - **ComfyUI**
 
-![模型](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-模型.jpg)
+![模型](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-模型.jpg)
 
 ## 模型分类
 
@@ -64,11 +64,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**：分为**Prompt**（正向提示词）和**Negative Prompt**（反向提示词）
 
-![提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-提示词.jpg)
+![提示词](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-提示词.jpg)
 
 - **ComfyUI**：使用**CLIP文本编码节点**，接入**positive**即为**正向提示词**，接入**negative**即为**负向提示词**
 
-![提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-提示词.jpg)
+![提示词](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-提示词.jpg)
 
 ## 分类
 
@@ -88,11 +88,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![迭代步数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-迭代步数.jpg)
+![迭代步数](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-迭代步数.jpg)
 
 - **ComfyUI**
 
-![迭代步数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-迭代步数.jpg)
+![迭代步数](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-迭代步数.jpg)
 
 ## 功能
 
@@ -109,11 +109,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![采样方法](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-采样方法.jpg)
+![采样方法](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-采样方法.jpg)
 
 - **ComfyUI**
 
-![采样方法](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-采样方法.jpg)
+![采样方法](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-采样方法.jpg)
 
 ## 功能
 
@@ -136,11 +136,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![分辨率](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-分辨率.jpg)
+![分辨率](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-分辨率.jpg)
 
 - **ComfyUI**
 
-![分辨率](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-分辨率.jpg)
+![分辨率](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-分辨率.jpg)
 
 ## 推荐分辨率
 
@@ -166,11 +166,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![批](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-批.jpg)
+![批](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-批.jpg)
 
 - **ComfyUI**
 
-![每批数量](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-每批数量.jpg)
+![每批数量](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-每批数量.jpg)
 
 ## 功能
 
@@ -183,11 +183,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![提示词相关性](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-提示词相关性.jpg)
+![提示词相关性](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-提示词相关性.jpg)
 
 - **ComfyUI**
 
-![提示词相关性](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-提示词相关性.jpg)
+![提示词相关性](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-提示词相关性.jpg)
 
 ## 功能
 
@@ -204,11 +204,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![随机种子](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-随机种子.jpg)
+![随机种子](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-随机种子.jpg)
 
 - **ComfyUI**
 
-![随机种子](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-随机种子.jpg)
+![随机种子](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-随机种子.jpg)
 
 ## 功能
 
@@ -230,11 +230,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **WebUI**
 
-![重绘幅度](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/WebUI-重绘幅度.jpg)
+![重绘幅度](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/WebUI-重绘幅度.jpg)
 
 - **ComfyUI**
 
-![去噪](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/ComfyUI-去噪.jpg)
+![去噪](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/ComfyUI-去噪.jpg)
 
 ## 功能
 
@@ -260,18 +260,18 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |          AnythingV5           |         CetusMix          |           CuteYukiMix           |          DreamGirl          |
 | :---------------------------: | :-----------------------: | :-----------------------------: | :-------------------------: |
-| ![AnythingV5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/AnythingV5.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/CetusMix.jpg) | ![CuteYukiMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/CuteYukiMix.jpg) | ![DreamGirl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/DreamGirl.jpg) |
+| ![AnythingV5](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/AnythingV5.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/CetusMix.jpg) | ![CuteYukiMix](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/CuteYukiMix.jpg) | ![DreamGirl](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/DreamGirl.jpg) |
 
 |       SDXL        |           SD3.5_Large           |       FLUX        |
 | :---------------: | :-----------------------------: | :---------------: |
-| ![SDXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/SDXL.jpg) | ![SD3.5_Large](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/SD3.5_Large.jpg) | ![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/FLUX.jpg) |
+| ![SDXL](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/SDXL.jpg) | ![SD3.5_Large](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/SD3.5_Large.jpg) | ![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/FLUX.jpg) |
 
 
 ## 对比：不同的迭代步数
 
 - **迭代步数**分别为：5、10、15、20、25、30，基础模型为**FLUX**
 
-![不同迭代步数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/不同迭代步数.jpg)
+![不同迭代步数](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/不同迭代步数.jpg)
 
 ## 对比：不同的采样方式
 
@@ -279,27 +279,27 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |          Euler + Simple           |          Euler + Karras           |             Euler + sgm_uniform             |
 | :-------------------------------: | :-------------------------------: | :-----------------------------------------: |
-| ![Euler+Simple](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/Euler+Simple.jpg) | ![Euler+Karras](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/Euler+Karras.jpg) | ![Euler+sgm_uniform](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/Euler+sgm_uniform.jpg) |
+| ![Euler+Simple](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/Euler+Simple.jpg) | ![Euler+Karras](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/Euler+Karras.jpg) | ![Euler+sgm_uniform](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/Euler+sgm_uniform.jpg) |
 
 |            DPM++ 2M + Karras            |              DPM++ 2M + sgm_uniform               |               DPM++ 2M + ddim_uniform               |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: |
-| ![DPM++_2M_Karras](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/DPM++_2M_Karras.jpg) | ![DPM++_2M_sgm_uniform](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/DPM++_2M_sgm_uniform.jpg) | ![DPM++_2M_ddim_uniform](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/DPM++_2M_ddim_uniform.jpg) |
+| ![DPM++_2M_Karras](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/DPM++_2M_Karras.jpg) | ![DPM++_2M_sgm_uniform](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/DPM++_2M_sgm_uniform.jpg) | ![DPM++_2M_ddim_uniform](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/DPM++_2M_ddim_uniform.jpg) |
 
 
 ## 对比：不同的提示词相关性
 
 - **提示词引导系数**分别为**1.0、1.5、2.0、2.5、3.0、3.5**，基础模型为**FLUX**
 
-![提示词引导系数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/提示词引导系数.jpg)
+![提示词引导系数](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/提示词引导系数.jpg)
 
 ## 对比：不同的随机种子
 
 - 基础模型为**FLUX**
 
-![不同随机种子](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/不同随机种子.jpg)
+![不同随机种子](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/不同随机种子.jpg)
 
 ## 对比：不同的重绘幅度
 
 - **重绘幅度**分别为**0.40、0.55、0.70、0.85、1.00**
 
-![不同重绘幅度](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：参数设定/不同重绘幅度.jpg)
+![不同重绘幅度](https://image.shadowchen.top/src/posts/StableDiffusion：参数设定/不同重绘幅度.jpg)

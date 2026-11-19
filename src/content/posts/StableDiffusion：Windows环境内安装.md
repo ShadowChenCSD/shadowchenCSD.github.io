@@ -4,7 +4,7 @@ published: 2024-10-18
 description: 介绍如何在Windows环境内安装StableDiffusion软件，包括WebUI、WebUI-Forge、ComfyUI等。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 基础环境安装
@@ -15,7 +15,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 - [**CUDA**](https://developer.nvidia.com/cuda-toolkit-archive)：推荐和显卡驱动**匹配**的版本，下载时选**本地安装**模式（**Local**版本）
   - 查询显卡适用的**最高**CUDA版本：在命令提示符中输入**nvidia-smi**
 
-![查询当前显卡驱动支持的最高CUDA版本](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/查询当前显卡驱动支持的最高CUDA版本.jpg)
+![查询当前显卡驱动支持的最高CUDA版本](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/查询当前显卡驱动支持的最高CUDA版本.jpg)
 
 # 2. WebUI：秋叶整合包
 
@@ -32,11 +32,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - 进入软件安装文件夹，运行`AI启动器.exe`，等待加载和更新。
 
-![绘世](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/绘世.jpg)
+![绘世](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/绘世.jpg)
 
 - 点击`一键启动`，自动打开**WebUI**界面。
 
-![WebUI界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/WebUI界面.jpg)
+![WebUI界面](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/WebUI界面.jpg)
 
 # 3. WebUI-Forge：lllyasviel整合包
 
@@ -44,13 +44,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - [**仓库链接**](https://github.com/lllyasviel/stable-diffusion-webui-forge)：**webui_forge_cu121_torch231.7z**
 
-![WebUI-Forge-Windows版本整合包](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge-Windows版本整合包.jpg)
+![WebUI-Forge-Windows版本整合包](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge-Windows版本整合包.jpg)
 
 ## 3.2 解压安装
 
 - `安装路径`**不要有中文字符**
 
-![WebUI-Forge内容](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge内容.jpg)
+![WebUI-Forge内容](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge内容.jpg)
 
 ## 3.3 更新、运行和启动
 
@@ -58,7 +58,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 - 进入软件安装文件夹，运行`run.bat`，等待程序加载。
 - 加载完成后，自动打开**WebUI-Forge**界面。
 
-![WebUI-Forge界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge界面.jpg)
+![WebUI-Forge界面](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/WebUI-Forge界面.jpg)
 
 ## 附：无法读取SD 3.5的CLIP组件？
 
@@ -75,7 +75,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - [**仓库链接**](https://github.com/comfyanonymous/ComfyUI)：**ComfyUI_windows_portable_nvidia.7z**
 
-![ComfyUI-Windows版本整合包](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/ComfyUI-Windows版本整合包.jpg)
+![ComfyUI-Windows版本整合包](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/ComfyUI-Windows版本整合包.jpg)
 
 ## 4.2 解压安装
 
@@ -86,8 +86,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - 进入软件安装文件夹，运行`run_nvidia_gpu.bat`，等待程序加载。
 
-![ComfyUI启动](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/ComfyUI启动.jpg)
+![ComfyUI启动](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/ComfyUI启动.jpg)
 
 - 加载完成后，自动打开**ComfyUI**界面。
 
-![ComfyUI界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Windows环境内安装/ComfyUI界面.jpg)
+![ComfyUI界面](https://image.shadowchen.top/src/posts/StableDiffusion：Windows环境内安装/ComfyUI界面.jpg)

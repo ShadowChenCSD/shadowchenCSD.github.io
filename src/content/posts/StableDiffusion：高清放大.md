@@ -4,7 +4,7 @@ published: 2024-11-30
 description: 介绍图像高清放大技术，既包括传统的插值放大方案、通过模型进行放大的方案，也包括使用图生图进行重采样放大的方案，还有通过高清放大插件进行放大的方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 背景
@@ -21,13 +21,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 工作流
 
-![插值放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/插值放大.jpg)
+![插值放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/插值放大.jpg)
 
 ### 效果图
 
 |       参考图        |          双线性插值          |
 | :-----------------: | :--------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_插值放大.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_插值放大.jpg) |
 
 # 3. 通过模型放大
 
@@ -43,13 +43,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 后期处理模块
 
-![R-ESRGAN_4x+](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/后期处理：R-ESRGAN_4x+.jpg)
+![R-ESRGAN_4x+](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/后期处理：R-ESRGAN_4x+.jpg)
 
 ### 效果图
 
 |       参考图        |            R-ESRGAN_x4plus             |
 | :-----------------: | :------------------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_R-ESRGAN_4x+_WebUI.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_R-ESRGAN_4x+_WebUI.jpg) |
 
 ## 3.3 ComfyUI
 
@@ -59,15 +59,15 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 工作流：R-ESRGAN_x4plus、4x-UltraSharp
 
-![R-ESRGAN_x4plus](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/模型放大：R-ESRGAN_x4plus.jpg)
+![R-ESRGAN_x4plus](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/模型放大：R-ESRGAN_x4plus.jpg)
 
-![4x-UltraSharp](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/模型放大：4x-UltraSharp.jpg)
+![4x-UltraSharp](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/模型放大：4x-UltraSharp.jpg)
 
 ### 效果图
 
 |       参考图        |               R-ESRGAN_x4plus               |               4x-UltraSharp               |
 | :-----------------: | :-----------------------------------------: | :---------------------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_R-ESRGAN_x4plus_ComfyUI.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_4x-UltraSharp_ComfyUI.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_R-ESRGAN_x4plus_ComfyUI.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_4x-UltraSharp_ComfyUI.jpg) |
 
 # 4. 重采样放大
 
@@ -79,13 +79,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### 图生图模块
 
-![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/图生图：重采样放大.jpg)
+![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/图生图：重采样放大.jpg)
 
 ### 效果图
 
 |       参考图        |         FLUX模型：重采样放大         |
 | :-----------------: | :----------------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_重采样放大_WebUI.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_重采样放大_WebUI.jpg) |
 
 
 ## 4.2 ComfyUI：Latent放大
@@ -96,24 +96,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - **SD 1.5**
 
-![重采样放大：Latent放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_SD1.5.jpg)
+![重采样放大：Latent放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_SD1.5.jpg)
 
 - **SDXL**
 
-![重采样放大：Latent放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_SDXL.jpg)
+![重采样放大：Latent放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_SDXL.jpg)
 
 - **FLUX**
 
-![重采样放大：Latent放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_FLUX.jpg)
+![重采样放大：Latent放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_Latent放大_FLUX.jpg)
 
 ### 效果图
 
 |             一次采样              |         重采样放大：Latent放大         |
 | :-------------------------------: | :------------------------------------: |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：SD1.5.jpg)  | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：SD1.5-1.jpg) |
-|  ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：SDXL.jpg)  | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：SDXL-1.jpg)  |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：FLUX-1.jpg) | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-1.jpg)  |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：FLUX-2.jpg) | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-2.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：SD1.5.jpg)  | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：SD1.5-1.jpg) |
+|  ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：SDXL.jpg)  | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：SDXL-1.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：FLUX-1.jpg) | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-1.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：FLUX-2.jpg) | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-2.jpg)  |
 
 
 ## 4.3 ComfyUI：模型放大
@@ -124,24 +124,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 - **SD 1.5**
 
-![重采样放大：模型放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_SD1.5.jpg)
+![重采样放大：模型放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_SD1.5.jpg)
 
 - **SDXL**
 
-![重采样放大：模型放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_SDXL.jpg)
+![重采样放大：模型放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_SDXL.jpg)
 
 - **FLUX**
 
-![重采样放大：模型放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_FLUX.jpg)
+![重采样放大：模型放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大_模型放大_FLUX.jpg)
 
 ### 效果图
 
 |             一次采样              |  重采样放大：模型放大，预览缩放：50%   |
 | :-------------------------------: | :------------------------------------: |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：SD1.5.jpg)  | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：SD1.5-2.jpg) |
-|  ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：SDXL.jpg)  | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：SDXL-2.jpg)  |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：FLUX-1.jpg) | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-3.jpg)  |
-| ![一次采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/一次采样：FLUX-2.jpg) | ![重采样放大](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-4.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：SD1.5.jpg)  | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：SD1.5-2.jpg) |
+|  ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：SDXL.jpg)  | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：SDXL-2.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：FLUX-1.jpg) | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-3.jpg)  |
+| ![一次采样](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/一次采样：FLUX-2.jpg) | ![重采样放大](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/重采样放大：FLUX-4.jpg)  |
 
 # 5. 放大插件：SUPIR
 
@@ -165,13 +165,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### **工作流**
 
-![SUPIR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/SUPIR.jpg)
+![SUPIR](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/SUPIR.jpg)
 
 ### 效果图
 
 |       参考图        |          效果图           |
 | :-----------------: | :-----------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_SUPIR.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_SUPIR.jpg) |
 
 # 6. 放大插件：Flux-ControlNet-Upscaler
 
@@ -186,33 +186,33 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ### **工作流**
 
-![Flux.1-ControlNet-Upscaler](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/ControlNet-Upscaler.jpg)
+![Flux.1-ControlNet-Upscaler](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/ControlNet-Upscaler.jpg)
 
 ### 效果图
 
 |       参考图        |                 效果图                  |
 | :-----------------: | :-------------------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/girl_ControlNet-Upscaler.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/girl_ControlNet-Upscaler.jpg) |
 
 # 7. 饰品精修
 
 ## 7.1 **工作流**
 
-![饰品精修](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/饰品精修.jpg)
+![饰品精修](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/饰品精修.jpg)
 
 ## 7.2 效果图
 
 | 原始图像：311 * 309 |     一阶段：616 * 616     |     二阶段：924 * 924     |
 | :-----------------: | :-----------------------: | :-----------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/饰品-1.jpg) | ![精修图-1](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-1.jpg) | ![精修图-2](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-2.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/饰品-1.jpg) | ![精修图-1](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-1.jpg) | ![精修图-2](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-2.jpg) |
 
 | 原始图像：768 * 768 | 一阶段：1536 * 1536 | 二阶段：2304 * 2304 |
 |:-----------------:|:-----------------:|:-----------------:|
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/饰品-2.jpg) | ![精修图-3](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-3.jpg) | ![精修图-4](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-4.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/饰品-2.jpg) | ![精修图-3](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-3.jpg) | ![精修图-4](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-4.jpg) |
 
 | 原始图像：320 * 296 | 一阶段：640 * 592 | 二阶段：960 * 888 |
 |:-----------------:|:---------------:|:---------------:|
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/饰品-3.jpg) | ![精修图-5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-5.jpg) | ![精修图-6](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：高清放大/精修图-6.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/饰品-3.jpg) | ![精修图-5](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-5.jpg) | ![精修图-6](https://image.shadowchen.top/src/posts/StableDiffusion：高清放大/精修图-6.jpg) |
 
 ## 7.3 结论
 

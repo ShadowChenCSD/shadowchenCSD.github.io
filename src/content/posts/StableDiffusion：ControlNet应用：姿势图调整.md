@@ -4,7 +4,7 @@ published: 2024-12-22
 description: 介绍如何使用插件调整OpenPose姿势图。
 tags: [AIGC·图像, 图像生成, StableDiffusion, OpenPose]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
+image: "https://image.shadowchen.top/public/posts/ControlNet.png"
 ---
 
 # 1. 姿势图调整
@@ -41,11 +41,11 @@ Step 5. **重启WebUI**，自动安装环境依赖。
 
 ​		打开WebUI，选择**OpenPose编辑器**标签。
 
-![OpenPose编辑器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose编辑器-标签页.jpg)
+![OpenPose编辑器](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose编辑器-标签页.jpg)
 
 ## 2.4 功能说明
 
-![OpenPose编辑器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose编辑器-功能.jpg)
+![OpenPose编辑器](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose编辑器-功能.jpg)
 
 - 自定义修改**图像尺寸**：**宽度**、**高度**
 - 自定义修改**人物姿态**
@@ -88,19 +88,19 @@ git clone https://github.com/huchenlei/ComfyUI-openpose-editor.git
 
 ## 3.2 工作流：生成姿态图
 
-![生成openpose姿势](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/生成openpose姿势_工作流.jpg)
+![生成openpose姿势](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/生成openpose姿势_工作流.jpg)
 
 ## 3.3 工作流：修改姿态图
 
 ### 加载工作流
 
-![修改openpose姿势](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/修改openpose姿势_工作流.jpg)
+![修改openpose姿势](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/修改openpose姿势_工作流.jpg)
 
 ### 选择Open in Openpose Editor
 
 - 右击 **`Load Openpose JSON`** ，选择 **`Open in Openpose Editor`**
 
-![OpenPose-Editor-ComfyUI](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose-Editor-ComfyUI-1.jpg)
+![OpenPose-Editor-ComfyUI](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose-Editor-ComfyUI-1.jpg)
 
 ### 调整人物姿态
 
@@ -109,4 +109,4 @@ git clone https://github.com/huchenlei/ComfyUI-openpose-editor.git
 - 可以**上传JSON文件**、**下载JSON文件**
 - 可以**上传背景图像**、**下载姿态图像**
 
-![OpenPose-Editor-ComfyUI](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose-Editor-ComfyUI-2.jpg)
+![OpenPose-Editor-ComfyUI](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：姿势图调整/OpenPose-Editor-ComfyUI-2.jpg)

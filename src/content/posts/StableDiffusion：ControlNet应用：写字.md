@@ -4,7 +4,7 @@ published: 2024-12-20
 description: 介绍使用ControlNet模型实现AI艺术字的效果。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
+image: "https://image.shadowchen.top/public/posts/ControlNet.png"
 ---
 
 # 1. 说明
@@ -20,17 +20,17 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
 
 ## 2.1 工作流
 
-![AI写字：边缘提取_工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/AI写字：边缘提取_工作流.jpg)
+![AI写字：边缘提取_工作流](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/AI写字：边缘提取_工作流.jpg)
 
 ## 2.2 预处理器效果参考
 
-![预处理器效果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/预处理器效果.jpg)
+![预处理器效果](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/预处理器效果.jpg)
 
 # 3. ControlNet组件
 
 ## 3.1 工作流
 
-![AI写字：ControlNet组件](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/AI写字：ControlNet组件_工作流.jpg)
+![AI写字：ControlNet组件](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/AI写字：ControlNet组件_工作流.jpg)
 
 ## 3.2 提示词
 
@@ -40,4 +40,4 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/ControlNet.png"
 
 |        参考图         |        边缘提取图         |        生成图         |
 | :-------------------: | :-----------------------: | :-------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/参考图.jpg) | ![边缘提取](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/边缘提取.jpg) | ![AI写字](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：ControlNet应用：写字/AI写字.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/参考图.jpg) | ![边缘提取](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/边缘提取.jpg) | ![AI写字](https://image.shadowchen.top/src/posts/StableDiffusion：ControlNet应用：写字/AI写字.jpg) |

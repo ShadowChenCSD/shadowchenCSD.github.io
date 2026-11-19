@@ -4,7 +4,7 @@ published: 2024-11-26
 description: 介绍如何使用ComfyUI对图像进行局部重绘。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 说明
@@ -23,12 +23,12 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |         选择菜单          |         手动绘制重绘区域          |
 | :-----------------------: | :-------------------------------: |
-| ![选择菜单](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/选择菜单.jpg) | ![绘制重绘区域](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/绘制重绘区域.jpg) |
+| ![选择菜单](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/选择菜单.jpg) | ![绘制重绘区域](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/绘制重绘区域.jpg) |
 
 
 - **效果显示**
 
-![效果显示](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果显示.jpg)
+![效果显示](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果显示.jpg)
 
 ### 蒙版重绘
 
@@ -36,7 +36,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |           读取蒙版图像            |          图像转蒙版           |
 | :-------------------------------: | :---------------------------: |
-| ![读取蒙版图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/读取蒙版图像.jpg) | ![图像转蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/图像转蒙版.jpg) |
+| ![读取蒙版图像](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/读取蒙版图像.jpg) | ![图像转蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/图像转蒙版.jpg) |
 
 
 ## 2.2 蒙版图的二次处理
@@ -47,27 +47,27 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 2. **Mask Blur**插件进行**蒙版区域模糊处理**，实现羽化效果
 3. **InvertMask**插件进行**蒙版区域反转处理**
 
-![二次处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/二次处理.jpg)
+![二次处理](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/二次处理.jpg)
 
 # 3. 工作流：手动重绘
 
 ## 3.1 SD系列：SD 1.5 工作流
 
-![SD_1.5_局部重绘_手动](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_1.5_局部重绘_手动.jpg)
+![SD_1.5_局部重绘_手动](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_1.5_局部重绘_手动.jpg)
 
 ## 3.2 SD系列：SD 3.5 工作流
 
-![SD_3.5_局部重绘_手动](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_3.5_局部重绘_手动.jpg)
+![SD_3.5_局部重绘_手动](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_3.5_局部重绘_手动.jpg)
 
 ## 3.3 FLUX系列：Flux 1 工作流
 
-![Flux_Fill_局部重绘_手动](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_局部重绘_手动.jpg)
+![Flux_Fill_局部重绘_手动](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_局部重绘_手动.jpg)
 
 ## 3.4 效果图
 
 |      参考图       |       SD 1.5 模型       |       SD 3.5 模型       |        FLUX模型         |
 | :---------------: | :---------------------: | :---------------------: | :---------------------: |
-| ![MAGA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/MAGA.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-1.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-2.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-3.jpg) |
+| ![MAGA](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/MAGA.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-1.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-2.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-3.jpg) |
 
 
 # 4. 工作流：蒙版重绘
@@ -76,23 +76,23 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ​		SD系列的模型对局部重绘的支持**效果尚可**，可以**直接使用SD模型进行局部重绘**。
 
-![SD_1.5_局部重绘_蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_1.5_局部重绘_蒙版.jpg)
+![SD_1.5_局部重绘_蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_1.5_局部重绘_蒙版.jpg)
 
 ## 4.2 SD系列：SD 3.5 工作流
 
-![SD_3.5_局部重绘_蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_3.5_局部重绘_蒙版.jpg)
+![SD_3.5_局部重绘_蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/SD_3.5_局部重绘_蒙版.jpg)
 
 ## 4.3 FLUX系列：Flux 1 工作流
 
 ​		FLUX系列**原生的模型对局部重绘的支持效果并不好**，但**可以选择局部重绘专用的FLUX模型**——`Fill模型`，进行**局部重绘**，效果很好。
 
-![Flux_Fill_局部重绘_蒙版](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_局部重绘_蒙版.jpg)
+![Flux_Fill_局部重绘_蒙版](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_局部重绘_蒙版.jpg)
 
 ## 4.4 效果图
 
 |       参考图        |       蒙版图        |        效果图-1         |        效果图-2         |        效果图-3         |
 | :-----------------: | :-----------------: | :---------------------: | :---------------------: | :---------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/girl.jpg) | ![蒙版图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/mask.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-4.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-5.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-6.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/girl.jpg) | ![蒙版图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/mask.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-4.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-5.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图-6.jpg) |
 
 # 5. 应用：换装
 
@@ -100,7 +100,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 ## 5.1 工作流
 
-![换装](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_换装.jpg)
+![换装](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/Flux_Fill_换装.jpg)
 
 - **蒙版**决定了重绘区域的**范围**：通过**抠图插件**获取**感兴趣区域的蒙版**
 - **提示词**决定了重绘区域的**内容**：`pure white dress,`
@@ -109,4 +109,4 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 |       参考图        |       蒙版图        |        效果图         |
 | :-----------------: | :-----------------: | :-------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/模特.jpg) | ![蒙版图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/蒙版.jpg) | ![效果图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/模特.jpg) | ![蒙版图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/蒙版.jpg) | ![效果图](https://image.shadowchen.top/src/posts/StableDiffusion：局部重绘·ComfyUI/效果图.jpg) |

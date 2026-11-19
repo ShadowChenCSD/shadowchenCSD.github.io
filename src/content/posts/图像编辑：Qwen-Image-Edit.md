@@ -5,7 +5,7 @@ updated: 2025-10-12
 description: 展现Qwen-Image-Edit在图像编辑领域中的能力。
 tags: [AIGC·图像, 图像编辑, Qwen]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
+image: "https://image.shadowchen.top/public/posts/Qwen-Image-Edit.png"
 ---
 
 # 1. 介绍
@@ -52,24 +52,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/18.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/0.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/18.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/0.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/1.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/1.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/2.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/2.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/3.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/3.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/4.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/4.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -96,44 +96,44 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/5.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/5.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/6.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/6.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/04.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/7.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/04.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/7.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/8.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/8.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/9.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/9.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/10.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/10.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/11.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/11.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/12.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/12.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/13.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/13.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/14.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/14.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -162,52 +162,52 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/04.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/15.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/04.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/15.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/16.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/16.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/17.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/17.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/18.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/18.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/19.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/19.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/20.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/20.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/21.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/21.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/11.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/22.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/11.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/22.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/23.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/23.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/14.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/24.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/14.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/24.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/16.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/25.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/16.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/25.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/26.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -229,24 +229,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/01.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/27.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/01.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/27.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/28.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/28.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/29.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/29.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/30.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/30.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/31.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/31.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -271,36 +271,36 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/32.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/32.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/33.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/33.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/34.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/34.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/35.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/35.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/36.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/36.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/37.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/37.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/38.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/38.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/39.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/39.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -322,24 +322,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/01.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/40.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/01.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/40.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/41.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/41.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/04.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/42.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/04.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/42.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/11.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/43.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/11.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/43.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/44.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/44.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -366,44 +366,44 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/45.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/45.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/46.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/46.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/47.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/47.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/48.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/48.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/49.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/49.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/50.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/50.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/10.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/51.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/10.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/51.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/11.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/52.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/11.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/52.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/53.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/53.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/54.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/54.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -428,36 +428,36 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/55.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/55.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/56.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/56.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/57.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/57.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/58.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/58.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/59.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/59.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/60.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/60.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/61.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/61.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/62.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/62.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -486,44 +486,44 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/63.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/63.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/64.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/64.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/65.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/65.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/66.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/66.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/67.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/67.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/68.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/68.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/69.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/69.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/70.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/70.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/71.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/71.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/21.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/72.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/21.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/72.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -546,28 +546,28 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/73.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/73.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/74.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/74.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/75.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/75.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/13.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/76.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/13.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/76.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/14.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/77.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/14.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/77.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/16.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/78.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/16.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/78.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -590,28 +590,28 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/79.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/79.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/80.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/80.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/16.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/81.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/16.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/81.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/82.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/82.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/19.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/83.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/19.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/83.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/20.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/84.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/20.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/84.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -633,24 +633,24 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/22.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/85.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/22.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/85.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/23.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/86.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/23.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/86.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/24.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/87.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/24.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/87.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/24.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/88.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/24.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/88.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/25.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/89.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/25.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/89.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -677,44 +677,44 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/90.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/90.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/03.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/91.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/03.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/91.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/92.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/92.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/93.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/93.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/07.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/94.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/07.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/94.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/12.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/95.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/12.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/95.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/14.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/96.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/14.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/96.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/97.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/97.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/16.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/98.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/16.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/98.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/99.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/99.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -735,20 +735,20 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/17.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/100.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/17.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/100.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/05.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/101.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/05.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/101.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/02.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/102.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/02.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/102.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/15.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/103.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/15.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/103.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -769,20 +769,20 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/06.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/104.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/06.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/104.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/105.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/105.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/08.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/106.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/08.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/106.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/09.jpg" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/107.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/09.jpg" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/107.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -806,32 +806,32 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/108.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/108.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/109.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/109.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/110.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/110.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/111.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/111.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/112.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/112.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/113.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/113.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/114.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/114.png" width="512" /></td>
     </tr>
   </tbody>
 </table>
@@ -852,20 +852,20 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Qwen-Image-Edit.png"
   </thead>
   <tbody>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/115.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/115.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/116.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/116.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/117.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/117.png" width="512" /></td>
     </tr>
     <tr align="center">
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/input/26.png" width="512" /></td>
-      <td><img src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/output-Qwen/118.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/input/26.png" width="512" /></td>
+      <td><img src="https://image.shadowchen.top/public/posts/output-Qwen/118.png" width="512" /></td>
     </tr>
   </tbody>
 </table>

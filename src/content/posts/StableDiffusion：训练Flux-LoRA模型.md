@@ -4,7 +4,7 @@ published: 2024-12-08
 description: 介绍如何训练一个特定风格的LoRA模型。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/FLUX.webp"
+image: "https://image.shadowchen.top/public/posts/FLUX.webp"
 ---
 
 # 1. 介绍
@@ -66,7 +66,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/FLUX.webp"
 
 - **20张**，**自然风景下的化妆品**
 
-![训练数据](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/TrainData.jpg)
+![训练数据](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/TrainData.jpg)
 
 # 5. 设置标签
 
@@ -82,7 +82,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/FLUX.webp"
   - 劣势：**包含了画面内的大多数内容，需要人工复核内容，删除错误的、不需要的内容**
   - 方法：**使用提示词反推的工作流，一键式批量生成标签**。以**Florence 2方式**的反推工作流参考如下：
 
-![批量生成提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/批量生成提示词.jpg)
+![批量生成提示词](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/批量生成提示词.jpg)
 
 # 6. 清洗标签
 
@@ -121,7 +121,7 @@ pip install -r requirements.txt
 
 ## 7.2 绘制工作流
 
-![Flux：LoRA_训练](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Flux：LoRA_训练.jpg)
+![Flux：LoRA_训练](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Flux：LoRA_训练.jpg)
 
 - **设定归一化尺寸**，一般使用**512*512**、**768*768**、**1024*1024**等三种方案
 - **设定训练的模型**
@@ -130,14 +130,14 @@ pip install -r requirements.txt
 
 ## 7.3 训练
 
-![训练中](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/训练中.jpg)
+![训练中](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/训练中.jpg)
 
 ​		在**RTX 4090单卡**（24GB显存）下，训练**20张**、**1024 * 1024**分辨率的图像，使用**1024*1024**的模式，会报错（爆显存），改用**768*768**的模式，可以顺利训练，速度在**2.42s/it**。**训练3000步，需要约2小时。**
 
 |                  750步                   |                  1500步                   |                  2250步                   |                3000步                |
 | :--------------------------------------: | :---------------------------------------: | :---------------------------------------: | :----------------------------------: |
-| ![750步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00001_.jpg) | ![1500步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00002_.jpg) | ![2250步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00003_.jpg) |                  /                   |
-|   ![750步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00001.jpg)    |   ![1500步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00002.jpg)    |   ![2250步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00003.jpg)    | ![3000步](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00004.jpg) |
+| ![750步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00001_.jpg) | ![1500步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00002_.jpg) | ![2250步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_loss_plot_00003_.jpg) |                  /                   |
+|   ![750步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00001.jpg)    |   ![1500步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00002.jpg)    |   ![2250步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00003.jpg)    | ![3000步](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/flux_lora_WSECO_00004.jpg) |
 
 
 # 8. 效果验证
@@ -152,7 +152,7 @@ pip install -r requirements.txt
 
 ## 8.2 绘制工作流
 
-![Flux：LoRA_测试](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Flux：LoRA_测试.jpg)
+![Flux：LoRA_测试](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Flux：LoRA_测试.jpg)
 
 ## 8.3 示例
 
@@ -167,25 +167,25 @@ pip install -r requirements.txt
 
 | Lora强度：0.0→0.2→0.4→0.6→0.8→1.0 |
 | :-------------------------------: |
-|        ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_0750.jpg)         |
+|        ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_0750.jpg)         |
 
 - **1500步**
 
 | Lora强度：0.0→0.2→0.4→0.6→0.8→1.0 |
 | :-------------------------------: |
-|        ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_1500.jpg)         |
+|        ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_1500.jpg)         |
 
 - **2250步**
 
 | Lora强度：0.0→0.2→0.4→0.6→0.8→1.0 |
 | :-------------------------------: |
-|        ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_2250.jpg)         |
+|        ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_2250.jpg)         |
 
 - **3000步**
 
 | Lora强度：0.0→0.2→0.4→0.6→0.8→1.0 |
 | :-------------------------------: |
-|        ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_3000.jpg)         |
+|        ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-LoRA模型/Step_3000.jpg)         |
 
 ### 结果分析
 

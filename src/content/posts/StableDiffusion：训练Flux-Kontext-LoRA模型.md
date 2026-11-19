@@ -4,7 +4,7 @@ published: 2025-09-20
 description: 介绍如何训练一个Flux-Kontext-LoRA模型模型，用于实现风格迁移的功能。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/FLUX.webp"
+image: "https://image.shadowchen.top/public/posts/FLUX.webp"
 ---
 
 # 1. 训练准备
@@ -69,8 +69,8 @@ flowchart LR
 
 |         画风效果         |           输入图           |           输出图            |
 | :----------------------: | :------------------------: | :-------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/ref-1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/input-1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/output-1.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/ref-1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/input-2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/output-2.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/ref-1.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/input-1.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/output-1.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/ref-1.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/input-2.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/output-2.png) |
 
 ## 4.2 间接风格迁移
 
@@ -78,8 +78,8 @@ flowchart LR
 
 |         画风效果         |           输入图           |              中间产物              |           输出图            |
 | :----------------------: | :------------------------: | :--------------------------------: | :-------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/ref-2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/input-3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/transitionary-1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/output-3.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/ref-2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/input-4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/transitionary-2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/reference/output-4.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/ref-2.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/input-3.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/transitionary-1.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/output-3.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/ref-2.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/input-4.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/transitionary-2.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/reference/output-4.png) |
 
 # 5. 示例
 
@@ -90,21 +90,21 @@ flowchart LR
 
 | Control组 - I（线稿风） | Control组 - II（粘土风） |      Target组      |
 | :---------------------: | :----------------------: | :----------------: |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/01.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/07.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/15.png) |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/02.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/08.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/16.png) |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/03.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/09.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/17.png) |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/04.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/10.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/18.png) |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/05.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/11.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/19.png) |
-|   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/06.png)   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/control/12.png)    | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/20.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/01.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/07.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/15.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/02.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/08.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/16.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/03.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/09.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/17.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/04.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/10.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/18.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/05.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/11.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/19.png) |
+|   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/06.png)   |   ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/control/12.png)    | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/20.png) |
 
 ## 5.2 测试结果
 
 |       输入1        |       输入2        |      输出1       |      输出2       |
 | :----------------: | :----------------: | :--------------: | :--------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/01.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/02.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/02.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/03.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/04.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/04.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/05.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/06.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/06.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/07.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/08.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/07.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/08.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/09.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/10.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/09.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/10.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/11.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/12.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/11.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/12.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/13.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/target/14.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/13.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/test/14.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/01.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/02.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/02.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/03.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/04.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/04.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/05.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/06.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/06.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/07.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/08.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/07.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/08.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/09.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/10.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/09.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/10.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/11.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/12.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/11.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/12.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/13.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/target/14.jpg) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/13.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：训练Flux-Kontext-LoRA模型/test/14.png) |

@@ -4,7 +4,7 @@ published: 2024-10-22
 description: 介绍如何在Linux环境内安装StableDiffusion软件，包括WebUI、WebUI-Forge、ComfyUI等。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 基础环境安装
@@ -107,21 +107,21 @@ LAUNCH_SCRIPT="launch.py"
 bash start.sh
 ```
 
-![WebUI-Linux界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面.jpg)
+![WebUI-Linux界面](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面.jpg)
 
 ## 无法选择vae模型？
 
 1. 选择`Settings`标签页
 
-   ![选择Settings标签页](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-选择Settings标签页.jpg)
+   ![选择Settings标签页](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-选择Settings标签页.jpg)
 
 2. 在`Quicksettings list`中选择`sd_model_checkpoints`和`sd_vae`，并`应用设置`
 
-   ![Quicksettings list](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-Quicksettings_list.jpg)
+   ![Quicksettings list](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-Quicksettings_list.jpg)
 
 3. `刷新`页面
 
-   ![WebUI-Linux界面（带VAE模型）](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面（带VAE模型）.jpg)
+   ![WebUI-Linux界面（带VAE模型）](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面（带VAE模型）.jpg)
 
 ## 需要安装CLIP？
 
@@ -131,7 +131,7 @@ bash start.sh
 
 ​		中文界面汉化扩展插件：https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans
 
-![WebUI-Linux界面汉化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面汉化.jpg)
+![WebUI-Linux界面汉化](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-Linux界面汉化.jpg)
 
 # 3. WebUI-Forge：lllyasviel整合包
 
@@ -231,7 +231,7 @@ LAUNCH_SCRIPT="launch.py"
 bash start.sh
 ```
 
-![WebUI-Forge-Linux界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/WebUI-Forge-Linux界面.jpg)
+![WebUI-Forge-Linux界面](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/WebUI-Forge-Linux界面.jpg)
 
 ## 无法读取SD 3.5的CLIP组件？
 
@@ -300,4 +300,4 @@ python main.py --port 8188 --listen 127.0.0.1 --cuda-device 6
 # cuda-device指定GPU的ID号
 ```
 
-![ComfyUI界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Linux环境内安装/ComfyUI界面.jpg)
+![ComfyUI界面](https://image.shadowchen.top/src/posts/StableDiffusion：Linux环境内安装/ComfyUI界面.jpg)

@@ -4,7 +4,7 @@ published: 2025-01-21
 description: 介绍如何使用In-Context-LoRA方案，实现高度一致性出图。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Flux]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 介绍
@@ -26,7 +26,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 # 3. 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/一致性.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/一致性.jpg)
 
 # 4. 提示词
 
@@ -45,13 +45,13 @@ A young woman walks on the blue seaside, at the beach, several boats are on the 
 
 - **尺寸**：1536 x 1024
 - **生成图**
-![一次生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/一次生图.jpg)
+![一次生图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/一次生图.jpg)
 
 ## 第二次生图：重采样
 
 - **尺寸**：3072 x 2048
 - **生成图**
-![二次生图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/二次生图.jpg)
+![二次生图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/二次生图.jpg)
 
 ## 图像裁剪
 
@@ -59,8 +59,8 @@ A young woman walks on the blue seaside, at the beach, several boats are on the 
 
 |          生成图           |          生成图           |
 | :-----------------------: | :-----------------------: |
-| ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/二次生图-1.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/二次生图-2.jpg) |
-| ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/二次生图-3.jpg) | ![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：一致性出图/二次生图-4.jpg) |
+| ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/二次生图-1.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/二次生图-2.jpg) |
+| ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/二次生图-3.jpg) | ![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：一致性出图/二次生图-4.jpg) |
 
 # 6. 使用说明
 

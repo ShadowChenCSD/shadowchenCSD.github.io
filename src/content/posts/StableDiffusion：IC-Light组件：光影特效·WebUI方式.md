@@ -4,7 +4,7 @@ published: 2025-01-12
 description: 介绍IC-Light组件，实现光影特效，本篇介绍WebUI的运行方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 环境配置
@@ -42,7 +42,7 @@ bash start.sh
 
 - 选择**iclight_sd15_fc_unet_ldm**模型
 
-![上传参考图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像-1.jpg)
+![上传参考图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像-1.jpg)
 
 ## 2.3 撰写提示词
 
@@ -58,11 +58,11 @@ bash start.sh
 
 ## 2.5 运行结果
 
-![WebUI-Forge-运行结果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-1.jpg)
+![WebUI-Forge-运行结果](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-1.jpg)
 
 |         AI生成图          |         AI生成图          |
 | :-----------------------: | :-----------------------: |
-| ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-1.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-2.jpg) |
+| ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-1.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-2.jpg) |
 
 # 3. 图像设定背景：背景图像
 
@@ -74,7 +74,7 @@ bash start.sh
 
 - 选择**iclight_sd15_fbc_unet_ldm**模型
 
-![WebUI-Forge-上传参考图像、参考背景图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像、参考背景图像.jpg)
+![WebUI-Forge-上传参考图像、参考背景图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像、参考背景图像.jpg)
 
 ## 3.3 撰写提示词
 
@@ -90,9 +90,9 @@ bash start.sh
 
 ## 3.5 运行结果
 
-![WebUI-Forge-运行结果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-2.jpg)
+![WebUI-Forge-运行结果](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-2.jpg)
 
-![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-3.jpg)
+![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-3.jpg)
 
 # 4. 图像设定背景：打光图像
 
@@ -102,14 +102,14 @@ bash start.sh
 
 ## 4.2 上传参考图像
 
-![WebUI-Forge-上传参考图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像-2.jpg)
+![WebUI-Forge-上传参考图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传参考图像-2.jpg)
 
 ## 4.3 设定打光方式或上传打光图像
 
 - 选择**iclight_sd15_fc_unet_ldm**模型
 - 可以勾选**Reinforce Foreground**，以增强生成图的前景效果
 
-![WebUI-Forge-上传打光图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传打光图像.jpg)
+![WebUI-Forge-上传打光图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-上传打光图像.jpg)
 
 ## 4.4 撰写提示词
 
@@ -125,11 +125,11 @@ bash start.sh
 
 ## 4.6 运行结果
 
-![WebUI-Forge-运行结果](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-3.jpg)
+![WebUI-Forge-运行结果](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/WebUI-Forge-运行结果-3.jpg)
 
 |         AI生成图          |         AI生成图          |
 | :-----------------------: | :-----------------------: |
-| ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-4.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-5.jpg) |
+| ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-4.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·WebUI方式/生成图-5.jpg) |
 
 # 5. 优点和缺点
 

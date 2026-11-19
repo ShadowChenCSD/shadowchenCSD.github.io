@@ -4,7 +4,7 @@ published: 2024-11-12
 description: 重点讲述AI生图时不同模型对生图结果的影响。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 模型文件
@@ -99,19 +99,19 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 ### WebUI / WebUI-Forge
 
-![SD1.5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI-Forge-SD1.5.jpg)
+![SD1.5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI-Forge-SD1.5.jpg)
 
-![SDXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI-Forge-SDXL.jpg)
+![SDXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI-Forge-SDXL.jpg)
 
-![SD3.5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI-Forge-SD3.5.jpg)
+![SD3.5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI-Forge-SD3.5.jpg)
 
-![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI-Forge-FLUX.jpg)
+![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI-Forge-FLUX.jpg)
 
 ### ComfyUI
 
 |            SD1.5            |           SDXL            |            SD3.5            |           FLUX            |
 | :-------------------------: | :-----------------------: | :-------------------------: | :-----------------------: |
-| ![SD1.5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI-SD1.5.jpg) | ![SDXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI-SDXL.jpg) | ![SD3.5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI-SD3.5.jpg) | ![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI-FLUX.jpg) |
+| ![SD1.5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI-SD1.5.jpg) | ![SDXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI-SDXL.jpg) | ![SD3.5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI-SD3.5.jpg) | ![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI-FLUX.jpg) |
 
 
 ## 4.2 画面风格分类
@@ -124,13 +124,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |           Anything V5            |          CetusMix           |
 | :------------------------------: | :-------------------------: |
-| ![Anything V5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/AnythingV5-1.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/CetusMix-1.jpg) |
-| ![Anything V5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/AnythingV5-2.jpg) | ![CetusMix](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/CetusMix-2.jpg) |
+| ![Anything V5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/AnythingV5-1.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/CetusMix-1.jpg) |
+| ![Anything V5](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/AnythingV5-2.jpg) | ![CetusMix](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/CetusMix-2.jpg) |
 
 |         GhostXL           |          GhostXL          |
 | :-----------------------: | :-----------------------: |
-| ![GhostXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/GhostXL-1.jpg) | ![GhostXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/GhostXL-2.jpg) |
-| ![GhostXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/GhostXL-3.jpg) | ![GhostXL](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/GhostXL-4.jpg) |
+| ![GhostXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/GhostXL-1.jpg) | ![GhostXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/GhostXL-2.jpg) |
+| ![GhostXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/GhostXL-3.jpg) | ![GhostXL](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/GhostXL-4.jpg) |
 
 
 ### 写实摄影风
@@ -141,8 +141,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |             Realistic Vision              |           Dream Girl           |
 | :---------------------------------------: | :----------------------------: |
-| ![RealisticVision](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/RealisticVision-1.jpg) | ![Dream Girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/DreamGirl-1.jpg) |
-| ![RealisticVision](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/RealisticVision-2.jpg) | ![Dream Girl](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/DreamGirl-2.jpg) |
+| ![RealisticVision](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/RealisticVision-1.jpg) | ![Dream Girl](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/DreamGirl-1.jpg) |
+| ![RealisticVision](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/RealisticVision-2.jpg) | ![Dream Girl](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/DreamGirl-2.jpg) |
 
 ### 模型渲染风
 
@@ -152,7 +152,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |              示例图-1               |              示例图-2               |              示例图-3               |
 | :---------------------------------: | :---------------------------------: | :---------------------------------: |
-| ![ReV-Animated](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ReV-Animated-1.jpg) | ![ReV-Animated](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ReV-Animated-2.jpg) | ![ReV-Animated](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ReV-Animated-3.jpg) |
+| ![ReV-Animated](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ReV-Animated-1.jpg) | ![ReV-Animated](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ReV-Animated-2.jpg) | ![ReV-Animated](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ReV-Animated-3.jpg) |
 
 
 ### 自由切换风格
@@ -162,7 +162,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |       动漫风        |       写实风        |       渲染风        |
 | :-----------------: | :-----------------: | :-----------------: |
-| ![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/FLUX-1.jpg) | ![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/FLUX-2.jpg) | ![FLUX](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/FLUX-3.jpg) |
+| ![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/FLUX-1.jpg) | ![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/FLUX-2.jpg) | ![FLUX](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/FLUX-3.jpg) |
 
 
 # 5. 辅助模型
@@ -178,13 +178,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - 在**提示词**里直接输入**embedding模型名称**即可——可自动映射到对应的模型
 
-![WebUI使用Embeddings](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI使用Embeddings.jpg)
+![WebUI使用Embeddings](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI使用Embeddings.jpg)
 
 ### 使用方法：ComfyUI
 
 - 在**提示词**里输入**embedding: embedding模型名称**即可
 
-![ComfyUI使用Embeddings](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI使用Embeddings.jpg)
+![ComfyUI使用Embeddings](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI使用Embeddings.jpg)
 
 ### 应用
 
@@ -193,7 +193,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |    无Embeddings：EasyNegative     |    有Embeddings：EasyNegative     |
 | :-------------------------------: | :-------------------------------: |
-| ![无Embeddings](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/无Embeddings.jpg) | ![有Embeddings](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/有Embeddings.jpg) |
+| ![无Embeddings](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/无Embeddings.jpg) | ![有Embeddings](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/有Embeddings.jpg) |
 
 
 ## 5.2 HyperNetwork模型
@@ -218,13 +218,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - 在**提示词**里输入：**\<lora:模型名称:权重\>**
 
-  ![WebUI使用LoRA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/WebUI使用LoRA.jpg)
+  ![WebUI使用LoRA](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/WebUI使用LoRA.jpg)
 
 ### 使用方法：ComfyUI
 
 - 在**工作流**的模型后面追加**仅加载LoRA模型**，**模型强度**即为**权重**
 
-  ![ComfyUI使用LoRA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/ComfyUI使用LoRA.jpg)
+  ![ComfyUI使用LoRA](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/ComfyUI使用LoRA.jpg)
 
 ### 权重设定
 
@@ -234,7 +234,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 - **MoXin**
 
-![墨心](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/墨心.jpg)
+![墨心](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/墨心.jpg)
 
 # 6. 美化模型
 
@@ -246,5 +246,5 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
 
 |         无VAE         |         有VAE         |
 | :-------------------: | :-------------------: |
-| ![无VAE](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/无VAE-1.jpg) | ![有VAE](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/有VAE-1.jpg) |
-| ![无VAE](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/无VAE-2.jpg) | ![有VAE](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：模型选择/有VAE-2.jpg) |
+| ![无VAE](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/无VAE-1.jpg) | ![有VAE](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/有VAE-1.jpg) |
+| ![无VAE](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/无VAE-2.jpg) | ![有VAE](https://image.shadowchen.top/src/posts/StableDiffusion：模型选择/有VAE-2.jpg) |

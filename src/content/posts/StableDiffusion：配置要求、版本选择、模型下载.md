@@ -5,25 +5,25 @@ updated: 2025-12-10
 description: 对StableDiffusion的配置要求和版本选择进行说明，提供常用基础模型的下载方式。
 tags: [AIGC·图像, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
+image: "https://image.shadowchen.top/public/posts/StableDiffusion.png"
 ---
 
 # 1. 配置要求
 
-|              |       低配       |      中配      |              高配               |                   顶配                   |
-| :----------: | :--------------: | :------------: | :-----------------------------: | :--------------------------------------: |
-|   **显存**   |     **8 GB**     |   **16 GB**    |            **24 GB**            |                **48 GB**                 |
-|   **内存**   |      16 GB       |     32 GB      |              64 GB              |                  128 GB                  |
-| **硬盘空间** |      150 GB      |     500 GB     |              1 TB               |                   2 TB                   |
-| **显卡推荐** | **RTX 3060 TI**  |  **RTX 4080**  |     **RTX 4090 / RTX 5090**     |              **H20 / H100**              |
-| **适用范围** | **SD 1.5、SDXL** | **SDXL、FLUX** | **FLUX、Qwen-Image、Wan-Video** | **FLUX、Qwen-Image、Wan-Video、HunYuan** |
+|              |       低配       |      中配      |                        高配                         |
+| :----------: | :--------------: | :------------: | :-------------------------------------------------: |
+|   **显存**   |     **8 GB**     |   **16 GB**    |                      **24 GB**                      |
+|   **内存**   |      16 GB       |     32 GB      |                        64 GB                        |
+| **硬盘空间** |      150 GB      |     500 GB     |                        1 TB                         |
+| **显卡推荐** | **RTX 3060 TI**  |  **RTX 4080**  |               **RTX 4090 / RTX 5090**               |
+| **适用范围** | **SD 1.5、SDXL** | **SDXL、FLUX** | **FLUX、FLUX-Kontext、Qwen-Image、Qwen-Image-Edit** |
 
 # 2. 版本选择
 
 - 有**两种方式**来使用**Stable Diffusion**——`WebUI`、`ComfyUI`
   - **早期的WebUI不能加载SD 3.5及FLUX等**新模型，需要升级为**WebUI-Forge**进行使用
   - **入门尝试**推荐**WebUI-Forge**、**深入研究**推荐**ComfyUI**
-    - **WebUI-Forge**：使用更方便，但不灵活，逐渐退出舞台
+    - **WebUI-Forge**：使用更方便，但不灵活，已逐渐退出舞台
     - **ComfyUI**：功能更丰富，社区更活跃， 目前成为**开源图像生成**、**开源视频生成**的主流平台
 
 |      方式       |                             版本                             |        特点        | 使用难度 | 灵活度 | 推荐程度(Windows) | 推荐程度（Linux） |
@@ -32,7 +32,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 |    `WebUI`    |    [**秋叶整合包**](https://pan.quark.cn/s/2c832199b09b)     | **简便，自动更新** |    低    |   中   |   ✔️    |    ❌    |
 | `WebUI-Forge` | [**lllyasviel版**](https://github.com/lllyasviel/stable-diffusion-webui-forge) |   **支持新模型**   |    低    |   低   |     ✔️    |     ❌     |
 | `WebUI-Forge` |    [**秋叶整合包**](https://pan.quark.cn/s/4e9459b17c94)     | **简便，自动更新** |    低    |   中   |  👍 |    ❌    |
-|   `ComfyUI`   |  [**官方原版**](https://github.com/comfyanonymous/ComfyUI)   |  **灵活，自维护**  |    中    |   高   |   👍  |     👍     |
+|   `ComfyUI`   |  [**官方原版**](https://github.com/comfyanonymous/ComfyUI)   |  **灵活，自维护**  |    中    |   高   | ✔️  |     👍     |
 |   `ComfyUI`   |    [**秋叶整合包**]( https://pan.quark.cn/s/64b808baa960)    | **简便，自动更新** |    中    |   高   |    👍 |    ✔️    |
 
 - **Windows平台**
@@ -120,7 +120,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 
 | 编码器                                                       | 模型大小 | 存放位置                     | 适用范围                            |
 | :----------------------------------------------------------- | :------: | ---------------------------- | ----------------------------------- |
-| [clip_g.safetensors](https://hf-mirror.com/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_g.safetensors) | 1.39 GB  | ComfyUI\models\clip          | **SD 3.5**                          |
+| [**clip_g.safetensors**](https://hf-mirror.com/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_g.safetensors) | 1.39 GB  | ComfyUI\models\clip          | **SD 3.5**                          |
 | [**clip_l.safetensors**](https://hf-mirror.com/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/clip_l.safetensors) |  245 MB  | ComfyUI\models\clip          | **SD 3.5**、**FLUX 1**、**Kontext** |
 | [**t5xxl_fp8_e4m3fn.safetensors**](https://hf-mirror.com/Comfy-Org/stable-diffusion-3.5-fp8/resolve/main/text_encoders/t5xxl_fp8_e4m3fn.safetensors) |  4.6 GB  | ComfyUI\models\text_encoders | **SD 3.5**、**FLUX 1**、**Kontext** |
 | [**mistral_3_small_flux2_fp8.safetensors**](https://www.modelscope.cn/models/Comfy-Org/flux2-dev/resolve/master/split_files/text_encoders/mistral_3_small_flux2_fp8.safetensors) | 18.03 GB | ComfyUI\models\text_encoders | **FLUX 2**                          |
@@ -145,9 +145,9 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/StableDiffusion.png"
 | **FLUX 1 系列** | **clip_g.safetensors**、**t5xxl_fp8_e4m3fn.safetensors**     | **ae.safetensors**                                           |
 | **FLUX 2 系列** | **mistral_3_small_flux2_fp8.safetensors**                    | **flux2-vae.safetensors**                                    |
 
-# 4. 模型文件校验方法
+# 附：模型文件校验方法
 
-## 4.1 MD5校验
+## MD5校验
 
 - **Windows平台**
 
@@ -161,7 +161,7 @@ certutil -hashfile "文件名" MD5
 md5sum "文件名"
 ```
 
-## 4.2 SHA256校验
+## SHA256校验
 
 - **Windows平台**
 

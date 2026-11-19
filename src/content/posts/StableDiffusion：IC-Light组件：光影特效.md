@@ -4,7 +4,7 @@ published: 2025-01-10
 description: 介绍IC-Light组件，实现光影特效，本篇介绍官方代码的运行方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 介绍
@@ -88,23 +88,23 @@ python gradio_demo_bg.py # 图像设定背景，启动后会自动下载模型�
 
 ### 3.2.1 运行界面
 
-![运行界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/运行界面-1.jpg)
+![运行界面](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/运行界面-1.jpg)
 
 ### 3.2.2 上传参考图像
 
-![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-1.jpg)
+![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-1.jpg)
 
 ### 3.2.3 设定光线方向、撰写提示词
 
-![设定光线方向、撰写提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/设定光线方向、撰写提示词-1.jpg)
+![设定光线方向、撰写提示词](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/设定光线方向、撰写提示词-1.jpg)
 
 ### 3.2.4 运行结果
 
-![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/生成图-1.jpg)
+![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/生成图-1.jpg)
 
 ### 3.2.5 参数设定
 
-![参数设定](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/参数设定.jpg)
+![参数设定](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/参数设定.jpg)
 
 - 设定**生成图像数量**
 - 设定**种子数**
@@ -115,31 +115,31 @@ python gradio_demo_bg.py # 图像设定背景，启动后会自动下载模型�
 
 ### 3.2.6 预设方案
 
-![预设方案](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/预设方案-1.jpg)
+![预设方案](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/预设方案-1.jpg)
 
 ## 3.3 图像设定背景
 
 ### 3.3.1 运行界面
 
-![运行界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/运行界面-2.jpg)
+![运行界面](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/运行界面-2.jpg)
 
 ### 3.3.2 上传参考主体图像、设定参考背景图像
 
 |         参考图像          |         参考背景图像          |
 | :-----------------------: | :---------------------------: |
-| ![参考图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-1.jpg) | ![参考背景图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-2.jpg) |
+| ![参考图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-1.jpg) | ![参考背景图像](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/参考图-2.jpg) |
 
 ### 3.3.3 设定光线方向、撰写提示词
 
-![设定光线方向、撰写提示词](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/设定光线方向、撰写提示词-2.jpg)
+![设定光线方向、撰写提示词](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/设定光线方向、撰写提示词-2.jpg)
 
 ### 3.3.4 运行结果
 
-![生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/生成图-2.jpg)
+![生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/生成图-2.jpg)
 
 ### 3.3.5 参数说明
 
-![参数设定](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/参数设定.jpg)
+![参数设定](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/参数设定.jpg)
 
 - 设定**生成图像数量**
 - 设定**种子数**
@@ -150,7 +150,7 @@ python gradio_demo_bg.py # 图像设定背景，启动后会自动下载模型�
 
 ### 3.3.6 预设方案
 
-![预设方案](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效/预设方案-2.jpg)
+![预设方案](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效/预设方案-2.jpg)
 
 ## 3.4. 优点和缺点
 

@@ -4,7 +4,7 @@ published: 2025-01-15
 description: 介绍IC-Light组件，实现光影特效，本篇介绍ComfyUI的运行方案。
 tags: [AIGC·图像, 图像生成, StableDiffusion]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/AIGC.png"
+image: "https://image.shadowchen.top/public/posts/AIGC.png"
 ---
 
 # 1. 环境配置
@@ -57,37 +57,37 @@ python main.py --port 18188 --listen 127.0.0.1 --cuda-device 7
 
 ## 2.1 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/文本设定背景.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/文本设定背景.jpg)
 
 ## 2.2 参考图 & 生成效果
 
 |         参考图          |         AI生成图          |         AI生成图          |         AI生成图          |         AI生成图          |
 | :---------------------: | :-----------------------: | :-----------------------: | :-----------------------: | :-----------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-1.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-2.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-3.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-4.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-1.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-2.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-3.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-4.jpg) |
 
 # 3. 图像设定背景：背景图像
 
 ## 3.1 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：背景图像.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：背景图像.jpg)
 
 ## 3.2 参考图 & 生成效果
 
 |         参考图          |         参考背景图          |         AI生成图          |
 | :---------------------: | :-------------------------: | :-----------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![参考背景图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-2.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-5.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![参考背景图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-2.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-5.jpg) |
 
 # 4. 图像设定背景：打光图像
 
 ## 4.1 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光图像.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光图像.jpg)
 
 ## 4.2 参考图 & 生成效果
 
 |         参考图          |         打光背景图          |         AI生成图          |
 | :---------------------: | :-------------------------: | :-----------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光背景图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-3.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-6.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光背景图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-3.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-6.jpg) |
 
 # 5. 图像设定背景：打光设定
 
@@ -111,44 +111,44 @@ pip install -r requirements.txt
 
 ## 5.2 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光设定.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光设定.jpg)
 
 ## 5.3 参考图 & 生成效果
 
 |         参考图          |         打光设定图          |         AI生成图          |
 | :---------------------: | :-------------------------: | :-----------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-4.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-7.jpg) |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-5.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-8.jpg) |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-6.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-9.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-4.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-7.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-5.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-8.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-6.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-9.jpg) |
 
 # 6. 图像设定背景：打光图像【不抠图】
 
 ## 6.1 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光图像-不抠图.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光图像-不抠图.jpg)
 
 ## 6.2 参考图 & 生成效果
 
 |         参考图          |         打光设定图          |          AI生成图          |          AI生成图          |
 | :---------------------: | :-------------------------: | :------------------------: | :------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-8.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-9.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-10.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-11.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-8.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-9.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-10.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-11.jpg) |
 
 # 7. 图像设定背景：打光设定【不抠图】
 
 ## 7.1 工作流
 
-![工作流](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光设定-不抠图.jpg)
+![工作流](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/图像设定背景：打光设定-不抠图.jpg)
 
 ## 7.2 参考图 & 生成效果
 
 |         参考图          |         打光设定图          |          AI生成图          |          AI生成图          |
 | :---------------------: | :-------------------------: | :------------------------: | :------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-7.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-12.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-13.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-1.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-7.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-12.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-13.jpg) |
 
 |         参考图          |          打光设定图          |          AI生成图          |          AI生成图          |
 | :---------------------: | :--------------------------: | :------------------------: | :------------------------: |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-8.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-10.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-14.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-15.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-8.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-10.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-14.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-15.jpg) |
 
 |          参考图          |          打光设定图          | AI生成图                   | AI生成图                   |
 | :----------------------: | :--------------------------: | -------------------------- | -------------------------- |
-| ![参考图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-11.jpg) | ![打光设定图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-12.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-16.jpg) | ![AI生成图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-17.jpg) |
+| ![参考图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-11.jpg) | ![打光设定图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/参考图-12.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-16.jpg) | ![AI生成图](https://image.shadowchen.top/src/posts/StableDiffusion：IC-Light组件：光影特效·ComfyUI方式/生成图-17.jpg) |

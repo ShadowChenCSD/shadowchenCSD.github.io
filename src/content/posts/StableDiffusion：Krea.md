@@ -4,7 +4,7 @@ published: 2025-05-24
 description: 展现Flux-Krea在图像生成领域中的能力。
 tags: [AIGC·图像, 图像生成, StableDiffusion, Krea]
 category: AIGC
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
+image: "https://image.shadowchen.top/public/posts/Krea.png"
 ---
 
 # 1. 介绍
@@ -33,7 +33,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
 
 # 3. 工作流搭建
 
-![workflow](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/workflow.png)
+![workflow](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/workflow.png)
 
 # 4. 示例图
 
@@ -49,19 +49,19 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
 
 |      人物-1       |      人物-2       |     人物-3      |     人物-3      |
 | :---------------: | :---------------: | :-------------: | :-------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-06.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-06.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-02.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-07.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-02.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-07.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-08.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-08.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-04.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-09.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-04.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-09.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-10.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Man-10.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-06.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-06.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-02.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-07.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-02.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-07.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-08.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-08.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-04.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-09.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-04.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-09.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-10.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Man-10.png) |
 
 |      人物-5       |      人物-6       |      人物-7       |
 | :---------------: | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-11.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-16.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-21.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-12.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-17.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-22.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-13.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-18.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-23.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-14.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-19.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-24.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-15.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-20.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Woman-25.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-11.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-16.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-21.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-12.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-17.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-22.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-13.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-18.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-23.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-14.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-19.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-24.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-15.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-20.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Woman-25.png) |
 
 ## 4.2 静物
 
@@ -73,10 +73,10 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
 
 |      静物-1       |      静物-2       |      静物-3       |      静物-4       |
 | :---------------: | :---------------: | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-09.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-13.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-02.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-06.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-10.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-14.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-07.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-11.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-15.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-04.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-08.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-12.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Still-16.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-09.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-13.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-02.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-06.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-10.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-14.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-07.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-11.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-15.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-04.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-08.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-12.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Still-16.png) |
 
 ## 4.3 场景
 
@@ -89,17 +89,17 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
 
 |      场景-1       |      场景-2       |      场景-3       |
 | :---------------: | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-09.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-02.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-06.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-10.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-07.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-11.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-04.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-08.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-12.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-09.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-02.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-06.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-10.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-07.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-11.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-04.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-08.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-12.png) |
 
 |      场景-4       |      场景-5       |      场景-6       |
 | :---------------: | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-13.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-17.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-21.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-14.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-18.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-22.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-15.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-19.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-23.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-16.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-20.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Scene-24.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-13.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-17.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-21.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-14.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-18.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-22.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-15.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-19.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-23.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-16.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-20.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Scene-24.png) |
 
 ## 4.4 风格化
 
@@ -111,7 +111,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Krea.png"
 
 |      风格-1       |      风格-2       |      风格-3       |      风格-4       |
 | :---------------: | :---------------: | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-01.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-05.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-09.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-13.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-02.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-06.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-10.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-14.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-03.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-07.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-11.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-15.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-04.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-08.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-12.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/StableDiffusion：Krea/Style-16.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-01.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-05.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-09.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-13.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-02.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-06.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-10.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-14.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-03.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-07.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-11.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-15.png) |
+| ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-04.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-08.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-12.png) | ![](https://image.shadowchen.top/src/posts/StableDiffusion：Krea/Style-16.png) |
