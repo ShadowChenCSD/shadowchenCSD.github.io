@@ -4,7 +4,7 @@ published: 2024-04-22
 description: 介绍如何在Windows系统、Linux系统的Docker环境中安装Jenkins。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_1.png"
 ---
 
 # 1. Windows环境
@@ -13,7 +13,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 - **安装Java运行环境**，版本：`Java 1.8` 或 `Java11`
 
-![提前安装JDK](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/提前安装JDK.jpg)
+![提前安装JDK](https://image.shadowchen.top/src/posts/Jenkins：安装/提前安装JDK.jpg)
 
 ## 1.2 下载Jenkins
 
@@ -25,25 +25,25 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 ​		跟随安装提示，安装Jenkins即可。
 
-![安装Jenkins](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/安装Jenkins.jpg)
+![安装Jenkins](https://image.shadowchen.top/src/posts/Jenkins：安装/安装Jenkins.jpg)
 
 ## 1.4 疑难杂症：在安装过程中如何需要选择Logon Type？
 
 - 选择`以本地用户或域用户来运行服务`。
 
-![以本地用户或域用户来运行服务](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/以本地用户或域用户来运行服务.jpg)
+![以本地用户或域用户来运行服务](https://image.shadowchen.top/src/posts/Jenkins：安装/以本地用户或域用户来运行服务.jpg)
 
 - 用**cmd**运行`secpol.msc`打开**本地安全策略**
 
-![本地安全策略](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/本地安全策略.jpg)
+![本地安全策略](https://image.shadowchen.top/src/posts/Jenkins：安装/本地安全策略.jpg)
 
 - **添加用户**
 
-![添加用户](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/添加用户.jpg)
+![添加用户](https://image.shadowchen.top/src/posts/Jenkins：安装/添加用户.jpg)
 
 - 回到安装界面**填入本地账户**即可
 
-![填入用户信息](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/填入用户信息.jpg)
+![填入用户信息](https://image.shadowchen.top/src/posts/Jenkins：安装/填入用户信息.jpg)
 
 
 
@@ -55,7 +55,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 - 切换系统的**安装源**
 
-![切换系统安装源](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/切换系统安装源.jpg)
+![切换系统安装源](https://image.shadowchen.top/src/posts/Jenkins：安装/切换系统安装源.jpg)
 
 - 终端内**更新系统软件**
 
@@ -153,7 +153,7 @@ sudo systemctl restart docker
 
 - 进入新的容器，运行`nvidia-smi`确认显卡驱动运行状态。
 
-![nvidia-smi](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/nvidia-smi.jpg)
+![nvidia-smi](https://image.shadowchen.top/src/posts/Jenkins：安装/nvidia-smi.jpg)
 
 ## 2.3 用Dockerfile方式制作Jenkins镜像
 
@@ -272,4 +272,4 @@ sudo docker stop jenkins_env                # 停止Jenkins容器
 
 ​		在浏览器中输入 **IP:PORT**，一般IP默认为 `127.0.0.1`，端口默认为`8080`端口，**浏览器弹出下述界面，表示Jenkins安装完成并成功启动了**。
 
-![Jenkins初始化配置界面](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：安装/Jenkins初始化配置界面.jpg)
+![Jenkins初始化配置界面](https://image.shadowchen.top/src/posts/Jenkins：安装/Jenkins初始化配置界面.jpg)

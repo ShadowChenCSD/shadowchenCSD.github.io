@@ -4,7 +4,7 @@ published: 2023-07-31
 description: 介绍对图像进行空域滤波操作，实现边缘检测的功能。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Canny.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Canny.jpg"
 ---
 
 # 1. 边缘检测
@@ -45,7 +45,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Canny.j
 
 |                    水平方向                    |                    垂直方向                    |
 | :--------------------------------------------: | :--------------------------------------------: |
-| ![水平方向](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/Sobel边缘检测：水平方向滤波器.png) | ![垂直方向](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/Sobel边缘检测：垂直方向滤波器.png) |
+| ![水平方向](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/Sobel边缘检测：水平方向滤波器.png) | ![垂直方向](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/Sobel边缘检测：垂直方向滤波器.png) |
 
 ## 3.2 使用方式
 
@@ -97,7 +97,7 @@ cv2.imwrite("sobel_x_y.png", SobelXY)
 
 |        原图         |      检测：横线      |      检测：竖线      |      检测：角点       |       检测：横线+竖线       |
 | :-----------------: | :------------------: | :------------------: | :-------------------: | :-------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![横线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sobel_y.png) | ![竖线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sobel_x.png) | ![角点](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sobel_xy.png) | ![横线+竖线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sobel_x_y.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![横线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sobel_y.png) | ![竖线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sobel_x.png) | ![角点](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sobel_xy.png) | ![横线+竖线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sobel_x_y.png) |
 
 # 4. Scharr算子
 
@@ -107,7 +107,7 @@ cv2.imwrite("sobel_x_y.png", SobelXY)
 
 |                    水平方向                    |                    垂直方向                    |
 | :--------------------------------------------: | :--------------------------------------------: |
-| ![水平方向](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/Scharr边缘检测：水平方向滤波器.png) | ![垂直方向](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/Scharr边缘检测：垂直方向滤波器.png) |
+| ![水平方向](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/Scharr边缘检测：水平方向滤波器.png) | ![垂直方向](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/Scharr边缘检测：垂直方向滤波器.png) |
 
 ## 4.2 使用方式
 
@@ -151,7 +151,7 @@ cv2.imwrite("scharr_x_y.png", ScharrXY)
 
 |        原图         |      检测：横线       |      检测：竖线       |       检测：横线+竖线        |
 | :-----------------: | :-------------------: | :-------------------: | :--------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![横线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/scharr_y.png) | ![竖线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/scharr_x.png) | ![横线+竖线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/scharr_x_y.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![横线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/scharr_y.png) | ![竖线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/scharr_x.png) | ![横线+竖线](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/scharr_x_y.png) |
 
 # 5. Canny算子
 
@@ -184,7 +184,7 @@ cv2.imwrite("scharr_x_y.png", ScharrXY)
   - **apertureSize**：表示**Sobel梯度计算的孔径大小**。
   - **L2gradient **：表示**计算图像梯度幅度的标识**，默认值为**False**。
 
-![L2gradient](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/L2gradient.png)
+![L2gradient](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/L2gradient.png)
 
 ## 5.3 示例
 
@@ -199,7 +199,7 @@ cv2.imwrite("canny.png", dst)
 
 |        原图         |        Canny算子检测        |
 | :-----------------: | :-------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![Canny算子检测](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/canny.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![Canny算子检测](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/canny.png) |
 
 # 6. Laplacian算子
 
@@ -207,7 +207,7 @@ cv2.imwrite("canny.png", dst)
 
 ## 6.1 滤波器
 
-![Laplacian边缘检测滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/Laplacian边缘检测滤波器.png)
+![Laplacian边缘检测滤波器](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/Laplacian边缘检测滤波器.png)
 
 ## 6.2 使用方式
 
@@ -237,4 +237,4 @@ cv2.imwrite("laplacian.png", dst)
 
 |        原图         |          Laplacian算子检测          |
 | :-----------------: | :---------------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![Laplacian算子检测](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【边缘检测】/laplacian.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/sample.png) | ![Laplacian算子检测](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【边缘检测】/laplacian.png) |

@@ -4,7 +4,7 @@ published: 2024-05-14
 description: 对Jenkins任务触发机制进行说明，重点阐述自动触发机制下的日程表设定。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_2.png"
 ---
 
 # 1. 触发机制
@@ -15,7 +15,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 - **周期触发**：设置**Build periodically**——**不管目录文件是否有更新，都会强制触发构建**
 - **计划触发**：设置**Poll SCM**——**按设置的时间进行轮询，发现有目录文件变化时，会触发构建**
 
-![定时构建&轮询构建](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务触发机制/定时构建&轮询构建.jpg)
+![定时构建&轮询构建](https://image.shadowchen.top/src/posts/Jenkins：任务触发机制/定时构建&轮询构建.jpg)
 
 # 2. Schedule设定
 

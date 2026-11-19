@@ -4,7 +4,7 @@ published: 2023-09-09
 description: 介绍图像级别的数字水印技术。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 介绍
@@ -58,7 +58,7 @@ cv2.imwrite("extraction-1.jpg", dst_2)
 
 |    原始图像     |          水印图像           |       水印嵌入后的图像       |        提取的水印图像         |
 | :-------------: | :-------------------------: | :--------------------------: | :---------------------------: |
-| ![src](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/watermark.png) | ![水印嵌入](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/embedding-1.jpg) | ![水印提取](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/extraction-1.jpg) |
+| ![src](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/watermark.png) | ![水印嵌入](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/embedding-1.jpg) | ![水印提取](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/extraction-1.jpg) |
 
 ## 3.2 随机位
 
@@ -100,7 +100,7 @@ cv2.imwrite("extraction-2.jpg", dst_2)
 
 |    原始图像     |          水印图像           |       水印嵌入后的图像       |        提取的水印图像         |
 | :-------------: | :-------------------------: | :--------------------------: | :---------------------------: |
-| ![src](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/watermark.png) | ![水印嵌入](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/embedding-2.jpg) | ![水印提取](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/extraction-2.jpg) |
+| ![src](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/watermark.png) | ![水印嵌入](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/embedding-2.jpg) | ![水印提取](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/extraction-2.jpg) |
 
 # 4. 非盲数字水印
 
@@ -141,7 +141,7 @@ cv2.imwrite("extraction-3.jpg", dst_2)
 
 |    原始图像     |          水印图像           |           非盲处理           |           水印嵌入           |           水印提取            |
 | :-------------: | :-------------------------: | :--------------------------: | :--------------------------: | :---------------------------: |
-| ![src](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/watermark.png) | ![非盲处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/operation-1.jpg) | ![水印嵌入](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/embedding-3.jpg) | ![水印提取](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/extraction-3.jpg) |
+| ![src](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/watermark.png) | ![非盲处理](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/operation-1.jpg) | ![水印嵌入](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/embedding-3.jpg) | ![水印提取](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/extraction-3.jpg) |
 
 ## 4.2 随机位
 
@@ -185,4 +185,4 @@ cv2.imwrite("extraction-4.jpg", dst_2)
 
 |    原始图像     |          水印图像           |           非盲处理           |           水印嵌入           |           水印提取            |
 | :-------------: | :-------------------------: | :--------------------------: | :--------------------------: | :---------------------------: |
-| ![src](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/watermark.png) | ![非盲处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/operation-2.jpg) | ![水印嵌入](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/embedding-4.jpg) | ![水印提取](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：数字水印/extraction-4.jpg) |
+| ![src](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/src.jpg) | ![watermark](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/watermark.png) | ![非盲处理](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/operation-2.jpg) | ![水印嵌入](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/embedding-4.jpg) | ![水印提取](https://image.shadowchen.top/src/posts/OpenCV案例：数字水印/extraction-4.jpg) |

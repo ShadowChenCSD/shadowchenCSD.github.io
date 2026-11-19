@@ -4,7 +4,7 @@ published: 2023-09-02
 description: 介绍入门级别的机器学习方法，包括K近邻算法、K均值聚类和支持向量机。
 tags: [OpenCV, 数字图像处理, 机器学习]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/机器学习.png"
+image: "https://image.shadowchen.top/public/posts/机器学习.png"
 ---
 
 # 	1. 机器学习
@@ -143,7 +143,7 @@ plt.show()
 距离该点最近的7个邻居的距离分别为： [1225. 1300. 1429. 1586. 1657. 1805. 1825.]
 ```
 
-![K近邻算法](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/K近邻算法.png)
+![K近邻算法](https://image.shadowchen.top/src/posts/OpenCV：机器学习/K近邻算法.png)
 
 # 	3. K均值聚类
 
@@ -237,7 +237,7 @@ centers: [[22.16],
           [75.29]]
 ```
 
-![K均值聚类_1D](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/K均值聚类_1D.png)
+![K均值聚类_1D](https://image.shadowchen.top/src/posts/OpenCV：机器学习/K均值聚类_1D.png)
 
 ### 二维数据
 
@@ -283,7 +283,7 @@ centers: [[23.91, 27.21],
           [74.909996, 73.78]]
 ```
 
-![K均值聚类_2D](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/K均值聚类_2D.png)
+![K均值聚类_2D](https://image.shadowchen.top/src/posts/OpenCV：机器学习/K均值聚类_2D.png)
 
 # 	4. 支持向量机
 
@@ -291,7 +291,7 @@ centers: [[23.91, 27.21],
 
 ​		**支持向量机**（ Support Vector Machine， SVM）是**一种 `二分类` 模型**，目标是**寻找一个超平面对样本数据进行分割，分割的原则是确保分类类别之间的间隔最大**。当数据集较小时，使用支持向量机进行分类非常有效。
 
-![不同分类器的间隔情况](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/不同分类器的间隔情况.png)
+![不同分类器的间隔情况](https://image.shadowchen.top/src/posts/OpenCV：机器学习/不同分类器的间隔情况.png)
 
 - **支持向量机**就是 **`在已有数据中，找到离分类器最近的点，确保它们离分类器尽可能地远`** 。
 
@@ -300,7 +300,7 @@ centers: [[23.91, 27.21],
 
 ​		在对原始数据分类的过程中，可能**无法使用线性方法实现分割**。支持向量机在分类时，可以`把无法线性分割的数据映射到高维空间`，然后再`在高维空间找到分类最优的线性分类器`。
 
-![升维处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/升维处理.png)
+![升维处理](https://image.shadowchen.top/src/posts/OpenCV：机器学习/升维处理.png)
 
 ## 4.2 使用
 
@@ -381,4 +381,4 @@ plt.show()
 第5个点的数据为：(80, 19)，类别为：1
 ```
 
-![支持向量机](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：机器学习/支持向量机.png)
+![支持向量机](https://image.shadowchen.top/src/posts/OpenCV：机器学习/支持向量机.png)

@@ -4,7 +4,7 @@ published: 2023-08-20
 description: 介绍如何计算图像的轮廓特征信息。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Contours.png"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Contours.png"
 ---
 
 # 1. 计算轮廓面积
@@ -37,7 +37,7 @@ for i in range(amount):
 
 |       原图        |        二值化的图        |          轮廓0           |          轮廓1           |          轮廓2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
 
 ```python
 contours[0]的面积为： 4095.0
@@ -77,7 +77,7 @@ for i in range(amount):
 
 |       原图        |        二值化的图        |          索引0           |          索引1           |          索引2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
 
 ```python
 contours[0]的长度为：256
@@ -141,7 +141,7 @@ for i in range(amount):
 
 |       原图        |        二值化的图        |          轮廓0           |          轮廓1           |          轮廓2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
 
 ```python
 轮廓0的矩:
@@ -256,7 +256,7 @@ print("轮廓1和轮廓2的匹配度：%.6f" % match_2)
 
 |       原图        |          轮廓0           |          轮廓1           |          轮廓2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_draw_2.png) |
 
 # 4. 轮廓的特征值
 
@@ -303,7 +303,7 @@ cv2.imwrite("sample_1_rect.png", image)
 
 |       原图        |        二值化的图        |        外接矩形        |
 | :---------------: | :----------------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_rect.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_rect.png) |
 
 ## 4.2 Extend
 
@@ -347,7 +347,7 @@ print("红色轮廓的extend为：", extend)
 
 |       原图        |        二值化的图        |        外接矩形        |
 | :---------------: | :----------------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_rect.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_rect.png) |
 
 ## 4.3 Solidity
 
@@ -396,7 +396,7 @@ cv2.imwrite("sample_1_hull.png", image)
 
 |       原图        |        二值化的图        |          凸包          |
 | :---------------: | :----------------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_hull.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_hull.png) |
 
 ## 4.4 等效直径
 
@@ -465,7 +465,7 @@ cv2.imwrite("sample_1_mask_2.png", mask_2)
 
 |       原图        |          轮廓0           |          轮廓1           |          轮廓2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_1_mask_2.png) |
 
 ##  5.2 ROI的最大值、最小值及其位置
 
@@ -543,7 +543,7 @@ maxLoc = (136, 82)
 
 |       原图        |    最大值、最小值-1     |    最大值、最小值-2     |    最大值、最小值-3     |    最大值、最小值-4     |
 | :---------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_4.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_2.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_5_ROI_4.png) |
 
 ## 5.3 ROI的平均颜色
 
@@ -655,4 +655,4 @@ bottom = (71, 250)
 
 |       原图        |             角点              |
 | :---------------: | :---------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_4_boundaryDot.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_4.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【计算轮廓特征】/sample_4_boundaryDot.png) |

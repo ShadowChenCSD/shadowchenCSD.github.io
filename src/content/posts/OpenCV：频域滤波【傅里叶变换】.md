@@ -4,7 +4,7 @@ published: 2023-08-05
 description: 介绍如何使用傅里叶变换技术，对图像进行频域滤波操作，实现边缘检测、平滑滤波的功能。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 理论基础
@@ -114,7 +114,7 @@ plt.axis('off')
 plt.show()
 ```
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_FFT_iFFT.png)
+![](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_FFT_iFFT.png)
 
 ## 2.4 应用
 
@@ -159,7 +159,7 @@ plt.imshow(fft_filter, cmap='gray')
 plt.show()
 ```
 
-![numpy_高通滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_高通滤波器.png)
+![numpy_高通滤波器](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_高通滤波器.png)
 
 ### 低通滤波器：图像模糊
 
@@ -207,7 +207,7 @@ plt.imshow(fft_filter, cmap='gray')
 plt.show()
 ```
 
-![numpy_低通滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_低通滤波器.png)
+![numpy_低通滤波器](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/numpy_低通滤波器.png)
 
 # 3. OpenCV实现傅里叶变换
 
@@ -292,7 +292,7 @@ plt.axis('off')
 plt.show()
 ```
 
-![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_DFT_iDFT.png)
+![](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_DFT_iDFT.png)
 
 ## 3.4 应用
 
@@ -338,7 +338,7 @@ plt.imshow(fft_filter, cmap='gray')
 plt.show()
 ```
 
-![OpenCV_高通滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_高通滤波器.png)
+![OpenCV_高通滤波器](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_高通滤波器.png)
 
 ### 低通滤波器：图像模糊
 
@@ -386,4 +386,4 @@ plt.imshow(fft_filter, cmap='gray')
 plt.show()
 ```
 
-![OpenCV_低通滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_低通滤波器.png)
+![OpenCV_低通滤波器](https://image.shadowchen.top/src/posts/OpenCV：频域滤波【傅里叶变换】/OpenCV_低通滤波器.png)

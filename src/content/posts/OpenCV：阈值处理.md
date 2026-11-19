@@ -4,7 +4,7 @@ published: 2023-08-11
 description: 介绍图像二值化处理技术，包括通用方案、Otsu阈值处理方案及自适应阈值处理方案。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Mean.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Mean.jpg"
 ---
 
 # 1. 介绍
@@ -23,9 +23,9 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Mean.jp
   - **maxval**：当type参数为**THRESH_BINARY**或者**THRESH_BINARY_INV**类型时，需要设定的**最大值**。
   - **type**：**阈值分割的类型**。
 
-![阈值分割类型](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/阈值分割类型.png)
+![阈值分割类型](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/阈值分割类型.png)
 
-![阈值分割类型·图示](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/阈值分割类型·图示.png)
+![阈值分割类型·图示](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/阈值分割类型·图示.png)
 
 ```python
 import cv2
@@ -47,15 +47,15 @@ cv2.imwrite("TOZERO_INV.jpg", TOZERO_INV)
 
 |        原图         |        二值化         |          反二值化           |
 | :-----------------: | :-------------------: | :-------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/person.jpg) | ![二值化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/BINARY.jpg) | ![反二值化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/BINARY_INV.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/person.jpg) | ![二值化](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/BINARY.jpg) | ![反二值化](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/BINARY_INV.jpg) |
 
 |        原图         |        截断处理        |
 | :-----------------: | :--------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/person.jpg) | ![截断处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/TRUNC.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/person.jpg) | ![截断处理](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/TRUNC.jpg) |
 
 |        原图         |          超阈值零处理           |        低阈值零处理         |
 | :-----------------: | :-----------------------------: | :-------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/person.jpg) | ![超阈值零处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/TOZERO_INV.jpg) | ![低阈值零处理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/TOZERO.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/person.jpg) | ![超阈值零处理](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/TOZERO_INV.jpg) | ![低阈值零处理](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/TOZERO.jpg) |
 
 # 3. Otsu阈值处理
 
@@ -83,7 +83,7 @@ cv2.imwrite("OTSU.jpg", OTSU)
 
 |        原图         |       Otsu二值化        |
 | :-----------------: | :---------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/person.jpg) | ![Otsu二值化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/Otsu.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/person.jpg) | ![Otsu二值化](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/Otsu.jpg) |
 
 # 4. 自适应阈值处理
 
@@ -119,4 +119,4 @@ cv2.imwrite("GAUSS.jpg", GAUSS)
 
 |        原图         |       均值法        |        高斯法        |
 | :-----------------: | :-----------------: | :------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/person.jpg) | ![均值法](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/MEAN.jpg) | ![高斯法](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：阈值处理/GAUSS.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/person.jpg) | ![均值法](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/MEAN.jpg) | ![高斯法](https://image.shadowchen.top/src/posts/OpenCV：阈值处理/GAUSS.jpg) |

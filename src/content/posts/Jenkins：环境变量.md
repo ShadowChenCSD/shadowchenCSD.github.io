@@ -4,7 +4,7 @@ published: 2024-05-10
 description: 给Jenkins服务添加环境变量，激活系统内的程序，如conda、python、CUDA等。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_2.png"
 ---
 
 # 1. 介绍
@@ -15,13 +15,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 - 选择**当前运行的节点**，点击`Configure`进行配置修改
 
-![节点设置](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：环境变量/节点设置.jpg)
+![节点设置](https://image.shadowchen.top/src/posts/Jenkins：环境变量/节点设置.jpg)
 
 - 下拉至最下方，找到`Node Properties`，勾选`Environment variable`，填写`Name`和`Value`即可
   - `Name`：path
   - `Value`：路径;路径;...
 
-![环境变量配置](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：环境变量/环境变量配置.jpg)
+![环境变量配置](https://image.shadowchen.top/src/posts/Jenkins：环境变量/环境变量配置.jpg)
 
 # 3. 举例
 

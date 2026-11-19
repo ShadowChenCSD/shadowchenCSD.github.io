@@ -4,7 +4,7 @@ published: 2023-07-02
 description: 介绍针对图像进行直方图归一化和直方图均衡化的原理和使用方法。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 直方图归一化
@@ -17,15 +17,15 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
   - **图像**：
   
-    ![图像数据](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/图像数据-1.png)
+    ![图像数据](https://image.shadowchen.top/src/posts/OpenCV：直方图/图像数据-1.png)
 
   - **灰度级次数统计**：
 
-    ![灰度级次数统计](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级次数统计-1.png)
+    ![灰度级次数统计](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级次数统计-1.png)
 
   - **直方图**：
 
-    ![直方图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图.png)
+    ![直方图](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图.png)
 
 ## 直方图归一化
 
@@ -35,15 +35,15 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
   - **图像**：
 
-    ![图像数据](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/图像数据-1.png)
+    ![图像数据](https://image.shadowchen.top/src/posts/OpenCV：直方图/图像数据-1.png)
 
   - **灰度级频率统计**：`灰度级出现的频率 = 灰度级出现的次数 / 总像素数`
 
-    ![灰度级频率统计](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级频率统计-1.png)
+    ![灰度级频率统计](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级频率统计-1.png)
 
   - **直方图归一化**：
 
-    ![直方图归一化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图归一化.png)
+    ![直方图归一化](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图归一化.png)
 
 ## dims、range、bins
 
@@ -80,7 +80,7 @@ cv2.destroyAllWindows()
 
 |        原图         |         直方图          |
 | :-----------------: | :---------------------: |
-| ![color](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/color.png) | ![直方图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/256_bins.png) |
+| ![color](https://image.shadowchen.top/src/posts/OpenCV：直方图/color.png) | ![直方图](https://image.shadowchen.top/src/posts/OpenCV：直方图/256_bins.png) |
 
 ## cv2.calcHist() + plt.plot()
 
@@ -120,7 +120,7 @@ cv2.destroyAllWindows()
 
 |        原图         |         直方图         |
 | :-----------------: | :--------------------: |
-| ![color](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/color.png) | ![直方图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/3_hists.png) |
+| ![color](https://image.shadowchen.top/src/posts/OpenCV：直方图/color.png) | ![直方图](https://image.shadowchen.top/src/posts/OpenCV：直方图/3_hists.png) |
 
 # 3. 直方图均衡化
 
@@ -132,33 +132,33 @@ cv2.destroyAllWindows()
 
 - **示例图像**：
 
-![图像数据](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/图像数据-2.png)
+![图像数据](https://image.shadowchen.top/src/posts/OpenCV：直方图/图像数据-2.png)
 
 - **灰度级次数统计**：
 
-![灰度级次数统计](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级次数统计-2.png)
+![灰度级次数统计](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级次数统计-2.png)
 
 - **灰度级频率统计**：
 
-![灰度级频率统计](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级频率统计-2.png)
+![灰度级频率统计](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级频率统计-2.png)
 
 - **灰度级累积频率**：
 
-![灰度级累积频率](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级累积频率.png)
+![灰度级累积频率](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级累积频率.png)
 
 - **灰度级均衡化**：`累积频率 * 灰度最大值` —— 结果舍入至整数
 
-![灰度级均衡化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/灰度级均衡化.png)
+![灰度级均衡化](https://image.shadowchen.top/src/posts/OpenCV：直方图/灰度级均衡化.png)
 
 - **均衡化后的灰度级和对应像素个数**：
 
-![均衡化后的灰度级和对应像素个数](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/均衡化后的灰度级和对应像素个数.png)
+![均衡化后的灰度级和对应像素个数](https://image.shadowchen.top/src/posts/OpenCV：直方图/均衡化后的灰度级和对应像素个数.png)
 
 - **直方图均衡化**：
 
 |              直方图均衡化·前              |              直方图均衡化·后              |
 | :---------------------------------------: | :---------------------------------------: |
-| ![直方图均衡化·前](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图均衡化·前-1.png) | ![直方图均衡化·后](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图均衡化·后-1.png) |
+| ![直方图均衡化·前](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图均衡化·前-1.png) | ![直方图均衡化·后](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图均衡化·后-1.png) |
 
 ## 直方图均衡化
 
@@ -193,5 +193,5 @@ cv2.destroyAllWindows()
 
 |                 原始图像                  |           直方图均衡化后的图像            |
 | :---------------------------------------: | :---------------------------------------: |
-|           ![原始图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/grey.png)           | ![直方图均衡化后的图像](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/equalization.png) |
-| ![直方图均衡化·前](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图均衡化·前-2.png) | ![直方图均衡化·后](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：直方图/直方图均衡化·后-2.png) |
+|           ![原始图像](https://image.shadowchen.top/src/posts/OpenCV：直方图/grey.png)           | ![直方图均衡化后的图像](https://image.shadowchen.top/src/posts/OpenCV：直方图/equalization.png) |
+| ![直方图均衡化·前](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图均衡化·前-2.png) | ![直方图均衡化·后](https://image.shadowchen.top/src/posts/OpenCV：直方图/直方图均衡化·后-2.png) |

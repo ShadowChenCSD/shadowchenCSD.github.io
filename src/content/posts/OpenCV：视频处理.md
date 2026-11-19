@@ -4,7 +4,7 @@ published: 2023-08-31
 description: 介绍如何使用图像处理技术处理视频文件。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/OpenCV.png"		
+image: "https://image.shadowchen.top/public/posts/OpenCV.png"		
 ---
 
 # 	1. 介绍
@@ -132,7 +132,7 @@ cv2.destroyAllWindows()
 ```
 
 <video id="video" controls="" title="traffic" style="width: 80%; height: 80%;">
-    <source id="mp4" src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/traffic.mp4">
+    <source id="mp4" src="https://image.shadowchen.top/public/posts/traffic.mp4">
 </video>
 
 
@@ -203,7 +203,7 @@ cv2.destroyAllWindows()
 ```
 
 <video id="video" controls="" title="traffic" style="width: 80%; height: 80%;">
-    <source id="mp4" src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/traffic-new.mp4">
+    <source id="mp4" src="https://image.shadowchen.top/public/posts/traffic-new.mp4">
 </video>
 
 
@@ -243,5 +243,5 @@ cv2.destroyAllWindows()
 ```
 
 <video id="video" controls="" title="traffic" style="width: 80%; height: 80%;">
-    <source id="mp4" src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/traffic-canny.mp4">
+    <source id="mp4" src="https://image.shadowchen.top/public/posts/traffic-canny.mp4">
 </video>

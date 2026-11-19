@@ -4,18 +4,18 @@ published: 2024-03-18
 description: 介绍GIT的工作特点、安装与配置及常见的操作管理方案。
 tags: [软件工程, 版本控制, GIT]
 category: 版本控制管理
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/GIT.jpg"
+image: "https://image.shadowchen.top/public/posts/GIT.jpg"
 ---
 
 # 1. 介绍
 
 ​		**Git**是目前**世界上使用最广泛、最先进**的 **`分布式版本控制系统`** ，**`每个开发者都拥有项目完整的、功能齐全的本地存储库副本，包括所有历史记录`**，即使**没有网络连接**，开发者仍然可以**在本地进行提交、查看历史、创建分支等**几乎所有操作，**与远程仓库的同步只需要在需要时进行**。
 
-![版本控制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/版本控制.jpg)
+![版本控制](https://image.shadowchen.top/src/posts/版本控制管理：GIT/版本控制.jpg)
 
 # 2. 工作特点
 
-![分布式版本控制系统](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分布式版本控制系统.jpg)
+![分布式版本控制系统](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分布式版本控制系统.jpg)
 
 |                |                           工作特点                           |
 | :------------: | :----------------------------------------------------------: |
@@ -123,14 +123,14 @@ git config user.email "xxx@xxx.com"
 
 # 4. 基本操作
 
-![Git命令流程图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/Git命令流程图.jpeg)
+![Git命令流程图](https://image.shadowchen.top/src/posts/版本控制管理：GIT/Git命令流程图.jpeg)
 
 ## 4.1 工作区和暂存区
 
 - **工作区**（Working Directory）：个人电脑里管理的目录
 - **暂存区**（Stage）：git版本库管理的目录
 
-![工作区和暂存区](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/工作区和暂存区.jpg)
+![工作区和暂存区](https://image.shadowchen.top/src/posts/版本控制管理：GIT/工作区和暂存区.jpg)
 
 ## 4.2 查看状态：`git status`
 
@@ -140,14 +140,14 @@ git config user.email "xxx@xxx.com"
 
 - 添加文件，从工作区添加到暂存区
 
-![工作区和暂存区·add](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/工作区和暂存区·add.jpg)
+![工作区和暂存区·add](https://image.shadowchen.top/src/posts/版本控制管理：GIT/工作区和暂存区·add.jpg)
 
 ## 4.4 提交：`git commit file1 file2 file3 ... -m "message" `
 
 - 提交文件，从暂存区提交至本地仓库
 - 必须使用`-m`参数，填写提交记录
 
-![工作区和暂存区·commit](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/工作区和暂存区·commit.jpg)
+![工作区和暂存区·commit](https://image.shadowchen.top/src/posts/版本控制管理：GIT/工作区和暂存区·commit.jpg)
 
 ## 4.5 查看内容差分
 
@@ -183,7 +183,7 @@ git config user.email "xxx@xxx.com"
 
 ## 5.1 使用`git reflog`查看版本信息：`HEAD`表示**当前版本**
 
-![版本切换](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/版本切换.png)
+![版本切换](https://image.shadowchen.top/src/posts/版本控制管理：GIT/版本切换.png)
 
 ## 5.2 通过HEAD版本进行切换
 
@@ -220,12 +220,12 @@ git config user.email "xxx@xxx.com"
 
 |             步骤             |                        图例                        |
 | :--------------------------: | :------------------------------------------------: |
-|          查看主分支          |         ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·查看分支.png)         |
-| 创建开发分支并切换至开发分支 | ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·创建新分支并切换至新分支.png) |
-|         开发分支更新         |         ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·分支开发.png)         |
-|         切换至主分支         |       ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·切换至主分支.png)       |
-|      主分支合并开发分支      |         ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·分支合并.png)         |
-|         删除开发分支         |         ![分支管理](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·分支删除.png)         |
+|          查看主分支          |         ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·查看分支.png)         |
+| 创建开发分支并切换至开发分支 | ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·创建新分支并切换至新分支.png) |
+|         开发分支更新         |         ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·分支开发.png)         |
+|         切换至主分支         |       ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·切换至主分支.png)       |
+|      主分支合并开发分支      |         ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·分支合并.png)         |
+|         删除开发分支         |         ![分支管理](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·分支删除.png)         |
 
 ## 6.3 冲突与解决
 
@@ -233,7 +233,7 @@ git config user.email "xxx@xxx.com"
 
   - 当 **主分支** 和 **开发分支** 各自都分别有新的提交时，**尝试快速合并会产生冲突**
 
-  ![冲突](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·冲突.png)
+  ![冲突](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·冲突.png)
 
 - **冲突处理**
 
@@ -244,7 +244,7 @@ git config user.email "xxx@xxx.com"
 
   - add并commit冲突文件
 
-  ![冲突解决](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·冲突解决.png)
+  ![冲突解决](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·冲突解决.png)
 
 - 可利用 `git log --graph --pretty=oneline --abbrev-commit` 查看分支合并图
 
@@ -254,7 +254,7 @@ git config user.email "xxx@xxx.com"
 
 |   git merge dev / git merge -ff dev    |              git merge --no-ff dev               |
 | :------------------------------------: | :----------------------------------------------: |
-| ![fast forward](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·分支合并.png) | ![no fast forward](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：GIT/分支管理·no-fast-forward.png) |
+| ![fast forward](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·分支合并.png) | ![no fast forward](https://image.shadowchen.top/src/posts/版本控制管理：GIT/分支管理·no-fast-forward.png) |
 
 # 7. TAG标签管理
 

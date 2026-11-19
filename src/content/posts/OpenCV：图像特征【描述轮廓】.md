@@ -4,7 +4,7 @@ published: 2023-08-18
 description: 介绍图像轮廓的描述方法，以及如何拟合图像轮廓。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Contours.png"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Contours.png"
 ---
 
 # 	1. 描述轮廓
@@ -66,7 +66,7 @@ print (len(contours[2])) # 198
 
 |       原图        |        二值化的图        |
 | :---------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_binary.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_binary.png) |
 
 ### 示例2：拓扑信息解析
 
@@ -98,14 +98,14 @@ print(hierarchy)
 
 |       原图        |        二值化的图        |
 | :---------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_binary.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_binary.png) |
 
 |         类型          |            图示            |                      说明                      |
 | :-------------------: | :------------------------: | :--------------------------------------------: |
-| **cv2.RETR_EXTERNAL** | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_EXTERNAL.png) |        [[[1 -1 -1 -1],  [-1  0 -1 -1]]]        |
-|   **cv2.RETR_LIST**   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_LIST.png)   | [[[1 -1 -1 -1], [2  0 -1 -1], [-1  1 -1 -1]]]  |
-|  **cv2.RETR_CCOMP**   |  ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_CCOMP.png)   | [[[1 -1 -1 -1], [-1  0  2 -1], [-1 -1 -1  1]]] |
-|   **cv2.RETR_TREE**   |   ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_TREE.png)   | [[[1 -1 -1 -1], [-1  0  2 -1], [-1 -1 -1  1]]] |
+| **cv2.RETR_EXTERNAL** | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_EXTERNAL.png) |        [[[1 -1 -1 -1],  [-1  0 -1 -1]]]        |
+|   **cv2.RETR_LIST**   |   ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_LIST.png)   | [[[1 -1 -1 -1], [2  0 -1 -1], [-1  1 -1 -1]]]  |
+|  **cv2.RETR_CCOMP**   |  ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_CCOMP.png)   | [[[1 -1 -1 -1], [-1  0  2 -1], [-1 -1 -1  1]]] |
+|   **cv2.RETR_TREE**   |   ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_2_TREE.png)   | [[[1 -1 -1 -1], [-1  0  2 -1], [-1 -1 -1  1]]] |
 
 ## 1.2 绘制轮廓
 
@@ -151,7 +151,7 @@ for i in range(amount):
 
 |       原图        |        二值化的图        |          轮廓0           |          轮廓1           |          轮廓2           |
 | :---------------: | :----------------------: | :----------------------: | :----------------------: | :----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_binary.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_0.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_2.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_binary.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_0.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_1_draw_2.png) |
 
 # 	2. 拟合轮廓
 
@@ -192,7 +192,7 @@ cv2.imwrite("sample_3_rect.png", image)
 
 |       原图        |       矩形包围框       |
 | :---------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_rect.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_rect.png) |
 
 ## 2.2 最小包围矩形框
 
@@ -233,7 +233,7 @@ cv2.imwrite("sample_3_minAreaRect.png", image)
 
 |       原图        |        最小包围矩形框         |
 | :---------------: | :---------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minAreaRect.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minAreaRect.png) |
 
 ## 2.3 最小包围圆
 
@@ -269,7 +269,7 @@ cv2.imwrite("sample_3_minEnclosingCircle.png", image)
 
 |       原图        |              最小包围圆              |
 | :---------------: | :----------------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minEnclosingCircle.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minEnclosingCircle.png) |
 
 ## 2.4 最小包围三角形
 
@@ -303,7 +303,7 @@ cv2.imwrite("sample_3_minEnclosingTriangle.png", image)
 
 |       原图        |             最小包围三角形             |
 | :---------------: | :------------------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minEnclosingTriangle.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_minEnclosingTriangle.png) |
 
 ## 2.5 最优拟合椭圆
 
@@ -335,7 +335,7 @@ cv2.imwrite("sample_3_fitEllipse.png", image)
 
 |       原图        |         最优拟合椭圆         |
 | :---------------: | :--------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_fitEllipse.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_fitEllipse.png) |
 
 ## 2.6 最优拟合直线
 
@@ -382,7 +382,7 @@ cv2.imwrite("sample_3_fitLine.png", image)
 
 |       原图        |       最优拟合直线        |
 | :---------------: | :-----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_fitLine.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_fitLine.png) |
 
 ## 2.7 逼近多边形
 
@@ -422,8 +422,8 @@ for n in range(len(proportion)):
 
 |            逼近多边形            |            逼近多边形            |            逼近多边形            |
 | :------------------------------: | :------------------------------: | :------------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_1.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_2.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_3.png) |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_5.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_6.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_1.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_2.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_3.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_4.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_5.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_3_approxPolyDP_6.png) |
 
 ## 2.8 凸包
 
@@ -467,7 +467,7 @@ cv2.imwrite("sample_4_hull.png", image)
 
 |       原图        |          凸包          |
 | :---------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_hull.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_hull.png) |
 
 ## 2.9 凸缺陷
 
@@ -512,7 +512,7 @@ cv2.imwrite("sample_4_hullDefects.png", image)
 
 |       原图        |            凸缺陷             |
 | :---------------: | :---------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_hullDefects.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_hullDefects.png) |
 
 ## 2.10 测试轮廓是否是凸形的
 
@@ -603,4 +603,4 @@ cv2.imwrite("sample_4_dist.png", image)
 
 |       原图        |        点和凸包        |
 | :---------------: | :--------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_dist.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像特征【描述轮廓】/sample_4_dist.png) |

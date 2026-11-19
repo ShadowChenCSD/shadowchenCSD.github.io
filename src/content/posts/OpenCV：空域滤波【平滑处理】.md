@@ -4,7 +4,7 @@ published: 2023-07-28
 description: 介绍对图像进行空域滤波操作，实现平滑图像的功能。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Blur.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Blur.jpg"
 ---
 
 # 1. 介绍
@@ -29,7 +29,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Blur.jp
   - **dst**：表示**目标图像**。
   - **src**：表示**原始图像**。
   - **ksize**：表示**滤波核**的大小。滤波核大小是指在滤波处理过程中，邻域图像的高度和宽度。
-    - 例如，5x5的滤波器可记为(5, 5)，表示如下的滤波器：![5x5均值滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/5x5均值滤波器.png)
+    - 例如，5x5的滤波器可记为(5, 5)，表示如下的滤波器：![5x5均值滤波器](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/5x5均值滤波器.png)
     - **卷积核越大，去噪效果越好，花费的计算时间越长，图像失真越严重。**
   - **anchor**：表示**锚点**，默认值是(-1, -1)，表示当前计算均值的点位于核的中心点位置。
   - **borderType**：表示**边界样式**，决定了以何种方式处理边界。
@@ -47,7 +47,7 @@ cv2.imwrite("mean_blur.png", dst)
 
 |      原图       |      噪声图      |      均值滤波      |
 | :-------------: | :----------------: | :----------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![均值滤波](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/mean_blur.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![均值滤波](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/mean_blur.png) |
 
 # 3. 方框滤波
 
@@ -64,7 +64,7 @@ cv2.imwrite("mean_blur.png", dst)
   - **src**：表示**原始图像**。
   - **ddepth**：表示处理结果图像的图像深度，**一般使用-1**，即**与原始图像使用相同的图像深度**。
   - **ksize**：表示**滤波核**的大小。滤波核大小是指在滤波处理过程中，邻域图像的高度和宽度。
-    - 例如，5x5的滤波器可记为(5, 5)，表示如下的滤波器：![5x5方框滤波器](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/5x5方框滤波器.png)
+    - 例如，5x5的滤波器可记为(5, 5)，表示如下的滤波器：![5x5方框滤波器](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/5x5方框滤波器.png)
   - **anchor**：表示**锚点**，默认值是(-1, -1)，表示当前计算均值的点位于核的中心点位置。
   - **normalize**：表示**是否进行归一化处理**。默认为0。
     - 当**normalize=1**时，表示要进行归一化处理，要**用邻域像素值的和除以面积**。
@@ -87,7 +87,7 @@ cv2.imwrite("boxFilter_normalized.png", dst)
 
 |      原图       |      噪声图      |       方框滤波：不归一化        | 方框滤波：归一化              |
 | :-------------: | :-----------------------------: | ----------------------------- | :---------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![方框滤波：不归一化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/boxFilter_unnormalized.png) | ![方框滤波：归一化](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/boxFilter_normalized.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![方框滤波：不归一化](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/boxFilter_unnormalized.png) | ![方框滤波：归一化](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/boxFilter_normalized.png) |
 
 # 4. 高斯滤波
 
@@ -95,7 +95,7 @@ cv2.imwrite("boxFilter_normalized.png", dst)
 
 ​		在进行**均值滤波**和**方框滤波**时，其**邻域内每个像素的权重是相等的**。在**高斯滤波**中，**会将中心点的权重值加大，远离中心点的权重值减小**，在此基础上计算邻域内各个像素值不同权重的和。
 
-​		**常见**的高斯滤波器如：![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/5x5高斯滤波器.png)
+​		**常见**的高斯滤波器如：![](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/5x5高斯滤波器.png)
 
 ​		对于高斯滤波器而言，**同一尺寸的卷积核可以有不同的权重比**。
 
@@ -108,7 +108,7 @@ cv2.imwrite("boxFilter_normalized.png", dst)
   - **src**：表示**原始图像**。
   - **ksize**：表示**滤波核**的大小。滤波核的值**必须是奇数**。
   - **sigmaX**：表示卷积核在**水平方向（X轴方向）的标准差**，控制其权重比例。
-    - 不同的sigmaX决定的卷积核，它们在水平方向上的标准差不同。![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/sigmaX.png)
+    - 不同的sigmaX决定的卷积核，它们在水平方向上的标准差不同。![](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/sigmaX.png)
   - **sigmaY**：表示卷积核在**竖直方向（Y轴方向）的标准差**，控制其权重比例。
     - 如果将该值设置为**0**，则**只采用sigmaX的值**。
     - 如果**sigmaX 和sigmaY都是0**，则**通过ksize.width和ksize.height计算得到**：
@@ -129,7 +129,7 @@ cv2.imwrite("gaussian_blur.png", dst)
 
 |       原图        |         噪声图          |            高斯滤波            |
 | :---------------: | :---------------------: | :----------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![高斯滤波](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/gaussian_blur.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![高斯滤波](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/gaussian_blur.png) |
 
 # 5. 中值滤波
 
@@ -162,7 +162,7 @@ cv2.imwrite("median_blur.png", dst)
 
 |       原图        |          噪声图           |           中值滤波           |
 | :---------------: | :-----------------------: | :--------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![中值滤波](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/median_blur.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![中值滤波](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/median_blur.png) |
 
 # 6. 双边滤波
 
@@ -204,7 +204,7 @@ cv2.imwrite("bilateral_blur.png", dst)
 
 |       原图        |          噪声图           |            双边滤波             |
 | :---------------: | :-----------------------: | :-----------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![双边滤波](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/bilateral_blur.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![双边滤波](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/bilateral_blur.png) |
 
 # 7. 自定义卷积核的滤波
 
@@ -227,7 +227,7 @@ cv2.imwrite("bilateral_blur.png", dst)
 
 ## 7.3 示例
 
-- 自定义卷积核：![自定义卷积核](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/自定义卷积核.png)
+- 自定义卷积核：![自定义卷积核](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/自定义卷积核.png)
   - **滤波效果等同于均值滤波**
 
 ```python
@@ -243,4 +243,4 @@ cv2.imwrite("conv_blur.png", dst)
 
 |       原图        |          噪声图           |          自定义卷积          |          均值滤波          |
 | :---------------: | :-----------------------: | :--------------------------: | :------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![自定义卷积](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/conv_blur.png) | ![均值滤波](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：空域滤波【平滑处理】/mean_blur.png) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo.png) | ![噪声图](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/logo_noise.png) | ![自定义卷积](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/conv_blur.png) | ![均值滤波](https://image.shadowchen.top/src/posts/OpenCV：空域滤波【平滑处理】/mean_blur.png) |

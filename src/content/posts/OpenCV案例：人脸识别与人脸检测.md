@@ -4,7 +4,7 @@ published: 2023-09-18
 description: 介绍使用OpenCV自带的库函数，实现人脸识别和人脸检测的功能。
 tags: [OpenCV, 数字图像处理, 目标分类, 目标检测]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/人脸检测.jpg"
+image: "https://image.shadowchen.top/public/posts/人脸检测.jpg"
 ---
 
 # 	1. 介绍
@@ -89,7 +89,7 @@ predict = 12
 confidence = 64.23
 ```
 
-![LBPH_predict](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/LBPH_predict.png)
+![LBPH_predict](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/LBPH_predict.png)
 
 ## 2.2 PCA人脸识别（EigenFace）
 
@@ -156,7 +156,7 @@ predict = 33
 confidence = 772.21
 ```
 
-![EigenFace_predict](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/EigenFace_predict.png)
+![EigenFace_predict](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/EigenFace_predict.png)
 
 ## 2.3 LDA人脸识别（FisherFace）
 
@@ -173,7 +173,7 @@ confidence = 772.21
 
 ​		做**线性判别分析**时，首先**将训练样本集投影到一条直线上，让投影后的点满足：同类间的点尽可能地靠近，异类间的点尽可能地远离**。做**识别**时，**将待测样本再投影到直线上**，**根据投影点的位置判定样本的类别，就完成了识别**。
 
-![LDA](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/LDA.png)
+![LDA](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/LDA.png)
 
 ### 使用方法
 
@@ -234,7 +234,7 @@ predict = 2
 confidence = 616.28
 ```
 
-![FisherFace_predict](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/FisherFace_predict.png)
+![FisherFace_predict](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/FisherFace_predict.png)
 
 # 3. 人脸检测
 
@@ -302,7 +302,7 @@ cv2.imwrite("face_detect.jpg", image)
 
 |         原图          |            检测结果             |
 | :-------------------: | :-----------------------------: |
-| ![family](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/family.jpg) | ![face_detect](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：人脸识别与人脸检测/face_detect.jpg) |
+| ![family](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/family.jpg) | ![face_detect](https://image.shadowchen.top/src/posts/OpenCV案例：人脸识别与人脸检测/face_detect.jpg) |
 
 # 4. 人脸数据库
 

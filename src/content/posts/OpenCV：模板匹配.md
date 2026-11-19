@@ -4,14 +4,14 @@ published: 2023-08-08
 description: 介绍如何使用模板匹配技术，在图像A内寻找与图像B最相似的部分。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Target.png"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Target.png"
 ---
 
 # 	1. 介绍
 
 ​		**模板匹配**是指**在当前图像A内寻找与图像B最相似的部分**，一般将**图像A**称为**输入图像**，将**图像B**称为**模板图像**。**模板匹配**的操作方法是**将模板图像B在图像A上`滑动`， 遍历所有像素以完成匹配**。
 
-![模板匹配](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/模板匹配.png)
+![模板匹配](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/模板匹配.png)
 
 # 2. 单目标匹配
 
@@ -69,7 +69,7 @@ cv2.imwrite("detect_TM_SQDIFF.png", img)
 
 |     原图      |       目标        |         位置匹配          |
 | :-----------: | :---------------: | :-----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/rice.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/template.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/detect_TM_SQDIFF.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/rice.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/template.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/detect_TM_SQDIFF.png) |
 
 ### 最大值方案：`cv2.TM_CCOEFF`
 
@@ -95,7 +95,7 @@ cv2.imwrite("detect_TM_CCOEFF.png", img)
 
 |     原图      |       目标        |         位置匹配          |
 | :-----------: | :---------------: | :-----------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/rice.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/template.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/detect_TM_CCOEFF.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/rice.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/template.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/detect_TM_CCOEFF.png) |
 
 # 3. 多目标匹配
 
@@ -133,4 +133,4 @@ cv2.imwrite("detect_TM_CCOEFF_NORMED.png", img)
 
 |      原图      |       目标        |             位置匹配             |
 | :------------: | :---------------: | :------------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/rices.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/template.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：模板匹配/detect_TM_CCOEFF_NORMED.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/rices.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/template.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：模板匹配/detect_TM_CCOEFF_NORMED.png) |

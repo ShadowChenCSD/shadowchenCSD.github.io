@@ -4,7 +4,7 @@ published: 2023-08-27
 description: 介绍霍夫变换算法，检测图像中的直线和圆。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"		
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"		
 ---
 
 # 1. 介绍
@@ -120,11 +120,11 @@ cv2.imwrite("HoughLinesP.png", img)
 
 |      原图      |      灰度图像       |     二值化图像      |
 | :------------: | :-----------------: | :-----------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/board.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/board_gray.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/board_edge.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/board.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/board_gray.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/board_edge.png) |
 
 |      霍夫变换       |     概率霍夫变换     |
 | :-----------------: | :------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/HoughLines.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/HoughLinesP.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/HoughLines.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/HoughLinesP.png) |
 
 # 3. 霍夫圆变换
 
@@ -176,4 +176,4 @@ cv2.imwrite("HoughCircles.png", img)
 
 |    霍夫变换    |      灰度图像       |      霍夫圆变换       |
 | :------------: | :-----------------: | :-------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/chess.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/chess_gray.png) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：霍夫变换/HoughCircles.png) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/chess.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/chess_gray.png) | ![](https://image.shadowchen.top/src/posts/OpenCV：霍夫变换/HoughCircles.png) |

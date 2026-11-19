@@ -4,7 +4,7 @@ published: 2023-07-19
 description: 介绍图像的色彩空间处理操作，重点介绍RGB空间与Gray空间、HSV空间、YCbCr空间的色彩转换。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Recolor.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Recolor.jpg"
 ---
 
 # 1. 介绍
@@ -134,7 +134,7 @@ cv2.imwrite("GRAY_BGR.jpg", GRAY_BGR)
 
 |        BGR         |     BGR转GRAY     |         GRAY转BGR         |
 | :----------------: | :---------------: | :-----------------------: |
-| ![BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/person.jpg) | ![GRAY](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/GRAY.jpg) | ![GRAY_BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/GRAY_BGR.jpg) |
+| ![BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/person.jpg) | ![GRAY](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/GRAY.jpg) | ![GRAY_BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/GRAY_BGR.jpg) |
 
 ### RGB与YCrCb
 
@@ -153,7 +153,7 @@ cv2.imwrite("YCbCr_BGR.jpg", YCbCr_BGR)
 
 |        BGR         | Y           |      Cb       | Cr   |        YCrCb转BGR         |
 | :----------------: | :---------: | :-----------: | :--: | :-----------------------: |
-| ![BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/person.jpg) | ![Y](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/Y.jpg) | ![Cb](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/Cb.jpg) | ![Cr](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/Cr.jpg) | ![YCbCr_BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/YCbCr_BGR.jpg) |
+| ![BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/person.jpg) | ![Y](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/Y.jpg) | ![Cb](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/Cb.jpg) | ![Cr](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/Cr.jpg) | ![YCbCr_BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/YCbCr_BGR.jpg) |
 
 ### RGB与HSV
 
@@ -172,7 +172,7 @@ cv2.imwrite("HSV_BGR.jpg", HSV_BGR)
 
 |        BGR         |      H      |      S      |      V      |        HSV转BGR         |
 | :----------------: | :---------: | :---------: | :---------: | :---------------------: |
-| ![BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/person.jpg) | ![H](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/H.jpg) | ![S](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/S.jpg) | ![V](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/V.jpg) | ![HSV_BGR](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/HSV_BGR.jpg) |
+| ![BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/person.jpg) | ![H](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/H.jpg) | ![S](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/S.jpg) | ![V](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/V.jpg) | ![HSV_BGR](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/HSV_BGR.jpg) |
 
 # 4. 色彩控制
 
@@ -216,4 +216,4 @@ cv2.imwrite("R.jpg", red)
 
 |       LOGO        |      R      |      G      |      B      |
 | :---------------: | :---------: | :---------: | :---------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/logo.png) | ![R](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/R.jpg) | ![G](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/G.jpg) | ![B](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：色彩空间处理/B.jpg) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/logo.png) | ![R](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/R.jpg) | ![G](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/G.jpg) | ![B](https://image.shadowchen.top/src/posts/OpenCV：色彩空间处理/B.jpg) |

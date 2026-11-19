@@ -94,6 +94,12 @@
     margin-inline: auto;
   }
 
+  /* 表格单元格内的图片默认居中显示 */
+  td > img,
+  th > img {
+    margin-inline: auto;
+  }
+
   /* --- 表格样式 --- */
   .table-wrapper {
     @apply w-full overflow-x-auto m-0 rounded-(--radius-large);

@@ -4,7 +4,7 @@ published: 2023-06-24
 description: 介绍OpenCV的绘图方式及键盘鼠标的交互方式。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/OpenCV.png"
+image: "https://image.shadowchen.top/public/posts/OpenCV.png"
 ---
 
 # 1. 绘图
@@ -147,7 +147,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![基本绘图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/demo.png)
+![基本绘图](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/demo.png)
 
 # 2. 交互
 
@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
 | 矩形  | 直线 | 圆形 | 椭圆形 | 文字 |
 | :---: | :--: | :--: | :----: | :--: |
-| ![矩形](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/rectangle.png) | ![直线](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/line.png) | ![圆形](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/circle.png) | ![椭圆形](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/ellipse.png) | ![文字](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/text.png) |
+| ![矩形](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/rectangle.png) | ![直线](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/line.png) | ![圆形](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/circle.png) | ![椭圆形](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/ellipse.png) | ![文字](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/text.png) |
 
 ## 2.3 滚动条交互
 
@@ -302,4 +302,4 @@ while(1):
 cv2.destroyAllWindows()
 ```
 
-![滚动条](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：绘图与交互/trackbar.png)
+![滚动条](https://image.shadowchen.top/src/posts/OpenCV：绘图与交互/trackbar.png)

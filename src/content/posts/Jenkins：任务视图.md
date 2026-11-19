@@ -4,7 +4,7 @@ published: 2024-05-29
 description: 介绍Jenkins的任务视图功能：通过预设的过滤规则，以便对任务进行分类管理。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_2.png"
 ---
 
 # 1. 介绍
@@ -15,15 +15,15 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 - 进入Jenkins后，点击**All**后面的 **+**
 
-![+](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务视图/+.jpg)
+![+](https://image.shadowchen.top/src/posts/Jenkins：任务视图/+.jpg)
 
 - 输入**视图名称**，选择**视图的显示方式**
 
-![新建视图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务视图/新建视图.jpg)
+![新建视图](https://image.shadowchen.top/src/posts/Jenkins：任务视图/新建视图.jpg)
 
 - 使用**Job过滤器选中要包括的Job**
 
-![过滤任务](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务视图/过滤任务.jpg)
+![过滤任务](https://image.shadowchen.top/src/posts/Jenkins：任务视图/过滤任务.jpg)
 
 - **保存设置**
 
@@ -31,8 +31,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
 - 进入Jenkins后，选择要改的`视图标签`
 
-![选择视图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务视图/选择视图.jpg)
+![选择视图](https://image.shadowchen.top/src/posts/Jenkins：任务视图/选择视图.jpg)
 
 - 观察左侧的菜单栏，可以通过`Edit View`、`Delete View`进行`视图编辑`和`视图删除`
 
-![编辑视图、修改视图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务视图/编辑视图、修改视图.jpg)
+![编辑视图、修改视图](https://image.shadowchen.top/src/posts/Jenkins：任务视图/编辑视图、修改视图.jpg)

@@ -4,7 +4,7 @@ published: 2023-08-14
 description: 介绍图像形态学处理技术，包括腐蚀、膨胀、开运算、闭运算、顶帽运算、黑帽运算等。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 基础概念
@@ -27,7 +27,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 - 如果**结构元**`完全处于前景图像`中，就将**结构元中心点**所对应的腐蚀结果图像中的**像素点**处理为 **`前景色`** 。
 - 如果**结构元**`未完全处于前景图像`中，就将**结构元中心点**对应的腐蚀结果图像中的**像素点**处理为 **`背景色`** 。
 
-![腐蚀示意图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/腐蚀示意图.png)
+![腐蚀示意图](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/腐蚀示意图.png)
 
 ## 2.2 使用方法
 
@@ -62,7 +62,7 @@ cv2.imwrite("J_erosion_2.png", J_erosion_2)
 
 |    原图     |  5x5的结构元，腐蚀1次   |  9x9的结构元，腐蚀1次   |
 | :---------: | :---------------------: | :---------------------: |
-| ![J](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J.png) | ![5x5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_erosion_1.png) | ![9x9](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_erosion_2.png) |
+| ![J](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J.png) | ![5x5](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_erosion_1.png) | ![9x9](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_erosion_2.png) |
 
 # 3. 膨胀
 
@@ -75,7 +75,7 @@ cv2.imwrite("J_erosion_2.png", J_erosion_2)
 - 如果**结构元中`任意一点处于前景图像中`**，就**将`膨胀结果`图像中对应`像素点`处理为`前景色`**。
 - 如果**结构元`完全处于背景图像外`**，就**将`膨胀结果`图像中对应`像素点`处理为`背景色`**。
 
-![膨胀示意图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/膨胀示意图.png)
+![膨胀示意图](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/膨胀示意图.png)
 
 ## 3.2 使用方法
 
@@ -110,7 +110,7 @@ cv2.imwrite("J_dilation_2.png", J_dilate_2)
 
 |    原图     |   5x5的结构元，膨胀1次   |   9x9的结构元，膨胀1次   |
 | :---------: | :----------------------: | :----------------------: |
-| ![J](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J.png) | ![5x5](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_dilation_1.png) | ![9x9](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_dilation_2.png) |
+| ![J](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J.png) | ![5x5](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_dilation_1.png) | ![9x9](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_dilation_2.png) |
 
 # 4. 形态学函数
 
@@ -128,7 +128,7 @@ cv2.imwrite("J_dilation_2.png", J_dilate_2)
 
   - **op**：**具体的形态学操作**
 
-    ![形态学操作](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/形态学操作.png)
+    ![形态学操作](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/形态学操作.png)
 
   - **kernel**：**腐蚀操作时所采用的结构元**。
 
@@ -164,11 +164,11 @@ cv2.imwrite("box_open.png", box_open)
 
 |   毛刺图    |    开运算：去毛刺     |
 | :---------: | :-------------------: |
-| ![J](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J.png) | ![J_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_open.png) |
+| ![J](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J.png) | ![J_open](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_open.png) |
 
 |     粘连图      |     开运算：划分区域      |
 | :-------------: | :-----------------------: |
-| ![box](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/box.png) | ![box_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/box_open.png) |
+| ![box](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/box.png) | ![box_open](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/box_open.png) |
 
 ## 4.3 闭运算：先膨胀，再腐蚀
 
@@ -189,7 +189,7 @@ cv2.imwrite("J_hole_close.png", J_hole_close)
 
 |        孔洞图         |         闭运算：闭合孔洞          |
 | :-------------------: | :-------------------------------: |
-| ![J_hole](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_hole.png) | ![J_hole_close](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_hole_close.png) |
+| ![J_hole](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_hole.png) | ![J_hole_close](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_hole_close.png) |
 
 ## 4.4 形态学梯度运算：膨胀 - 腐蚀
 
@@ -210,7 +210,7 @@ cv2.imwrite("J_gradient.png", J_gradient)
 
 |        原图         |         形态学梯度运算         |
 | :-------------------: | :-------------------------------: |
-| ![J_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_open.png) | ![J_gradient](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_gradient.png) |
+| ![J_open](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_open.png) | ![J_gradient](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_gradient.png) |
 
 ## 4.5 顶帽运算：原图 - 开运算
 
@@ -231,7 +231,7 @@ cv2.imwrite("J_tophat.png", J_tophat)
 
 |    原图     |        开运算         |         顶帽运算          |
 | :---------: | :-------------------: | :-----------------------: |
-| ![J](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J.png) | ![J_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_open.png) | ![J_tophat](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_tophat.png) |
+| ![J](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J.png) | ![J_open](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_open.png) | ![J_tophat](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_tophat.png) |
 
 ## 4.6 黑帽运算：闭运算 - 原图
 
@@ -252,7 +252,7 @@ cv2.imwrite("J_blackhat.png", J_blackhat)
 
 |         原图          |              闭运算               |           黑帽运算            |
 | :-------------------: | :-------------------------------: | :---------------------------: |
-| ![J_hole](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_hole.png) | ![J_hole_close](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_hole_close.png) | ![J_blackhat](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：形态学操作/J_blackhat.png) |
+| ![J_hole](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_hole.png) | ![J_hole_close](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_hole_close.png) | ![J_blackhat](https://image.shadowchen.top/src/posts/OpenCV：形态学操作/J_blackhat.png) |
 
 # 5. 自定义结构元
 

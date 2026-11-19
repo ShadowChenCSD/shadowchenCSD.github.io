@@ -4,10 +4,10 @@ published: 2024-05-11
 description: 分析Jenkins检出仓库代码的逻辑。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_2.png"
 ---
 
-![代码检出策略](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：代码检出逻辑/代码检出策略.jpg)
+![代码检出策略](https://image.shadowchen.top/src/posts/Jenkins：代码检出逻辑/代码检出策略.jpg)
 
 # 1. update
 

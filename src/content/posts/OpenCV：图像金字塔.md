@@ -4,7 +4,7 @@ published: 2023-07-12
 description: 介绍图像金字塔理论，包括上采样、下采样、高斯金字塔和拉普拉斯金字塔等。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 理论基础
@@ -15,7 +15,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 ​		图示就是一个图像金字塔的**示例**：
 
-![图像金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/图像金字塔.png)
+![图像金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/图像金字塔.png)
 
 # 2. 高斯金字塔
 
@@ -27,7 +27,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 ​		**高斯金字塔**就是通过**不断地使用高斯滤波和下采样**所产生的。
 
-![高斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/高斯金字塔的生成过程.png)
+![高斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/高斯金字塔的生成过程.png)
 
 ​		**原始图像**与**各次向下采样所得到的结果图像**共同**构成了高斯金字塔**。
 
@@ -66,7 +66,7 @@ cv2.imwrite("gauss_down_pyr3.jpg", pyr3)
 
 |    原图（第0层）     |             第1层             |             第2层             |             第3层             |  ……  |
 | :------------------: | :---------------------------: | :---------------------------: | :---------------------------: | :--: |
-| ![第0层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/person.jpg) | ![第1层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_down_pyr1.jpg) | ![第2层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_down_pyr2.jpg) | ![第3层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_down_pyr3.jpg) |  ……  |
+| ![第0层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/person.jpg) | ![第1层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_down_pyr1.jpg) | ![第2层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_down_pyr2.jpg) | ![第3层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_down_pyr3.jpg) |  ……  |
 
 ## 2.3 上采样
 
@@ -74,7 +74,7 @@ cv2.imwrite("gauss_down_pyr3.jpg", pyr3)
 
 ​		插值可以通过多种方式实现，如用最邻近的像素点给当前还没有值的像素点赋值的**最近邻插值**、对像素点以补零的方式进行插值的**补零插值**。
 
-![补零插值](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/补零插值.png)
+![补零插值](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/补零插值.png)
 
 ## 2.4 上采样：pyrUp函数
 
@@ -111,7 +111,7 @@ cv2.imwrite("gauss_up_pyr0.jpg", pyr0)
 
 |    第3层     |            第2层            |          第1层           |          第0层           |
 | :------------------: | :-------------------------: | :----------------------: | :----------------------: |
-| ![第3层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_down_pyr3.jpg) | ![第2层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_up_pyr2.jpg) | ![第1层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_up_pyr1.jpg) | ![第0层](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_up_pyr0.jpg) |
+| ![第3层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_down_pyr3.jpg) | ![第2层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_up_pyr2.jpg) | ![第1层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_up_pyr1.jpg) | ![第0层](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_up_pyr0.jpg) |
 
 # 3. 可逆性研究
 
@@ -135,11 +135,11 @@ cv2.imwrite("gauss_diff_up_down.jpg", imgDiff)
 
 |        原图         |              先下采样、再上采样              |              差分               |
 | :-----------------: | :------------------------------------------: | :-----------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/person.jpg) | ![先下采样、再上采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_pyr_down_up.jpg) | ![差分](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_diff_down_up.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/person.jpg) | ![先下采样、再上采样](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_pyr_down_up.jpg) | ![差分](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_diff_down_up.jpg) |
 
 |        原图         |              先上采样、再下采样              |              差分               |
 | :-----------------: | :------------------------------------------: | :-----------------------------: |
-| ![原图](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/person.jpg) | ![先上采样、再下采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_pyr_up_down.jpg) | ![差分](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_diff_up_down.jpg) |
+| ![原图](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/person.jpg) | ![先上采样、再下采样](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_pyr_up_down.jpg) | ![差分](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_diff_up_down.jpg) |
 
 # 4. 拉普拉斯金字塔
 
@@ -149,11 +149,11 @@ cv2.imwrite("gauss_diff_up_down.jpg", imgDiff)
 
 ​		为了在向上采样时能够恢复具有较高分辨率的原始图像，就要获取在采样过程中所丢失的信息，这些 **`丢失的信息`** 就**构成了 `拉普拉斯金字塔`** 。
 
-![拉普拉斯金字塔的生成过程](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/拉普拉斯金字塔的生成过程.png)
+![拉普拉斯金字塔的生成过程](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/拉普拉斯金字塔的生成过程.png)
 
 ## 4.2 示例应用：恢复高分辨率的图像
 
-![拉普拉斯金字塔的应用](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/拉普拉斯金字塔的应用.png)
+![拉普拉斯金字塔的应用](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/拉普拉斯金字塔的应用.png)
 
 ```python
 import cv2
@@ -197,6 +197,6 @@ cv2.imwrite("restore_2.jpg", Restore2)
 
 |           高斯金字塔           |          上采样           |             拉普拉斯金字塔             |          图像恢复          |
 | :----------------------------: | :-----------------------: | :------------------------------------: | :------------------------: |
-| ![高斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_pyr_0.jpg) | ![上采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/upsample_0.jpg) | ![拉普拉斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/laplacian_pyr_0.jpg) | ![图像恢复](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/restore_0.jpg) |
-| ![高斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_pyr_1.jpg) | ![上采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/upsample_1.jpg) | ![拉普拉斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/laplacian_pyr_1.jpg) | ![图像恢复](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/restore_1.jpg) |
-| ![高斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/gauss_pyr_2.jpg) | ![上采样](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/upsample_2.jpg) | ![拉普拉斯金字塔](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/laplacian_pyr_2.jpg) | ![图像恢复](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像金字塔/restore_2.jpg) |
+| ![高斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_pyr_0.jpg) | ![上采样](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/upsample_0.jpg) | ![拉普拉斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/laplacian_pyr_0.jpg) | ![图像恢复](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/restore_0.jpg) |
+| ![高斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_pyr_1.jpg) | ![上采样](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/upsample_1.jpg) | ![拉普拉斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/laplacian_pyr_1.jpg) | ![图像恢复](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/restore_1.jpg) |
+| ![高斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/gauss_pyr_2.jpg) | ![上采样](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/upsample_2.jpg) | ![拉普拉斯金字塔](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/laplacian_pyr_2.jpg) | ![图像恢复](https://image.shadowchen.top/src/posts/OpenCV：图像金字塔/restore_2.jpg) |

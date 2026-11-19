@@ -4,14 +4,14 @@ published: 2023-07-06
 description: 介绍图像间的运算处理逻辑，主要涉及加法运算、位操作运算和掩膜操作。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 0. 参考图
 
 |      参考图1      |      参考图2      |
 | :---------------: | :---------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/person-1.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/person-2.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：图像运算/person-1.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：图像运算/person-2.jpg) |
 
 # 1. 加法运算
 
@@ -83,7 +83,7 @@ cv2.imwrite("3.jpg", dst_5)
 
 |        +        |        cv2.add()        |        cv2.addWeighted()        |
 | :-------------: | :---------------------: | :-----------------------------: |
-| ![+](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合1.jpg) | ![cv2.add()](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合2.jpg) | ![cv2.addWeighted()](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合3.jpg) |
+| ![+](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合1.jpg) | ![cv2.add()](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合2.jpg) | ![cv2.addWeighted()](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合3.jpg) |
 
 # 2. 位运算
 
@@ -182,7 +182,7 @@ src_2的像素点：  247 , 0b11110111
 
 |        位与        |        位或        |        位非        |        位异或        |
 | :-------------: | :---------------------: | :-----------------------------: | :-----------------------------: |
-| ![位与](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合4.jpg) | ![位或](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合5.jpg) | ![位非](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合6.jpg) | ![位异或](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像运算/组合7.jpg) |
+| ![位与](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合4.jpg) | ![位或](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合5.jpg) | ![位非](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合6.jpg) | ![位异或](https://image.shadowchen.top/src/posts/OpenCV：图像运算/组合7.jpg) |
 
 # 3. 掩膜
 

@@ -4,7 +4,7 @@ published: 2024-04-24
 description: 介绍Jenkins的初始化、启动和停止。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_1.png"
 ---
 
 # 1. Jenkins的初始化
@@ -15,7 +15,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 ​		按照提示，**使用管理员的密码文件，解锁Jenkins**。
 
-![解锁Jenkins](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：初始化、启动和停止/解锁Jenkins.jpg)
+![解锁Jenkins](https://image.shadowchen.top/src/posts/Jenkins：初始化、启动和停止/解锁Jenkins.jpg)
 
 ## 1.2 配置插件
 
@@ -23,19 +23,19 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 ​		后续如有需要可在Jenkins的配置管理中进行增减。
 
-![配置插件](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：初始化、启动和停止/配置插件.jpg)
+![配置插件](https://image.shadowchen.top/src/posts/Jenkins：初始化、启动和停止/配置插件.jpg)
 
 ## 1.3 创建管理员账户
 
 ​		既可以**继续使用**原本的admin账户，也可以**额外创建**admin账户，推荐先使用默认的admin账户。
 
-![创建管理员用户](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：初始化、启动和停止/创建管理员用户.jpg)
+![创建管理员用户](https://image.shadowchen.top/src/posts/Jenkins：初始化、启动和停止/创建管理员用户.jpg)
 
 ## 1.4 进入Jenkins主界面
 
 ​		完成配置后Jenkins就准备就绪、可以进行使用了！
 
-![准备就绪](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：初始化、启动和停止/准备就绪.jpg)
+![准备就绪](https://image.shadowchen.top/src/posts/Jenkins：初始化、启动和停止/准备就绪.jpg)
 
 # 2. Jenkins的启动和停止
 
@@ -53,7 +53,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 - 打开**任务管理器**，进入**服务**。
 - 找到**Jenkins**，右键对该服务进行管理：**停止**或**启用**。
 
-![Windows服务](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：初始化、启动和停止/Windows服务.jpg)
+![Windows服务](https://image.shadowchen.top/src/posts/Jenkins：初始化、启动和停止/Windows服务.jpg)
 
 ## 2.3 Linux服务方式
 

@@ -4,7 +4,7 @@ published: 2023-06-28
 description: 介绍数字图像技术的基本概念。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 像素与通道
@@ -22,7 +22,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 |       字母"A"       |                    计算机内的存储形式                     |
 | :-----------------: | :-------------------------------------------------------: |
-| ![字母A](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/字母A.png) | ![二值图像的计算机存储形式](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/二值图像的计算机存储形式.png) |
+| ![字母A](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/字母A.png) | ![二值图像的计算机存储形式](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/二值图像的计算机存储形式.png) |
 
 ### 灰度图像
 
@@ -30,7 +30,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 ​		通常，计算机会**将灰度处理为`256个灰度级`**，用数值区间[0, 255]来表示，其中，**数值“255”表示纯白色，数值“0”表示纯黑色，其余的数值表示从纯白到纯黑之间不同级别的灰度**。
 
-![灰度图像的计算机存储形式](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/灰度图像的计算机存储形式.png)
+![灰度图像的计算机存储形式](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/灰度图像的计算机存储形式.png)
 
 ### 彩色图像
 
@@ -112,7 +112,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 ​		彩色图像，可以理解为由R通道、G通道、B通道三个通道构成，每一个通道都是一个独立的灰度图像。比如，左侧彩色图像中的白色方块内的区域，对应右侧三个通道的三个矩阵，白色方块**左上角顶点**的**RGB值**即为(205,89,68)。
 
-![彩色图像的计算机存储形式](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/彩色图像的计算机存储形式.png)
+![彩色图像的计算机存储形式](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/彩色图像的计算机存储形式.png)
 
 ## 1.3 像素处理
 
@@ -150,7 +150,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 ```
 
-![grey](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/grey.png)
+![grey](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/grey.png)
 
 ### 彩色图像
 
@@ -176,7 +176,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 ```
 
-![color](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/color.png)
+![color](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/color.png)
 
 ### item()和itemset()
 
@@ -242,7 +242,7 @@ cv2.destroyAllWindows()
 
 |       原图        |       蓝色通道        |       绿色通道        |       红色通道        |
 | :---------------: | :-------------------: | :-------------------: | :-------------------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![logo-B](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-B.png) | ![logo-G](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-G.png) | ![logo-R](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-R.png) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![logo-B](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-B.png) | ![logo-G](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-G.png) | ![logo-R](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-R.png) |
 
 ### 通道合并
 
@@ -268,7 +268,7 @@ cv2.destroyAllWindows()
 
 |        BGR        |            RGB            |
 | :---------------: | :-----------------------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![logo-RGB](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-RGB.png) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![logo-RGB](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo-RGB.png) |
 
 # 2. 图像属性
 
@@ -299,4 +299,4 @@ cv2.destroyAllWindows()
 
 |       LOGO        |       TEXT        |
 | :---------------: | :---------------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![text](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：像素、通道、图像属性、ROI/text.png) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/logo.png) | ![text](https://image.shadowchen.top/src/posts/OpenCV：像素、通道、图像属性、ROI/text.png) |

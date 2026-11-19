@@ -4,7 +4,7 @@ published: 2023-08-24
 description: 介绍经典的图像分割算法。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 分水岭算法
@@ -36,7 +36,7 @@ cv2.imwrite("J_open.png", J_open)
 
 |   毛刺图    |    开运算：去毛刺     |
 | :---------: | :-------------------: |
-| ![J](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/J.png) | ![J_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/J_open.png) |
+| ![J](https://image.shadowchen.top/src/posts/OpenCV：图像分割/J.png) | ![J_open](https://image.shadowchen.top/src/posts/OpenCV：图像分割/J_open.png) |
 
 ### 获取图像边界
 
@@ -55,7 +55,7 @@ cv2.imwrite("J_gradient.png", J_gradient)
 
 |         原图          |        形态学梯度运算         |
 | :-------------------: | :---------------------------: |
-| ![J_open](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/J_open.png) | ![J_gradient](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/J_gradient.png) |
+| ![J_open](https://image.shadowchen.top/src/posts/OpenCV：图像分割/J_open.png) | ![J_gradient](https://image.shadowchen.top/src/posts/OpenCV：图像分割/J_gradient.png) |
 
 ## 2.2 距离变换、前景提取
 
@@ -114,11 +114,11 @@ plt.savefig("coins_foreground.png")
 
 |        原图         |            灰度图             |             二值图              |
 | :-----------------: | :---------------------------: | :-----------------------------: |
-| ![coins](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins.jpg) | ![coins_gray](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_gray.png) | ![coins_morph](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_morph.png) |
+| ![coins](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins.jpg) | ![coins_gray](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_gray.png) | ![coins_morph](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_morph.png) |
 
 |                     距离变换                      |                 前景提取                  |
 | :-----------------------------------------------: | :---------------------------------------: |
-| ![coins_dist_transform](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_dist_transform.png) | ![coins_foreground](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_foreground.png) |
+| ![coins_dist_transform](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_dist_transform.png) | ![coins_foreground](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_foreground.png) |
 
 ## 2.3 确定未知区域
 
@@ -147,7 +147,7 @@ plt.savefig("coins_unknown.png")
 
 |                  前景图                   |              未知区域               |
 | :---------------------------------------: | :---------------------------------: |
-| ![coins_foreground](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_foreground.png) | ![coins_unknown](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_unknown.png) |
+| ![coins_foreground](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_foreground.png) | ![coins_unknown](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_unknown.png) |
 
 ## 2.4 标注前景区域
 
@@ -182,7 +182,7 @@ plt.savefig("coins_markers.png")
 
 |                  前景图                   |            前景区域标注             |
 | :---------------------------------------: | :---------------------------------: |
-| ![coins_foreground](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_foreground.png) | ![coins_markers](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_markers.png) |
+| ![coins_foreground](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_foreground.png) | ![coins_markers](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_markers.png) |
 
 ## 2.5 图像分割
 
@@ -244,4 +244,4 @@ cv2.imwrite("coins_watershed.png", img)
 
 |        原图         |                图像分割                 |
 | :-----------------: | :-------------------------------------: |
-| ![coins](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins.jpg) | ![coins_watershed](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：图像分割/coins_watershed.png) |
+| ![coins](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins.jpg) | ![coins_watershed](https://image.shadowchen.top/src/posts/OpenCV：图像分割/coins_watershed.png) |

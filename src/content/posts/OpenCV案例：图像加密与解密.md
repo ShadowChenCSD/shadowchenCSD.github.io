@@ -4,7 +4,7 @@ published: 2023-09-04
 description: 介绍图像加密与解密的技术。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 位异或加密
@@ -34,7 +34,7 @@ cv2.imwrite("decryption-xor.jpg", decryption)
 
 |     原始图像      |        密钥图像         |             加密图像              |               解密                |
 | :---------------: | :---------------------: | :-------------------------------: | :-------------------------------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/logo.png) | ![key-xor](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/key-xor.jpg) | ![encryption](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/encryption-xor.jpg) | ![decryption](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/decryption-xor.jpg) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/logo.png) | ![key-xor](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/key-xor.jpg) | ![encryption](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/encryption-xor.jpg) | ![decryption](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/decryption-xor.jpg) |
 
 # 2. 置乱加密
 
@@ -123,4 +123,4 @@ cv2.imwrite("decrypt-shuffle.jpg", decrypt)
 
 |     原始图像      |            加密图像             |            解密图像             |
 | :---------------: | :-----------------------------: | :-----------------------------: |
-| ![logo](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/logo.png) | ![encrypt](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/encrypt-shuffle.jpg) | ![decrypt](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：图像加密与解密/decrypt-shuffle.jpg) |
+| ![logo](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/logo.png) | ![encrypt](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/encrypt-shuffle.jpg) | ![decrypt](https://image.shadowchen.top/src/posts/OpenCV案例：图像加密与解密/decrypt-shuffle.jpg) |

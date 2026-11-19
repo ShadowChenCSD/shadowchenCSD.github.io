@@ -4,18 +4,18 @@ published: 2024-04-29
 description: 介绍Jenkins各个模块的工作流程。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_1.png"
 ---
 
 # 1. 触发任务
 
 - `手动触发`：点击**任务**，选择左侧功能菜单中的**Build Now**即可
 
-![立即构建](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/立即构建.jpg)
+![立即构建](https://image.shadowchen.top/src/posts/Jenkins：工作流程/立即构建.jpg)
 
 - `自动触发`：如果任务**设定了自动触发机制**，则在**满足触发时间条件**后，Jenkins会自动触发任务
 
-![触发机制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/触发机制.jpg)
+![触发机制](https://image.shadowchen.top/src/posts/Jenkins：工作流程/触发机制.jpg)
 
 # 2. 获取源代码
 
@@ -27,17 +27,17 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 - `Linux环境`：启动**终端**执行`bash`文件
 
-![bash](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/bash.jpg)
+![bash](https://image.shadowchen.top/src/posts/Jenkins：工作流程/bash.jpg)
 
 - `Windows环境`：启动**命令提示符**执行`bat`文件
 
-![cmd](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/cmd.jpg)
+![cmd](https://image.shadowchen.top/src/posts/Jenkins：工作流程/cmd.jpg)
 
 # 4. 发送邮件通知
 
 ​		若Jenkins设置了邮件通知相关内容，则Jenkins在运行完构建脚本后会**自动向设定的邮箱中发送邮件**。
 
-![邮件通知](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/邮件通知.jpg)
+![邮件通知](https://image.shadowchen.top/src/posts/Jenkins：工作流程/邮件通知.jpg)
 
 # 5. 反馈运行状态
 
@@ -45,8 +45,8 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_1.png"
 
 - **命令块返回值为0时**，Jenkins提示`Finished: SUCCESS`
 
-![成功](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/成功.jpg)
+![成功](https://image.shadowchen.top/src/posts/Jenkins：工作流程/成功.jpg)
 
 - **命令块返回值非0时**，Jenkins提示`Finished: FAILURE`
 
-![失败](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：工作流程/失败.jpg)
+![失败](https://image.shadowchen.top/src/posts/Jenkins：工作流程/失败.jpg)

@@ -4,7 +4,7 @@ published: 2023-07-17
 description: 介绍对图像进行常规几何变换的操作，包括缩放、翻转、仿射变换、透视变换。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉-Invert.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉-Invert.jpg"
 ---
 
 # 1. 概述
@@ -58,7 +58,7 @@ cv2.imwrite("resize.jpg", dst)
 
 |      原图       |      缩放       |
 | :-------------: | :-------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/resize.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/resize.jpg) |
 
 # 3. 翻转
 
@@ -92,9 +92,30 @@ cv2.imwrite("y.jpg", y)
 cv2.imwrite("x+y.jpg", x_y)
 ```
 
-|      原图       |  水平翻转   |  垂直翻转   | 水平翻转 + 垂直翻转 |
-| :-------------: | :---------: | :---------: | :-----------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![x](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/x.jpg) | ![y](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/y.jpg) |   ![x+y](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/x+y.jpg)   |
+<table>
+  <colgroup>
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th align="center">原图</th>
+      <th align="center">水平翻转</th>
+      <th align="center">垂直翻转</th>
+      <th align="center">水平翻转 + 垂直翻转</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg" alt="原图" /></td>
+      <td><img src="https://image.shadowchen.top/src/posts/OpenCV：几何变换/x.jpg" alt="水平翻转" /></td>
+      <td><img src="https://image.shadowchen.top/src/posts/OpenCV：几何变换/y.jpg" alt="垂直翻转" /></td>
+      <td><img src="https://image.shadowchen.top/src/posts/OpenCV：几何变换/x+y.jpg" alt="水平翻转 + 垂直翻转" /></td>
+    </tr>
+  </tbody>
+</table>
 
 # 4. 仿射变换
 
@@ -136,7 +157,7 @@ cv2.imwrite("offset.jpg", dst)
 
 |      原图       |         平移          |
 | :-------------: | :-------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![offset](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/offset.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg) | ![offset](https://image.shadowchen.top/src/posts/OpenCV：几何变换/offset.jpg) |
 
 ## 4.4 示例：旋转
 
@@ -162,7 +183,7 @@ cv2.imwrite("rotate.jpg", dst)
 
 |      原图       |         旋转          |
 | :-------------: | :-------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![rotate](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/rotate.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg) | ![rotate](https://image.shadowchen.top/src/posts/OpenCV：几何变换/rotate.jpg) |
 
 ## 4.5 示例：任意变换
 
@@ -189,7 +210,7 @@ cv2.imwrite("affine.jpg", dst)
 
 |      原图       |       任意变换        |
 | :-------------: | :-------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![affine](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/affine.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg) | ![affine](https://image.shadowchen.top/src/posts/OpenCV：几何变换/affine.jpg) |
 
 # 5. 透视变换
 
@@ -237,4 +258,4 @@ cv2.imwrite("perspective.jpg", dst)
 
 |      原图       |            透视变换             |
 | :-------------: | :-----------------------------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/person.jpg) | ![perspective](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：几何变换/perspective.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：几何变换/person.jpg) | ![perspective](https://image.shadowchen.top/src/posts/OpenCV：几何变换/perspective.jpg) |

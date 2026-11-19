@@ -4,7 +4,7 @@ published: 2023-06-20
 description: 介绍OpenCV-Python的安装方式，以及如何对图像进行读取、显示和保存。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/OpenCV.png"
+image: "https://image.shadowchen.top/public/posts/OpenCV.png"
 ---
 
 # 1. OpenCV安装

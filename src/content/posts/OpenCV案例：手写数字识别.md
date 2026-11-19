@@ -4,14 +4,14 @@ published: 2023-09-15
 description: 介绍使用OpenCV的KNN分类技术，实现MNIST手写数字识别的功能。
 tags: [OpenCV, 数字图像处理, 目标分类]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/MNIST.png"
+image: "https://image.shadowchen.top/public/posts/MNIST.png"
 ---
 
 # 1. 介绍
 
 ​		**MNIST数据集**是**由0~9手写数字图片和数字标签组成**，包含**60000个训练样本**和**10000个测试样本**，每个样本都是一张**28 * 28像素**的**灰度**手写数字图片。本文采用 **`K近邻方式`** 对**MNIST数据集**进行**训练与识别**。
 
-![MNIST数据](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV案例：手写数字识别/MNIST数据.png)
+![MNIST数据](https://image.shadowchen.top/src/posts/OpenCV案例：手写数字识别/MNIST数据.png)
 
 
 

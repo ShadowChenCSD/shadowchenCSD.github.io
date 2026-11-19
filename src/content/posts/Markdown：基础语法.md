@@ -4,7 +4,7 @@ published: 2023-01-16
 description: 介绍撰写Markdown文档的基本语法规则。
 tags: [Markdown, 文章撰写]
 category: 博客
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/markdown.png"
+image: "https://image.shadowchen.top/public/posts/markdown.png"
 ---
 
 # 1. 标题
@@ -187,12 +187,12 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/markdown.png"
 
 ```html
 <video id="video" controls="" title="红叶森林">
-    <source id="mp4" src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/红叶森林.mp4">
+    <source id="mp4" src="https://image.shadowchen.top/public/posts/红叶森林.mp4">
 </video>
 ```
 
 <video id="video" controls="" title="红叶森林">
-    <source id="mp4" src="http://tn260vxlu.hd-bkt.clouddn.com/public/posts/红叶森林.mp4">
+    <source id="mp4" src="https://image.shadowchen.top/public/posts/红叶森林.mp4">
 </video>
 
 ## 外链视频

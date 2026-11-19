@@ -4,22 +4,22 @@ published: 2024-05-08
 description: 拆解Jenkins任务的设定要素。
 tags: [软件工程, CICD, Jenkins]
 category: CICD
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
+image: "https://image.shadowchen.top/public/posts/Jenkins_2.png"
 ---
 
 # 1. 新建任务
 
 - 点击`Dashboard`下的`New Item`
 
-![新建任务](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/新建任务.jpg)
+![新建任务](https://image.shadowchen.top/src/posts/Jenkins：任务设置/新建任务.jpg)
 
 - 编辑`Item Name`，选择如没有特别的需要，一般默认选择`FreeStyle Project`
 
-![新任务创建](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/新任务创建.jpg)
+![新任务创建](https://image.shadowchen.top/src/posts/Jenkins：任务设置/新任务创建.jpg)
 
 - **快捷操作**：如果要**在既有的任务上创建新任务**，可以使用`Copy From`的功能创建**新任务**
 
-![新任务创建：拷贝既有任务](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/新任务创建：拷贝既有任务.jpg)
+![新任务创建：拷贝既有任务](https://image.shadowchen.top/src/posts/Jenkins：任务设置/新任务创建：拷贝既有任务.jpg)
 
 # 2. 任务设置
 
@@ -30,14 +30,14 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 - **作用**：描述任务的工作用途
 - **默认**：**非必填项**，即使为空，也不影响任务的运行
 
-![任务描述](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/任务描述.jpg)
+![任务描述](https://image.shadowchen.top/src/posts/Jenkins：任务设置/任务描述.jpg)
 
 ### ② 指定任务的运行节点
 
 - **作用**：指定任务的运行节点，在多工作节点系统下适用
 - **默认**：**非必填项**，如果**没有指定工作节点**，则**任务运行在本机环境内**
 
-![任务的工作节点](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/任务的工作节点.jpg)
+![任务的工作节点](https://image.shadowchen.top/src/posts/Jenkins：任务设置/任务的工作节点.jpg)
 
 ### ③ 配置获取源码的方式
 
@@ -47,18 +47,18 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 
   - `Git`：填入**仓库地址**、**账户凭据**即可使用。可以**选择master/branch分支**
 
-    ![Git](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/Git.jpg)
+    ![Git](https://image.shadowchen.top/src/posts/Jenkins：任务设置/Git.jpg)
 
   - `SVN`：填入**仓库地址**、**账户凭据**即可使用。可以**选择checkout的策略**
 
-    ![SVN](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/SVN.jpg)
+    ![SVN](https://image.shadowchen.top/src/posts/Jenkins：任务设置/SVN.jpg)
 
 ### ④ 任务触发机制设定
 
 - **作用**：设置任务的触发机制，可选`手动触发`、`周期触发`、`计划触发`等
 - **默认**：**非必填项**，如果没有设置，则任务为**手动触发**机制
 
-![触发机制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/触发机制.jpg)
+![触发机制](https://image.shadowchen.top/src/posts/Jenkins：任务设置/触发机制.jpg)
 
 ## 2.2 Build（构建）
 
@@ -67,13 +67,13 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 - **作用**：指定构建时需要执行的脚本
   - 一般情况下，**Linux平台设置`shell脚本`、Windows平台设置`cmd脚本`、特定平台可以直接设置`python脚本`**
 
-![执行脚本](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/执行脚本.jpg)
+![执行脚本](https://image.shadowchen.top/src/posts/Jenkins：任务设置/执行脚本.jpg)
 
 ### ② 撰写执行脚本内容
 
 - **作用**：Jenkins自动化作业的**核心功能**。**该模块会执行构建脚本的内容，根据构建脚本的执行状态，Jenkins反馈运行`成功`或`失败`。**
 
-![撰写执行脚本内容](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/撰写执行脚本内容.jpg)
+![撰写执行脚本内容](https://image.shadowchen.top/src/posts/Jenkins：任务设置/撰写执行脚本内容.jpg)
 
 - **Jenkins天气状态变化**
   - Jenkins以`晴雨状态`来表示它的**运行状态**反馈，晴天表示成功，雨天表示失败
@@ -86,10 +86,10 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/Jenkins_2.png"
 - **依赖项**：需要提前设置**发件人**相关信息
 - **默认**：**非必填项**，如果没有设置，则不发送任何邮件
 
-![邮件通知](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/邮件通知.jpg)
+![邮件通知](https://image.shadowchen.top/src/posts/Jenkins：任务设置/邮件通知.jpg)
 
 # 3. 对既有任务进行配置修改
 
 ​		点击**既有的任务**，选择左侧的`Configure`，之后**参照上一节内容**进行设置调整。
 
-​		![配置再修改](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/Jenkins：任务设置/配置再修改.jpg)
+​		![配置再修改](https://image.shadowchen.top/src/posts/Jenkins：任务设置/配置再修改.jpg)

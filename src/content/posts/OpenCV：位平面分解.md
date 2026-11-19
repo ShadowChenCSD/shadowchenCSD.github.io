@@ -4,7 +4,7 @@ published: 2023-07-15
 description: 介绍对图像进行位平面分解的操作。
 tags: [OpenCV, 数字图像处理]
 category: 计算机视觉
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
+image: "https://image.shadowchen.top/public/posts/计算机视觉.jpg"
 ---
 
 # 1. 定义
@@ -25,11 +25,11 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/计算机视觉.jpg"
 
 |               10进制表示                |               2进制表示               |
 | :-------------------------------------: | :-----------------------------------: |
-| ![示例图像-10进制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/示例图像-10进制.png) | ![示例图像-2进制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/示例图像-2进制.png) |
+| ![示例图像-10进制](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/示例图像-10进制.png) | ![示例图像-2进制](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/示例图像-2进制.png) |
 
 ### 图像数据的位平面分解
 
-![示例数据-位平面分解](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/示例数据-位平面分解.png)
+![示例数据-位平面分解](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/示例数据-位平面分解.png)
 
 ## 2.2 示例
 
@@ -58,14 +58,14 @@ for i in range(8):
 
 |       彩色图像        |            灰度图像             |
 | :-------------------: | :-----------------------------: |
-| ![person](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/person.jpg) | ![person-gray](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/person-gray.jpg) |
+| ![person](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/person.jpg) | ![person-gray](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/person-gray.jpg) |
 
 ### 位平面分解的图像
 
 |   第0层    |   第1层    |   第2层    |   第3层    |
 | :--------: | :--------: | :--------: | :--------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/0.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/1.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/2.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/3.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/0.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/1.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/2.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/3.jpg) |
 
 |   第4层 |   第5层    |   第6层    |   第7层    |
 | :--------: | :--------: | :--------: | :--------: |
-| ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/4.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/5.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/6.jpg) | ![](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/OpenCV：位平面分解/7.jpg) |
+| ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/4.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/5.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/6.jpg) | ![](https://image.shadowchen.top/src/posts/OpenCV：位平面分解/7.jpg) |

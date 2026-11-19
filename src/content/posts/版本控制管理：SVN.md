@@ -4,18 +4,18 @@ published: 2024-03-12
 description: 介绍SVN的工作特点、客户端工具和常见的使用命令。
 tags: [软件工程, 版本控制, SVN]
 category: 版本控制管理
-image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/SVN.png"
+image: "https://image.shadowchen.top/public/posts/SVN.png"
 ---
 
 # 1. 介绍
 
 ​		**SVN**，全称 **Subversion**，它是一个**开源**的 **`集中式版本控制系统`** ，主要用于**维护项目（源代码或文档）的 `当前版本` 和 `历史版本` **。它允许团队**查看文件先前的版本**，并**跟踪其随时间所发生的所有变化**。
 
-![版本控制](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：SVN/版本控制.jpg)
+![版本控制](https://image.shadowchen.top/src/posts/版本控制管理：SVN/版本控制.jpg)
 
 # 2. 工作特点
 
-![集中式版本控制系统](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：SVN/集中式版本控制系统.jpg)
+![集中式版本控制系统](https://image.shadowchen.top/src/posts/版本控制管理：SVN/集中式版本控制系统.jpg)
 
 |                |                           工作特点                           |
 | :------------: | :----------------------------------------------------------: |
@@ -54,7 +54,7 @@ image: "http://tn260vxlu.hd-bkt.clouddn.com/public/posts/SVN.png"
 
 2. 输入命令`svn --version`，如果**提示相应的版本**，说明svn命令行工具可以正常使用了；如果提示 **“svn”不是内部或外部命令，也不是可运行的程序或批处理文件名** ，说明svn命令行工具没有配置成功，需要重新审核配置过程。
 
-   ![Subversion](http://tn260vxlu.hd-bkt.clouddn.com/src/posts/版本控制管理：SVN/Subversion.png)
+   ![Subversion](https://image.shadowchen.top/src/posts/版本控制管理：SVN/Subversion.png)
 
 ## 3.3 subversion（Linux）
 
