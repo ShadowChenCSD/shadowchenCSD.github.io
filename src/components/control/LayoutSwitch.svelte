@@ -95,22 +95,18 @@
 		};
 
 		const handleSwupEvent = () => {
-			setTimeout(() => {
-				const forced = window.getForcedLayout?.(location.pathname);
-				if (forced === "list" || forced === "grid") {
-					userPreference = forced;
-					updateStorage(forced);
-					return;
-				}
-
-				const saved = getSavedSessionLayout();
-				if (saved === "list" || saved === "grid") {
-					userPreference = saved;
-				} else {
-					userPreference = siteConfig.postListLayout
-						.defaultMode as LayoutMode;
-				}
-			}, 200);
+			const forced = window.getForcedLayout?.(location.pathname);
+			const saved = getSavedSessionLayout();
+			const layout =
+				forced || saved || siteConfig.postListLayout.defaultMode;
+			if (forced === "list" || forced === "grid") {
+				updateStorage(forced);
+			}
+			if (userPreference === layout) {
+				dispatchLayoutChange(layout);
+			} else {
+				userPreference = layout;
+			}
 		};
 
 		window.addEventListener(
@@ -118,34 +114,15 @@
 			handleCustomEvent as EventListener,
 		);
 
-		const setupSwup = () => {
-			const swup = (window as any).swup;
-			if (swup?.hooks) {
-				swup.hooks.on("content:replace", handleSwupEvent);
-				swup.hooks.on("page:view", handleSwupEvent);
-			} else {
-				window.addEventListener("popstate", handleSwupEvent);
-			}
-		};
-
-		if ((window as any).swup) {
-			setupSwup();
-		} else {
-			setTimeout(setupSwup, 200);
-		}
+		// 直接使用集成生命周期，兼容生产环境延迟初始化 Swup。
+		document.addEventListener("astro:page-load", handleSwupEvent);
 
 		return () => {
 			window.removeEventListener(
 				"layoutChange",
 				handleCustomEvent as EventListener,
 			);
-			window.removeEventListener("popstate", handleSwupEvent);
-
-			const swup = (window as any).swup;
-			if (swup?.hooks) {
-				swup.hooks.off("content:replace", handleSwupEvent);
-				swup.hooks.off("page:view", handleSwupEvent);
-			}
+			document.removeEventListener("astro:page-load", handleSwupEvent);
 		};
 	});
 </script>
