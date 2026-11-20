@@ -1,0 +1,280 @@
+.emoji-icon {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
+.anime-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  transition: gap 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === Grid Mode === */
+.anime-grid-container.anime-grid-mode {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 640px) {
+  .anime-grid-container.anime-grid-mode {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .anime-grid-container.anime-grid-mode {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .anime-grid-container.anime-grid-mode {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* === List Mode === */
+.anime-grid-container.anime-list-mode {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 1280px) {
+  .anime-grid-container.anime-list-mode {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.anime-grid-container.anime-list-mode .group {
+  display: flex;
+  flex-direction: row;
+  min-height: 12rem;
+}
+
+.anime-grid-container.anime-list-mode .anime-cover-container {
+  width: 8.5rem;
+  height: auto;
+  aspect-ratio: 2/3;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .anime-grid-container.anime-list-mode .anime-cover-container {
+    width: 11rem;
+  }
+}
+
+.anime-grid-container.anime-list-mode .p-3 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  min-width: 0;
+}
+
+.anime-grid-container.anime-list-mode h3 {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.anime-grid-container.anime-list-mode .p-3 .flex.flex-wrap span {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.anime-grid-container.anime-list-mode .group p.text-xs {
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+.anime-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.anime-filter-tag {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line-divider);
+  border-radius: var(--radius-large);
+  background: var(--btn-regular-bg);
+  color: var(--btn-content);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.anime-filter-tag:hover:not(.anime-active) {
+  background: var(--btn-hover-bg);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+.anime-filter-tag.anime-active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.anime-filter-tag[data-status="planned"] {
+  background: rgb(254 249 195);
+}
+.anime-filter-tag[data-status="planned"]:hover:not(.anime-active) {
+  background: rgb(254 249 195);
+}
+.anime-filter-tag[data-status="planned"].anime-active {
+  background: rgb(234 179 8);
+  border-color: rgb(234 179 8);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="watching"] {
+  background: rgb(220 252 231);
+}
+.anime-filter-tag[data-status="watching"]:hover:not(.anime-active) {
+  background: rgb(220 252 231);
+}
+.anime-filter-tag[data-status="watching"].anime-active {
+  background: rgb(34 197 94);
+  border-color: rgb(34 197 94);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="completed"] {
+  background: rgb(243 232 255);
+}
+.anime-filter-tag[data-status="completed"]:hover:not(.anime-active) {
+  background: rgb(243 232 255);
+}
+.anime-filter-tag[data-status="completed"].anime-active {
+  background: rgb(168 85 247);
+  border-color: rgb(168 85 247);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="favorite"] {
+  background: rgb(255 237 213);
+}
+.anime-filter-tag[data-status="favorite"]:hover:not(.anime-active) {
+  background: rgb(255 237 213);
+}
+.anime-filter-tag[data-status="favorite"].anime-active {
+  background: rgb(249 115 22);
+  border-color: rgb(249 115 22);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="onhold"] {
+  background: rgb(243 244 246);
+}
+.anime-filter-tag[data-status="onhold"]:hover:not(.anime-active) {
+  background: rgb(243 244 246);
+}
+.anime-filter-tag[data-status="onhold"].anime-active {
+  background: rgb(55 65 81);
+  border-color: rgb(55 65 81);
+  color: #fff;
+}
+
+.anime-filter-tag[data-status="dropped"] {
+  background: rgb(254 226 226);
+}
+.anime-filter-tag[data-status="dropped"]:hover:not(.anime-active) {
+  background: rgb(254 226 226);
+}
+.anime-filter-tag[data-status="dropped"].anime-active {
+  background: rgb(239 68 68);
+  border-color: rgb(239 68 68);
+  color: #fff;
+}
+
+.anime-grid-container [data-anime-status].anime-hidden {
+  display: none !important;
+}
+
+.anime-grid-container [data-anime-status] {
+  transition:
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.15s ease-out;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 350px;
+}
+
+.anime-grid-container [data-anime-status].anime-fade-out {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+.anime-grid-container [data-anime-status].anime-fade-in {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.anime-grid-container [data-anime-status].anime-fade-in-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.anime-loading-spinner {
+  border-right-color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+.anime-pagination {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime-pagination.is-hidden {
+  display: none;
+}
+
+.anime-page-numbers {
+  min-height: 2.75rem;
+}
+
+.anime-page-number {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.anime-page-number:hover:not(:disabled):not(.is-active) {
+  background: var(--btn-card-bg-hover);
+}
+
+.anime-page-number:active:not(:disabled):not(.is-active) {
+  transform: scale(0.85);
+}
+
+.anime-page-number.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.anime-page-ellipsis {
+  margin: 0 0.25rem;
+}
+
+.anime-page-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

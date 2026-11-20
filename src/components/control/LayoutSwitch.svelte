@@ -1,0 +1,212 @@
+<script lang="ts">
+	import I18nKey from "@i18n/i18nKey";
+	import { i18n } from "@i18n/translation";
+	import { onMount } from "svelte";
+
+	import { siteConfig } from "../../config";
+
+	type LayoutMode = "list" | "grid";
+
+	export let currentLayout: LayoutMode = "list";
+
+	let mounted = false;
+	let isSwitching = false;
+	let userPreference: LayoutMode = "list";
+
+	$: currentLayout = userPreference;
+
+	$: if (mounted) {
+		dispatchLayoutChange(currentLayout);
+	}
+
+	function dispatchLayoutChange(layout: LayoutMode) {
+		if (typeof window !== "undefined") {
+			window.dispatchEvent(
+				new CustomEvent("layoutChange", {
+					detail: { layout },
+				}),
+			);
+		}
+	}
+
+	// 辅助函数：同时更新两种存储
+	// sessionStorage 用于判断当前会话状态（关闭标签页失效）
+	// localStorage 用于兼容其他组件（如 PostPage.astro）
+	// TODO: 使用 sessionStorage 存储状态，关闭标签页即销毁。不应把缓存数据存在访客本地电脑上
+	function updateStorage(layout: LayoutMode) {
+		sessionStorage.setItem("postListLayout", layout);
+		localStorage.setItem("postListLayout", layout);
+	}
+
+	function getSavedSessionLayout(): LayoutMode | null {
+		return sessionStorage.getItem("postListLayout") as LayoutMode;
+	}
+
+	function switchLayout() {
+		if (!mounted || isSwitching) {
+			return;
+		}
+
+		isSwitching = true;
+		const newLayout = userPreference === "list" ? "grid" : "list";
+		userPreference = newLayout;
+
+		// 更新存储
+		updateStorage(newLayout);
+	}
+
+	function onAnimationEnd() {
+		isSwitching = false;
+	}
+
+	onMount(() => {
+		mounted = true;
+
+		// 先查页面是否强制布局，强制则覆盖用户偏好
+		let initialLayout: LayoutMode;
+		const forced = window.getForcedLayout?.(location.pathname);
+		if (forced === "list" || forced === "grid") {
+			initialLayout = forced;
+			updateStorage(forced);
+		} else {
+			const sessionLayout = getSavedSessionLayout();
+			const defaultLayout = siteConfig.postListLayout
+				.defaultMode as LayoutMode;
+
+			if (sessionLayout === "list" || sessionLayout === "grid") {
+				initialLayout = sessionLayout;
+
+				if (localStorage.getItem("postListLayout") !== sessionLayout) {
+					localStorage.setItem("postListLayout", sessionLayout);
+				}
+			} else {
+				initialLayout = defaultLayout;
+				updateStorage(defaultLayout);
+			}
+		}
+		userPreference = initialLayout;
+
+		const handleCustomEvent = (
+			event: CustomEvent<{ layout: LayoutMode }>,
+		) => {
+			if (event.detail?.layout) {
+				userPreference = event.detail.layout;
+			}
+		};
+
+		const handleSwupEvent = () => {
+			const forced = window.getForcedLayout?.(location.pathname);
+			const saved = getSavedSessionLayout();
+			const layout =
+				forced || saved || siteConfig.postListLayout.defaultMode;
+			if (forced === "list" || forced === "grid") {
+				updateStorage(forced);
+			}
+			if (userPreference === layout) {
+				dispatchLayoutChange(layout);
+			} else {
+				userPreference = layout;
+			}
+		};
+
+		window.addEventListener(
+			"layoutChange",
+			handleCustomEvent as EventListener,
+		);
+
+		// 直接使用集成生命周期，兼容生产环境延迟初始化 Swup。
+		document.addEventListener("astro:page-load", handleSwupEvent);
+
+		return () => {
+			window.removeEventListener(
+				"layoutChange",
+				handleCustomEvent as EventListener,
+			);
+			document.removeEventListener("astro:page-load", handleSwupEvent);
+		};
+	});
+</script>
+
+{#if mounted && siteConfig.postListLayout.allowSwitch}
+	<button
+		type="button"
+		aria-label={userPreference === "list"
+			? i18n(I18nKey.switchToGridMode)
+			: i18n(I18nKey.switchToListMode)}
+		aria-pressed={userPreference === "grid"}
+		class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90 flex items-center justify-center theme-switch-btn {isSwitching
+			? 'switching'
+			: ''}"
+		on:click={switchLayout}
+		disabled={isSwitching}
+		title={userPreference === "list"
+			? i18n(I18nKey.switchToGridMode)
+			: i18n(I18nKey.switchToListMode)}
+	>
+		<div
+			class="icon-container w-5 h-5 flex items-center justify-center relative"
+			on:animationend={onAnimationEnd}
+		>
+			{#if userPreference === "list"}
+				<svg
+					class="w-5 h-5 icon-transition"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+				</svg>
+			{:else}
+				<svg
+					class="w-5 h-5 icon-transition"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"
+					/>
+				</svg>
+			{/if}
+		</div>
+	</button>
+{/if}
+
+<style>
+	.theme-switch-btn::before {
+		transition:
+			transform 75ms ease-out,
+			background-color 0ms !important;
+	}
+
+	.icon-transition {
+		transition:
+			transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+			opacity 0.3s ease;
+	}
+	.switching {
+		pointer-events: none;
+	}
+	.switching .icon-transition {
+		animation: iconRotate 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	@keyframes iconRotate {
+		0% {
+			transform: rotate(0deg) scale(1);
+			opacity: 1;
+		}
+		50% {
+			transform: rotate(180deg) scale(0.8);
+			opacity: 0.5;
+		}
+		100% {
+			transform: rotate(360deg) scale(1);
+			opacity: 1;
+		}
+	}
+	.theme-switch-btn:not(.switching):hover .icon-transition {
+		transform: scale(1.1);
+	}
+	.theme-switch-btn:disabled {
+		cursor: not-allowed;
+		opacity: 0.7;
+	}
+</style>
